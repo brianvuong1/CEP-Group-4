@@ -186,15 +186,11 @@ So the two work together, not in place of each other:
 
 Establish GA4 events, conversions, and KPIs to determine which user actions and traffic sources represent meaningful engagement for Wellness Ranch Therapy.
 
-- Is GA4 currently connected?
-- Who has admin access?
-- What counts as a meaningful conversion for the organization — a donation, booking request, volunteer signup, or another action?
-
 ### AO3. Title of AO3 (Name of Student 3)
 
-### AO4. Title of AO4 (Name of Student 4)
+### AO4. Title of AO4 (Ron)
 
-### AO5. Title of AO5 (Name of Student 5)
+Measure how implemented SEO, website, and digital marketing changes affect organic traffic, engagement, and conversions by comparing Spring performance data against a Fall baseline.
 
 ## Significance of the Topic
 
