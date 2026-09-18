@@ -247,7 +247,9 @@ This is where students may acknowledge important people in their life that impac
     ![](images/slo-1.png)
 :::
 
-### AO1. Title of AO1 (Name of Student 1) {#sec-ao1-title-ao1}
+### AO1. On-Page & Off-Page SEO Performance Analysis (Alexa)
+
+Analyze current SEO data (technical issues, content, backlinks, local SEO) from the SEO Fix Tracker and backlink audit to identify which factors most affect Wellness Ranch Therapy's search visibility and which pages should be prioritized for improvement.
 
 ::: callout-note
 #### How to cite an article in-text
