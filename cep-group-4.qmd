@@ -75,15 +75,6 @@ csl: styles/american-marketing-association.csl
 
 # ACKNOWLEDGMENTS PAGE {#sec-acknowledgments-page .unnumbered}
 
-::: page-note
-***(Optional)***
-:::
-
-::: {.callout-note .hl-yellow}
-## Instructions
-
-This is where students may acknowledge important people in their life that impacted their graduate studies, such as family members, mentors, and friends. Below is a space holder.
-:::
 
 {{< lipsum 1 >}}
 
@@ -95,47 +86,7 @@ This is where students may acknowledge important people in their life that impac
 
 # ABSTRACT {#sec-abstract .unnumbered}
 
-::: page-note
-*(The abstract should be no more than **250 words** including section headings and keywords.)*
-:::
 
-::: {.callout-note .hl-yellow}
-## Instructions for Abstract
-
--   **Do not write this section** until the end of the CEP journey in the summer semester when you have a clear understanding of your contributions to the project. You can refer to the sample summary of individual contribution in the [**template document**](https://docs.google.com/document/d/1Pv5wn9QUTmBgrY2H_9R4-MrDewLz7qaZ/edit) for guidance on how to write your own summary.
-
--   The abstract should be structured with the appropriate sub-headings.
-
--   These four sub-headings and their accompanying explanations must always be included:
-
-    -   **Purpose**
-    -   **Design/methodology/approach**
-    -   **Findings**
-    -   **Originality/Value**
-    -   **Practical implications**
-
--   The below sub-headings are optional and can be included, if applicable:
-
-    -   **Research limitations/implications**
-    -   **Social implications**
-
--   The maximum length of your abstract should be 250 words in total, including keywords.
-
--   **Article keywords**:\
-    Your submission should include **up to 6 appropriate and short keywords** that capture the key topics of the paper. Choosing the right key words can help enhance the online discoverability of your research and may also be used to help find relevant reviewers.
-
--   Below is a sample of an abstract screenshot from a published CEP on BroncoWorks library repository.
-:::
-
-![](images/paste-4.png)
-
-![](images/paste-5.png)
-
-------------------------------------------------------------------------
-
-<br>
-
-{{< pagebreak >}}
 
 # SUMMARY OF INDIVIDUAL CONTRIBUTION {#sec-summary-of-individual-contribution .unnumbered}
 
@@ -193,25 +144,8 @@ This is where students may acknowledge important people in their life that impac
 
 # TABLE OF CONTENTS {#sec-table-of-contents .unnumbered}
 
-::: {.callout-note .hl-yellow}
-## Instructions for Table of Contents
 
--   This section is a placeholder for the table of contents for those who use Word. If you are using Quarto, you are not required to insert a table of contents here because the table of contents will be generated automatically in the right sidebar for navigation when you submit your report in HTML format.
 
-    -   If you are using Quarto, you may submit **HTML** file rendered from Quarto, as you can generate toc on the side bar. In fact, there is no way to insert toc in the middle of sections natively in Quarto.
-
-        -   Allow up to three heading levels (h1, h2, and h3) expandable on the sidebar.
-
-        -   This document is already using the method, you can check the source code by clicking the code tools button on the top of the web page.
-
-    -   If you use **Word**, you will need to insert an automatic table of contents here using the appropriate features in Word (References \> Table of Contents). The table of contents should be generated based on the headings used in the document, so make sure to use the correct heading styles for your section titles.
-:::
-
-------------------------------------------------------------------------
-
-<br>
-
-{{< pagebreak >}}
 
 # CHAPTER 1: INTRODUCTION {#sec-ch1-introduction}
 
@@ -223,41 +157,13 @@ This is where students may acknowledge important people in their life that impac
 
 ## Project Objectives (PO's)
 
-::: {.callout-note .hl-yellow}
--   Sometimes you will be presented with project objectives (PO), instead of analytics objectives (AO), in which case, you must translate the project objectives (marketing or business objectives) into analytics objectives.
-
--   For more information on [how to tell difference between AO's and PO's](capstone_project.qmd#project-objectives-po-vs.-analytics-objectives-ao-1) and [how to convert PO’s to AO’s](capstone_project.qmd#how-to-convert-po-to-ao), follow the links.
-:::
 
 ## Analytics Objectives
 
-::: {.callout-note .hl-yellow}
--   Each team member must have at least one AO so that they can go through the entire culminating experience process along the AO. That way, each member will have rich experience of culminating expereince as if they work on a project alone although they work as a team. Each member should focus on one analytics objective (AO) that would adress corresponding project objective (PO) to help solve the business problem(s).
-
--   In this section, state how the AO will address the problem(s) introduced earlier. In doing so, talk about which data you will need to use for the AO and what insights you would expect to find. Please note that the analytics objectives should be relevant to the data you can collect and analyze to inform the direction of digital marketing activities. In other words, AO’s must be directly tied to data.
-:::
-
-::: callout-tip
-### Assessment Rubric for SLO 1: Translate a marketing problem into research questions or hypotheses that will drive the research project.
-
--   This section will be used to evaluate your performance on SLO 1, which is to translate a marketing problem into research questions or hypotheses that will drive the research project.
-
--   The following rubric will be used to evaluate the quality of your model. Make sure to review this rubric carefully and use it as a guide when writing your recommendations section.
-
-    ![](images/slo-1.png)
-:::
 
 ### AO1. Title of AO1 (Name of Student 1) {#sec-ao1-title-ao1}
 
-::: callout-note
-#### How to cite an article in-text
 
-Here is a sample of in-text citation.
-:::
-
-Gu et al. [-@gu2024] examines how characteristics of AI-generated advertisements influence consumer acceptance through perceived eeriness and perceived intelligence and show that different ad features shape these perceptions in opposite ways, offering practical guidance for advertisers using generative AI. As consumers are ultimate judges for effectiveness of AI-generated contents [@gu2024], past research that examined consumer reactions to technology will be relevant [e.g., @reich2022; @wu2021]
-
-::: callout-note
 #### Citation Syntax Explanation
 
 -   The CSL file and citation syntax do different jobs.
