@@ -182,7 +182,13 @@ So the two work together, not in place of each other:
 | `[e.g., @reich2022; @wu2021]` | Parenthetical with prefix | No |
 :::
 
-### AO2. Title of AO2 (Name of Student 2)
+### AO2. Conversion & Engagement Measurement (Kevin)
+
+Establish GA4 events, conversions, and KPIs to determine which user actions and traffic sources represent meaningful engagement for Wellness Ranch Therapy.
+
+- Is GA4 currently connected?
+- Who has admin access?
+- What counts as a meaningful conversion for the organization — a donation, booking request, volunteer signup, or another action?
 
 ### AO3. Title of AO3 (Name of Student 3)
 
