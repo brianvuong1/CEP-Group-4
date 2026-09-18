@@ -333,8 +333,6 @@ So the two work together, not in place of each other:
 
 ### Segments and Their Brief Justification
 
-*Develop a profile of customers for each segment in terms of demographics, psychographics, benefits sought, behavioral patterns, etc.*
-
 #### Segment Name A
 
 #### Segment Name B
@@ -345,17 +343,12 @@ So the two work together, not in place of each other:
 
 #### **Summary Table of Segments**
 
-*In the table, each column should represent a segment, and each row should represent a customer characteristic (e.g., demographics, psychographics, benefits sought, behavioral patterns). The cell descriptions should indicate the profile of customers in each segment for each characteristic.*
-
 ### Segment Analysis
 
-*Evaluate the potential for each segment on such criteria as identifiability, actionability, substantiality, and accessibility.*
 
 #### **Summary Table of Segment Evaluation**
 
-*Based on the segment evaluation, identify the most attractive segment(s) to target and justify your choice.*
 
-*In the table, each column should represent a segment, and each row should represent an evaluation criterion, plus overall attractiveness. The cell values should indicate how well each segment meets each criterion, using a consistent rating system (e.g., high, medium, low or a numerical scale).*
 
 ## SWOT Analysis
 
@@ -465,75 +458,23 @@ So the two work together, not in place of each other:
 
 {{< pagebreak >}}
 
-::: {.callout-tip .hl-yellow}
-## 2. Guidelines for Basic/Applied Academic Research Project
 
-If your project doesn't have a client and is intended to benefit the public or industry directly, you may find the contents for Chapter 2 described above unfit to your project. In that case, the contents provided next may be better for you. Consult with your professors.
-:::
 
 # CHAPTER 2: For Basic/Applied Academic Research Project {#sec-ch2-for-basic-applied-academic-research-project .unnumbered .unlisted}
 
-::: page-note
-*(3 - 4 pages per AO). Use the same chapter title as the client consulting project.*
-:::
-
-::: callout-note
-## Basic/Applied Academic Research Project
-
-If you are completing a Basic/Applied Academic Research Project type, you do not have a client company to analyze for company-specific analysis. Therefore, you cannot fill out the client-specific sections. This is why you should follow the structure of the front end of an **academic research paper**.
-
--   For the **Basic/Applied Academic Research Project type**, Chapter 2 should follow the structure of the front end of an academic research paper, which includes an overall introduction, a literature review, theoretical development, and hypothesis development for each AO. The purpose of this chapter is to provide a comprehensive understanding of the research topic and to establish a strong foundation for the analytics objectives by grounding them in relevant theories and models.
-
--   You will find the content and structure guidelines below is consistent with the academic papers published in many journals, such as the *Journal of Marketing*, *Journal of Consumer Research*, *Journal of the Academy of Marketing Science*, etc. You can refer to these journals for examples of how to structure and write this chapter.
-:::
 
 ## Overall Introduction
 
-::: callout-note
-*Briefly introduce the business or social problem(s) the group is addressing. Summarize the purpose of the study, key theoretical concepts (constructs), analytical focus, and the expected practical and academic contributions.*
-
--   You can write this section in a way that is similar to the introduction section of an academic research paper. Refer to journal articles for examples of how to write this section.
-
--   This section is for the entire AO's, so you should not write this section separately for each AO. Instead, you can write this section once at the beginning of Chapter 2, and then write the literature review, theoretical development, and hypothesis sections separately for each AO.
-:::
 
 ## AO1. Title of AO1 Right Here (Name of Author Here)
 
-::: callout-note
-*Each student must write an individual section corresponding to their assigned analytics objective. These sections should be structured as follows:*
 
-**Literature Review**
-
-*Conduct a focused academic literature review related to the construct(s) behind the analytics objective. Include an evaluation of the quality of evidence gathered (e.g., recognize issues in terms of bias, accuracy, new findings, etc. for the information gathered) and the need for additional analysis (to support proposed research)*
-
--   Instead of the title, "Literature review," you can use a more specific title that reflects the content of the section, such as "User generated content" or "Consumer Response to AI-Generated Content."
-
-**Theoretical Development**
-
-*This section is the continuation of the literature review. Develop a logical and theoretical argument based on the literature review that is directly relevant to the analytics objective.*
-
--   Instead of the title, "Theoretical development," you can use a more specific title that reflects the content of the section, such as "User generated content in the Era of AI" or "Current Status of Consumer Acceptance of AI-generated Content."
-
-**Hypothesis**
-
-*Conclude the section above by identifying the clear and testable hypothesis that results from theoretical development. Each hypothesis is typically linked to a construct. In some cases, multiple AO’s may relate to the same construct (from different perspectives), or multiple AO’s may contribute to the evaluation of a single hypothesis.*
-
--   You should not have a separate title for hypothesis. Instead, you can just write the hypothesis at the end of the theoretical development section without a title. For example, you can write, "Based on the above theoretical development, we propose the following hypothesis: \[state the hypothesis here\]." See journal articles for examples of how to write a hypothesis.
-
--   You need to write a hypothesis only if your AO is related to testing a relationship between two or more constructs. If there is not a strong theoretical development that leads to a testable hypothesis, you may not need to write a hypothesis. In that case, you can call it research questions. For example, you can write, "Based on the above theoretical development, we propose the following research question: \[state the research question here\]." See journal articles for examples of how to write a research question.
-:::
 
 ### Literature Review
 
 ### Theoretical Development
 
 ### Hypothesis
-
-<br>
-
-::: callout-note
-*You may apply the structure of AO1 to the rest of the AO sections (AO2, AO3, AO4, and AO5). However, you are not required to follow the same structure for all AO sections. You can use different structures for different AO sections as long as you cover the three main components: literature review, theoretical development, and hypothesis/research question. The key is to ensure that each section is well-organized, logically flows, and effectively communicates the relevant information to support the analytics objective.*
-:::
 
 ## AO2. Title of AO2 Here (Name of Author Here)
 
@@ -572,24 +513,6 @@ If you are completing a Basic/Applied Academic Research Project type, you do not
 {{< pagebreak >}}
 
 # CHAPTER 3: METHODS {#sec-ch3-methods}
-
-::: page-note
-*(6 - 10 pages)*
-:::
-
-::: callout-note
-## Chapter Guidelines
-
-*This chapter should provide a detailed description of the methods used to accomplish the analytics objectives. The methods should be described in sufficient detail to allow for replication by other researchers. The methods should be appropriate for the analytics objectives and should be justified based on the literature review and theoretical development presented in Chapter 2.*
-
--   For projects that need **primary data collection**,\* ***an instrument should be prepared*** \*and submitted as part of Chapter 3.
-
--   For projects that use **secondary data**, the data source should be described in detail, including how the data was obtained and any limitations of the data.
-
--   For projects that uses both **primary and secondary data**, both data collection methods should be described in detail.
-
--   For more information about data collection methods, data sources, and instruments, refer to the [Data Collection for the Above AO](capstone_project.qmd#data-collection) section of the main capstone project page.
-:::
 
 ## Data and Sampling
 
@@ -639,10 +562,6 @@ If you are completing a Basic/Applied Academic Research Project type, you do not
 
 ## Measures
 
-::: callout-note
-*Define the constructs in your analysis and describe how each construct will be operationalized (one item vs. multi-item). Explain what type of scale will be used (nominal, ordinal, interval, ratio), source, etc. Provide this information for each construct categorized under the following headings (IV, DV, Control). Each construct name will be another subheading. See journal articles for an idea.*
-:::
-
 ### Independent Variables. (if applicable)
 
 #### Variable Name 1
@@ -674,26 +593,6 @@ If you are completing a Basic/Applied Academic Research Project type, you do not
 #### Variable Name 12
 
 ## Analytics Methods to Employ
-
-*(1-2 pages per AO)*
-
-::: callout-note
--   *In this section, provide specific data science methods, variables/features to be used, and justifications for the methods and choice of the variables/features.*
-
--   *Provide a sufficient amount of writing (one or two paragraphs) under each AO. The word sufficiency is relativistic, depending on the objective.*
-
--   *Your description should be able to inform readers of what the method is, why you want to use it, and what variables/features you plan to use, such that readers do not have questions.*
-:::
-
-::: callout-tip
-### Assessment Rubric for SLO 3: Build a model appropriate for addressing the project objectives
-
--   This section will in part be used to evaluate your performance on SLO 3, which is to build a model appropriate for addressing the project objectives. The specific model you build will depend on the analytics objectives you have set for your project and the data you have collected. Make sure to choose a model that is appropriate for your analytics objectives and to justify your choice of the model based on the literature review and theoretical development presented in Chapter 2.
-
--   The following rubric will be used to evaluate the quality of your model. Make sure to review this rubric carefully and use it as a guide when writing your recommendations section.
-
-    ![](images/slo-3.png)
-:::
 
 ### AO1. Title of AO1 Here (Name of Author Here)
 
@@ -741,29 +640,7 @@ If you are completing a Basic/Applied Academic Research Project type, you do not
 
 # CHAPTER 4: ANALYSIS/MODELING AND RESULTS {#sec-ch4-analysis-modeling-and-results}
 
-::: page-note
-*(5-10 pages per AO)*
-:::
 
-::: callout-note
-### Instructions for Writing the Analysis/Modeling and Results Section
-
--   In this section, you will present data analysis andthe results of your analysis/modeling for each AO. The structure of this section may vary based on your project objectives and the nature of your analysis/modeling, but the following are common components to include for each AO.
-
-    -   *For each AO, you should have a separate subsection that includes an introduction, a description of the descriptive analytics and results, a description of the predictive analytics and results, and a summary of findings.*
-
--   If your project analytics objectives do not involve quantitative methods, make appropriate alterations in consultation with your professors.
-:::
-
-::: callout-tip
-### Assessment Rubric for SLO 3: Build a model appropriate for addressing the project objectives
-
--   This section will in part be used to evaluate your performance on SLO 3, which is to build a model appropriate for addressing the project objectives. The specific model you build will depend on the analytics objectives you have set for your project and the data you have collected. Make sure to choose a model that is appropriate for your analytics objectives and to justify your choice of the model based on the literature review and theoretical development presented in Chapter 2.
-
--   The following rubric will be used to evaluate the quality of your model. Make sure to review this rubric carefully and use it as a guide when writing your recommendations section.
-
-    ![](images/slo-3.png)
-:::
 
 ## AO1. Title of AO1 Here (Name of Author Here)
 
@@ -821,33 +698,9 @@ If you are completing a Basic/Applied Academic Research Project type, you do not
 
 # CHAPTER 5: DATA-INFORMED MARKETING STRATEGY AND CONCLUSION {#sec-ch5-data-informed-marketing-strategy-and-conclusion}
 
-::: page-note
-*(13 - 15 pages)*
-:::
-
-<br>
-
-::: {.callout-note .hl-yellow}
-## 1. Guidelines for Client Consulting Project
-
--   This chapter should provide your **client** with a comprehensive discussion of the data-informed marketing strategy that you recommend based on the findings from your analysis. The specific structure of this chapter may vary based on your project goals and the nature of your recommendations, but the following are common components to include.
-
--   If your project is **basic/applied academic research**, you may tweak the structure of this chapter to fit your project. For example, you may have a section on "Implications for Practice" where you can provide recommendations for practitioners based on your research findings, and a separate section on "Implications for Research" where you can discuss how your findings contribute to the academic literature and suggest directions for future research. Refer to journal articles to see how to structure this chapter for basic/applied academic research projects. For more details, see [2. Guidelines for Basic/Applied Academic Research](#sec-ch5-basic-applied-research) section.
-:::
-
-::: callout-tip
-### Assessment Rubric for SLO 4a: Make data-informed recommendations on marketing strategy.
-
-The following rubric will be used to evaluate the quality of your recommendations and the justification for those recommendations. Make sure to review this rubric carefully and use it as a guide when writing your recommendations section.
-
-![](images/slo-4a.png)
-:::
 
 ## AO1. Title of AO1 Here (Name of Author Here)
 
-::: callout-note
-The goal of this callout-note is to provide **guidance on how to structure the recommendations section for AO1.** The same structure can be applied to the rest of the AO sections (AO2, AO3, AO4, and AO5). However, you are not required to follow the same structure for all AO sections. You can use different structures for different AO sections as long as you cover the main components: summary of findings, specific recommendations, and justification for each recommendation. The key is to ensure that each section is well-organized, logically flows, and effectively communicates the relevant information to support the recommendations.
-:::
 
 **Summary of findings from data analysis - AO1.**
 
