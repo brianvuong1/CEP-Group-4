@@ -37,21 +37,6 @@ csl: styles/american-marketing-association.csl
 
 # TITLE PAGE {#sec-title-page .unnumbered}
 
-::: page-note
-*(All pages in the front matters will have **1.5 inch margin** on the **left** side and 1.0 inch margins on the top, right, and bottom of a page)*
-:::
-
-::: {.callout-note .hl-yellow}
-## Instructions on the Title Page
-
--   This page should be one page long and include Project Title, appropriate description, the names of all team members, faculty advisor(s), and affiliation.
-
--   Follow the format of [the template](https://docs.google.com/document/d/1Pv5wn9QUTmBgrY2H_9R4-MrDewLz7qaZ/edit).
-
--   Below is how it should look like:
-:::
-
-![](images/paste-2.png)
 
 ------------------------------------------------------------------------
 
@@ -61,11 +46,6 @@ csl: styles/american-marketing-association.csl
 
 # SIGNATURE PAGE {#sec-signature-page .unnumbered}
 
-::: page-note
-(This page should include Project Title, the names of all team members, and faculty advisor(s)). Download [the template](https://docs.google.com/document/d/1Pv5wn9QUTmBgrY2H_9R4-MrDewLz7qaZ/edit) and just replace it with your own information. Below is how it should look like.
-:::
-
-![](images/paste-3.png)
 
 ------------------------------------------------------------------------
 
@@ -90,21 +70,6 @@ csl: styles/american-marketing-association.csl
 
 # SUMMARY OF INDIVIDUAL CONTRIBUTION {#sec-summary-of-individual-contribution .unnumbered}
 
-::: page-note
-*(Each individual contribution statement should be between **75 words and 100 words**.)*
-:::
-
-::: {.callout-note .hl-yellow}
-## Instructions for Summary of Individual Contribution
-
--   **Do not write this section** until the end of the CEP journey in the summer semester when you have a clear understanding of your contributions to the project. You can refer to the sample summary of individual contribution in the [**template document**](https://docs.google.com/document/d/1Pv5wn9QUTmBgrY2H_9R4-MrDewLz7qaZ/edit) for guidance on how to write your own summary.
-
--   A separate summary should be written under each student's name describing the unique role the student played for the duration of the project. Each summary should be one paragraph with **a minimum of 75 words and a maximum of 100 words**.
-
--   Below are student names and limpsum paragraph as a placeholder. Replace the student name with your own and the limpsum paragraph below with your own summary of individual contribution. Make sure to write a unique summary for each student, and do not copy and paste the same summary for all students. Each summary should reflect the specific contributions of the individual student to the project.
-
--   Note that this section will be **published in the CPP library** along with the title page and abstract, so make sure to write it in a professional tone and to highlight your unique contributions to the project.
-:::
 
 ::: student-name
 **Name of Student 1**
@@ -149,9 +114,6 @@ csl: styles/american-marketing-association.csl
 
 # CHAPTER 1: INTRODUCTION {#sec-ch1-introduction}
 
-::: page-note
-*(no more than 3 pages in double space)*
-:::
 
 ## Background and Business Problem(s)
 
@@ -185,19 +147,7 @@ Measure how implemented SEO, website, and digital marketing changes affect organ
 
 # CHAPTER 2: BACKGROUND AND ANALYTICS OBJECTIVES {#sec-ch2-background-and-analytics-objectives}
 
-::: page-note
-*(no specific page length guideline)*
-:::
 
-::: {.callout-tip .hl-yellow}
-## 1. Guidelines For Client Consulting Project
-
--   *If you are conducting a **Client Consulting Project type**, you have a company-specific analysis. Thus, follow the structure for Chapter 2 presented below.*
-
--   For the **Client Consulting Project type**, Chapter 2 should include a comprehensive analysis of the client company and its industry, as well as an investigation of existing research frameworks/models that support the analytics objectives. The purpose of this chapter is to provide a thorough understanding of the client’s business context and to establish a strong foundation for the analytics objectives by grounding them in relevant theories and models.
-
--   On the other hand, if you do not have a specific client company to analyze, you are completing a **Basic/Applied Academic Research Project type** where you are likely to benefit general public or the whole industry. In this case, Chapter 2 should follow the structure of the front end of an **academic research paper**. For details, refer to the [2. Guidelines for Basic/Applied Academic Research Project](#sec-ch2-for-basic-applied-academic-research-project).
-:::
 
 ## Client (Company) Background
 
