@@ -169,6 +169,17 @@ Measure how implemented SEO, website, and digital marketing changes affect organ
 
 ## Significance of the Topic
 
+This project is significant because Wellness Ranch Equine Assisted Therapy operates in an area where digital visibility can directly support access to mental wellness services and community resources. As a nonprofit serving children, adults, couples, and groups throughout the Inland Empire, Wellness Ranch relies on its ability to communicate its services to individuals who may be actively searching for therapy, equine-assisted services, wellness education, and related support. Improving the organization’s digital presence can make it easier for these audiences to find relevant information and take the next step toward engaging with the organization.
+
+The project is also significant because it addresses the connection between digital marketing activities and measurable organizational outcomes. Improving website content, SEO, local search visibility, and conversion pathways can increase opportunities for users to discover and engage with Wellness Ranch. However, these improvements are most useful when their impact can be measured. Establishing reliable GA4 events, conversions, and baseline KPIs will give the organization a clearer understanding of how users find the website, how they interact with it, and which actions may contribute to inquiries, program interest, or other meaningful outcomes.
+
+For a nonprofit organization, the ability to use available resources efficiently is particularly important. The evaluation of Google Ad Grants provides Wellness Ranch with an opportunity to determine whether donated search advertising could support its outreach efforts without requiring the same level of financial investment as traditional paid advertising. Assessing eligibility, campaign readiness, and the organization's capacity to maintain the program will help ensure that any future advertising efforts are realistic and sustainable.
+
+The project also builds on the work completed by the Spring 2026 search engine marketing class. Rather than developing recommendations independently, the current project provides an opportunity to move from identifying digital marketing opportunities to implementing, measuring, and evaluating selected improvements. This creates continuity between the two semesters while allowing the team to establish performance baselines and assess changes over time.
+
+From an academic perspective, the project provides an applied opportunity to use digital marketing and analytics concepts in a real nonprofit setting. SEO analysis, website optimization, GA4 measurement, local search, and paid search planning will be evaluated based on both their potential impact and Wellness Ranch's ability to maintain them with its available resources. The project therefore demonstrates how data-informed digital marketing strategies can be adapted to the needs and constraints of a community-based organization.
+
+Ultimately, the significance of this project is its potential to strengthen the connection between Wellness Ranch's mission and its digital presence. By improving how the organization is found, how user engagement is measured, and how digital marketing resources are managed, the project aims to provide Wellness Ranch with a sustainable foundation for reaching its target audiences and supporting its continued growth.
 ------------------------------------------------------------------------
 
 {{< pagebreak >}}
