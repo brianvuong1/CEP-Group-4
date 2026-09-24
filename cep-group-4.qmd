@@ -115,7 +115,35 @@ csl: styles/american-marketing-association.csl
 # CHAPTER 1: INTRODUCTION {#sec-ch1-introduction}
 
 
-## Background and Business Problem(s)
+## Background
+
+Wellness Ranch Equine Assisted Therapy is a nonprofit based in Rancho Cucamonga, led by Director Angelica Manzo. Founded in 2023, its mission is to *"bring individual healing and empowerment to our clients through the transformative use of equine assisted therapy and community activities that promote mental wellness and learning."*
+
+The ranch serves people of all ages, from children to adults, providing:
+
+- Trauma-informed therapy
+- Wellness education
+- Community outreach
+
+Services are offered to individuals, couples, and groups.
+
+There is a real and growing need for what Wellness Ranch provides. The organization focuses mainly on the Inland Empire, especially underserved communities where access to responsive mental health care is limited by cost and workforce shortages. It is also building capacity in the field by training emerging mental health professionals through hands-on experience and internships.
+
+In Spring 2026, a Cal Poly Pomona search engine marketing class researched Wellness Ranch's digital presence and produced recommendations across website, SEO, content, local search, and advertising. Our team picks up where that work left off.
+
+## Business Problem
+
+Wellness Ranch has done tremendous and meaningful work, but its digital presence can improve and take it even further in connecting with the people who need help. There are three connected gaps:
+
+1. **Visibility.** When someone in the Inland Empire searches for trauma therapy, equine therapy, or mental health support, Wellness Ranch needs to show up. Right now, technical SEO issues, content and keyword gaps, and an underdeveloped local search presence make that harder.
+
+2. **Measurement.** Without a properly configured GA4 setup with defined events, conversions, and baseline KPIs, the organization can't tell which channels drive inquiries, sign-ups, or donations, so there's no way to know what's working.
+
+3. **Untapped resources.** As a nonprofit, Wellness Ranch may qualify for Google Ad Grants, which offers up to $10,000 per month in free search advertising, but it hasn't yet applied or built the campaign structure to use it.
+
+> **Core problem:** Wellness Ranch has a strong mission and growing community demand, but lacks the digital infrastructure to be found, measure its impact, and scale its reach.
+
+Our project moves the organization from recommendations to implementation, measurement, and ongoing optimization so its online presence can support its mission instead of holding it back.
 
 ## Project Objectives (PO's)
 
@@ -135,7 +163,7 @@ Establish GA4 events, conversions, and KPIs to determine which user actions and 
 
 Analyze Wellness Ranch Therapy's Google Ad Grants eligibility and internal capacity to determine readiness for launching and sustaining paid search campaigns.
 
-### AO4. Title of AO4 (Ron)
+### AO4. Measuring Digital Marketing Impact (Ron)
 
 Measure how implemented SEO, website, and digital marketing changes affect organic traffic, engagement, and conversions by comparing Spring performance data against a Fall baseline.
 
