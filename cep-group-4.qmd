@@ -105,9 +105,11 @@ csl: styles/american-marketing-association.csl
 
 # CHAPTER 1: INTRODUCTION {#sec-ch1-introduction}
 
-## Background
+Wellness Ranch Equine Assisted Therapy is a nonprofit organization that provides equine-assisted psychotherapy and wellness-focused services in Rancho Cucamonga, California [@wellnessranch2026]. This Culminating Experience Project focuses on strengthening the organization’s digital marketing foundation through improvements in search visibility, website performance, analytics, and paid search readiness. Building on recommendations developed by a Cal Poly Pomona search engine marketing class in Spring 2026, the project will move from identifying digital marketing opportunities to implementing, measuring, and evaluating selected strategies.
 
-Wellness Ranch Equine Assisted Therapy is a nonprofit based in Rancho Cucamonga, led by Director Angelica Manzo. Founded in 2023, its mission is to *"bring individual healing and empowerment to our clients through the transformative use of equine assisted therapy and community activities that promote mental wellness and learning."*
+## Background and Problem Statement
+
+Wellness Ranch Equine Assisted Therapy is a nonprofit based in Rancho Cucamonga, led by Director Angelica Manzo [@wellnessranch2026]. Founded in 2022 and established as a 501(c)(3) nonprofit organization in 2023, its mission is to "bring individual healing and empowerment to our clients through the transformative use of equine assisted therapy and community activities that promote mental wellness and learning" [@wellnessranchabout2026].
 
 The ranch serves people of all ages, from children to adults, providing:
 
@@ -115,21 +117,19 @@ The ranch serves people of all ages, from children to adults, providing:
 - Wellness education
 - Community outreach
 
-Services are offered to individuals, couples, and groups.
+Services are offered to individuals, couples, and groups [@wellnessranchservices2026].
 
-There is a real and growing need for what Wellness Ranch provides. The organization focuses mainly on the Inland Empire, especially underserved communities where access to responsive mental health care is limited by cost and workforce shortages. It is also building capacity in the field by training emerging mental health professionals through hands-on experience and internships.
+There is a real and growing need for what Wellness Ranch provides. The organization focuses mainly on the Inland Empire, especially underserved communities where access to responsive mental health care is affected by behavioral health workforce shortages [@hcai2025]. It is also building capacity in the field by training emerging mental health professionals through hands-on experience and internships.
 
 In Spring 2026, a Cal Poly Pomona search engine marketing class researched Wellness Ranch's digital presence and produced recommendations across website, SEO, content, local search, and advertising. Our team picks up where that work left off.
 
-## Business Problem
-
 Wellness Ranch has done tremendous and meaningful work, but its digital presence can improve and take it even further in connecting with the people who need help. There are three connected gaps:
 
-1.  **Visibility.** When someone in the Inland Empire searches for trauma therapy, equine therapy, or mental health support, Wellness Ranch needs to show up. Right now, technical SEO issues, content and keyword gaps, and an underdeveloped local search presence make that harder.
+1. **Visibility.** When someone in the Inland Empire searches for trauma therapy, equine therapy, or mental health support, Wellness Ranch needs to show up. Right now, technical SEO issues, content and keyword gaps, and an underdeveloped local search presence make that harder.
 
-2.  **Measurement.** Without a properly configured GA4 setup with defined events, conversions, and baseline KPIs, the organization can't tell which channels drive inquiries, sign-ups, or donations, so there's no way to know what's working.
+2. **Measurement.** Without a properly configured GA4 setup with defined events, conversions, and baseline KPIs, the organization can't tell which channels drive inquiries, sign-ups, or donations, so there's no way to know what's working.
 
-3.  **Untapped resources.** As a nonprofit, Wellness Ranch may qualify for Google Ad Grants, which offers up to \$10,000 per month in free search advertising, but it hasn't yet applied or built the campaign structure to use it.
+3. **Untapped resources.** As a nonprofit, Wellness Ranch may qualify for Google Ad Grants, which provides eligible nonprofit organizations with access to up to $10,000 per month in Google Search advertising [@googleadgrants2026], but it hasn't yet applied or built the campaign structure to use it.
 
 > **Core problem:** Wellness Ranch has a strong mission and growing community demand, but lacks the digital infrastructure to be found, measure its impact, and scale its reach.
 
@@ -167,7 +167,7 @@ Analyze Wellness Ranch Therapy's Google Ad Grants eligibility and internal capac
 
 Measure how implemented SEO, website, and digital marketing changes affect organic traffic, engagement, and conversions by comparing Spring performance data against a Fall baseline.
 
-## Significance of the Topic
+## Significance of the Project
 
 This project is significant because Wellness Ranch Equine Assisted Therapy operates in an area where digital visibility can directly support access to mental wellness services and community resources. As a nonprofit serving children, adults, couples, and groups throughout the Inland Empire, Wellness Ranch relies on its ability to communicate its services to individuals who may be actively searching for therapy, equine-assisted services, wellness education, and related support. Improving the organization’s digital presence can make it easier for these audiences to find relevant information and take the next step toward engaging with the organization.
 
@@ -2277,22 +2277,6 @@ If your project doesn't have a client and is intended to benefit the public or i
 {{< pagebreak >}}
 
 # REFERENCES {#sec-references}
-
-::: page-note
-*(3-6 pages)*
-:::
-
-::: {.callout-note .hl-yellow}
-- *Follow the [format instructions for citations](#sec-instruction-reference) provided at the beginning of this page.*
-
-- The articles in this section were automatically added below when article DOI was added to `citations` function in Quarto. See Analytics Objective section in Chapter 1 for in-text citation (@sec-ao1-title-ao1).
-
-  - When the articles were cited in the section of Chapter 1, a file called, `references.bib` was created automatically and added to the root directory of this project folder. At the same time, a line of code---`bibliography: references.bib`---was added to the bottom of this document's Yaml header.
-
-  - The bibliography file (`*.bib`) contains article information only. To style a reference automatically according to the grammar of a particular citation style, you need to download and add the `csl` file that match the desired style (e.g., American Marketing Association, Chicago Style, APA style, etc.). To learn how to find the correct `csl` file and configure Quarto, refer to the instructions on [For Reference Section](#sec-instruction-reference).
-
-    - For the citations below, I used **AMA style** by adding `csl: styles/american-marketing-association.csl` to the Yaml header and adding `american-marketing-association.csl` to the project's subdirectory called, `styles`. You can confirm it by viewing the source code, which will be revealed when you click `Code Tools` icon top right corner of this page.
-:::
 
 ::: {#refs}
 :::
