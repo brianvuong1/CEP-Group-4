@@ -53,7 +53,6 @@ csl: styles/american-marketing-association.csl
 
 # ACKNOWLEDGMENTS PAGE {#sec-acknowledgments-page .unnumbered}
 
-{{< lipsum 1 >}}
 
 ------------------------------------------------------------------------
 
@@ -65,35 +64,6 @@ csl: styles/american-marketing-association.csl
 
 # SUMMARY OF INDIVIDUAL CONTRIBUTION {#sec-summary-of-individual-contribution .unnumbered}
 
-::: student-name
-**Name of Student 1**
-:::
-
-{{< lipsum 1 >}}
-
-::: student-name
-**Name of Student 2**
-:::
-
-{{< lipsum 1 >}}
-
-::: student-name
-**Name of Student 3**
-:::
-
-{{< lipsum 1 >}}
-
-::: student-name
-**Name of Student 4**
-:::
-
-{{< lipsum 1 >}}
-
-::: student-name
-**Name of Student 5**
-:::
-
-{{< lipsum 1 >}}
 
 ------------------------------------------------------------------------
 
@@ -180,6 +150,7 @@ The project also builds on the work completed by the Spring 2026 search engine m
 From an academic perspective, the project provides an applied opportunity to use digital marketing and analytics concepts in a real nonprofit setting. SEO analysis, website optimization, GA4 measurement, local search, and paid search planning will be evaluated based on both their potential impact and Wellness Ranch's ability to maintain them with its available resources. The project therefore demonstrates how data-informed digital marketing strategies can be adapted to the needs and constraints of a community-based organization.
 
 Ultimately, the significance of this project is its potential to strengthen the connection between Wellness Ranch's mission and its digital presence. By improving how the organization is found, how user engagement is measured, and how digital marketing resources are managed, the project aims to provide Wellness Ranch with a sustainable foundation for reaching its target audiences and supporting its continued growth.
+
 ------------------------------------------------------------------------
 
 {{< pagebreak >}}
