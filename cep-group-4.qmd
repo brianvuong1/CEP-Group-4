@@ -119,6 +119,8 @@ The overall objective of this project is to help Wellness Ranch Equine Assisted 
 
 **5. Develop and optimize a sustainable digital marketing strategy.** The final objective is to combine the website, SEO, analytics, local search, and advertising findings into one practical strategy. If the Ad Grant is approved, the team will launch and refine campaigns based on performance data. The project will conclude with prioritized recommendations, reporting guidance, and a client roadmap that Wellness Ranch can continue using. Together, these objectives are intended to build a digital foundation that helps the organization reach more people while remaining realistic about its staffing, resources, and ability to sustain the work.
 
+
+
 ## Analytics Objectives
 
 ### AO1. On-Page & Off-Page SEO Performance Analysis (Alexa)
