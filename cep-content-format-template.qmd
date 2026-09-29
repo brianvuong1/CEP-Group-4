@@ -507,19 +507,25 @@ Analyze GA4 and Google Search Console data to evaluate Wellness Ranch Therapy’
     ![](images/slo-2.png)
 :::
 
-### AO1. Title of AO1 Right Here (Name of Author Here)
+### AO1. On-Page and Off-Page SEO Performance Analysis (Alexa Bueno)
 
-*See the callout-note section above for instructions on this section. For each AO, provide the entire AO exactly as you specified in Chapter 1 so that readers do not have to refer back to the previous chapter.*
+Using data from the Semrush site audit (SEO Fix Tracker), backlink audit, and Google Search Console, measure Wellness Ranch Therapy's baseline SEO performance during Fall 2026. Measures will include the number and type of technical and on-page issues per page, organic impressions, clicks, click-through rate, and average search position by page and query, and the number of referring domains linking to the website. Pages will then be ranked by issue severity and importance to the organization to produce a prioritized list of pages for improvement and a baseline for measuring the impact of those improvements in Spring 2027.
 
-#### Existence of Well-established Models (2-3 pages per AO)
+#### Existence of Well-established Models
 
-#### Adequateness of Gathered Information (a paragraph per AO)
+Search engine optimization (SEO) is the process of improving a website so that it appears more often and more prominently in unpaid search results. For organizations with limited marketing budgets, organic search can be one of the most cost-effective ways to reach people who are already looking for a specific service. SEO performance is commonly evaluated through factors such as search visibility, keyword rankings, impressions, clicks, and the overall health of the website from a search engine's point of view.
 
-#### Need for Additional Analysis (a paragraph per AO)
+A widely used framework for this analytics objective divides SEO into on-page, off-page, and technical components. On-page SEO covers the content and structure of individual pages, including page titles, meta descriptions, headings, keyword usage, internal links, and the depth and quality of written content. Off-page SEO focuses on signals that come from outside the website, mainly backlinks from other sites, which search engines treat as a sign of credibility and authority. Technical SEO addresses whether search engines can properly crawl and index the website, which includes issues such as broken links, page speed, and mobile usability. Because weaknesses in any one of these areas can limit performance, looking at all three together gives a more complete picture of why a website may or may not be ranking well.
 
-#### Assessment and Affirmation of Analytics Objectives (no more than 1 page per AO)
+Local SEO is also an important part of this framework for organizations that serve people in a specific area. Google has stated that local search results are based mainly on relevance, distance, and prominence. In practice, this means an organization's Google Business Profile, the consistency of its name, address, and phone number across online directories, and its reviews all play a role in whether it shows up when nearby users search for related services.
 
-## Investigation of Currently Available Research Framework/Model
+Several tools support this type of analysis. Site audit tools such as Semrush scan a website for technical and on-page issues and flag problems like thin content, missing meta descriptions, and broken links. Google Search Console shows how the website actually performs in Google search, including which queries lead to impressions and clicks and which pages are being indexed. Backlink audits help evaluate the number and quality of external sites linking to the organization. Using these sources together allows the analysis to connect specific website issues with actual search performance.
+
+These models are relevant to Wellness Ranch Therapy because many prospective clients, families, and donors are likely to find the organization through search when looking for equine-assisted therapy or mental wellness services in their area. If key pages such as service descriptions, program information, or donation pages have thin content or missing metadata, they may be less likely to appear in search results for the terms these users are searching for. At the same time, not every SEO issue carries the same weight. A thin page that describes a core therapy program matters more than a low-traffic page that serves little purpose for the organization, so prioritization is an important part of the analysis.
+
+There are also limitations to consider when applying these models. Many commonly cited ranking factors come from third-party studies that show correlation with higher rankings rather than proof that those factors cause them, and Google does not publish exactly how its algorithm weighs each signal. Word count is one example. Pages under 200 words are flagged as thin content by audit tools, but Google has said that word count on its own is not a ranking factor, so adding length without adding useful information may not improve visibility. SEO changes can also take weeks or months to be reflected in search results, which makes it harder to connect a specific fix to a specific outcome within a single semester. Finally, smaller websites often have limited Search Console data, and Google withholds some low-volume queries for privacy reasons, so query-level findings for Wellness Ranch Therapy may be incomplete. These limitations mean audit results should be treated as a starting point for prioritization rather than a guarantee of improved rankings.
+
+Based on these established SEO approaches, the analysis for Wellness Ranch Therapy will focus on three main areas: on-page and content quality, technical website health, and off-page and local search presence. The resulting prioritized page list will guide the website and SEO improvements implemented during Fall 2026. This work connects directly to the rest of the project. Organic search is one of the traffic sources that AO2 will evaluate in GA4, so improvements in search visibility can be followed through to engagement and conversion behavior on the website. The baseline established here will also allow AO4 to compare performance before and after implementation in Spring 2027.
 
 ### AO2. Website Analytics and Conversion Performance Analysis (Kevin Bachez)
 
