@@ -23,3 +23,150 @@ engine: knitr
 
 
 
+# Purpose
+
+This document summarizes the research-framework evidence developed for each analytics objective, compares plausible approaches, and identifies unresolved questions or decisions requiring faculty-lead guidance.
+
+# AO1. [Title] ([Primary Author])
+
+## Current Evidence Synthesis
+
+[Briefly summarize the main agreements, contradictions, limitations, and boundary conditions in the evidence.]
+
+## Current Framework Decision
+
+[Identify the preferred framework or combination and explain why it is currently preferred.]
+
+## Model-Comparison Table
+
+| Approach / Model | What It Explains | Evidence For / Against | Data / Assumptions | Fit with AO |
+|---|---|---|---|---|
+| [Approach 1] | [Explanation] | [Supporting and challenging evidence] | [Required data and assumptions] | [High, moderate, or low fit with explanation] |
+| [Approach 2] | [Explanation] | [Supporting and challenging evidence] | [Required data and assumptions] | [High, moderate, or low fit with explanation] |
+| [Combined or alternative approach] | [Explanation] | [Supporting and challenging evidence] | [Required data and assumptions] | [Overall fit] |
+
+## Questions for the Faculty Lead
+
+- [Unresolved framework question]
+- [Evidence or data question]
+- [Possible AO revision]
+- [Decision requiring faculty guidance]
+
+# AO2. [Title] ([Primary Author])
+
+## Current Evidence Synthesis
+
+[Insert a short synthesis.]
+
+## Current Framework Decision
+
+[Identify and justify the preferred approach.]
+
+## Model-Comparison Table
+
+| Approach / Model | What It Explains | Evidence For / Against | Data / Assumptions | Fit with AO |
+|---|---|---|---|---|
+| [Approach 1] | [Explanation] | [Evidence] | [Requirements] | [Fit] |
+| [Approach 2] | [Explanation] | [Evidence] | [Requirements] | [Fit] |
+| [Combined or alternative approach] | [Explanation] | [Evidence] | [Requirements] | [Fit] |
+
+## Questions for the Faculty Lead
+
+- [Question]
+- [Question]
+- [Decision requiring guidance]
+
+# AO3. Google Ad Grants Eligibility and Organizational Readiness (Brian Vuong)
+
+## Current Evidence Synthesis
+
+[Briefly explain how the evidence supports a multidimensional readiness assessment while showing that technology access alone does not guarantee effective or sustainable digital-marketing performance.]
+
+## Current Framework Decision
+
+The current proposed approach uses the Technology-Organization-Environment framework as the primary model. The Customer Decision Journey serves as a supplementary framework for connecting website and campaign activity to meaningful audience actions and conversions. A structured readiness matrix will translate the frameworks and current Google requirements into operational assessment criteria. This approach remains preliminary pending client interviews, system access, and faculty-lead feedback.
+
+## Model-Comparison Table
+
+| Approach / Model | What It Explains | Evidence For / Against | Data / Assumptions | Fit with AO |
+|---|---|---|---|---|
+| Technology-Organization-Environment | Explains readiness through technological capacity, organizational capacity, and external requirements | Supported by nonprofit digital-adoption evidence; may be too broad without operational criteria | Requires website, organizational, account, and environmental information | Strong primary fit |
+| Customer Decision Journey | Connects audience needs, journey stages, website behavior, and meaningful conversions | Helps avoid analytics myopia; does not fully assess organizational eligibility or capacity | Requires defined audiences, desired actions, and measurable journey stages | Strong supplementary fit |
+| Website and analytics audit | Evaluates technical website quality, landing pages, events, funnels, and conversions | Produces practical evidence but does not independently explain organizational sustainability | Requires Wix, GA4, Search Console, and donation-process access | Strong diagnostic fit but insufficient alone |
+| Combined TOE, Customer Decision Journey, and readiness matrix | Integrates eligibility, technology, organizational capacity, user behavior, measurement, and compliance | Comprehensive and suitable for a single-client assessment; requires clearly justified scoring criteria | Requires multiple data sources and transparent classification rules | Most defensible current approach |
+
+## Unresolved Questions
+
+- Does Wellness Ranch meet all current Google Ad Grants eligibility requirements?
+- What documentation and Google for Nonprofits access are available?
+- Which website actions should be treated as meaningful conversions?
+- Are the necessary GA4 events configured and tested?
+- Who will manage the campaigns after the capstone project concludes?
+- What evidence should determine whether an area is Ready, Partially Ready, or Not Ready?
+- Should AO3 retain its current wording or be clarified after the readiness assessment?
+
+## Guidance Requested from the Faculty Lead
+
+- Is the combined TOE and Customer Decision Journey approach appropriately scoped for AO3?
+- Is a three-level readiness matrix sufficiently defensible for this client-consulting project?
+- Should the team retain the original AO wording while treating the readiness criteria as preliminary?
+- Are additional academic frameworks or data sources needed before the method is finalized?
+
+# AO4. [Title] ([Primary Author])
+
+## Current Evidence Synthesis
+
+[Insert a short synthesis.]
+
+## Current Framework Decision
+
+[Identify and justify the preferred approach.]
+
+## Model-Comparison Table
+
+| Approach / Model | What It Explains | Evidence For / Against | Data / Assumptions | Fit with AO |
+|---|---|---|---|---|
+| [Approach 1] | [Explanation] | [Evidence] | [Requirements] | [Fit] |
+| [Approach 2] | [Explanation] | [Evidence] | [Requirements] | [Fit] |
+| [Combined or alternative approach] | [Explanation] | [Evidence] | [Requirements] | [Fit] |
+
+## Questions for the Faculty Lead
+
+- [Question]
+- [Question]
+- [Decision requiring guidance]
+
+# AO5. [Title] ([Primary Author])
+
+## Current Evidence Synthesis
+
+[Insert a short synthesis.]
+
+## Current Framework Decision
+
+[Identify and justify the preferred approach.]
+
+## Model-Comparison Table
+
+| Approach / Model | What It Explains | Evidence For / Against | Data / Assumptions | Fit with AO |
+|---|---|---|---|---|
+| [Approach 1] | [Explanation] | [Evidence] | [Requirements] | [Fit] |
+| [Approach 2] | [Explanation] | [Evidence] | [Requirements] | [Fit] |
+| [Combined or alternative approach] | [Explanation] | [Evidence] | [Requirements] | [Fit] |
+
+## Questions for the Faculty Lead
+
+- [Question]
+- [Question]
+- [Decision requiring guidance]
+
+# Team-Level Questions and Decisions
+
+- Are the five AOs clearly distinguished while still addressing the same business problem?
+- Is terminology consistent across the AO sections?
+- Are any sources, models, or explanations unnecessarily duplicated?
+- Does each selected framework lead logically toward a feasible analytical method?
+- Is any AO too broad, narrow, or dependent on unavailable information?
+- What should the team prioritize before Progress Report 3?
+
+# References
