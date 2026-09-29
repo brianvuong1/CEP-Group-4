@@ -465,15 +465,49 @@ This revision keeps the original intent while making the expected outcome more a
 
 The current analytical approach will use TOE as the primary framework, with the Customer Decision Journey supporting the evaluation of website behavior and conversion measurement. Data will come from client interviews, nonprofit and account documentation, a Wix website audit, GA4 and Search Console data if available, the donation journey, and current official Google policy documentation. The likely analytical method is a mixed-methods, single-case diagnostic assessment. Evidence will be organized in a readiness matrix using the categories **Ready**, **Partially Ready**, and **Not Ready**. The resulting analysis will identify gaps, prioritize corrective actions, and provide Wellness Ranch with a practical path toward applying for and sustaining Google Ad Grants.
 
-### AO4. Title of AO4 Right Here (Name of Author Here)
+### AO4. Measuring Digital Marketing Impact (Ron)
 
-#### Existence of Well-established Models (2-3 pages per AO)
+Measure how implemented SEO, website, and digital marketing changes affect organic traffic, engagement, and conversions by comparing Spring performance data against a Fall baseline.
 
-#### Adequateness of Gathered Information (a paragraph per AO)
+#### Existence of Well-established Models
 
-#### Need for Additional Analysis (a paragraph per AO)
+AO4 addresses Wellness Ranch Therapy's underlying need to know whether digital marketing effort is actually working — a question that matters most given its stated priorities: strengthening the homepage with substantiated impact numbers, prioritizing donations as the outcome that offsets the cost of accessible, sliding-scale care, and eventually launching Google Ad Grants campaigns. There is no single established model built specifically for measuring nonprofit digital marketing impact, so this AO draws on several complementary frameworks from marketing measurement and evaluation research.
 
-#### Assessment and Affirmation of Analytics Objectives (no more than 1 page per AO)
+##### Segmented Regression Analysis of Interrupted Time Series
+
+The core methodological challenge for AO4 is that Wellness Ranch Therapy has no control group — there is one website and one organization, not a treatment group and a holdout group to compare against. This makes AO4 a quasi-experimental, pre/post evaluation problem, a design well established in program and policy evaluation research. Wagner, Soumerai, Zhang, and Ross-Degnan [@wagner2002] describe segmented regression analysis of interrupted time series data as a method for exactly this situation: rather than comparing a single Fall average to a single Spring average, the method fits separate regression segments to the pre- and post-intervention periods and tests for both a level change (an immediate jump) and a trend change (a change in slope) at the point of intervention. Applied to AO4, tracking weekly or monthly organic traffic, engagement rate, and conversion data across both Fall and Spring makes it possible to test whether the trajectory itself shifted once the SEO, website, and other digital marketing changes go live, rather than relying on a single before/after snapshot that can't rule out normal fluctuation or seasonality.
+
+##### Digital Marketing Measurement Model and the Consumer Decision Journey
+
+A second relevant framework is Kaushik's [@kaushik2010] Digital Marketing and Measurement Model, which structures analytics around a chain from business objectives to goals, KPIs, targets, and segments. This keeps AO4's comparison anchored to what Wellness Ranch Therapy actually cares about rather than to metrics that are easy to measure but less meaningful — a point reinforced directly by the organization, which identified donations as its highest current priority. Under this model, a rise in raw pageviews is a weaker signal of success than a rise in donation-related engagement and conversions.
+
+This is complemented by the Consumer Decision Journey [@court2009], which describes how visitors move through discovery, evaluation, and decision stages that are not strictly linear. Applied to AO4, organic traffic (discovery), engagement behavior (evaluation), and conversions (decision) should be tracked as related but distinct measures rather than one aggregate score. This matters directly for Wellness Ranch Therapy's stated plan to add substantiated impact numbers — clients served, measurable outcomes — to the homepage: that kind of content change is more likely to move engagement and donation conversions than top-of-funnel visibility, so AO4 should expect, and look for, uneven movement across funnel stages rather than uniform improvement everywhere.
+
+##### Multichannel Attribution
+
+A further consideration is attribution once more than one channel is active. Li and Kannan [@likannan2014] developed and empirically tested a multichannel attribution model showing that channels contribute unevenly to conversion outcomes, and that simple last-touch attribution can over- or under-credit specific channels. This is directly relevant to AO4 because Wellness Ranch Therapy has expressed interest in pursuing Google Ad Grants: if a paid search campaign becomes active during the Spring measurement window, part of any lift in traffic or donations may be attributable to paid search rather than to organic and website changes. Segmenting results by channel, rather than crediting all improvement to "digital marketing" in aggregate, follows directly from Li and Kannan's findings and keeps AO4's conclusions specific enough to be actionable for Wellness Ranch Therapy.
+
+##### Applied Benchmarking for Nonprofit Conversion Performance
+
+Because this is applied research for a real organization rather than a theoretical exercise, practitioner benchmarking is also relevant. NextAfter [@nextafter], an applied research organization that runs controlled experiments on nonprofit donation pages, publishes benchmark data on what constitutes a meaningful shift in donation-page conversion rates. This addresses a limitation the academic models above don't resolve on their own: none of them indicate whether an observed change of a given size is practically meaningful for an organization with Wellness Ranch Therapy's traffic volume. Given that donations — specifically, offsetting the cost of providing accessible, sliding-scale care — are the outcome that matters most to Wellness Ranch Therapy, benchmarking observed donation-conversion movement against NextAfter's applied data gives AO4 a more concrete basis for judging "did this work" than a purely statistical read of the numbers would.
+
+#### Adequateness of Gathered Information
+
+The gathered information is adequate to define how AO4's comparison should be structured — segmented pre/post analysis, funnel-stage segmentation, channel-level attribution, and applied benchmarking together form a coherent methodology — but it is not yet adequate to complete the comparison itself. A valid Fall baseline depends on GA4 access being confirmed with Wellness Ranch Therapy's contact, Jared, and on that access being secured before the homepage, SEO, and other digital marketing changes the organization has planned go live. Wellness Ranch Therapy has also not yet indicated a firm timeline for the homepage redesign or for submitting a Google Ad Grants application, both of which affect when a meaningful "post" period can be evaluated. The gap, in other words, is one of access and timing rather than a lack of applicable literature.
+
+#### Need for Additional Analysis
+
+The primary additional work is applying the segmented regression approach once GA4 access is confirmed and both Fall and Spring data exist, testing for level and trend changes in organic traffic, engagement rate, and donation-related conversions rather than relying on a single before/after average. This should be paired with channel-level segmentation, consistent with Li and Kannan [@likannan2014], so that any lift coinciding with a paid search campaign — if Wellness Ranch Therapy moves forward with Google Ad Grants — is not misattributed to organic or website changes. Results should be checked against NextAfter's applied donation-conversion benchmarks to judge practical, not just statistical, significance. A running log should also be kept of implementation dates — when the homepage redesign goes live, when SEO changes are deployed, and when (or if) a Google Ad Grants campaign launches — along with any external factors such as seasonal demand for therapy services, so these can be built into the analysis rather than reconstructed afterward.
+
+#### Assessment and Affirmation of Analytics Objectives
+
+AO4 remains directly relevant to Wellness Ranch Therapy's core need: the organization has no reliable way to know whether its digital marketing investment is working, and this objective closes that loop by connecting implementation work back to outcomes it explicitly cares about. Given Wellness Ranch Therapy's stated priorities — donations as the top outcome, a homepage redesign to highlight substantiated impact, and a pending interest in Google Ad Grants — AO4 is better stated with that specificity built in rather than left generic:
+
+> **Refined AO4:** Measure how implemented SEO, website content, and digital marketing changes affect organic traffic, engagement, and donation-related conversions by comparing Spring performance data against a Fall baseline established prior to implementation.
+
+This revision keeps the original intent while naming donations as the priority conversion type, consistent with what Wellness Ranch Therapy identified, and makes explicit that the baseline must be captured before changes go live — a timing dependency that directly affects whether the comparison is valid at all.
+
+The analytical approach will use segmented regression analysis of interrupted time series data [@wagner2002] as the primary technique, distinguishing genuine trend shifts from normal fluctuation. Metrics will be organized by funnel stage using Kaushik's measurement model and the Consumer Decision Journey [@kaushik2010; @court2009], segmented by channel per Li and Kannan [@likannan2014] to isolate organic and website effects from any concurrent paid search activity, and interpreted against applied donation-conversion benchmarks [@nextafter]. These techniques are appropriate given the project's constraints: no control group is available, so a trend-based, segmented, benchmarked comparison is the most rigorous design realistically achievable, and it produces a result Wellness Ranch Therapy can act on — which specific changes moved which specific outcomes — rather than a single ambiguous "traffic went up" conclusion.
 
 ### AO5. Title of AO5 Right Here (Name of Author Here)
 
