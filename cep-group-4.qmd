@@ -523,54 +523,6 @@ The analytical approach will use segmented regression analysis of interrupted ti
 
 {{< pagebreak >}}
 
-# CHAPTER 2: For Basic/Applied Academic Research Project {#sec-ch2-for-basic-applied-academic-research-project .unnumbered .unlisted}
-
-## Overall Introduction
-
-## AO1. Title of AO1 Right Here (Name of Author Here)
-
-### Literature Review
-
-### Theoretical Development
-
-### Hypothesis
-
-## AO2. Title of AO2 Here (Name of Author Here)
-
-### Literature Review
-
-### Theoretical Development
-
-### Hypothesis
-
-## AO3. Title of AO3 Here (Name of Author Here)
-
-### Literature Review
-
-### Theoretical Development
-
-### Hypothesis
-
-## AO4. Title of AO4 Here (Name of Author Here)
-
-### Literature Review
-
-### Theoretical Development
-
-### Hypothesis
-
-## AO5. Title of AO5 Here (Name of Author Here)
-
-### Literature Review
-
-### Theoretical Development
-
-### Hypothesis
-
-------------------------------------------------------------------------
-
-{{< pagebreak >}}
-
 # CHAPTER 3: METHODS {#sec-ch3-methods}
 
 ## Data and Sampling
