@@ -1,0 +1,25 @@
+---
+title: "Progress Report"
+author: "Name 1, Name 2, Name 3, Name 4"
+date: today
+date-format: long
+bibliography: references.bib
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+    geometry:
+      - top=1in
+      - bottom=1in
+      - left=1in
+      - right=1in
+execute:
+  echo: true
+  warning: false
+  message: false
+engine: knitr
+---
+
+
+
