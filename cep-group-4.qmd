@@ -53,7 +53,6 @@ csl: styles/american-marketing-association.csl
 
 # ACKNOWLEDGMENTS PAGE {#sec-acknowledgments-page .unnumbered}
 
-
 ------------------------------------------------------------------------
 
 <br>
@@ -63,7 +62,6 @@ csl: styles/american-marketing-association.csl
 # ABSTRACT {#sec-abstract .unnumbered}
 
 # SUMMARY OF INDIVIDUAL CONTRIBUTION {#sec-summary-of-individual-contribution .unnumbered}
-
 
 ------------------------------------------------------------------------
 
@@ -95,11 +93,11 @@ In Spring 2026, a Cal Poly Pomona search engine marketing class researched Welln
 
 Wellness Ranch has done tremendous and meaningful work, but its digital presence can improve and take it even further in connecting with the people who need help. There are three connected gaps:
 
-1. **Visibility.** When someone in the Inland Empire searches for trauma therapy, equine therapy, or mental health support, Wellness Ranch needs to show up. Right now, technical SEO issues, content and keyword gaps, and an underdeveloped local search presence make that harder.
+1.  **Visibility.** When someone in the Inland Empire searches for trauma therapy, equine therapy, or mental health support, Wellness Ranch needs to show up. Right now, technical SEO issues, content and keyword gaps, and an underdeveloped local search presence make that harder.
 
-2. **Measurement.** Without a properly configured GA4 setup with defined events, conversions, and baseline KPIs, the organization can't tell which channels drive inquiries, sign-ups, or donations, so there's no way to know what's working.
+2.  **Measurement.** Without a properly configured GA4 setup with defined events, conversions, and baseline KPIs, the organization can't tell which channels drive inquiries, sign-ups, or donations, so there's no way to know what's working.
 
-3. **Untapped resources.** As a nonprofit, Wellness Ranch may qualify for Google Ad Grants, which provides eligible nonprofit organizations with access to up to $10,000 per month in Google Search advertising [@googleadgrants2026], but it hasn't yet applied or built the campaign structure to use it.
+3.  **Untapped resources.** As a nonprofit, Wellness Ranch may qualify for Google Ad Grants, which provides eligible nonprofit organizations with access to up to \$10,000 per month in Google Search advertising [@googleadgrants2026], but it hasn't yet applied or built the campaign structure to use it.
 
 > **Core problem:** Wellness Ranch has a strong mission and growing community demand, but lacks the digital infrastructure to be found, measure its impact, and scale its reach.
 
@@ -118,8 +116,6 @@ The overall objective of this project is to help Wellness Ranch Equine Assisted 
 **4. Measure the impact of implemented strategies.** After changes are made, the team will compare performance with the baseline established earlier in the project. Measures may include organic search impressions, rankings, website traffic, engagement, conversions, inquiries, and advertising results if campaigns are launched. Because outside factors can affect performance, results will be interpreted carefully instead of assuming that every change was caused by one specific action.
 
 **5. Develop and optimize a sustainable digital marketing strategy.** The final objective is to combine the website, SEO, analytics, local search, and advertising findings into one practical strategy. If the Ad Grant is approved, the team will launch and refine campaigns based on performance data. The project will conclude with prioritized recommendations, reporting guidance, and a client roadmap that Wellness Ranch can continue using. Together, these objectives are intended to build a digital foundation that helps the organization reach more people while remaining realistic about its staffing, resources, and ability to sustain the work.
-
-
 
 ## Analytics Objectives
 
@@ -391,15 +387,83 @@ Together, these measures can help establish baseline KPIs for future evaluation.
 
 #### Assessment and Affirmation of Analytics Objectives (no more than 1 page per AO)
 
-### AO3. Title of AO3 Right Here (Name of Author Here)
+### AO3. Google Ad Grants Eligibility and Organizational Readiness (Brian)
 
-#### Existence of Well-established Models (2-3 pages per AO)
+#### Existence of Well-established Models
 
-#### Adequateness of Gathered Information (a paragraph per AO)
+The third analytics objective is to assess Wellness Ranch Therapy’s Google Ad Grants eligibility and its organizational, website, analytics, and campaign-management capacity. The purpose is to determine whether the organization is prepared to launch, manage, and sustain compliant Google Ad Grants campaigns. This objective extends beyond determining whether Wellness Ranch qualifies as a nonprofit. Receiving an Ad Grant also requires a functional website, reliable conversion measurement, relevant campaign structure, ongoing account management, and the organizational capacity to comply with program policies. Therefore, the assessment needs a framework that considers both technology and the people and processes responsible for using it.
 
-#### Need for Additional Analysis (a paragraph per AO)
+There does not appear to be one universally accepted model designed specifically to measure Google Ad Grants readiness among small nonprofit organizations. However, established models from technology adoption, digital marketing, organizational readiness, and customer-journey research can be combined to create an appropriate assessment. The Technology-Organization-Environment framework, or TOE, appears to be the strongest primary framework for this objective. The Customer Decision Journey can supplement TOE by helping the team evaluate whether the website and analytics system support meaningful user actions.
 
-#### Assessment and Affirmation of Analytics Objectives (no more than 1 page per AO)
+##### Technology-Organization-Environment Framework
+
+The TOE framework explains technology adoption through three areas: technological conditions, organizational conditions, and the external environment. It is appropriate for this project because Google Ad Grants readiness depends on more than acquiring access to an advertising platform. Wellness Ranch must possess appropriate technical infrastructure, internal capacity, and awareness of external program requirements. Prior research indicates that digital performance depends on strategic alignment among technological resources, organizational capabilities, and analytical decision-making rather than technology adoption alone \[\@yoon2024; \@xiao2026\].
+
+The **technology** component includes the systems needed to support advertising and measurement. For Wellness Ranch, this includes the Wix website, its mobile functionality, secure browsing, landing-page quality, donation process, GA4 configuration, Google Search Console, and conversion tracking. GA4 has already been installed, but installation alone does not confirm that the correct events or conversions are being measured. The assessment must determine whether important actions—such as completed donations, donation-button clicks, inquiry submissions, or event registrations—can be tracked accurately. It must also examine whether advertising traffic can be connected to these outcomes.
+
+The website must be evaluated as part of the technological component because Google Ad Grants campaigns direct users to the organization’s website. A campaign may generate traffic without producing useful results if visitors encounter unclear information, weak calls to action, broken links, or a confusing donation process. The client has identified donations as the current primary outcome and wants to strengthen the homepage by presenting substantiated impact information. Therefore, website readiness should include both technical functionality and the ability to communicate the organization’s mission, impact, and donation opportunity clearly.
+
+The **organization** component examines whether Wellness Ranch has the human and administrative capacity to maintain the program. Relevant factors include staff knowledge, leadership support, campaign ownership, approval procedures, available time, and continuity after the capstone ends. These considerations are important because Google Ad Grants requires ongoing oversight. Even a well-designed campaign may become ineffective or noncompliant if no one monitors performance, approves changes, reviews search terms, updates landing pages, or responds to policy notices.
+
+Organizational readiness should therefore include questions about who controls the relevant Google accounts, who will approve campaigns, and who will manage the account after the student team’s involvement concludes. The assessment should also consider whether the organization has documented processes that another staff member could follow. Research concerning digital marketing capability suggests that technological tools do not automatically improve performance when organizations lack the knowledge or processes needed to interpret and act on data \[\@suntrayuthNovak2015; \@kovalenkoKuzmenko2020\].
+
+The **environment** component includes external conditions that affect the organization’s ability to participate. For this AO, the most important environmental factors are Google for Nonprofits requirements, Google Ad Grants policies, nonprofit verification, advertising competition, search behavior, and privacy expectations. These requirements are outside Wellness Ranch’s direct control, but the organization must be able to respond to them. The team should compare the organization’s legal status, website, account structure, and proposed campaign practices with the current official requirements rather than relying only on academic literature or general knowledge.
+
+The external environment also includes the local market for mental-health and equine-assisted therapy services. Search demand, geographic targeting, keyword competition, and user intent may affect whether an Ad Grants campaign can reach appropriate audiences. However, these issues should be examined only after basic eligibility and internal readiness have been established. Eligibility answers whether Wellness Ranch may participate; readiness answers whether the organization can use the resource effectively and sustain it.
+
+##### Customer Decision Journey
+
+The Customer Decision Journey provides a useful secondary framework because it focuses on how individuals move from initial awareness to meaningful action. A person may first discover Wellness Ranch through a Google search, visit the homepage, review its mission and services, examine evidence of its impact, and then decide whether to donate or contact the organization. Each stage creates different informational and measurement needs.
+
+The framework can help prevent the team from relying on surface-level measures such as impressions, clicks, or total website traffic. These metrics show whether people encountered an advertisement or website, but they do not establish whether visitors completed an action that supports the organization’s mission. Research on digital measurement warns that organizations may focus on readily available metrics without connecting them to actual decision stages or desired outcomes \[\@vollrathVillegas2022\].
+
+For Wellness Ranch, the likely journey begins with a search related to equine-assisted therapy, trauma-informed care, mental wellness, community support, or charitable giving. The user may then view a search advertisement and arrive at a relevant page. From there, the website must provide clear information and a suitable next step. Because the client has identified donations as the primary outcome, the journey should include the path from advertisement or organic search to impact information, the donation call to action, the donation form, and confirmation of completion.
+
+Using the Customer Decision Journey does not mean the team must develop a complicated model of every possible visitor. Instead, it provides a practical method for identifying the main audiences, expected actions, and points where visitors may leave the process. It also helps determine which GA4 events should be treated as diagnostic events and which should be treated as primary conversions.
+
+##### Readiness Assessment and Compliance Review
+
+Because TOE and the Customer Decision Journey are broad conceptual frameworks, they should be supported by a structured readiness assessment. The proposed assessment will translate the frameworks into observable criteria. Each criterion can be classified as **Ready**, **Partially Ready**, or **Not Ready** and supported by documented evidence.
+
+The assessment may contain the following categories:
+
+1.  **Eligibility readiness:** Verified nonprofit status, Google for Nonprofits status, ownership of required accounts, and alignment with current participation requirements.
+
+2.  **Website readiness:** Secure and functional website, clear mission, original information, working navigation, appropriate landing pages, visible calls to action, and a functional donation process.
+
+3.  **Analytics readiness:** GA4 access, defined events and conversions, accurate donation or inquiry tracking, baseline metrics, and the ability to distinguish advertising traffic.
+
+4.  **Campaign readiness:** Defined audiences, geographic scope, relevant keywords, appropriate landing pages, draft campaign themes, and an approval process.
+
+5.  **Organizational readiness:** Designated campaign owner, leadership support, staff time, access control, documentation, and a long-term maintenance plan.
+
+6.  **Compliance readiness:** Understanding of current Google policies, procedures for monitoring the account, and responsibility for correcting policy or performance issues.
+
+The score should not be treated as a scientifically validated scale unless it is developed and tested for that purpose. Instead, it will function as a transparent diagnostic tool for this single-client project. Its value will come from making the evaluation criteria visible, documenting the evidence behind each rating, and converting identified gaps into specific recommendations.
+
+Overall, the literature supports the use of a multidimensional approach. TOE provides the primary structure because it captures the interaction among technology, organizational capacity, and external requirements. The Customer Decision Journey connects the website and analytics systems to meaningful visitor behavior. The compliance review translates current Google requirements into operational criteria. Together, these approaches are more defensible than evaluating eligibility through a simple yes-or-no checklist.
+
+#### Adequateness of Gathered Information
+
+The information gathered so far is adequate for defining the scope of AO3 and selecting a preliminary framework, but it is not yet adequate for reaching a final readiness determination. The client has confirmed that a Google Ad Grants application has not been submitted and that the organization would like assistance with the process. The team also knows that GA4 is installed, Wix access will be provided, and donations are the current primary outcome. The supporting and challenging literature provides a basis for evaluating technology, organizational capacity, measurement, and sustainability. However, the team has not yet verified the organization’s Google for Nonprofits status, reviewed its nonprofit documentation, examined its Wix configuration, audited its GA4 events, or identified who will manage campaigns after the capstone. The current information therefore supports the research design, but additional evidence is required before assigning readiness ratings or recommending that an application be submitted.
+
+#### Need for Additional Analysis
+
+Additional analysis is needed in four areas. First, the team must compare Wellness Ranch’s legal and organizational information with current Google for Nonprofits and Ad Grants requirements. Second, a website audit is needed to evaluate technical functionality, mission clarity, landing-page quality, mobile usability, and the donation process. Third, an analytics audit must determine whether GA4 is collecting reliable baseline data and tracking meaningful conversions. Fourth, interviews with the client should examine staff availability, account ownership, approval procedures, campaign knowledge, and long-term management capacity. The team should also review search demand and potential campaign themes after basic eligibility is established. These findings can then be triangulated through client interviews, organizational records, website observations, analytics data, and official policy documentation.
+
+#### Assessment and Affirmation of Analytics Objectives
+
+AO3 remains relevant and appropriate because Google Ad Grants could provide Wellness Ranch with a valuable source of search advertising, but only if the organization is both eligible and capable of sustaining the program. The objective also directly addresses the project’s larger business problem. Wellness Ranch needs stronger visibility, meaningful measurement, and the ability to use available nonprofit resources. Assessing readiness before launching campaigns may reduce the risk of applying prematurely, directing traffic to an unprepared website, collecting unreliable performance data, or creating an account that the organization cannot maintain.
+
+The evidence reviewed so far affirms the need for a multidimensional assessment. Technology adoption alone is not a sufficient indicator of digital marketing readiness. For example, the existing installation of GA4 does not demonstrate that conversions are configured correctly or that the organization can interpret the results. Similarly, nonprofit status alone does not demonstrate website readiness, campaign-management capacity, or long-term compliance. The combination of TOE, the Customer Decision Journey, and a policy-based readiness matrix is therefore appropriate for the applied nature of this project.
+
+The AO should be slightly clarified so that it emphasizes identifying gaps and recommended actions rather than producing only a binary readiness decision. A refined version is:
+
+> **Assess Wellness Ranch Therapy’s Google Ad Grants eligibility and its organizational, website, analytics, and campaign-management capacity to identify readiness gaps and recommend actions for launching, managing, and sustaining compliant Google Ad Grants campaigns.**
+
+This revision keeps the original intent while making the expected outcome more actionable. It also recognizes that readiness may vary across categories. Wellness Ranch may be ready in one area, partially ready in another, and not ready in a third. The final assessment should therefore explain the evidence behind each conclusion instead of reducing the organization to a single overall score.
+
+The current analytical approach will use TOE as the primary framework, with the Customer Decision Journey supporting the evaluation of website behavior and conversion measurement. Data will come from client interviews, nonprofit and account documentation, a Wix website audit, GA4 and Search Console data if available, the donation journey, and current official Google policy documentation. The likely analytical method is a mixed-methods, single-case diagnostic assessment. Evidence will be organized in a readiness matrix using the categories **Ready**, **Partially Ready**, and **Not Ready**. The resulting analysis will identify gaps, prioritize corrective actions, and provide Wellness Ranch with a practical path toward applying for and sustaining Google Ad Grants.
 
 ### AO4. Title of AO4 Right Here (Name of Author Here)
 
