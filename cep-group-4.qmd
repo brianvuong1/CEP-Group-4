@@ -395,7 +395,7 @@ The third analytics objective is to assess Wellness Ranch Therapy’s Google Ad 
 
 There does not appear to be one universally accepted model designed specifically to measure Google Ad Grants readiness among small nonprofit organizations. However, established models from technology adoption, digital marketing, organizational readiness, and customer-journey research can be combined to create an appropriate assessment. The Technology-Organization-Environment framework, or TOE, appears to be the strongest primary framework for this objective. The Customer Decision Journey can supplement TOE by helping the team evaluate whether the website and analytics system support meaningful user actions.
 
-##### Technology-Organization-Environment Framework
+#### Technology-Organization-Environment Framework
 
 The TOE framework explains technology adoption through three areas: technological conditions, organizational conditions, and the external environment. It is appropriate for this project because Google Ad Grants readiness depends on more than acquiring access to an advertising platform. Wellness Ranch must possess appropriate technical infrastructure, internal capacity, and awareness of external program requirements. Prior research indicates that digital performance depends on strategic alignment among technological resources, organizational capabilities, and analytical decision-making rather than technology adoption alone \[\@yoon2024; \@xiao2026\].
 
@@ -411,7 +411,7 @@ The **environment** component includes external conditions that affect the organ
 
 The external environment also includes the local market for mental-health and equine-assisted therapy services. Search demand, geographic targeting, keyword competition, and user intent may affect whether an Ad Grants campaign can reach appropriate audiences. However, these issues should be examined only after basic eligibility and internal readiness have been established. Eligibility answers whether Wellness Ranch may participate; readiness answers whether the organization can use the resource effectively and sustain it.
 
-##### Customer Decision Journey
+#### Customer Decision Journey
 
 The Customer Decision Journey provides a useful secondary framework because it focuses on how individuals move from initial awareness to meaningful action. A person may first discover Wellness Ranch through a Google search, visit the homepage, review its mission and services, examine evidence of its impact, and then decide whether to donate or contact the organization. Each stage creates different informational and measurement needs.
 
@@ -421,7 +421,7 @@ For Wellness Ranch, the likely journey begins with a search related to equine-as
 
 Using the Customer Decision Journey does not mean the team must develop a complicated model of every possible visitor. Instead, it provides a practical method for identifying the main audiences, expected actions, and points where visitors may leave the process. It also helps determine which GA4 events should be treated as diagnostic events and which should be treated as primary conversions.
 
-##### Readiness Assessment and Compliance Review
+#### Readiness Assessment and Compliance Review
 
 Because TOE and the Customer Decision Journey are broad conceptual frameworks, they should be supported by a structured readiness assessment. The proposed assessment will translate the frameworks into observable criteria. Each criterion can be classified as **Ready**, **Partially Ready**, or **Not Ready** and supported by documented evidence.
 
