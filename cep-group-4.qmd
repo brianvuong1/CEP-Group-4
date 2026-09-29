@@ -157,13 +157,79 @@ Ultimately, the significance of this project is its potential to strengthen the 
 
 ## Client (Company) Background
 
-### Company Mission/Vision
+Wellness Ranch Equine Assisted Therapy is a nonprofit organization based in Rancho Cucamonga, California. Founded in 2023 and led by Director Angelica Manzo, the organization uses equine-assisted therapy and community-based activities to promote mental wellness, personal development, and healing. Wellness Ranch serves children and adults through individual, couples, and group services. Its principal service area is the Inland Empire, including communities where access to mental-health care may be limited by cost, provider shortages, and other barriers.
+
+The organization’s services include trauma-informed therapy, wellness education, and community outreach. Wellness Ranch also contributes to the development of future mental-health professionals by offering internships and hands-on learning opportunities. As a relatively new nonprofit, the organization is continuing to develop its operational capacity, public visibility, fundraising efforts, and digital infrastructure.
+
+### Company Mission and Vision
+
+Wellness Ranch’s stated mission is to *“bring individual healing and empowerment to our clients through the transformative use of equine assisted therapy and community activities that promote mental wellness and learning.”* This mission emphasizes healing, empowerment, education, and community engagement through interaction with horses and trained mental-health professionals.
+
+A separate formal vision statement has not yet been provided to the project team. Based on the organization’s mission and current activities, its working vision appears to be the creation of a community in which people of different ages and backgrounds can access supportive, experiential, and affordable mental-health services. This interpretation should be confirmed with the client before it is presented as the organization’s official vision.
 
 ### Core Competencies
 
+Wellness Ranch’s primary competency is providing equine-assisted, trauma-informed therapeutic experiences. The organization combines mental-health practices with structured interaction involving horses to offer an experiential form of support that differs from a traditional office-based setting.
+
+Its core competencies include:
+
+- Delivering equine-assisted therapy to individuals, couples, and groups
+
+- Providing trauma-informed care for children and adults
+
+- Creating experiential activities that support healing, learning, and empowerment
+
+- Offering mental-wellness education and community outreach
+
+- Serving communities in the Inland Empire
+
+- Supporting access to care through insurance and sliding-scale services
+
+- Providing internships and practical learning opportunities for emerging mental-health professionals
+
+- Developing relationships among clients, professionals, volunteers, donors, and community partners
+
+These competencies position Wellness Ranch as both a mental-health service provider and a community-based educational organization.
+
 ### Value Propositions
 
+Wellness Ranch offers a distinctive combination of equine-assisted therapy, trauma-informed care, wellness education, and community engagement. Its value comes from providing clients with an experiential therapeutic environment that may appeal to individuals who are seeking an alternative or supplement to conventional therapy.
+
+The organization’s major value propositions include:
+
+- **Experiential care:** Clients participate in structured therapeutic experiences involving horses rather than relying exclusively on a traditional office setting.
+
+- **Accessible services:** Insurance and sliding-scale options may help reduce financial barriers to mental-health care.
+
+- **Services for different needs:** Programs are available to children and adults and may be delivered to individuals, couples, or groups.
+
+- **Local community focus:** Wellness Ranch concentrates on the Inland Empire, including communities with limited access to responsive mental-health services.
+
+- **Community and workforce development:** Outreach, education, internships, and hands-on training extend the organization’s impact beyond direct client services.
+
+- **Mission-driven use of donations:** Financial contributions help the organization offset service costs, expand accessibility, and support individuals and families who may otherwise have difficulty obtaining care.
+
 ### Business Objectives
+
+Wellness Ranch’s broader business objective is to expand its ability to serve individuals and families while maintaining accessible and mission-aligned services. Achieving this objective requires the organization to improve its visibility, fundraising capacity, digital measurement, and internal ability to manage digital-marketing activities.
+
+The current business objectives include:
+
+1.  **Increase digital visibility.** Improve the organization’s ability to appear when people search for equine-assisted therapy, trauma-informed care, mental-health support, and related services in the Inland Empire.
+
+2.  **Strengthen the website.** Improve the homepage and other important pages so visitors can quickly understand the organization’s mission, services, impact, and available actions.
+
+3.  **Communicate measurable impact.** Present verified information—such as clients served, programs delivered, or other substantiated outcomes—in a clear and responsible manner.
+
+4.  **Increase donations.** Make donations more visible and reduce obstacles in the donation journey. The client has identified donations as the organization’s current primary website outcome.
+
+5.  **Improve digital measurement.** Evaluate the existing GA4 implementation, define meaningful events and conversions, establish baseline key performance indicators, and determine which channels contribute to donations and inquiries.
+
+6.  **Evaluate Google Ad Grants readiness.** Determine whether Wellness Ranch meets the eligibility requirements and possesses the website, analytics, staffing, and campaign-management capacity needed to apply for and sustain Google Ad Grants.
+
+7.  **Build sustainable internal capacity.** Establish procedures, documentation, and ownership so that the website, analytics tools, and future advertising campaigns can continue to be managed after the capstone project concludes.
+
+Together, these objectives support the organization’s larger mission by helping Wellness Ranch become easier to find, better able to demonstrate its impact, and more capable of generating the financial and community support needed to expand access to care.
 
 ## Description of the Client’s Current Marketing Program
 
