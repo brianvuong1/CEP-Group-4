@@ -277,7 +277,9 @@ So the two work together, not in place of each other:
 | `[e.g., @reich2022; @wu2021]` | Parenthetical with prefix | No |
 :::
 
-### AO2. Title of AO2 (Name of Student 2)
+### AO2. Website Analytics and Conversion Performance Analysis (Kevin Bachez)
+
+Analyze GA4 and Google Search Console data to evaluate Wellness Ranch Therapy’s website traffic, user engagement, landing page performance, and key conversion actions. The analysis will identify patterns in how users find and interact with the website and determine which pages, traffic sources, and user behaviors are associated with stronger engagement and meaningful actions such as contact form submissions, calls, appointment inquiries, program interest, and donations.
 
 ### AO3. Title of AO3 (Name of Student 3)
 
@@ -517,15 +519,25 @@ So the two work together, not in place of each other:
 
 #### Assessment and Affirmation of Analytics Objectives (no more than 1 page per AO)
 
-### AO2. Title of AO2 Right Here (Name of Author Here)
+## Investigation of Currently Available Research Framework/Model
 
-#### Existence of Well-established Models (2-3 pages per AO)
+### AO2. Website Analytics and Conversion Performance Analysis (Kevin Bachez)
 
-#### Adequateness of Gathered Information (a paragraph per AO)
+Analyze GA4 and Google Search Console data to evaluate Wellness Ranch Therapy’s website traffic, user engagement, landing page performance, and key conversion actions. The analysis will identify patterns in how users find and interact with the website and determine which pages, traffic sources, and user behaviors are associated with stronger engagement and meaningful actions such as contact form submissions, calls, appointment inquiries, program interest, and donations.
 
-#### Need for Additional Analysis (a paragraph per AO)
+#### Existence of Well-established Models
 
-#### Assessment and Affirmation of Analytics Objectives (no more than 1 page per AO)
+Web analytics provides organizations with a way to evaluate how users interact with digital platforms and whether website activity supports marketing and business objectives. Website performance can be assessed through measures such as traffic acquisition, user engagement, landing page behavior, and conversion activity. These measures help organizations understand how visitors enter a website, what content they interact with, and whether those interactions lead to meaningful actions.
+
+A useful framework for this analytics objective is the digital customer journey. Website visitors may move through different stages, beginning with awareness and information search and progressing toward stronger engagement or conversion. Because users may enter the website through different traffic sources and landing pages, analyzing their behavior can help determine which digital touchpoints are most effective at encouraging continued interaction.
+
+GA4 supports this type of analysis by organizing website activity around users, sessions, events, and key events. Metrics such as users, sessions, engagement rate, average engagement time, traffic source, landing page performance, and event activity can be used to evaluate how visitors interact with the Wellness Ranch Therapy website. Google Search Console can provide additional information about organic search performance, including impressions, clicks, queries, and search visibility.
+
+These analytics are relevant to Wellness Ranch Therapy because the website serves as an important digital touchpoint for prospective clients, donors, and community members. Visitors may arrive seeking information about equine-assisted therapy, mental wellness services, program options, or ways to contact the organization. Examining how these users move through the website can help identify pages that attract attention but do not lead to further engagement, as well as pages that contribute to stronger user actions.
+
+Conversion measurement is also important because website traffic alone does not necessarily indicate marketing effectiveness. Meaningful actions such as submitting a contact form, clicking a phone number, requesting an appointment, showing interest in a program, or making a donation provide stronger indicators of whether the website is supporting organizational goals. Tracking these actions as events or key events in GA4 allows the organization to connect website activity with outcomes that have greater business value.
+
+Based on these established web analytics approaches, the analysis for Wellness Ranch Therapy will focus on three main areas: traffic acquisition, user engagement, and conversion behavior. GA4 and Google Search Console data will be used to identify which traffic sources, landing pages, and user behaviors are associated with stronger engagement and meaningful actions. These findings can then support recommendations for improving website performance and strengthening the connection between digital marketing activity and organizational goals.
 
 ### AO3. Title of AO3 Right Here (Name of Author Here)
 
