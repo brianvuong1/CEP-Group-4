@@ -103,37 +103,119 @@ Wellness Ranch has done tremendous and meaningful work, but its digital presence
 
 Our project moves the organization from recommendations to implementation, measurement, and ongoing optimization so its online presence can support its mission instead of holding it back.
 
-## Project Objectives (PO's)
+## Project Objectives (POs)
 
-The overall objective of this project is to help Wellness Ranch Equine Assisted Therapy turn earlier digital marketing recommendations into practical improvements that support its mission. Across the three-semester capstone, our team will focus on five connected objectives that address the organization’s visibility, measurement, advertising readiness, and long-term ability to manage its digital presence.
+The overall purpose of this project is to help Wellness Ranch Equine Assisted Therapy convert earlier digital marketing recommendations into practical and sustainable improvements. Across the three-semester capstone project, the team will address the organization’s website, search visibility, analytics capabilities, advertising readiness, and long-term ability to manage its digital presence. The following five project objectives define the major outcomes expected from the project.
 
-**1. Implement priority website and SEO improvements.** The first objective is to review the recommendations produced by the Spring 2026 search engine marketing class and identify the changes that will have the greatest impact. Using access to the Wix website, the team will address technical SEO issues, broken links, page titles, keywords, internal linking, calls to action, landing pages, and other conversion-related elements. The team will also review local SEO opportunities so that Wellness Ranch can appear more consistently when Inland Empire residents search for equine therapy, trauma-informed services, and mental wellness resources. Content work will focus primarily on improving and organizing existing website information rather than creating an ongoing content program.
+### PO1. Implement Priority Website and SEO Improvements
 
-**2. Strengthen analytics and performance measurement.** GA4 is already installed on the Wellness Ranch website, so the project will focus on validating and improving the current setup. This includes checking whether important events and conversions are being tracked correctly, defining baseline key performance indicators, and connecting website activity to meaningful actions such as contact-form submissions, calls, appointment inquiries, program interest, or donations. Google Search Console and other available platform data will also be used to create a clearer picture of website traffic, search visibility, engagement, and user behavior.
+The first project objective is to review the recommendations produced by the Spring 2026 search engine marketing class and identify the improvements that are most relevant and feasible for Wellness Ranch. Using access to the Wix website, the team will evaluate and address priority technical SEO issues, broken links, page titles, keyword usage, internal linking, calls to action, landing pages, and other conversion-related elements.
 
-**3. Assess Google Ad Grants eligibility and readiness.** The third objective is to determine whether Wellness Ranch meets the current eligibility requirements for Google Ad Grants and whether the organization has the internal capacity to maintain a compliant account. If it is eligible and prepared, the team will assist with the application process. The team will also conduct keyword and competitor research, evaluate possible landing pages, and outline an initial campaign structure. This objective includes identifying who would manage the account and how the organization would monitor compliance after the capstone ends.
+The team will also examine local SEO opportunities that could help Wellness Ranch appear more consistently when Inland Empire residents search for equine-assisted therapy, trauma-informed services, mental-health support, and wellness resources. Website work will focus primarily on improving the organization, presentation, and optimization of existing information rather than creating an ongoing content-production program.
 
-**4. Measure the impact of implemented strategies.** After changes are made, the team will compare performance with the baseline established earlier in the project. Measures may include organic search impressions, rankings, website traffic, engagement, conversions, inquiries, and advertising results if campaigns are launched. Because outside factors can affect performance, results will be interpreted carefully instead of assuming that every change was caused by one specific action.
+### PO2. Strengthen Analytics and Performance Measurement
 
-**5. Develop and optimize a sustainable digital marketing strategy.** The final objective is to combine the website, SEO, analytics, local search, and advertising findings into one practical strategy. If the Ad Grant is approved, the team will launch and refine campaigns based on performance data. The project will conclude with prioritized recommendations, reporting guidance, and a client roadmap that Wellness Ranch can continue using. Together, these objectives are intended to build a digital foundation that helps the organization reach more people while remaining realistic about its staffing, resources, and ability to sustain the work.
+The second project objective is to improve Wellness Ranch’s ability to measure the performance of its website and digital marketing activities. Although GA4 is already installed, the team must determine whether the current configuration captures the actions that are most meaningful to the organization.
 
-## Analytics Objectives
+This objective includes reviewing existing events and conversions, defining baseline key performance indicators, and determining how website activity relates to actions such as donation activity, contact-form submissions, calls, appointment inquiries, and program interest. Google Search Console and other available data sources may also be used to evaluate traffic, search visibility, engagement, and user behavior.
 
-### AO1. On-Page & Off-Page SEO Performance Analysis (Alexa)
+### PO3. Assess Google Ad Grants Eligibility and Readiness
 
-Analyze current SEO data (technical issues, content, backlinks, local SEO) from the SEO Fix Tracker and backlink audit to identify which factors most affect Wellness Ranch Therapy's search visibility and which pages should be prioritized for improvement.
+The third project objective is to determine whether Wellness Ranch meets the current eligibility requirements for Google Ad Grants and whether the organization has the internal capacity to launch and maintain compliant campaigns. If Wellness Ranch is eligible and sufficiently prepared, the team will assist with the application process and initial campaign planning.
 
-### AO2. Conversion & Engagement Measurement (Kevin)
+This objective includes reviewing website readiness, analytics and conversion tracking, account ownership, staff capacity, campaign-management responsibilities, keyword opportunities, possible landing pages, and current compliance requirements. It will also identify who could maintain the account after the capstone project concludes.
 
-Analyze GA4 and Google Search Console data to establish baseline KPIs and evaluate which traffic sources, website interactions, and conversion actions represent meaningful engagement for Wellness Ranch Therapy.Revise
+### PO4. Measure the Impact of Implemented Strategies
 
-### AO3. Paid Search Readiness Analysis (Brian)
+The fourth project objective is to evaluate whether the selected website, SEO, analytics, and digital marketing improvements produce measurable changes. The team will compare pre-implementation baseline data with post-implementation results when sufficient data are available.
 
-Analyze Wellness Ranch Therapy's Google Ad Grants eligibility and internal capacity to determine readiness for launching and sustaining paid search campaigns.
+Potential measures include organic search impressions, rankings, website traffic, engagement, donation activity, inquiries, conversions, and advertising results if campaigns are launched. Because seasonality, external events, platform changes, and other factors may influence performance, the results will be interpreted carefully rather than automatically attributing every change to a single intervention.
 
-### AO4. Measuring Digital Marketing Impact (Ron)
+### PO5. Develop a Sustainable Digital Marketing Strategy
 
-Measure how implemented SEO, website, and digital marketing changes affect organic traffic, engagement, and conversions by comparing Spring performance data against a Fall baseline.
+The fifth project objective is to integrate findings from the website, SEO, analytics, local search, conversion, and paid-search analyses into a sustainable digital marketing strategy. The project will conclude with prioritized recommendations, reporting guidance, documented procedures, and a practical roadmap that Wellness Ranch can continue using after the capstone ends.
+
+This objective emphasizes sustainability. Recommendations must be realistic given the organization’s staffing, expertise, time, financial resources, and approval processes. Together, the five project objectives are intended to create a digital foundation that helps Wellness Ranch become easier to find, understand its performance, increase donations and other meaningful actions, and expand its community reach.
+
+## Analytics Objectives (AOs)
+
+The analytics objectives define the specific investigations needed to support the broader project objectives. Each analytics objective is assigned to one team member, but the findings will be shared and integrated across the project.
+
+### AO1. On-Page and Off-Page SEO Performance Analysis (Alexa)
+
+Analyze current SEO data, including technical issues, website content, backlinks, local SEO, and information from the SEO Fix Tracker and backlink audit, to identify which factors most affect Wellness Ranch Therapy’s search visibility and which pages and improvements should be prioritized.
+
+AO1 directly supports PO1 by providing the evidence needed to select and prioritize website and SEO improvements. It also supports PO4 by identifying the SEO indicators that should be monitored before and after implementation. The resulting findings will contribute to the SEO component of the sustainable strategy developed under PO5.
+
+### AO2. Conversion and Engagement Measurement (Kevin)
+
+Analyze GA4 and Google Search Console data to establish baseline key performance indicators and evaluate which traffic sources, website interactions, and conversion actions represent meaningful engagement for Wellness Ranch Therapy.
+
+AO2 directly supports PO2 by defining meaningful events, conversions, and performance measures. It also provides the baseline and post-implementation measures required for PO4. Its findings will help the team determine how Wellness Ranch should monitor future website and marketing performance under PO5.
+
+### AO3. Google Ad Grants Eligibility and Readiness Assessment (Brian)
+
+Assess Wellness Ranch Therapy’s Google Ad Grants eligibility and its organizational, website, analytics, and campaign-management capacity to determine its readiness to launch, manage, and sustain compliant Google Ad Grants campaigns.
+
+AO3 directly supports PO3 by evaluating both formal eligibility and practical readiness. It also supports PO1 by identifying website or landing-page improvements required before advertising and supports PO2 by evaluating whether conversions can be measured accurately. The readiness findings and recommendations will become part of the long-term digital marketing roadmap developed under PO5.
+
+### AO4. Digital Marketing Impact Measurement (Ron)
+
+Measure how implemented SEO, website, analytics, and digital marketing changes affect organic visibility, website traffic, engagement, and conversions by comparing pre-implementation baseline data with post-implementation results when sufficient data are available.
+
+AO4 directly supports PO4 by measuring the results of the strategies implemented during the project. It depends on the baseline measurements defined in AO2 and the changes prioritized through AO1 and, if applicable, AO3. Its findings will help determine which activities should be continued, modified, or discontinued under PO5.
+
+## Alignment Between Project Objectives and Analytics Objectives
+
+The project objectives describe what the team intends to accomplish for Wellness Ranch, while the analytics objectives define the analysis and evidence needed to make those decisions. The relationship between the POs and AOs is summarized below.
+
+| Project Objective | Directly Supporting AO | Additional Supporting AOs | Relationship |
+|---|---|---|---|
+| PO1. Implement priority website and SEO improvements | AO1 | AO2, AO3, and AO4 | AO1 identifies the SEO and website factors that should be prioritized. AO2 identifies conversion and measurement needs, AO3 may identify advertising-related website requirements, and AO4 measures the effects of the changes. |
+| PO2. Strengthen analytics and performance measurement | AO2 | AO3 and AO4 | AO2 establishes KPIs, events, conversions, and baseline measures. AO3 evaluates whether the measurement infrastructure can support paid search, while AO4 applies the measures to evaluate results. |
+| PO3. Assess Google Ad Grants eligibility and readiness | AO3 | AO1 and AO2 | AO3 evaluates eligibility and organizational readiness. AO1 supports website and landing-page readiness, while AO2 supports conversion measurement. |
+| PO4. Measure the impact of implemented strategies | AO4 | AO1, AO2, and AO3 | AO4 compares baseline and post-implementation results. The interventions and measures originate from the preceding AOs. |
+| PO5. Develop a sustainable digital marketing strategy | AO1, AO2, AO3, and AO4 collectively | All AOs | PO5 integrates the findings of all four analyses into recommendations, procedures, reporting guidance, and a long-term roadmap. |
+
+### Coverage of the Project Objectives
+
+The project objectives are converted into analytics work through four assigned AOs. PO1 through PO4 each have a directly corresponding analytics objective:
+
+- PO1 is primarily supported by AO1.
+- PO2 is primarily supported by AO2.
+- PO3 is primarily supported by AO3.
+- PO4 is primarily supported by AO4.
+
+PO5 does not have a separate one-to-one analytics objective. However, this does not represent an unsupported project objective. PO5 is an integration and implementation objective rather than a separate analytical question. It can be achieved by combining the findings from AO1 through AO4 into a sustainable digital marketing strategy.
+
+Creating another AO solely for PO5 would duplicate work already performed through the four existing analyses. Instead, the team will use the evidence produced by all four AOs to develop the final recommendations, reporting procedures, and client roadmap. Therefore, all five POs are supported by analytics work even though the project contains four AOs.
+
+### Team Assignment and Individual Responsibility
+
+Each member of the four-person project team has at least one analytics objective assigned:
+
+| Team Member | Assigned Analytics Objective | Primary Area of Responsibility |
+|---|---|---|
+| Alexa | AO1 | SEO and website-priority analysis |
+| Kevin | AO2 | GA4, Search Console, conversions, and baseline measurement |
+| Brian | AO3 | Google Ad Grants eligibility and organizational readiness |
+| Ron | AO4 | Measurement of implemented digital marketing changes |
+
+The assignments provide individual ownership while maintaining the connections among the analyses. For example, AO4 depends on the baseline established through AO2, while AO3 may identify website improvements related to AO1 and measurement needs related to AO2. Team members must therefore coordinate their findings rather than treating each AO as an independent project.
+
+### Relevance of the Analytics Objectives
+
+All four analytics objectives support at least one project objective, and none requires resources without contributing to the overall project. AO1 supports website and search visibility improvements, AO2 supports performance measurement, AO3 supports Google Ad Grants readiness, and AO4 supports impact evaluation. All four also contribute to PO5 by providing the evidence needed to develop a sustainable digital marketing strategy.
+
+The relationship among the objectives follows a logical sequence:
+
+1. AO1 identifies which website and SEO issues should be addressed.
+2. AO2 establishes how website activity and meaningful outcomes will be measured.
+3. AO3 determines whether Wellness Ranch is eligible and prepared to use Google Ad Grants.
+4. AO4 evaluates the results of implemented changes.
+5. Findings from all four AOs are integrated to accomplish PO5 and produce the final strategic roadmap.
+
+This alignment ensures that the team’s analytical work is connected to the client’s needs and that each AO contributes to a defined project outcome.
 
 ## Significance of the Project
 
