@@ -119,11 +119,11 @@ The second project objective is to improve Wellness Ranch’s ability to measure
 
 This objective includes reviewing existing events and conversions, defining baseline key performance indicators, and determining how website activity relates to actions such as donation activity, contact-form submissions, calls, appointment inquiries, and program interest. Google Search Console and other available data sources may also be used to evaluate traffic, search visibility, engagement, and user behavior.
 
-### PO3. Assess Google Ad Grants Eligibility and Readiness
+### PO3. Obtain and Activate Google Ad Grants
 
-The third project objective is to determine whether Wellness Ranch meets the current eligibility requirements for Google Ad Grants and whether the organization has the internal capacity to launch and maintain compliant campaigns. If Wellness Ranch is eligible and sufficiently prepared, the team will assist with the application process and initial campaign planning.
+The third project objective is to guide Wellness Ranch through the Google Ad Grants process, including eligibility verification, application, campaign development, and launch. If the organization qualifies, the team will assist with submitting the application and launching compliant search campaigns. If approval is delayed or denied, the team will document the barriers and recommend corrective actions.
 
-This objective includes reviewing website readiness, analytics and conversion tracking, account ownership, staff capacity, campaign-management responsibilities, keyword opportunities, possible landing pages, and current compliance requirements. It will also identify who could maintain the account after the capstone project concludes.
+This objective includes improving website and landing-page readiness, validating conversion tracking, researching keywords and audiences, and establishing campaign ownership and management procedures. After launch, the team will review measures such as impressions, clicks, click-through rate, search terms, and conversions to improve performance. The project will also provide documentation and recommendations so Wellness Ranch can maintain the account after the capstone concludes.
 
 ### PO4. Measure the Impact of Implemented Strategies
 
@@ -153,11 +153,11 @@ Analyze GA4 and Google Search Console data to establish baseline key performance
 
 AO2 directly supports PO2 by defining meaningful events, conversions, and performance measures. It also provides the baseline and post-implementation measures required for PO4. Its findings will help the team determine how Wellness Ranch should monitor future website and marketing performance under PO5.
 
-### AO3. Google Ad Grants Eligibility and Readiness Assessment (Brian)
+### AO3. Evaluate Google Ad Grants Readiness and Campaign Data to Guide Application, Launch, and Optimization (Brian)
 
-Assess Wellness Ranch Therapy’s Google Ad Grants eligibility and its organizational, website, analytics, and campaign-management capacity to determine its readiness to launch, manage, and sustain compliant Google Ad Grants campaigns.
+Evaluate Wellness Ranch Therapy’s eligibility, website and analytics readiness, organizational capacity, and campaign data to support the Google Ad Grants application, launch compliant campaigns, and guide ongoing optimization using measures such as click-through rate, search terms, conversions, and conversion rate.
 
-AO3 directly supports PO3 by evaluating both formal eligibility and practical readiness. It also supports PO1 by identifying website or landing-page improvements required before advertising and supports PO2 by evaluating whether conversions can be measured accurately. The readiness findings and recommendations will become part of the long-term digital marketing roadmap developed under PO5.
+AO3 directly supports PO3 by moving the organization from eligibility assessment through application, launch, measurement, and improvement. It also supports PO1 by identifying necessary website and landing-page improvements and PO2 by defining the conversion tracking required to evaluate campaign performance. The findings will contribute to the sustainable digital marketing roadmap developed under PO5.
 
 ### AO4. Digital Marketing Impact Measurement (Ron)
 
@@ -171,10 +171,10 @@ The project objectives describe what the team intends to accomplish for Wellness
 
 | Project Objective | Directly Supporting AO | Additional Supporting AOs | Relationship |
 |---|---|---|---|
-| PO1. Implement priority website and SEO improvements | AO1 | AO2, AO3, and AO4 | AO1 identifies the SEO and website factors that should be prioritized. AO2 identifies conversion and measurement needs, AO3 may identify advertising-related website requirements, and AO4 measures the effects of the changes. |
-| PO2. Strengthen analytics and performance measurement | AO2 | AO3 and AO4 | AO2 establishes KPIs, events, conversions, and baseline measures. AO3 evaluates whether the measurement infrastructure can support paid search, while AO4 applies the measures to evaluate results. |
-| PO3. Assess Google Ad Grants eligibility and readiness | AO3 | AO1 and AO2 | AO3 evaluates eligibility and organizational readiness. AO1 supports website and landing-page readiness, while AO2 supports conversion measurement. |
-| PO4. Measure the impact of implemented strategies | AO4 | AO1, AO2, and AO3 | AO4 compares baseline and post-implementation results. The interventions and measures originate from the preceding AOs. |
+| PO1. Implement priority website and SEO improvements | AO1 | AO2, AO3, and AO4 | AO1 identifies the SEO and website factors that should be prioritized. AO2 identifies conversion and measurement needs, AO3 identifies website and landing-page requirements for Google Ad Grants campaigns, and AO4 measures the effects of the changes. |
+| PO2. Strengthen analytics and performance measurement | AO2 | AO3 and AO4 | AO2 establishes KPIs, events, conversions, and baseline measures. AO3 evaluates whether the measurement infrastructure can support Google Ads and uses campaign metrics to guide optimization, while AO4 applies the measures to evaluate results. |
+| PO3. Obtain and activate Google Ad Grants | AO3 | AO1 and AO2 | AO3 evaluates eligibility and readiness, supports the application and campaign launch, and analyzes campaign data to guide compliant management and optimization. AO1 supports website and landing-page readiness, while AO2 supports conversion measurement. |
+| PO4. Measure the impact of implemented strategies | AO4 | AO1, AO2, and AO3 | AO4 compares baseline and post-implementation results. AO3 contributes Google Ads measures such as clicks, click-through rate, search terms, and conversions, while the other interventions and measures originate from the preceding AOs. |
 | PO5. Develop a sustainable digital marketing strategy | AO1, AO2, AO3, and AO4 collectively | All AOs | PO5 integrates the findings of all four analyses into recommendations, procedures, reporting guidance, and a long-term roadmap. |
 
 ### Coverage of the Project Objectives
@@ -198,20 +198,20 @@ Each member of the four-person project team has at least one analytics objective
 |---|---|---|
 | Alexa | AO1 | SEO and website-priority analysis |
 | Kevin | AO2 | GA4, Search Console, conversions, and baseline measurement |
-| Brian | AO3 | Google Ad Grants eligibility and organizational readiness |
+| Brian | AO3 | Google Ad Grants readiness, application, campaign launch, and performance analysis |
 | Ron | AO4 | Measurement of implemented digital marketing changes |
 
-The assignments provide individual ownership while maintaining the connections among the analyses. For example, AO4 depends on the baseline established through AO2, while AO3 may identify website improvements related to AO1 and measurement needs related to AO2. Team members must therefore coordinate their findings rather than treating each AO as an independent project.
+The assignments provide individual ownership while maintaining the connections among the analyses. For example, AO4 depends on the baseline established through AO2, while AO3 may identify website and landing-page improvements related to AO1 and conversion-tracking requirements related to AO2. Team members must therefore coordinate their findings rather than treating each AO as an independent project.
 
 ### Relevance of the Analytics Objectives
 
-All four analytics objectives support at least one project objective, and none requires resources without contributing to the overall project. AO1 supports website and search visibility improvements, AO2 supports performance measurement, AO3 supports Google Ad Grants readiness, and AO4 supports impact evaluation. All four also contribute to PO5 by providing the evidence needed to develop a sustainable digital marketing strategy.
+All four analytics objectives support at least one project objective, and none requires resources without contributing to the overall project. AO1 supports website and search visibility improvements, AO2 supports performance measurement, AO3 supports the Google Ad Grants application, campaign launch, measurement, and optimization, and AO4 supports impact evaluation. All four also contribute to PO5 by providing the evidence needed to develop a sustainable digital marketing strategy.
 
 The relationship among the objectives follows a logical sequence:
 
 1. AO1 identifies which website and SEO issues should be addressed.
 2. AO2 establishes how website activity and meaningful outcomes will be measured.
-3. AO3 determines whether Wellness Ranch is eligible and prepared to use Google Ad Grants.
+3. AO3 evaluates Google Ad Grants readiness, supports the application and campaign launch, and analyzes campaign data to guide optimization.
 4. AO4 evaluates the results of implemented changes.
 5. Findings from all four AOs are integrated to accomplish PO5 and produce the final strategic roadmap.
 
