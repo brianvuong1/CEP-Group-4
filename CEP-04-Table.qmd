@@ -1,0 +1,57 @@
+---
+title: "Construct and Measurement Table for Wellness Ranch Equine-Assisted Therapy"
+author: "Group 4: Kevin B, Alexa B, Ron S, Brian V"
+date: today
+
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-expand: 2
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-link: true
+    code-tools: true
+    code-fold: true
+    code-overflow: wrap
+    code-copy: true
+    embed-resources: true
+    theme: cosmo
+    html-math-method: katex
+
+editor: visual
+
+execute:
+  freeze: auto
+  warning: false
+---
+
+**Construct and Measurement Table for Wellness Ranch Equine-Assisted Therapy**
+
+**Research Questions**
+
+**H4:** Keywords with transactional or local intent will have higher conversion rates than informational keywords.  
+**RQ2:** Which traffic sources, website interactions, and conversion actions represent meaningful engagement for Wellness Ranch Therapy?  
+**RQ4:** Which keyword intent groups produce the highest click-through and conversion rates for Wellness Ranch's Google Ad Grants campaigns?
+
+**Construct and Measurement Table for Wellness Ranch Equine Assisted Therapy**
+
+| Construct Definition | Operationalization of the Construct | Source of the measure | Types of Scale (nominal, ordinal, interval, ratio) | Hypothesis / Research Questions | Type of Variables/Statistics |
+| :---- | :---- | :---- | :---- | :---- | :---- |
+| Traffic Source / Acquisition Channel: The source or channel through which users arrive at the Wellness Ranch website. | Organic Search, Direct, Referral, Organic Social, Paid Search if applicable, and other traffic channels. Compare sessions, users, engagement, and conversions by channel. | Google Analytics 4 (GA4) | Nominal scale for traffic-source category; ratio measures for users and sessions | RQ2 | Independent / grouping variable; Descriptive Statistics |
+| Website Engagement: The degree to which website visitors meaningfully interact with Wellness Ranch content after arriving on the website. | Engaged sessions, engagement rate, average engagement time, page views, and event activity. | Google Analytics 4 (GA4) | Ratio scale for engaged sessions, page views, and engagement time; percentage/ratio measure for engagement rate | RQ2 | Dependent / outcome variable; Descriptive Statistics; Baseline KPI |
+| Meaningful Conversion: A website action that indicates meaningful interest in Wellness Ranch services, programs, fundraising, or other organizational goals. | Contact-form submissions, phone-call clicks, appointment inquiries, program-interest actions, donations, total conversions, and conversion rate. | Google Analytics 4 (GA4) | Ratio scale for conversion counts; percentage/ratio measure for conversion rate | RQ2 | Dependent variable; Primary KPI / Outcome Measure; Descriptive Statistics |
+| **Search intent** (The goal behind a person's search: learning about a topic, reaching a specific website, or taking an action such as contacting a provider.) | Each search term in the Google Ads search terms report is coded into one category: – Informational (e.g., "what is equine therapy") – Navigational (e.g., "Wellness Ranch Rancho Cucamonga") – Transactional/local (e.g., "equine therapy near me") | Google Ads search terms report; Broder | Nominal; Informational=1, Navigational=2, Transactional/local=3 | R4, H4 | Descriptive statistics I.V. (grouping variable) |
+| **Click-through rate (CTR)** (The share of people who click an ad after seeing it; a measure of ad relevance and interest.) | CTR \= Clicks ÷ Impressions × 100, reported monthly by keyword and campaign. | Google Ads Grants Help | Ratio; percentage (0–100%). Ad Grants requires ≥ 5% each month. | R4 | Descriptive statistics D.V.; compliance metric |
+| **Conversion rate** (The share of ad clicks that lead to a meaningful action, such as a contact-form submission, phone call or donation.) | Conversion rate \= Conversions ÷ Clicks × 100\. Conversions are tracked in GA4 and imported into Google Ads. | Google Ads and GA4 | Ratio; percentage (0–100%) | R4, H4 | Descriptive statistics D.V.; chi-square test of independence (H4) |
+| Ad Impressions: The number of times a Wellness Ranch advertisement is displayed to users. | Monthly impression count for each Google Ad Grant campaign and keyword-intent group. | Google Ads | Ratio scale; count with a meaningful zero | RQ4 | Descriptive statistic; denominator for CTR |
+
+
+
+# Appendix
+
+- [GitHub Repository](https://github.com/brianvuong1/CEP-Group-4)
+- [Published Article Notes on GitHub Pages](https://brianvuong1.github.io/CEP-Group-4/CEP-04-Table.html)
+
+
