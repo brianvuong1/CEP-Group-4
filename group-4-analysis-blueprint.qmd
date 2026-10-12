@@ -1,6 +1,6 @@
 ---
-title: "Name of Assignment"
-author: "Brian Vuong"
+title: "GA4-1 - GP Analytics Blueprint (Team)"
+author: "Brian Vuong, Kevin Bachez"
 date: 'today'
 format:
   html:
