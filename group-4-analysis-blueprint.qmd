@@ -1,0 +1,227 @@
+---
+title: "Name of Assignment"
+author: "Brian Vuong"
+date: 'today'
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-expand: 2
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-link: true
+    code-tools: true
+    code-fold: true
+    code-overflow: wrap
+    code-copy: true
+    embed-resources: true
+    theme: cosmo
+    html-math-method: katex
+editor: visual
+execute:
+  freeze: auto
+  warning: false
+---
+
+# Deliverable 1: Analytics Blueprint
+
+## Client Context
+
+<!-- Complete this section as a group. Describe Wellness Ranch’s business model and primary goals. -->
+
+Wellness Ranch Equine-Assisted Therapy provides therapeutic and wellness-related services using equine-assisted activities. The primary measurement goal is to understand how digital marketing and website activity generate meaningful interest, qualified leads, and conversion actions.
+
+## Stakeholder Questions
+
+<!-- Add 3–6 questions written as decisions or problems the client needs to solve. -->
+
+1.  Which traffic sources generate the most meaningful engagement and qualified conversions?
+2.  Which website interactions indicate genuine interest in Wellness Ranch services?
+3.  Which keyword-intent groups produce the highest click-through and conversion rates?
+4.  Which landing pages and campaigns perform best?
+5.  Which digital marketing improvements should Wellness Ranch prioritize?
+
+## KPI Measurement Table
+
+| Stakeholder Question | KPI(s) | Metric Definition and Formula | Breakdowns / Dimensions | Data Source | Assumptions and Notes |
+|------------|------------|------------|------------|------------|------------|
+| <!-- Add question --> | <!-- Add KPI --> | <!-- Define exactly how the KPI is calculated --> | <!-- Channel, campaign, landing page, device, geography, etc. --> | <!-- GA4, BigQuery, Google Ads, CRM, etc. --> | <!-- Add assumptions or limitations --> |
+| <!-- Add question --> | <!-- Add KPI --> | <!-- Define exactly how the KPI is calculated --> | <!-- Add dimensions --> | <!-- Add data source --> | <!-- Add notes --> |
+| <!-- Add question --> | <!-- Add KPI --> | <!-- Define exactly how the KPI is calculated --> | <!-- Add dimensions --> | <!-- Add data source --> | <!-- Add notes --> |
+
+# Deliverable 2: KPI Tree / Metric Hierarchy Diagram
+
+## North Star Outcome
+
+The North Star outcome is **qualified leads and meaningful conversions** for Wellness Ranch Equine-Assisted Therapy. This includes contact-form submissions, appointment inquiries, phone-call clicks, program-interest actions, and other actions that indicate meaningful interest in Wellness Ranch services.
+
+```{mermaid}
+flowchart TD
+
+    NS["NORTH STAR OUTCOME<br/><b>Qualified Leads / Meaningful Conversions</b><br/>Contact forms • Appointment inquiries • Phone calls • Program-interest actions"]
+
+    A["ACQUISITION<br/><i>How users arrive</i>"]
+    A1["Users and sessions"]
+    A2["Traffic source / medium"]
+    A3["Campaign and keyword volume"]
+    A4["Ad impressions"]
+
+    E["ENGAGEMENT / INTENT<br/><i>Whether users show interest</i>"]
+    E1["Engaged sessions"]
+    E2["Engagement rate"]
+    E3["Average engagement time"]
+    E4["Search intent<br/>Informational • Navigational • Transactional/local"]
+
+    F["CONVERSION FUNNEL<br/><i>Where users move toward action</i>"]
+    F1["Landing-page views"]
+    F2["Key page views"]
+    F3["CTA interactions"]
+    F4["Conversion rate"]
+
+    Q["LEAD QUALITY<br/><i>Whether actions are meaningful</i>"]
+    Q1["Conversion action type"]
+    Q2["Appointment or contact intent"]
+    Q3["Phone-call and form completion"]
+    Q4["Qualified-lead rate"]
+
+    CUTS["DIAGNOSTIC CUTS<br/><i>Apply across branches</i><br/>Channel • Campaign • Keyword intent<br/>Landing page • Device • Geography<br/>New vs. returning user"]
+
+    A --> A1
+    A --> A2
+    A --> A3
+    A --> A4
+
+    E --> E1
+    E --> E2
+    E --> E3
+    E --> E4
+
+    F --> F1
+    F --> F2
+    F --> F3
+    F --> F4
+
+    Q --> Q1
+    Q --> Q2
+    Q --> Q3
+    Q --> Q4
+
+    A --> NS
+    E --> NS
+    F --> NS
+    Q --> NS
+
+    CUTS -.-> A
+    CUTS -.-> E
+    CUTS -.-> F
+    CUTS -.-> Q
+
+    classDef north fill:#1f4e79,color:#ffffff,stroke:#163a5c,stroke-width:3px;
+    classDef branch fill:#d9eaf7,color:#000000,stroke:#4f81bd,stroke-width:2px;
+    classDef metric fill:#f7fbff,color:#000000,stroke:#8fbad9;
+    classDef cuts fill:#fff2cc,color:#000000,stroke:#bf9000,stroke-width:2px;
+
+    class NS north;
+    class A,E,F,Q branch;
+    class A1,A2,A3,A4,E1,E2,E3,E4,F1,F2,F3,F4,Q1,Q2,Q3,Q4 metric;
+    class CUTS cuts;
+```
+
+## Diagram Notes
+
+<!-- Explain any changes your group makes to the KPI tree. -->
+
+The KPI tree connects acquisition, engagement, conversion-funnel activity, and lead quality to the overall outcome. The diagnostic cuts allow the team to compare performance by channel, campaign, keyword intent, landing page, device, geography, and new versus returning users.
+
+# Deliverable 3: Event / Parameter Map
+
+## Instrumentation Plan
+
+<!-- Complete or revise the rows below. Use recommended GA4 event names when appropriate. -->
+
+| KPI / Question Supported | Event Name | Trigger Definition | Required Parameters | Notes / Edge Cases |
+|---------------|---------------|---------------|---------------|---------------|
+| Meaningful conversions; RQ2 | `generate_lead` | User submits a contact or inquiry form successfully. | `form_id`, `form_name`, `page_location`, `page_referrer`, `lead_type` | Prevent duplicate events from refreshes or repeated clicks. Confirm embedded-form tracking. |
+| Appointment inquiries; RQ2 | `generate_lead` | User submits an appointment or consultation request. | `form_id`, `lead_type`, `service_type`, `page_location` | Distinguish appointment inquiries from general contact forms. |
+| Phone-call conversions; RQ2 | `click_to_call` | User clicks a phone number or call button on the website. | `phone_link`, `page_location`, `link_text` | A click does not confirm that a call was completed. |
+| CTA engagement; RQ2 | `select_content` or custom CTA event | User clicks a primary call-to-action button. | `cta_text`, `cta_location`, `page_location`, `destination_url` | Avoid counting repeated clicks as separate conversions unless intended. |
+| Search intent; RQ4 and H4 | Google Ads keyword data | Search term or keyword is classified as informational, navigational, or transactional/local. | `keyword`, `keyword_intent`, `campaign`, `ad_group` | Document the coding rules for each intent category. |
+| Click-through rate; RQ4 | Google Ads metric | User clicks a Wellness Ranch advertisement after seeing it. | `campaign`, `ad_group`, `keyword`, `impressions`, `clicks` | CTR is calculated as clicks divided by impressions multiplied by 100. |
+| Conversion rate; RQ4 and H4 | Google Ads / GA4 conversion data | A user completes a defined conversion after an ad interaction. | `campaign`, `keyword_intent`, `conversion_type`, `conversion_value` | Define the attribution window and conversion-counting method. |
+| Website engagement; RQ2 | `page_view` / GA4 engagement metrics | User views a page and interacts with the website. | `page_location`, `page_title`, `page_referrer`, `engagement_time_msec` | Confirm that internal traffic and unwanted referrals are handled consistently. |
+
+## Additional Events to Consider
+
+<!-- Add any additional events your team believes are necessary. -->
+
+| KPI / Question Supported | Event Name | Trigger Definition | Required Parameters | Notes / Edge Cases |
+|---------------|---------------|---------------|---------------|---------------|
+| <!-- Add KPI or question --> | <!-- Add event --> | <!-- Describe the trigger --> | <!-- List parameters --> | <!-- Add edge cases --> |
+| <!-- Add KPI or question --> | <!-- Add event --> | <!-- Describe the trigger --> | <!-- List parameters --> | <!-- Add edge cases --> |
+
+# Deliverable 4: Validation Checklist and Test Cases
+
+## Validation Checklist
+
+### GTM and Collection
+
+- Confirm the correct Google Tag Manager container is installed.
+- Use GTM Preview mode to verify that triggers fire only under the intended conditions.
+- Check that each event fires once per intended user action.
+- Confirm that required parameters are populated.
+- Test forms, phone links, CTA buttons, and landing pages.
+- Check for duplicate tags or duplicate conversion events.
+- Confirm that consent settings do not unintentionally block required tracking.
+
+### GA4 DebugView and Realtime
+
+- Verify that events appear in GA4 DebugView.
+- Confirm that event names are spelled consistently.
+- Confirm that required parameters contain the expected values.
+- Verify that page location, page title, source, medium, and campaign data are populated.
+- Confirm that conversion events are marked correctly in GA4.
+- Compare event counts in DebugView and Realtime.
+
+### Reporting Sanity Checks
+
+- Confirm that source, medium, campaign, and keyword dimensions populate correctly.
+- Check that landing pages are recorded consistently.
+- Confirm that device and geography dimensions are available.
+- Check that conversion rates are calculated from the correct numerator and denominator.
+- Review unusually high or low values for possible tracking errors.
+
+### BigQuery Export
+
+- Confirm that events appear in the `events_*` tables.
+- Verify that event parameters can be extracted correctly.
+- Check that timestamps and user/session identifiers are present.
+- Compare BigQuery event counts with GA4 reporting.
+- Document any known export delays or missing parameters.
+
+## Test Cases
+
+| Test Case | Steps to Perform | Expected Events | Expected Parameters / Dimensions |
+|------------------|------------------|------------------|------------------|
+| Contact form submission | Open the contact page, complete all required fields, submit the form, and confirm the success message. | `generate_lead` | `form_id`, `form_name`, `lead_type`, `page_location`, source, medium, campaign |
+| Appointment inquiry | Open the appointment page, complete the inquiry form, and submit it once. | `generate_lead` | `lead_type=appointment`, `service_type`, `form_id`, landing page |
+| Phone-call click | Open the site on a mobile device or mobile preview and click the phone number. | `click_to_call` | `phone_link`, `page_location`, `link_text`, device category |
+| CTA button click | Click the primary “Learn More,” “Contact Us,” or equivalent CTA button. | `select_content` or approved CTA event | `cta_text`, `cta_location`, `destination_url`, page location |
+| Google Ads landing-page visit | Click a test advertisement and arrive on the designated landing page. | `page_view` and engagement metrics | `page_location`, source, medium, campaign, landing page, device |
+| Search-intent conversion | Use a test keyword classified as transactional/local, click the advertisement, and complete a conversion. | `page_view`, engagement event, and `generate_lead` | `keyword_intent`, keyword, campaign, conversion type, source, medium |
+| Duplicate-submission check | Submit the same form, refresh the confirmation page, and return using the browser back button. | One intended `generate_lead` event | Verify that refreshes and back-button actions do not create duplicate conversions |
+| Consent check | Visit the site with analytics consent accepted and declined, then perform a test interaction. | Events should follow the team’s consent policy. | Confirm whether events are blocked or limited when consent is declined |
+
+## Test Results and Issues
+
+<!-- Complete this section after testing. -->
+
+| Date | Tester | Test Case | Result | Issue Found | Resolution |
+|------------|------------|------------|------------|------------|------------|
+| <!-- Add date --> | <!-- Add name --> | <!-- Add test case --> | <!-- Pass/Fail --> | <!-- Describe issue --> | <!-- Describe resolution --> |
+| <!-- Add date --> | <!-- Add name --> | <!-- Add test case --> | <!-- Pass/Fail --> | <!-- Describe issue --> | <!-- Describe resolution --> |
+
+# Appendix: Project Links
+
+- [GitHub Repository](PASTE-GITHUB-REPOSITORY-LINK-HERE)
+- [GitHub Pages](PASTE-GITHUB-PAGES-LINK-HERE)
