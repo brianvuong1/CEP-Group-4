@@ -160,68 +160,112 @@ The KPI tree connects acquisition, engagement, conversion-funnel activity, and l
 | <!-- Add KPI or question --> | <!-- Add event --> | <!-- Describe the trigger --> | <!-- List parameters --> | <!-- Add edge cases --> |
 | <!-- Add KPI or question --> | <!-- Add event --> | <!-- Describe the trigger --> | <!-- List parameters --> | <!-- Add edge cases --> |
 
+
 # Deliverable 4: Validation Checklist and Test Cases
 
 ## Validation Checklist
 
-### GTM and Collection
+The purpose of this validation plan is to ensure that Google Analytics 4 (GA4) accurately collects website traffic, engagement, and lead-generation data for Wellness Ranch Equine-Assisted Therapy. Validation focuses on confirming that events are recorded correctly, required parameters are available, and data can support the team's marketing KPIs.
 
-- Confirm the correct Google Tag Manager container is installed.
-- Use GTM Preview mode to verify that triggers fire only under the intended conditions.
-- Check that each event fires once per intended user action.
-- Confirm that required parameters are populated.
-- Test forms, phone links, CTA buttons, and landing pages.
-- Check for duplicate tags or duplicate conversion events.
-- Confirm that consent settings do not unintentionally block required tracking.
+### Google Tag / GTM and Collection
+
+- [x] Confirm that the Google tag is connected to the Wellness Ranch website.
+- [x] Use Google Tag Assistant to verify that the website is sending data to GA4.
+- [x] Verify that `page_view` events are collected.
+- [x] Confirm that GA4 receives form-start and lead-generation events.
+- [ ] If GTM is used, verify individual tags and triggers in Preview mode.
+- [ ] Test for duplicate tags and conversion events.
+- [ ] Verify that custom CTA and phone-click events fire correctly.
+- [ ] Confirm that tracking follows the website's consent settings.
 
 ### GA4 DebugView and Realtime
 
-- Verify that events appear in GA4 DebugView.
-- Confirm that event names are spelled consistently.
-- Confirm that required parameters contain the expected values.
-- Verify that page location, page title, source, medium, and campaign data are populated.
-- Confirm that conversion events are marked correctly in GA4.
-- Compare event counts in DebugView and Realtime.
+- [x] Verify that website activity appears in GA4 Realtime.
+- [x] Confirm that `page_view`, `session_start`, `first_visit`, `user_engagement`, `scroll`, and `click` events are received.
+- [x] Confirm that `form_start` and `generate_lead` appear in Realtime.
+- [x] Enable debugging through Google Tag Assistant.
+- [x] Verify that `page_view` events appear in GA4 DebugView.
+- [x] Confirm that `page_location`, `page_title`, and `page_referrer` contain appropriate values.
+- [ ] Verify that `generate_lead` includes the required form and lead parameters.
+- [ ] Confirm that lead-generation events are configured as GA4 key events.
 
 ### Reporting Sanity Checks
 
-- Confirm that source, medium, campaign, and keyword dimensions populate correctly.
-- Check that landing pages are recorded consistently.
-- Confirm that device and geography dimensions are available.
-- Check that conversion rates are calculated from the correct numerator and denominator.
-- Review unusually high or low values for possible tracking errors.
+- [x] Verify that GA4 identifies website pages, including the homepage and Contact page.
+- [x] Confirm that page titles and URLs match the pages visited during testing.
+- [ ] Verify that source, medium, campaign, and landing-page dimensions are recorded accurately.
+- [ ] Confirm that device and geographic dimensions populate correctly.
+- [ ] Verify that conversion rates use the correct numerator and denominator.
+- [ ] Compare successful Wix contact form submissions with GA4 lead events.
+- [ ] Investigate unusual event counts or possible duplicate conversions.
 
 ### BigQuery Export
 
-- Confirm that events appear in the `events_*` tables.
-- Verify that event parameters can be extracted correctly.
-- Check that timestamps and user/session identifiers are present.
-- Compare BigQuery event counts with GA4 reporting.
-- Document any known export delays or missing parameters.
+The following checks will be completed if BigQuery export is enabled.
 
-## Test Cases
+- [ ] Confirm that GA4 data is exported to BigQuery.
+- [ ] Verify that events appear in the `events_*` tables.
+- [ ] Confirm that required event parameters can be extracted correctly.
+- [ ] Check event timestamps and user/session identifiers.
+- [ ] Compare BigQuery event counts with GA4 reporting.
+- [ ] Document export delays, missing parameters, or discrepancies.
+
+## Validation Test Cases
+
+The following test cases outline how the team will verify website tracking accuracy and completeness.
 
 | Test Case | Steps to Perform | Expected Events | Expected Parameters / Dimensions |
-|------------------|------------------|------------------|------------------|
-| Contact form submission | Open the contact page, complete all required fields, submit the form, and confirm the success message. | `generate_lead` | `form_id`, `form_name`, `lead_type`, `page_location`, source, medium, campaign |
-| Appointment inquiry | Open the appointment page, complete the inquiry form, and submit it once. | `generate_lead` | `lead_type=appointment`, `service_type`, `form_id`, landing page |
-| Phone-call click | Open the site on a mobile device or mobile preview and click the phone number. | `click_to_call` | `phone_link`, `page_location`, `link_text`, device category |
-| CTA button click | Click the primary “Learn More,” “Contact Us,” or equivalent CTA button. | `select_content` or approved CTA event | `cta_text`, `cta_location`, `destination_url`, page location |
-| Google Ads landing-page visit | Click a test advertisement and arrive on the designated landing page. | `page_view` and engagement metrics | `page_location`, source, medium, campaign, landing page, device |
-| Search-intent conversion | Use a test keyword classified as transactional/local, click the advertisement, and complete a conversion. | `page_view`, engagement event, and `generate_lead` | `keyword_intent`, keyword, campaign, conversion type, source, medium |
-| Duplicate-submission check | Submit the same form, refresh the confirmation page, and return using the browser back button. | One intended `generate_lead` event | Verify that refreshes and back-button actions do not create duplicate conversions |
-| Consent check | Visit the site with analytics consent accepted and declined, then perform a test interaction. | Events should follow the team’s consent policy. | Confirm whether events are blocked or limited when consent is declined |
+|---|---|---|---|
+| TC1: Homepage Visit | Open the Wellness Ranch homepage and verify the visit in GA4 Realtime and DebugView. | `page_view` | `page_location`, `page_title`, `page_referrer`, device category |
+| TC2: Contact Page Visit | Navigate from the homepage to the Contact page and inspect the page-view event in DebugView. | `page_view` | `page_location`, `page_title`, `page_referrer`, `page_path` |
+| TC3: Contact Form Submission | Complete and submit a test inquiry through the Contact page. Verify that the submission is accepted. | `form_start`, `generate_lead` | `form_id`, `form_name`, `lead_type`, `page_location` |
+| TC4: Appointment Inquiry | Complete an appointment inquiry form, if available, and verify the event. | `generate_lead` | `lead_type=appointment`, `service_type`, `form_id`, `page_location` |
+| TC5: Phone-Call Click | Open the website on a mobile device and click a phone number or call button. | `click_to_call` | `phone_link`, `page_location`, `link_text`, device category |
+| TC6: CTA Button Click | Click a primary CTA button, such as Contact Us or Learn More. | `select_content` or approved custom CTA event | `cta_text`, `cta_location`, `destination_url`, `page_location` |
+| TC7: Campaign Landing Page | Visit a landing page using a URL containing test UTM parameters and inspect acquisition dimensions. | `page_view`, `session_start` for a new session | Session source, session medium, session campaign, landing page |
+| TC8: Duplicate Submission | Submit one valid test inquiry, then refresh the confirmation page and inspect GA4 events. | One intended `generate_lead` event | `form_id`, `form_name`, `lead_type`; no duplicate conversion |
+
+The event names and parameters are based on the team's Event/Parameter Map in Deliverable 3. Any custom parameters that are not currently implemented will require additional configuration.
 
 ## Test Results and Issues
 
-<!-- Complete this section after testing. -->
+### Validation Results — October 11, 2026
 
-| Date | Tester | Test Case | Result | Issue Found | Resolution |
-|------------|------------|------------|------------|------------|------------|
-| <!-- Add date --> | <!-- Add name --> | <!-- Add test case --> | <!-- Pass/Fail --> | <!-- Describe issue --> | <!-- Describe resolution --> |
-| <!-- Add date --> | <!-- Add name --> | <!-- Add test case --> | <!-- Pass/Fail --> | <!-- Describe issue --> | <!-- Describe resolution --> |
+Initial validation was conducted using the live Wellness Ranch website, Google Tag Assistant, GA4 Realtime, and GA4 DebugView.
+
+| Date | Tester | Test Case | Result | Findings / Resolution |
+|---|---|---|---|---|
+| Oct. 11, 2026 | Kevin Bachez | Google tag connection | Pass | Verified that Wellness Ranch was listed in Google Tag Assistant and that GA4 was receiving website activity. |
+| Oct. 11, 2026 | Kevin Bachez | GA4 Realtime collection | Pass | Confirmed that Realtime recorded active users, page views, and website engagement events. |
+| Oct. 11, 2026 | Kevin Bachez | Homepage and website page tracking | Pass | GA4 Realtime recorded activity across the homepage, Volunteer page, Community Events page, and other website pages. |
+| Oct. 11, 2026 | Kevin Bachez | Contact page tracking | Pass | Verified that the Contact page appeared in Realtime and DebugView. |
+| Oct. 11, 2026 | Kevin Bachez | Page-view parameter validation | Pass | Confirmed that `page_location`, `page_title`, and `page_referrer` identified the correct website pages and navigation path. |
+| Oct. 11, 2026 | Kevin Bachez | Contact form event collection | Partial Pass | After a test form submission, GA4 Realtime displayed one `form_start` and one `generate_lead` event. Form parameters and Wix submission records still require verification. |
+| Oct. 11, 2026 | Kevin Bachez | DebugView connectivity | Pass | Enabled debugging using Google Tag Assistant and confirmed that `page_view` events appeared in the DebugView timeline. |
+| Pending | Team | Custom CTA and phone-click tracking | Not Tested | Verify that custom events fire with the required parameters. |
+| Pending | Team | Campaign attribution | Not Tested | Test UTM-tagged visits and verify source, medium, and campaign dimensions. |
+| Pending | Team | BigQuery export | Not Tested | Confirm whether export is enabled before validating event tables. |
+
+### Initial Findings
+
+Initial testing confirmed that the Google tag is connected to the Wellness Ranch website and that GA4 receives website activity.
+
+GA4 Realtime recorded page views, sessions, user engagement, scrolling, and click events. During contact form testing, GA4 also recorded one `form_start` event and one `generate_lead` event.
+
+Google Tag Assistant was used to enable DebugView, where the team verified page-view events and inspected the `page_location`, `page_title`, and `page_referrer` parameters. These values correctly identified the Wellness Ranch Contact page.
+
+Although basic website and lead-event collection were observed, additional testing is required to verify custom lead parameters, duplicate prevention, campaign attribution, and BigQuery export.
+
+### Validation Conclusion
+
+The initial validation results indicate that Wellness Ranch's GA4 implementation is successfully collecting website traffic, engagement, and lead-generation events.
+
+The remaining validation activities will focus on ensuring that conversion events include the required parameters, that submissions are accurately represented, and that marketing performance can be analyzed by channel, campaign, landing page, and device.
+
+These additional checks will improve data reliability for the team's future BigQuery analysis, Looker Studio dashboards, and marketing recommendations.
+
 
 # Appendix: Project Links
 
-- [GitHub Repository](PASTE-GITHUB-REPOSITORY-LINK-HERE)
-- [GitHub Pages](PASTE-GITHUB-PAGES-LINK-HERE)
+-   [GitHub Repository](PASTE-GITHUB-REPOSITORY-LINK-HERE)
+-   [GitHub Pages](PASTE-GITHUB-PAGES-LINK-HERE)
