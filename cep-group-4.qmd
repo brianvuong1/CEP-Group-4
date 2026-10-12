@@ -566,23 +566,136 @@ The current analytics foundation includes GA4 and Google Search Console, but the
 
 #### Summary Table of Comparison
 
+
 ## Customer Analysis
 
 ### Segments and Their Brief Justification
 
-#### Segment Name A
+Wellness Ranch Equine Assisted Therapy serves multiple audiences with different needs, motivations, and levels of involvement. Understanding these audiences is important for developing effective marketing strategies, improving website communication, and identifying meaningful engagement and conversion opportunities.
 
-#### Segment Name B
+Customer segmentation involves dividing a broader market into groups with similar characteristics, needs, or behaviors. For Wellness Ranch, segmentation should consider geographic location, service needs, behavioral intentions, and the type of relationship each audience has with the organization.
 
-#### Segment Name C
+The Customer Decision Journey framework emphasizes that individuals interact with organizations through different touchpoints before making decisions (Lemon and Verhoef 2016). Similarly, multichannel research demonstrates the importance of understanding how audiences interact with organizations across different communication channels (Verhoef, Kannan, and Inman 2015).
 
-#### Segment Name D
+Based on the organization's current services and business objectives, four preliminary audience segments have been identified: prospective adult clients, parents and families, donors and community supporters, and professional referral and partnership audiences.
 
-#### **Summary Table of Segments**
+These segments provide a starting point for understanding Wellness Ranch's market. However, further client consultation and website analytics will be necessary to confirm their relative importance, size, and behavioral characteristics.
+
+#### Segment A: Prospective Adult Clients
+
+The first segment consists of adults seeking mental-health support, trauma-informed care, or equine-assisted therapy. These individuals may be looking for alternative or supplemental therapeutic experiences that differ from traditional office-based counseling.
+
+Geographically, the primary focus is Rancho Cucamonga and the broader Inland Empire. Prospective clients may search online for local mental-health services, equine-assisted therapy, affordable counseling, or information about trauma-informed treatment.
+
+Important decision factors may include professional qualifications, service availability, affordability, insurance acceptance, accessibility, and the ability to understand the treatment process before contacting the organization.
+
+Digital marketing efforts targeting this segment should emphasize clear service descriptions, professional credibility, transparent information about eligibility and cost, and accessible contact options.
+
+Potential website actions include viewing service pages, reviewing program information, clicking contact information, and submitting appointment inquiries.
+
+#### Segment B: Parents and Families
+
+The second segment includes parents, guardians, and families researching mental-health and equine-assisted therapy services for children or other family members.
+
+Unlike adults seeking services for themselves, parents and guardians may be responsible for evaluating treatment options, comparing providers, and determining whether a program is appropriate for a family member.
+
+Their decision-making process may involve concerns about safety, professional qualifications, age eligibility, program structure, scheduling, and affordability.
+
+Because Wellness Ranch provides services for children and adults, this segment represents an important audience for communicating program availability and helping families make informed decisions.
+
+Website content should clearly explain how equine-assisted therapy works, which services are offered, who may be eligible, and how families can obtain additional information.
+
+Meaningful digital interactions may include visiting program pages, reviewing frequently asked questions, clicking contact information, or completing an inquiry form.
+
+Marketing communications should remain sensitive to privacy and avoid unsupported claims about therapeutic outcomes.
+
+#### Segment C: Donors and Community Supporters
+
+The third segment consists of individuals and organizations interested in supporting Wellness Ranch through donations, volunteering, community involvement, or other forms of assistance.
+
+This segment differs from prospective therapy clients because its primary motivation may be supporting the organization's mission rather than receiving services.
+
+Potential supporters may be interested in expanding access to mental-health services, supporting nonprofit organizations, contributing to community wellness, or helping individuals who face financial barriers to care.
+
+Important decision factors include organizational credibility, transparency, mission alignment, opportunities for involvement, and evidence of community impact.
+
+Digital communications should explain Wellness Ranch's mission, services, community activities, and the ways donations can support its work. Any reported impact should be based on information verified and approved by the client.
+
+Donations have been identified as a primary website outcome for the organization. Therefore, this segment is especially relevant to the project's conversion measurement and digital-marketing objectives.
+
+Relevant website actions include viewing donation information, clicking donation buttons, completing donations, visiting volunteer pages, and submitting participation inquiries.
+
+The organization should distinguish completed donations from preliminary interactions to avoid overstating fundraising performance.
+
+#### Segment D: Professional Referral and Partnership Audiences
+
+The fourth segment includes mental-health professionals, counselors, schools, community organizations, potential interns, and other professional partners who may refer individuals to Wellness Ranch or collaborate with its programs.
+
+This segment is important because nonprofit mental-health organizations may develop awareness and community relationships through professional networks rather than relying exclusively on direct consumer advertising.
+
+Potential referral partners may evaluate service qualifications, available programs, eligibility requirements, organizational credibility, and the suitability of services for the individuals they support.
+
+Interns and educational partners may also seek information about training opportunities, practical experience, and professional development.
+
+Digital communications should provide accurate organizational information, clear explanations of available services, professional qualifications, and appropriate contact pathways.
+
+Meaningful website actions may include visiting service information pages, reviewing internship opportunities, accessing organizational information, and submitting partnership or referral inquiries.
+
+Although this audience may not generate immediate donations or direct service requests, it can support long-term organizational awareness and community relationships.
+
+#### Summary Table of Segments
+
+| Customer Segment | Primary Needs or Motivations | Important Decision Factors | Potential Website Actions |
+|---|---|---|---|
+| Prospective Adult Clients | Mental-health support and equine-assisted therapy | Service relevance, cost, qualifications, accessibility | Service-page visits, contact submissions, appointment inquiries |
+| Parents and Families | Appropriate mental-health services for family members | Safety, eligibility, qualifications, affordability | Program-page visits, information requests, contact submissions |
+| Donors and Community Supporters | Support the organization's mission and community impact | Trust, transparency, mission alignment, impact | Donation-page visits, completed donations, volunteer inquiries |
+| Professional Referral and Partnership Audiences | Referrals, collaboration, education, and training | Credibility, service information, qualifications, partnership opportunities | Referral inquiries, partnership contacts, internship interest |
 
 ### Segment Analysis
 
-#### **Summary Table of Segment Evaluation**
+The four identified segments differ in their motivations, information needs, decision-making processes, and expected website behaviors.
+
+Prospective adult clients and parents or families are primarily service-oriented audiences. These visitors may seek information about treatment options, program availability, cost, and how to contact the organization. Their customer journeys may begin with online searches, recommendations, or referrals and progress toward a direct inquiry.
+
+Donors and community supporters represent a mission-oriented audience. Their interactions may focus on understanding the organization's purpose, evaluating its credibility, and identifying opportunities to provide financial or community support. Because donations are currently a priority website outcome, clear fundraising information and reliable donation tracking are particularly important.
+
+Professional referral and partnership audiences represent a relationship-oriented segment. Their engagement may involve evaluating organizational qualifications, understanding available services, and identifying opportunities for collaboration. This segment may require more detailed informational content than audiences primarily interested in making an immediate donation.
+
+From a digital-marketing perspective, these differences demonstrate why a single website conversion metric would not adequately represent the organization's performance.
+
+For example, a completed donation and a contact-form submission both represent meaningful actions, but they support different organizational objectives. Similarly, a professional reviewing internship information may demonstrate valuable engagement without completing the same actions as a prospective therapy client.
+
+GA4 can support this analysis by measuring relevant website interactions, traffic acquisition channels, and key events. However, website analytics should not be used to assume that a visitor belongs to a particular customer segment based only on the pages they view.
+
+Instead, the team should evaluate segment-related content and actions while using client-approved information and aggregated data to improve its understanding of audience behavior.
+
+The following table provides a preliminary evaluation of the four segments based on their relationship to Wellness Ranch's business objectives.
+
+#### Summary Table of Segment Evaluation
+
+| Segment | Relationship to Business Objectives | Digital Marketing Priority | Relevant KPIs |
+|---|---|---|---|
+| Prospective Adult Clients | Supports service awareness and client inquiries | High | Service-page engagement, contact submissions, appointment inquiries |
+| Parents and Families | Supports awareness and access to appropriate services | High | Program-page engagement, information requests, contact submissions |
+| Donors and Community Supporters | Supports fundraising and community participation | High | Donation-page engagement, completed donations, volunteer inquiries |
+| Professional Referral and Partnership Audiences | Supports professional relationships, referrals, and organizational capacity | Moderate | Referral inquiries, partnership contacts, internship interest |
+
+The preliminary priority levels reflect the connection between each segment and the organization's currently identified objectives. They should not be interpreted as statistically validated rankings.
+
+Donors and community supporters warrant particular attention because donations have been identified as a primary website outcome. Prospective clients and families also represent important audiences because they are directly connected to the organization's therapeutic services and accessibility mission.
+
+Professional referral and partnership audiences remain relevant, although their contribution may be measured through longer-term relationships and inquiries rather than immediate website conversions.
+
+Additional information is needed to validate these segment priorities. The team should consult Wellness Ranch leadership to clarify its intended audiences, current service demand, referral patterns, fundraising priorities, and available organizational resources.
+
+Google Analytics 4 and Google Search Console can provide supplementary information about traffic sources, landing-page engagement, organic search demand, and measurable website actions. However, these platforms cannot independently establish customer demographics, motivations, or actual service eligibility.
+
+The analysis should also consider limitations related to small website traffic volumes, incomplete conversion tracking, and the sensitivity of mental-health information. Individual health-related information should not be collected or transmitted through GA4.
+
+Overall, the proposed customer segmentation provides a practical foundation for improving Wellness Ranch's website communication and digital-marketing strategy. By recognizing that prospective clients, families, donors, and professional partners have different needs, the organization can develop more relevant content, establish clearer calls to action, and evaluate website performance using appropriate measures.
+
+This analysis also supports AO2 by identifying the types of website interactions that should be included in the organization's GA4 measurement framework. Connecting customer segments to meaningful events and KPIs will help Wellness Ranch evaluate how its digital channels contribute to service awareness, community engagement, and fundraising objectives.
 
 ## SWOT Analysis
 
