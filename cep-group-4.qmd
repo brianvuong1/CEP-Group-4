@@ -174,7 +174,7 @@ AO4 directly supports PO3 by optimizing campaigns after launch, while AO3 covers
 The project objectives describe what the team intends to accomplish for Wellness Ranch, while the analytics objectives define the analysis and evidence needed to make those decisions. The relationship between the POs and AOs is summarized below.
 
 | Project Objective | Directly Supporting AO | Additional Supporting AOs | Relationship |
-|---|---|---|---|
+|------------------|------------------|------------------|------------------|
 | PO1. Implement priority website and SEO improvements | AO1 | AO2, AO3, and AO4 | AO1 identifies the SEO and website factors that should be prioritized. AO2 identifies conversion and measurement needs, AO3 identifies website and landing-page requirements for Google Ad Grants campaigns, and AO4 measures the effects of the changes. |
 | PO2. Strengthen analytics and performance measurement | AO2 | AO3 and AO4 | AO2 establishes KPIs, events, conversions, and baseline measures. AO3 evaluates whether the measurement infrastructure can support Google Ads and uses campaign metrics to guide optimization, while AO4 applies the measures to evaluate results. |
 | PO3. Obtain and activate Google Ad Grants | AO3 | AO1 and AO2 | AO3 evaluates eligibility and readiness, supports the application and campaign launch, and analyzes campaign data to guide compliant management and optimization. AO1 supports website and landing-page readiness, while AO2 supports conversion measurement. |
@@ -199,7 +199,7 @@ Creating another AO solely for PO5 would duplicate work already performed throug
 Each member of the four-person project team has at least one analytics objective assigned:
 
 | Team Member | Assigned Analytics Objective | Primary Area of Responsibility |
-|---|---|---|
+|------------------------|------------------------|------------------------|
 | Alexa | AO1 | SEO and website-priority analysis |
 | Kevin | AO2 | GA4, Search Console, conversions, and baseline measurement |
 | Brian | AO3 | Google Ad Grants readiness, application, campaign launch, and performance analysis |
@@ -213,11 +213,11 @@ All four analytics objectives support at least one project objective, and none r
 
 The relationship among the objectives follows a logical sequence:
 
-1. AO1 identifies which website and SEO issues should be addressed.
-2. AO2 establishes how website activity and meaningful outcomes will be measured.
-3. AO3 evaluates Google Ad Grants readiness, supports the application and campaign launch, and analyzes campaign data to guide optimization.
-4. AO4 evaluates the results of implemented changes.
-5. Findings from all four AOs are integrated to accomplish PO5 and produce the final strategic roadmap.
+1.  AO1 identifies which website and SEO issues should be addressed.
+2.  AO2 establishes how website activity and meaningful outcomes will be measured.
+3.  AO3 evaluates Google Ad Grants readiness, supports the application and campaign launch, and analyzes campaign data to guide optimization.
+4.  AO4 evaluates the results of implemented changes.
+5.  Findings from all four AOs are integrated to accomplish PO5 and produce the final strategic roadmap.
 
 This alignment ensures that the team’s analytical work is connected to the client’s needs and that each AO contributes to a defined project outcome.
 
@@ -321,59 +321,126 @@ Together, these objectives support the organization’s larger mission by helpin
 
 ### Marketing Team and Expertise
 
+Wellness Ranch’s marketing program is currently managed through a small, relationship-oriented nonprofit team rather than a dedicated marketing department. The organization’s primary expertise is in equine-assisted therapy, trauma-informed care, wellness education, and community outreach. Marketing responsibilities therefore appear to be distributed among leadership, service providers, volunteers, students, and community partners as capacity allows. Formal ownership of SEO, analytics, paid search, content planning, and performance reporting has not yet been documented.
+
+This structure is an important constraint for the project. Recommendations must be practical for a small organization and should not assume that a full-time digital marketer, analyst, or advertising specialist will be available. The team will confirm the current approval process, available staff time, existing marketing skills, and post-project account ownership through client discussion. The current assessment is that Wellness Ranch has strong subject-matter and community expertise but needs clearer digital-marketing roles, procedures, and training.
+
 ### Current Target Market
+
+Wellness Ranch serves a geographically concentrated but behaviorally diverse market. The primary audience is individuals and families in Rancho Cucamonga and the broader Inland Empire who are seeking mental-health support, trauma-informed care, equine-assisted therapy, wellness education, or community-based services. The audience includes children, adults, couples, and groups, so needs and decision criteria vary by life stage and service situation [@wellnessranchservices2026].
+
+The client’s target market also includes indirect decision-makers and support audiences. Parents or guardians may research services for children, partners or family members may help evaluate care options, and referral sources may seek information about the organization’s programs and qualifications. Donors, volunteers, interns, and community partners represent additional audiences that support the organization even when they are not therapy clients.
+
+For digital-marketing purposes, the most important preliminary segments are prospective clients and families; referral and professional audiences; and donors, volunteers, interns, and community partners. Each segment may use different search terms, respond to different messages, and complete different website actions. AO2 will therefore distinguish traffic and conversions by source and action where the available data permit. These segments should be validated with the client.
 
 ### Current Positioning and Perceptual Map
 
-*Current Perceptual Map*
+Wellness Ranch is positioned around the intersection of mental-health care, experiential equine-assisted therapy, and community wellness. Its differentiator is the combination of therapeutic services, structured interaction with horses, trauma-informed care, and a mission focused on healing, empowerment, and learning [@wellnessranchabout2026]. The working position is **community-based, experiential mental-health support for people seeking an alternative or supplement to conventional office-based care**.
+
+This positioning should be communicated carefully. Website and advertising language should avoid implying that equine-assisted therapy is appropriate for everyone or guarantees a particular outcome. Clear explanations of services, qualifications, eligibility, cost, and next steps will support trust.
+
+The following conceptual map is a working hypothesis, not a completed competitor study.
+
+|   | Lower emphasis on experiential/equine-assisted care | Higher emphasis on experiential/equine-assisted care |
+|------------------------|------------------------|------------------------|
+| **Higher community accessibility** | Community clinics, school-based programs, and general nonprofit mental-health resources | **Wellness Ranch: equine-assisted therapy combined with community outreach, education, and access-oriented services** |
+| **Lower community accessibility** | Private specialty practices and conventional providers with narrower access conditions | Specialized equine or animal-assisted programs with limited service breadth or geographic reach |
+
+The team should validate this map through client input and a review of comparable Inland Empire providers. A validated map can guide website language, local SEO themes, and campaign landing pages.
 
 ### Current Product/Services
 
+Wellness Ranch’s current service offering includes equine-assisted psychotherapy and related mental-wellness activities for individuals, couples, groups, children, and adults. The organization also provides wellness education, community outreach, internships, and hands-on learning opportunities for emerging mental-health professionals [@wellnessranchservices2026]. Insurance and sliding-scale options may support access for eligible clients, but current details and qualification requirements should be confirmed before they are used in marketing copy.
+
+The service portfolio can be organized into core therapeutic services, education and community services, and mission-support services such as donations, volunteering, internships, and partnerships. Each group requires a different call to action. A prospective client may submit an inquiry, while a donor may need a donation pathway and an explanation of impact. Treating all actions as one generic conversion would make performance difficult to interpret.
+
 ### Current Pricing
+
+Pricing is part of the organization’s access proposition, but complete current pricing information was not available in the project materials. The website indicates that insurance and sliding-scale services may be available [@wellnessranchservices2026]. The team should confirm which services accept insurance, how sliding-scale eligibility is determined, whether fees vary by service or audience, and how prospective clients should request pricing information.
+
+Until these details are confirmed, the project should avoid publishing unsupported prices or describing services as free. Transparent information about cost, insurance, financial assistance, and next steps can reduce uncertainty and improve the quality of inquiries.
 
 ### Current Marketing Channels
 
+The current channel mix appears to include the organization’s website, organic search, local-search listings, social media, referrals and community relationships, direct communication or email, and potential Google Ad Grants search advertising. The website is the central owned channel because it provides information about services, mission, donations, and contact options [@wellnessranch2026]. The team should distinguish channels that are confirmed from those that are planned or recommended.
+
 ### Current Integrated Marketing Communications
+
+Wellness Ranch’s communications should present one consistent story: the organization provides mission-driven, experiential mental-health and wellness services and offers clear ways to seek help, learn more, or support the mission. The website should be the source of truth for service descriptions, qualifications, access information, contact instructions, and donation or participation pathways.
+
+The current integration gap is less about a lack of possible channels than about coordination and measurement. Service language, location references, calls to action, privacy-sensitive claims, and impact statements should be consistent across the website, local listings, social posts, email, referrals, and future advertisements. The team should establish a small message library and approval process.
 
 ## Description of the Company’s Current Digital Marketing Practices
 
 ### Brand Persona
 
+Wellness Ranch’s working brand persona is compassionate, trustworthy, welcoming, trauma-informed, community-centered, and hopeful. The voice should be clear and supportive rather than sensational. Because the organization serves people who may be experiencing distress, messages should emphasize dignity, choice, confidentiality, qualifications, and practical next steps. Claims about outcomes, accessibility, or client impact should be supported by client-approved evidence.
+
 ### Digital Marketing Channels/Medium
 
 #### Website and Landing Page
 
+The website is the primary digital hub and should guide different audiences to distinct next steps: learn about services, inquire about care, donate, volunteer, pursue an internship, or contact the organization. Priority pages include the homepage, core service pages, about page, donation page, and contact or inquiry pathway. AO1 will evaluate technical and on-page issues, while AO2 will determine whether important interactions are measured.
+
 #### Keyword Research and SEO
+
+The initial SEO work focuses on technical health, page content, local intent, internal linking, metadata, and search queries relevant to equine-assisted therapy, trauma-informed services, mental wellness, donations, and the Inland Empire. Audit findings will be combined with Search Console data and client knowledge rather than treated as proof that every flagged issue should be fixed.
 
 #### Email Marketing
 
+Email marketing has not yet been documented as a formal program. If the organization uses email, the team should identify audience lists, consent practices, message frequency, ownership, and measurable actions. Email should be treated as a relationship and retention channel, not only an acquisition channel.
+
 #### Social Media Posting
+
+Social media may support awareness, education, community participation, and donor or volunteer relationships. The team should confirm which platforms are active, who posts, how often content is published, and whether links are tagged for measurement. Content should protect client privacy and avoid using sensitive stories or images without appropriate consent.
 
 #### Paid Search Advertising
 
+Wellness Ranch is not currently using an established Google Ad Grants campaign according to the project materials. AO3 will evaluate eligibility and readiness, and AO4 will analyze campaign performance if an account is approved and launched. Paid search requires verified conversions, relevant landing pages, ongoing optimization, and a clear owner.
+
 #### Social Media Advertising
 
+No ongoing social-media advertising program has been confirmed. If considered later, paid social should be evaluated against the organization’s audience, budget, privacy obligations, creative capacity, and ability to measure meaningful actions.
+
 #### Display advertising
+
+No ongoing display advertising program has been confirmed. Display would require a defined awareness or remarketing objective, an appropriate consent process, and sufficient measurement data.
 
 ### Other digital marketing channels & tactics
 
 #### Conversion Rate Optimization (CRO)
 
+The immediate CRO opportunity is to reduce uncertainty and friction on high-value pages. Priority areas include page clarity, service explanations, trust signals, contact and donation calls to action, mobile usability, form completion, and the number of steps required to act. Changes should be prioritized using analytics and client or user feedback.
+
 #### Mobile Application
+
+No mobile application is currently identified, and an application is not necessary for the project’s immediate goals. Mobile website usability should be prioritized because many search and social visits may occur on phones.
 
 #### Affiliate Marketing
 
+Affiliate marketing is not currently identified as a suitable core channel. Referral relationships with counselors, schools, healthcare providers, and community organizations are more consistent with the organization’s mission and should be evaluated as partnerships.
+
 #### Influencer Campaigns
+
+No influencer program has been confirmed. Any future partnership would require careful review of audience fit, privacy, credibility, cost, disclosures, and the sensitivity of mental-health communications.
 
 ### Allocation of Resources to Customer-Influence Efforts
 
 #### Demand Generation
 
+Demand generation should build awareness and understanding through educational content, community outreach, local visibility, referrals, and mission-centered storytelling.
+
 #### Demand Harvesting
+
+Demand harvesting should capture existing intent through search visibility, local listings, clear service pages, contact pathways, and—if approved—Google Ad Grants campaigns. This is the most direct connection to AO1 through AO4.
 
 #### Loyalty Building
 
+Loyalty building includes respectful follow-up, donor stewardship, volunteer and internship relationships, community partnerships, and useful communications for people who have already engaged with the organization. Recommendations should be limited to activities Wellness Ranch can maintain with available staff time and consent-based contact practices.
+
 ### Analytics Infrastructure
+
+The current analytics foundation includes GA4 and Google Search Console, but the project has not yet verified event definitions, conversion settings, data quality, historical baselines, attribution, or account access. AO2 will audit the implementation and define a measurement plan covering traffic acquisition, engagement, and meaningful actions such as contact submissions, phone clicks, appointment inquiries, donations, and program-interest actions. The team should document data limitations and avoid treating page views or clicks as outcomes by themselves.
 
 ## Competitive Analysis
 
@@ -515,6 +582,18 @@ There are also limitations to consider when applying these models. Many commonly
 
 Based on these established SEO approaches, the analysis for Wellness Ranch Therapy will focus on three main areas: on-page and content quality, technical website health, and off-page and local search presence. The resulting prioritized page list will guide the website and SEO improvements implemented during Fall 2026. This work connects directly to the rest of the project. Organic search is one of the traffic sources that AO2 will evaluate in GA4, so improvements in search visibility can be followed through to engagement and conversion behavior on the website. The baseline established here will also allow AO4 to compare performance before and after implementation in Spring 2027.
 
+#### Adequateness of Gathered Information
+
+The gathered information is adequate for selecting the SEO framework and defining the measures, but it is not yet sufficient for a final prioritization of pages. The team has access to the organization’s website context, the SEO Fix Tracker, backlink-audit information, and the planned use of Google Search Console. These sources can identify technical issues, search visibility patterns, and potential authority gaps. However, the team still needs verified exports, a confirmed list of priority services and audiences, local-search information, and client input about which pages matter most to the organization. Audit tools may overstate low-priority issues, Search Console may contain limited data for a small site, and backlink metrics do not by themselves establish relevance or trust.
+
+#### Need for Additional Analysis
+
+Additional analysis is needed to connect audit findings to business importance. The team should combine page-level technical issues with organic impressions, clicks, queries, page purpose, conversion potential, and implementation effort. Local competitors and Google Business Profile information should be reviewed where access is available. A page-prioritization matrix can classify issues by severity, organizational importance, evidence of search demand, and feasibility. After implementation, Search Console and GA4 should be revisited after an appropriate observation period because SEO changes may take weeks or months to affect performance.
+
+#### Assessment and Affirmation of Analytics Objectives
+
+AO1 is affirmed with a clearer evidence boundary. The objective is not to prove that every audit recommendation causes a ranking improvement; it is to identify and prioritize the SEO and website conditions most relevant to Wellness Ranch’s visibility and meaningful website actions. The analysis will use descriptive comparisons of technical issues, page characteristics, queries, impressions, clicks, click-through rate, average position, referring domains, and local-search evidence. A weighted prioritization matrix will translate those findings into an actionable implementation list. This approach is appropriate because it combines diagnostic audit information with observed search performance and remains feasible for a small nonprofit website.
+
 ### AO2. Conversion & Engagement Measurement (Kevin)
 
 Establish GA4 events, conversions, and KPIs to determine which user actions and traffic sources represent meaningful engagement for Wellness Ranch Therapy.
@@ -543,51 +622,61 @@ Together, these measures can help establish baseline KPIs for future evaluation.
 
 #### Adequateness of Gathered Information (a paragraph per AO)
 
+The gathered information is sufficient to define AO2’s measurement framework but not sufficient to declare that the current analytics implementation is accurate. The project has identified GA4 and Google Search Console as the main sources and has identified likely outcomes such as donations, contact submissions, phone clicks, appointment inquiries, and program interest. However, event names, conversion settings, filters, referral exclusions, historical coverage, and data quality have not yet been verified. Search Console describes search visibility while GA4 describes on-site behavior, and the two systems use different definitions and attribution windows. The team therefore needs account access, configuration exports, test submissions, and client confirmation of which actions are meaningful.
+
 #### Need for Additional Analysis (a paragraph per AO)
+
+Additional analysis is required before the baseline can be finalized. The team should inventory GA4 events and conversions, test important user journeys, verify that duplicate or internal traffic is handled appropriately, compare GA4 with Search Console where possible, and document data limitations. A measurement matrix should map each organizational goal to an event, conversion definition, responsible system, and reporting frequency. If the website cannot reliably measure an important action, the team should identify a feasible tracking improvement or report the action as a measurement gap rather than estimate it from unrelated metrics.
 
 #### Assessment and Affirmation of Analytics Objectives (no more than 1 page per AO)
 
+AO2 is affirmed as a baseline-and-measurement objective. Its purpose is to determine which traffic sources, website interactions, and conversion actions represent meaningful engagement for Wellness Ranch—not simply to increase reported traffic. The planned method is a descriptive analytics audit using GA4, Google Search Console, website testing, and client-defined business outcomes. Metrics will be grouped into acquisition, engagement, and conversion measures, with primary conversions separated from diagnostic events. This structure is appropriate because it connects the customer decision journey to the organization’s objectives and provides the baseline needed for AO4’s later evaluation of implemented changes.
+
 ### AO3. Evaluate Google Ad Grants Readiness and Campaign Data to Guide Application, Launch, and Optimization (Brian)
 
-#### Existence of Well-established Models
+#### Existence of Well-Established Models
 
-AO3 will evaluate Wellness Ranch Therapy’s eligibility, website readiness, analytics capabilities, organizational capacity, and campaign data to support the Google Ad Grants application, campaign launch, compliant management, and ongoing optimization. This revised scope extends beyond determining whether the organization qualifies for the program. Eligibility can be assessed relatively quickly, while successfully using the grant requires an appropriate website, reliable conversion tracking, relevant campaigns, staff ownership, and continued performance monitoring [@googleadgrants2026].
+AO3 evaluates whether Wellness Ranch Equine Assisted Therapy is prepared to apply for, launch, manage, and optimize a Google Ad Grants campaign. The objective extends beyond determining basic eligibility. Successful use of Google Ad Grants also requires a functional website, relevant landing pages, reliable conversion tracking, appropriate campaign planning, organizational ownership, and continued performance monitoring \[\@googleadgrants2026\].
 
-There does not appear to be one established model designed specifically for assessing Google Ad Grants readiness among small nonprofit organizations. However, several established frameworks can be combined for this project. The Technology-Organization-Environment framework, or TOE, provides the primary structure. The Customer Decision Journey supplements TOE by connecting advertising and website activity to meaningful audience actions. A policy-based readiness assessment and post-launch campaign analysis will translate these frameworks into practical evidence.
+No single established framework fully explains Google Ad Grants readiness for a small nonprofit organization. Therefore, AO3 will combine the Technology-Organization-Environment (TOE) framework, the Customer Decision Journey, and a structured readiness assessment. Together, these approaches provide a practical way to evaluate the technical, organizational, environmental, and audience-related conditions that influence campaign success.
 
-The TOE framework evaluates technology adoption through technological, organizational, and environmental conditions. Research involving nonprofit organizations indicates that digital-marketing adoption depends on compatibility, leadership, staff availability, organizational learning, and the ability to convert digital information into action [@yoon2024; @xiao2026]. These dimensions are directly relevant to Wellness Ranch.
+The TOE framework will serve as the primary framework. TOE explains technology adoption through three dimensions: technological conditions, organizational conditions, and the external environment. This framework is appropriate because Google Ad Grants readiness depends on more than access to Google Ads. Wellness Ranch must also have the technical infrastructure, internal capacity, and awareness of external program requirements needed to use the grant effectively.
 
-The **technology** dimension will examine the Wix website, mobile usability, landing pages, donation process, GA4 configuration, Google Search Console, and conversion tracking. A Google Ads campaign may generate traffic without producing useful results if visitors encounter technical problems, unclear calls to action, or an ineffective donation process. Website-quality research identifies accessibility, loading performance, navigation, search visibility, and interactivity as important elements of online marketing effectiveness [@herrada2022]. Behavioral-analytics research also supports examining conversion funnels and other measures that connect visitor activity to website outcomes [@olinski2026].
+The technology dimension will evaluate Wellness Ranch’s Wix website, mobile usability, landing pages, donation process, GA4 configuration, Google Search Console data, and conversion tracking. A campaign may generate impressions and clicks without producing meaningful results if visitors encounter unclear information, weak calls to action, technical problems, or an ineffective donation pathway. Website-quality research emphasizes the importance of usability, accessibility, navigation, performance, and interactivity in digital marketing effectiveness \[\@herrada2022\]. Behavioral analytics can also help identify where visitors engage with or leave the website before completing an important action \[\@olinski2026\].
 
-The **organization** dimension will examine staff knowledge, leadership support, account ownership, campaign approval, available management time, and continuity after the capstone project. Digital tools do not automatically produce improved performance when an organization lacks the skills or processes needed to interpret and apply the resulting information [@suntrayuth2015; @kovalenko2020]. Therefore, the analysis must identify who will approve, monitor, and maintain the account after the student team’s involvement concludes.
+The organization dimension will evaluate leadership support, staff expertise, account ownership, approval procedures, available management time, and the organization’s ability to continue managing the account after the capstone project ends. Digital tools do not automatically improve performance when an organization lacks the skills or procedures needed to interpret and apply the resulting information \[\@suntrayuth2015; \@kovalenko2020\]. Therefore, AO3 must identify who will approve advertisements, monitor performance, update campaigns, review search terms, and maintain compliance after the student team’s involvement concludes.
 
-The **environment** dimension will include Google for Nonprofits requirements, Google Ad Grants policies, nonprofit verification, search behavior, competition, and platform changes. Search-engine data and third-party tools can support keyword decisions, but they may be incomplete or methodologically unclear. Findings should therefore be evaluated alongside client knowledge, website data, and audience needs [@polfuss2025].
+The environment dimension will include Google for Nonprofits requirements, Google Ad Grants policies, nonprofit verification, search behavior, competition, and changes in the digital advertising environment. Official Google requirements will be used to assess eligibility and compliance. Keyword tools, Search Console data, and competitor research may support campaign planning, but these sources should be interpreted carefully because they may provide incomplete or estimated information \[\@polfuss2025\].
 
-The Customer Decision Journey will supplement TOE by evaluating how users move from a search advertisement to a meaningful action. Metrics such as impressions, clicks, and website traffic indicate exposure but do not establish whether visitors donated, submitted an inquiry, or expressed program interest. Focusing on isolated metrics can create analytics myopia when the measures are not connected to audience needs and organizational goals [@vollrath2022]. The journey framework will therefore help distinguish diagnostic metrics from primary conversions.
+The Customer Decision Journey will supplement TOE by connecting advertising activity to meaningful audience actions. A prospective user may move from seeing a search impression to clicking an advertisement, visiting a landing page, reviewing service or donation information, and completing an action such as submitting an inquiry, making a donation, or requesting additional information. Impressions, clicks, and website traffic are useful diagnostic measures, but they do not demonstrate whether the campaign supports Wellness Ranch’s organizational goals. The Customer Decision Journey will therefore help distinguish exposure and engagement metrics from primary conversion outcomes \[\@vollrath2022\].
 
-Paid search should also be evaluated alongside SEO rather than treated as an independent solution. Paid and organic search can have complementary or competing effects, and their performance depends on search quality, competition, and changing platform conditions [@li2026]. This supports coordinating AO3 with the team’s website, SEO, and analytics work.
+AO3 will also consider the relationship between paid search and organic search. Google Ad Grants should not be treated as an independent solution because paid-search performance is affected by website quality, search intent, competition, organic visibility, and the relevance of landing pages. Paid and organic search may support one another, but their effects should be evaluated using evidence rather than assumptions \[\@li2026\]. This connection requires coordination with AO1, which evaluates website and SEO conditions, and AO2, which evaluates analytics infrastructure and conversion measurement.
 
-The proposed approach will combine TOE, the Customer Decision Journey, current Google requirements, and a structured readiness matrix. Eligibility, website, analytics, campaign, organizational, and compliance criteria will initially be classified as **Ready**, **Partially Ready**, or **Not Ready**. These classifications will be supported by evidence rather than treated as a scientifically validated scale. If campaigns are launched, the analysis will expand to impressions, clicks, click-through rate, search terms, conversion volume, conversion rate, estimated cost per conversion, landing-page engagement, and compliance status.
+The combined framework will be translated into a readiness matrix. Each readiness area will be classified as **Ready**, **Partially Ready**, or **Not Ready** based on documented evidence. The areas will include eligibility, website readiness, analytics readiness, organizational capacity, campaign readiness, and compliance. These categories are intended as a transparent project assessment tool rather than a scientifically validated measurement scale.
 
 #### Adequateness of Gathered Information
 
-The information gathered so far is sufficient to define the revised scope and select a preliminary framework, but it is not sufficient to reach a final readiness decision or design the campaigns. The client has confirmed that an application has not been submitted, that Google Ads support is a priority, that GA4 is installed, and that Wix access will be provided. Donations are also the client’s current primary website outcome. However, the team has not yet verified Google for Nonprofits status, reviewed the nonprofit documentation, audited the Wix website or GA4 configuration, examined Search Console data, or confirmed who will manage the account after the capstone. The literature supports a multidimensional approach, but client records, platform access, and campaign data are still required.
+The information gathered so far is sufficient to define AO3’s scope and select a preliminary framework, but it is not sufficient to make a final readiness decision or design a complete campaign. The project materials indicate that Wellness Ranch has not submitted a Google Ad Grants application, considers Google Ads support a priority, uses GA4, and expects to provide access to its Wix website. Donations have also been identified as the organization’s primary website outcome. However, the team has not yet verified Google for Nonprofits status, nonprofit documentation, current account access, website readiness, GA4 event configuration, Search Console data, conversion accuracy, or long-term campaign ownership. Additional client information and platform evidence are therefore required.
 
 #### Need for Additional Analysis
 
-Additional analysis is required across the project lifecycle. First, Wellness Ranch’s nonprofit records, website, and accounts must be compared with current Google eligibility and compliance requirements. Second, website and analytics audits must determine whether appropriate landing pages, donation pathways, events, and conversions are available. Third, client interviews must examine staffing, account ownership, approval procedures, campaign knowledge, and long-term management responsibility. Fourth, keyword, audience, competitor, and search-intent data must be analyzed to develop the campaign structure. After launch, Google Ads and GA4 data must be reviewed to determine which keywords, search terms, advertisements, and landing pages generate meaningful conversions. If the application is delayed or denied, the team should document the barriers and develop a corrective action and launch-readiness plan.
+Additional analysis is required before AO3 can reach a final conclusion. First, the team should compare Wellness Ranch’s nonprofit documentation and account status with the current Google Ad Grants eligibility and compliance requirements. Second, the team should audit the website, landing pages, donation process, mobile experience, and calls to action. Third, AO3 should coordinate with AO2 to verify GA4 events, conversions, attribution, and the reliability of meaningful actions such as donations, contact-form submissions, phone clicks, and appointment inquiries.
 
-#### Assessment and Affirmation of Analytics Objectives
+The team should also conduct a client interview to determine who will own the account, approve campaign changes, monitor performance, and maintain compliance after the capstone project. Keyword research, search-intent analysis, competitor research, and audience analysis will be needed to determine whether realistic campaign opportunities exist. If the application is approved and campaigns are launched, AO3 should analyze impressions, clicks, click-through rate, search terms, conversions, conversion rate, landing-page engagement, and compliance status. If the application is delayed or denied, the analysis should document the barriers and provide a corrective action and launch-readiness plan.
 
-The evidence affirms AO3 as an important component of the project, but its original focus on eligibility and readiness was too narrow for a three-semester capstone. Basic eligibility assessment alone would not capture the potential value of applying for the grant, launching campaigns, and evaluating their results. AO3 should therefore be expanded from a readiness decision into an evidence-based process covering application, launch, measurement, compliance, and optimization.
+#### Assessment and Affirmation of Analytics Objective
 
-The revised AO is:
+The evidence affirms AO3 as an important component of the project, but the objective should extend beyond basic eligibility assessment. A checklist that only determines whether Wellness Ranch qualifies for Google Ad Grants would not address the organization’s broader need for campaign preparation, measurement, management, and sustainability.
 
-> **Evaluate Wellness Ranch Therapy’s Google Ad Grants readiness and campaign data to guide application, launch, compliant management, and ongoing optimization.**
+The revised analytics objective is:
 
-TOE remains the most defensible primary framework because it addresses the technological, organizational, and environmental conditions needed to use the grant successfully. The Customer Decision Journey supplements TOE by connecting advertising measures to donations, inquiries, and other meaningful outcomes. The likely method is a mixed-methods, single-case assessment using client interviews, organizational documentation, a Wix audit, GA4, Google Search Console, official Google policies, keyword data, and post-launch Google Ads metrics.
+> **Evaluate Wellness Ranch Equine Assisted Therapy’s Google Ad Grants readiness and campaign data to guide application, launch, compliant management, and ongoing optimization.**
 
-If the application is approved, AO3 will support campaign launch and optimization. If it is delayed or denied, the analysis will identify the barriers and provide corrective recommendations. This expanded objective better reflects the client’s request for Google Ads assistance, identifies measurable outcomes such as click-through and conversion rates, and provides an appropriate scope for a year-long project.
+TOE is the most appropriate primary framework because it addresses the technological, organizational, and environmental conditions required for successful adoption. The Customer Decision Journey supplements TOE by connecting advertising activity to meaningful audience behavior and organizational outcomes. The readiness matrix will translate these frameworks into an evidence-based assessment of Wellness Ranch’s current capabilities and remaining gaps.
+
+The planned approach is a mixed-method, single-client assessment using client interviews, organizational documentation, official Google requirements, a Wix website audit, GA4 and Google Search Console data, keyword and search-intent research, and Google Ads data if campaigns are launched. AO3 will not claim that Google Ad Grants caused changes in donations, inquiries, or website performance unless sufficient post-launch evidence is available. If campaign data are unavailable, AO3 will focus on readiness, implementation barriers, measurement requirements, and recommendations for future campaign management.
+
+This expanded objective supports PO3 by addressing Google Ad Grants eligibility, application, launch, and management. It also supports PO2 through conversion tracking and performance measurement, supports PO1 through website and landing-page requirements, and contributes to PO5 by identifying the procedures and ownership needed for sustainable digital marketing after the capstone project concludes.
 
 ### AO4. Analyze Google Ad Grants Campaign Data to Improve Click-Through and Conversion Rates (Ron)
 
@@ -641,7 +730,7 @@ Additional analysis is needed once campaigns launch. First, a pre-launch keyword
 
 #### Assessment and Affirmation of Analytics Objectives
 
-AO4 remains relevant because getting the Ad Grant approved is only half the value. The grant can provide up to $10,000 per month in search advertising, but that value is only realized if the ads reach the right people, earn clicks, and lead to meaningful actions. It also has to stay compliant. Without ongoing analysis, the account could waste impressions on irrelevant searches, drop below the 5% CTR requirement, or send traffic to pages that don't convert. AO4 directly addresses the project's business problem by turning a donated resource into measurable visibility, inquiries, and donations for Wellness Ranch.
+AO4 remains relevant because getting the Ad Grant approved is only half the value. The grant can provide up to \$10,000 per month in search advertising, but that value is only realized if the ads reach the right people, earn clicks, and lead to meaningful actions. It also has to stay compliant. Without ongoing analysis, the account could waste impressions on irrelevant searches, drop below the 5% CTR requirement, or send traffic to pages that don't convert. AO4 directly addresses the project's business problem by turning a donated resource into measurable visibility, inquiries, and donations for Wellness Ranch.
 
 The review of existing models affirms the AO but suggests one clarification. The original AO4 focused on measuring the impact of all implemented changes, which cannot be done until after the spring implementation, and which the full team will complete in the summer. The refined AO narrows the focus to Google Ad Grants campaign performance, which has the highest potential return and the clearest set of metrics:
 
@@ -650,16 +739,6 @@ The review of existing models affirms the AO but suggests one clarification. The
 The analytical approach combines search intent analysis, funnel-stage metric diagnosis, keyword and search-term level performance analysis, and controlled testing of ads and landing pages. Data will come from Google Ads (impressions, clicks, CTR, search terms, conversions, and conversion rate), GA4 (post-click engagement and conversion events), Google Search Console (organic query data), and Google Keyword Planner (pre-launch volume estimates). Analysis will be done in Google Ads and GA4 reporting, with summaries built in Excel or Looker Studio.
 
 These techniques are appropriate because they match how paid search works. People act on intent, performance varies at the keyword level, and improvements are best confirmed through testing rather than assumption. They are also realistic for Wellness Ranch's size and staffing. The monthly review routine and documented optimization steps can be handed off to the organization so it can continue managing the account after the capstone ends.
-
-### AO5. Title of AO5 Right Here (Name of Author Here)
-
-#### Existence of Well-established Models (2-3 pages per AO)
-
-#### Adequateness of Gathered Information (a paragraph per AO)
-
-#### Need for Additional Analysis (a paragraph per AO)
-
-#### Assessment and Affirmation of Analytics Objectives (no more than 1 page per AO)
 
 ------------------------------------------------------------------------
 
