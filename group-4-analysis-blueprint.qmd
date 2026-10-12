@@ -52,87 +52,17 @@ Wellness Ranch Equine-Assisted Therapy provides therapeutic and wellness-related
 
 # Deliverable 2: KPI Tree / Metric Hierarchy Diagram
 
-## North Star Outcome
+The North Star outcome for Wellness Ranch Equine-Assisted Therapy is qualified leads and meaningful conversions. These include contact-form submissions, appointment inquiries, phone-call clicks, and program-interest actions.
 
-The North Star outcome is **qualified leads and meaningful conversions** for Wellness Ranch Equine-Assisted Therapy. This includes contact-form submissions, appointment inquiries, phone-call clicks, program-interest actions, and other actions that indicate meaningful interest in Wellness Ranch services.
+![KPI Tree for Wellness Ranch Equine-Assisted Therapy](images/tree.png){width=100% fig-cap="KPI tree showing the North Star outcome, driver branches, supporting metrics, and diagnostic cuts."}
 
-```{mermaid}
-flowchart TD
+### Diagram Explanation
 
-    NS["NORTH STAR OUTCOME<br/><b>Qualified Leads / Meaningful Conversions</b><br/>Contact forms • Appointment inquiries • Phone calls • Program-interest actions"]
+The KPI tree illustrates how Wellness Ranch Equine-Assisted Therapy can connect digital marketing activity to qualified leads and meaningful conversions. The North Star outcome is placed at the top because it represents the primary business result: contact-form submissions, appointment inquiries, phone-call clicks, and program-interest actions.
 
-    A["ACQUISITION<br/><i>How users arrive</i>"]
-    A1["Users and sessions"]
-    A2["Traffic source / medium"]
-    A3["Campaign and keyword volume"]
-    A4["Ad impressions"]
+The four driver branches identify the major stages that influence this outcome. Acquisition measures how users arrive at the website. Engagement and intent measure whether visitors interact with the website and demonstrate interest in Wellness Ranch services. The conversion funnel measures the steps users take before completing an action. Lead quality evaluates whether those actions represent meaningful and potentially valuable prospects.
 
-    E["ENGAGEMENT / INTENT<br/><i>Whether users show interest</i>"]
-    E1["Engaged sessions"]
-    E2["Engagement rate"]
-    E3["Average engagement time"]
-    E4["Search intent<br/>Informational • Navigational • Transactional/local"]
-
-    F["CONVERSION FUNNEL<br/><i>Where users move toward action</i>"]
-    F1["Landing-page views"]
-    F2["Key page views"]
-    F3["CTA interactions"]
-    F4["Conversion rate"]
-
-    Q["LEAD QUALITY<br/><i>Whether actions are meaningful</i>"]
-    Q1["Conversion action type"]
-    Q2["Appointment or contact intent"]
-    Q3["Phone-call and form completion"]
-    Q4["Qualified-lead rate"]
-
-    CUTS["DIAGNOSTIC CUTS<br/><i>Apply across branches</i><br/>Channel • Campaign • Keyword intent<br/>Landing page • Device • Geography<br/>New vs. returning user"]
-
-    A --> A1
-    A --> A2
-    A --> A3
-    A --> A4
-
-    E --> E1
-    E --> E2
-    E --> E3
-    E --> E4
-
-    F --> F1
-    F --> F2
-    F --> F3
-    F --> F4
-
-    Q --> Q1
-    Q --> Q2
-    Q --> Q3
-    Q --> Q4
-
-    A --> NS
-    E --> NS
-    F --> NS
-    Q --> NS
-
-    CUTS -.-> A
-    CUTS -.-> E
-    CUTS -.-> F
-    CUTS -.-> Q
-
-    classDef north fill:#1f4e79,color:#ffffff,stroke:#163a5c,stroke-width:3px;
-    classDef branch fill:#d9eaf7,color:#000000,stroke:#4f81bd,stroke-width:2px;
-    classDef metric fill:#f7fbff,color:#000000,stroke:#8fbad9;
-    classDef cuts fill:#fff2cc,color:#000000,stroke:#bf9000,stroke-width:2px;
-
-    class NS north;
-    class A,E,F,Q branch;
-    class A1,A2,A3,A4,E1,E2,E3,E4,F1,F2,F3,F4,Q1,Q2,Q3,Q4 metric;
-    class CUTS cuts;
-```
-
-## Diagram Notes
-
-<!-- Explain any changes your group makes to the KPI tree. -->
-
-The KPI tree connects acquisition, engagement, conversion-funnel activity, and lead quality to the overall outcome. The diagnostic cuts allow the team to compare performance by channel, campaign, keyword intent, landing page, device, geography, and new versus returning users.
+The diagnostic cuts at the bottom will be applied across the driver branches. These include channel, campaign, keyword intent, landing page, device, geography, and new versus returning user status. Using these cuts will allow the team to compare performance and identify which marketing activities, website experiences, and audience segments produce the strongest results. The diagram supports the project’s research questions about meaningful engagement, keyword intent, click-through rates, and conversion rates.
 
 # Deliverable 3: Event / Parameter Map
 
