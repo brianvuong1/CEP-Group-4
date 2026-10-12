@@ -147,11 +147,85 @@ Analyze current SEO data, including technical issues, website content, backlinks
 
 AO1 directly supports PO1 by providing the evidence needed to select and prioritize website and SEO improvements. It also supports PO4 by identifying the SEO indicators that should be monitored before and after implementation. The resulting findings will contribute to the SEO component of the sustainable strategy developed under PO5.
 
-### AO2. Conversion and Engagement Measurement (Kevin)
 
-Analyze GA4 and Google Search Console data to establish baseline key performance indicators and evaluate which traffic sources, website interactions, and conversion actions represent meaningful engagement for Wellness Ranch Therapy.
+### AO2. Conversion & Engagement Measurement (Kevin Bachez)
 
-AO2 directly supports PO2 by defining meaningful events, conversions, and performance measures. It also provides the baseline and post-implementation measures required for PO4. Its findings will help the team determine how Wellness Ranch should monitor future website and marketing performance under PO5.
+Establish GA4 events, conversions, and KPIs to determine which user actions and traffic sources represent meaningful engagement for Wellness Ranch Therapy.
+
+#### Existence of Well-established Models
+
+Web analytics helps organizations understand how visitors interact with their websites and whether those interactions support business objectives. Instead of evaluating website success only through traffic volume, web analytics focuses on how users arrive, engage with content, and complete meaningful actions. This is especially important for nonprofit organizations such as Wellness Ranch Equine Assisted Therapy, where website performance should support service inquiries, community engagement, and donations.
+
+The Customer Decision Journey provides a useful framework for understanding these interactions. Lemon and Verhoef (2016) explain that customer experiences develop across multiple touchpoints throughout the customer journey. These touchpoints influence how customers gather information, evaluate alternatives, and make decisions. Although this framework was developed for broader customer experiences, it is relevant to Wellness Ranch because prospective clients, families, and donors may interact with the organization through different digital channels before taking action.
+
+For example, a prospective client may discover Wellness Ranch through Google Search, visit the website to learn about equine-assisted therapy, review the organization's services, and eventually submit an inquiry. A potential donor may follow a different journey by discovering the organization through social media, learning about its mission, and visiting the donation page. These examples demonstrate why website activity should be evaluated according to the visitor's purpose rather than treating every interaction as equally valuable.
+
+Research on multichannel customer behavior also supports evaluating how different marketing channels contribute to the overall experience. Verhoef, Kannan, and Inman (2015) discuss how customers interact with organizations across multiple channels during information search and decision-making. Their framework supports examining traffic sources and user behavior together rather than evaluating channels independently. For Wellness Ranch, this means comparing visitors from organic search, referrals, social media, and direct traffic to understand which sources generate engagement and meaningful website actions.
+
+Google Analytics 4 (GA4) provides a practical measurement framework for evaluating these behaviors. GA4 uses an event-based data model to record website interactions and organize them into reports. According to Google Analytics (2026a), events may be automatically collected, collected through enhanced measurement, recommended by Google, or customized to measure specific organizational activities. This structure allows organizations to track general website engagement while also identifying actions that support their objectives.
+
+For AO2, the measurement framework will focus on three categories: traffic acquisition, engagement, and conversions.
+
+**Traffic Acquisition**
+
+Traffic acquisition identifies how visitors reach the website. GA4 provides information about traffic sources, including organic search, direct traffic, referrals, and social media. Examining these channels can help Wellness Ranch understand which sources bring visitors to its website and which sources contribute to meaningful interactions.
+
+**Engagement Measurement**
+
+Engagement measurement evaluates how visitors interact with website content after arriving. Important metrics include engaged sessions, engagement rate, average engagement time, page views, and relevant interaction events.
+
+Google Analytics (2026b) defines an engaged session as a session that lasts longer than 10 seconds, contains a key event, or includes at least two page or screen views. Engagement rate represents the percentage of sessions that meet at least one of these conditions.
+
+These measures provide useful indicators of website activity, but they do not necessarily demonstrate that visitors are interested in obtaining services or supporting the organization. For example, a visitor spending time on a service page may be learning about equine-assisted therapy without intending to schedule an appointment. Therefore, engagement metrics should be interpreted alongside more direct behavioral outcomes.
+
+**Conversion Measurement**
+
+Conversion measurement identifies whether visitors complete actions that support organizational goals. In GA4, events representing particularly important outcomes can be designated as key events. For Wellness Ranch, the primary measurement priority is donations, since the organization has identified fundraising as an important website outcome.
+
+Additional meaningful actions may include successful contact-form submissions, appointment inquiries, phone-number clicks, and program-interest interactions. Google Analytics (2026c) recommends the `generate_lead` event for completed requests for information, making it an appropriate option for measuring verified inquiries.
+
+However, these actions represent different levels of commitment. A phone-number click does not establish that a conversation occurred, and clicking a donation button does not confirm a completed donation. Consequently, AO2 will distinguish confirmed outcomes from preliminary engagement signals.
+
+The proposed measurement framework will organize events according to their relationship with Wellness Ranch's objectives:
+
+| Measurement Category | Example KPI | Organizational Purpose |
+|---|---|---|
+| Acquisition | Sessions by traffic source | Identify where visitors originate |
+| Engagement | Engagement rate and average engagement time | Evaluate interaction with website content |
+| Service Interest | Program interactions and phone clicks | Identify potential interest in services |
+| Inquiries | Successful contact-form submissions | Measure completed requests for information |
+| Donations | Confirmed completed donations, where trackable | Evaluate the website's fundraising outcomes |
+
+Google Search Console will complement GA4 by providing organic search information, including impressions, clicks, search queries, and search performance by page. Combining Search Console and GA4 reporting can help the team examine how organic visibility relates to website engagement and meaningful actions. However, these platforms use different measurement methods, so their metrics should not be expected to match exactly.
+
+The Customer Decision Journey and GA4 measurement framework are the most appropriate combination for AO2 because they connect consumer behavior with observable website interactions. The customer journey provides the conceptual explanation for why visitors take different actions, while GA4 supplies the measurement infrastructure needed to evaluate those actions.
+
+Together, these frameworks will help Wellness Ranch move beyond basic website traffic reporting toward a more useful understanding of digital engagement, inquiries, and donations.
+
+#### Adequateness of Gathered Information
+
+The information gathered is sufficient to establish AO2's measurement framework but is not yet sufficient to confirm the accuracy of the organization's analytics data. During Fall 2026, the project began implementing and reviewing GA4 on Wellness Ranch's Wix website. Initial troubleshooting indicated that the Google tag was connected, but successful collection and reporting of the intended events had not yet been fully verified. In addition, the website's contact-form submission process presented difficulties during testing, preventing reliable confirmation of completed submissions and their corresponding analytics events. These findings indicate that installing GA4 does not automatically guarantee accurate conversion measurement. The current evidence identifies important measurement priorities, including donations, contact submissions, appointment inquiries, and phone interactions, but additional verification is required before these actions can be treated as reliable KPIs. Historical data availability, event configuration, attribution settings, and possible tracking limitations must also be evaluated. Therefore, the gathered information provides a reasonable starting point but does not yet support a complete and validated performance baseline.
+
+#### Need for Additional Analysis
+
+Additional analysis is necessary to validate the GA4 implementation and determine which website interactions can be measured reliably. The first step will be to review GA4 configuration, confirm that website visits and standard events are being recorded, and test important user journeys through tools such as GA4 DebugView and Google Tag Assistant. The team will then evaluate whether contact forms, phone clicks, donation interactions, and appointment inquiries trigger the appropriate events. Successful form submissions must be distinguished from form starts or unsuccessful attempts. Donation measurement will also require determining whether confirmed completed transactions can be recorded or whether only earlier interactions are currently measurable. A measurement matrix will connect each organizational objective to a KPI, event definition, validation method, and reporting source. Once reliable data collection is confirmed, descriptive analysis will compare traffic acquisition, engagement, and key-event performance across available channels and landing pages. Conversion rates will be calculated using clearly defined numerators and denominators, with limitations documented when sample sizes are small or tracking is incomplete. These additional steps will improve data reliability and establish a practical baseline for future evaluation.
+
+#### Assessment and Affirmation of Analytics Objectives
+
+AO2 remains appropriate because Wellness Ranch needs reliable information about how website visitors interact with its digital content and whether those interactions support its organizational goals. The review of existing frameworks confirms that the Customer Decision Journey and GA4 event-based measurement approach provide a defensible foundation for evaluating digital performance.
+
+The objective will remain focused on establishing GA4 events, key events, and KPIs that identify meaningful website engagement and conversion actions. However, the research also demonstrates that implementation must be accompanied by validation before performance conclusions can be drawn.
+
+The planned analytical approach will combine a GA4 configuration audit, event testing, descriptive website analytics, traffic source comparisons, and KPI reporting. Google Search Console will supplement the analysis by providing organic search visibility measures.
+
+The primary outcomes will include verified donation completions where measurement is available, successful contact-form submissions, and other client-approved key events. Supporting indicators will include engagement rate, average engagement time, phone clicks, program interactions, and traffic acquisition metrics.
+
+This distinction is important because website engagement does not always result in a meaningful organizational outcome. For example, an increase in page views may indicate greater awareness without necessarily increasing donations or inquiries. The analytical approach will therefore evaluate both website activity and the actions that more directly support Wellness Ranch's mission.
+
+The project will initially use descriptive analysis because its immediate purpose is to establish a reliable measurement baseline rather than prove that a specific marketing change caused an increase in conversions. Later comparisons may evaluate changes in performance after website improvements, SEO recommendations, or advertising campaigns are implemented, while acknowledging other factors that may influence the results.
+
+Overall, AO2 is affirmed as a necessary component of the CEP. Its contribution is to create a dependable analytics foundation that Wellness Ranch can use to evaluate digital marketing activity, identify opportunities for improvement, and make informed decisions about website engagement, service inquiries, and fundraising performance.
+
 
 ### AO3. Evaluate Google Ad Grants Readiness and Campaign Data to Guide Application, Launch, and Optimization (Brian)
 
@@ -594,43 +668,82 @@ Additional analysis is needed to connect audit findings to business importance. 
 
 AO1 is affirmed with a clearer evidence boundary. The objective is not to prove that every audit recommendation causes a ranking improvement; it is to identify and prioritize the SEO and website conditions most relevant to Wellness Ranch’s visibility and meaningful website actions. The analysis will use descriptive comparisons of technical issues, page characteristics, queries, impressions, clicks, click-through rate, average position, referring domains, and local-search evidence. A weighted prioritization matrix will translate those findings into an actionable implementation list. This approach is appropriate because it combines diagnostic audit information with observed search performance and remains feasible for a small nonprofit website.
 
-### AO2. Conversion & Engagement Measurement (Kevin)
+
+### AO2. Conversion & Engagement Measurement (Kevin Bachez)
 
 Establish GA4 events, conversions, and KPIs to determine which user actions and traffic sources represent meaningful engagement for Wellness Ranch Therapy.
 
 #### Existence of Well-established Models
 
-Web analytics provides organizations with a structured way to understand how users interact with websites and whether those interactions support broader marketing and organizational goals. Rather than evaluating website performance only through traffic volume, web analytics focuses on the quality of user behavior by examining how visitors arrive, what content they engage with, and whether they complete actions that indicate meaningful interest.
+Web analytics helps organizations understand how visitors interact with websites and whether those interactions support marketing and organizational objectives. Rather than evaluating website performance only through traffic volume, web analytics examines how visitors arrive, engage with content, and complete meaningful actions. For nonprofit organizations such as Wellness Ranch Equine Assisted Therapy, this approach is important because website activity should support service inquiries, community engagement, and donations.
 
-A useful framework for this analytics objective is the digital customer journey. Website visitors may move through several stages, including awareness, information search, consideration, engagement, and conversion. For Wellness Ranch Therapy, a prospective client may first discover the organization through Google Search, social media, a referral source, or a direct website visit. The visitor may then review information about equine-assisted therapy, trauma-informed services, wellness education, or available programs before deciding whether to contact the organization.
+The Customer Decision Journey provides a useful framework for understanding these interactions. Lemon and Verhoef (2016) explain that customer experiences develop through multiple touchpoints across the customer journey. These interactions influence how individuals gather information, evaluate alternatives, and make decisions. This framework is relevant to Wellness Ranch because prospective clients, families, and donors may interact with the organization through different channels before taking action.
 
-GA4 provides several measures that can be used to examine these stages of the customer journey. Traffic acquisition data can show how visitors reach the website through channels such as organic search, direct traffic, referrals, and social media. Engagement measures can help determine whether users meaningfully interact with the website after arriving. These measures may include engaged sessions, engagement rate, average engagement time, page views, and event activity.
+For example, a prospective client may discover Wellness Ranch through Google Search, visit its website to learn about equine-assisted therapy, review available services, and submit an inquiry. A potential donor may follow a different path by discovering the organization through social media, learning about its mission, and visiting the donation page. These examples demonstrate why website engagement should be evaluated according to visitor intent rather than treating every interaction as equally valuable.
 
-For Wellness Ranch Therapy, engagement should be evaluated in relation to actions that reflect actual interest in the organization’s services. High website traffic alone does not necessarily indicate successful digital marketing performance. A visitor who lands on a page and leaves without interacting may provide less value than a visitor who explores program information, clicks a phone number, submits a contact form, or begins an appointment inquiry. Because of this, GA4 events and conversions can help distinguish general website activity from behavior that is more closely connected to organizational goals.
+Research on multichannel customer behavior also supports evaluating how different marketing channels contribute to the overall customer experience. Verhoef, Kannan, and Inman (2015) explain that customers interact with organizations across multiple channels during information search and decision-making. Their framework supports examining traffic sources and website behavior together rather than evaluating each channel independently. For Wellness Ranch, this means comparing organic search, social media, referral, and direct traffic to understand which sources contribute to meaningful engagement.
 
-Conversion measurement is therefore an important part of the analytics framework. Meaningful conversion actions for Wellness Ranch Therapy may include contact-form submissions, phone-call clicks, appointment inquiries, program-interest actions, and donations. Establishing these events in GA4 can help the organization determine whether website visits are leading to actions that support client acquisition, community engagement, or fundraising efforts.
+Google Analytics 4 (GA4) provides a practical measurement framework for evaluating these behaviors. GA4 uses an event-based data model to record website interactions. Events can measure general activity, such as page views, as well as specific actions, such as contact-form submissions and donation interactions. Events that represent important organizational outcomes can be marked as key events.
 
-Traffic source analysis can also provide important insights. Different sources may attract users with different levels of intent. For example, organic search visitors may be actively looking for equine-assisted therapy or mental health services, while social media visitors may initially be learning about the organization. Comparing engagement and conversion behavior across traffic sources can help identify which channels are bringing visitors who are more likely to take meaningful actions.
+For AO2, the measurement framework will focus on three categories: traffic acquisition, engagement, and conversion performance.
 
-Google Search Console can complement GA4 by providing additional information about organic search visibility. Search Console data can show which search queries generate impressions and clicks, which pages appear in search results, and how users discover the website through Google Search. When combined with GA4 behavior data, this information can provide a more complete view of the user journey from search visibility to website engagement and conversion.
+**Traffic Acquisition**
 
-This analytical approach is relevant to Wellness Ranch Therapy because the organization currently needs a stronger measurement system for evaluating digital performance. The project’s Chapter 1 problem statement identifies measurement as a major gap, noting that without properly configured GA4 events, conversions, and baseline KPIs, the organization cannot clearly determine which channels are driving inquiries, sign-ups, or donations. :chatgpt-content-reference{index="3"}
+Traffic acquisition identifies how visitors reach the website. GA4 provides information about channels such as organic search, direct traffic, referrals, and social media. Analyzing these channels can help Wellness Ranch determine which sources attract website visitors and which contribute to meaningful actions.
 
-The analysis will therefore focus on three core areas: traffic acquisition, engagement behavior, and conversion performance. Traffic acquisition analysis will identify which channels are responsible for bringing users to the website. Engagement analysis will evaluate how users interact with website content after arriving. Conversion analysis will determine whether users complete meaningful actions that align with Wellness Ranch Therapy’s organizational goals.
+**Engagement Measurement**
 
-Together, these measures can help establish baseline KPIs for future evaluation. Baseline metrics will allow the team to compare future website performance after SEO, website, and digital marketing improvements are implemented. This is consistent with the project objective to strengthen analytics and performance measurement by validating GA4, defining baseline KPIs, and connecting website activity to meaningful user actions. :chatgpt-content-reference{index="4"}
+Engagement measurement evaluates how visitors interact with website content after arriving. Important metrics include engaged sessions, engagement rate, average engagement time, page views, and event activity.
 
-#### Adequateness of Gathered Information (a paragraph per AO)
+GA4 considers a session engaged when it lasts longer than 10 seconds, includes a key event, or contains at least two page or screen views. Engagement rate represents the percentage of sessions that meet these conditions.
 
-The gathered information is sufficient to define AO2’s measurement framework but not sufficient to declare that the current analytics implementation is accurate. The project has identified GA4 and Google Search Console as the main sources and has identified likely outcomes such as donations, contact submissions, phone clicks, appointment inquiries, and program interest. However, event names, conversion settings, filters, referral exclusions, historical coverage, and data quality have not yet been verified. Search Console describes search visibility while GA4 describes on-site behavior, and the two systems use different definitions and attribution windows. The team therefore needs account access, configuration exports, test submissions, and client confirmation of which actions are meaningful.
+However, engagement does not automatically indicate that a visitor intends to receive services or donate. For example, someone may spend several minutes reading about equine-assisted therapy without submitting an inquiry. Therefore, engagement metrics should be evaluated alongside actions that more directly support organizational goals.
 
-#### Need for Additional Analysis (a paragraph per AO)
+**Conversion Measurement**
 
-Additional analysis is required before the baseline can be finalized. The team should inventory GA4 events and conversions, test important user journeys, verify that duplicate or internal traffic is handled appropriately, compare GA4 with Search Console where possible, and document data limitations. A measurement matrix should map each organizational goal to an event, conversion definition, responsible system, and reporting frequency. If the website cannot reliably measure an important action, the team should identify a feasible tracking improvement or report the action as a measurement gap rather than estimate it from unrelated metrics.
+Conversion measurement focuses on whether visitors complete important actions. For Wellness Ranch, these actions may include successful contact-form submissions, appointment inquiries, phone-number clicks, program-interest interactions, and donations.
 
-#### Assessment and Affirmation of Analytics Objectives (no more than 1 page per AO)
+Donations are particularly important because the organization has identified fundraising as a primary website outcome. However, clicking a donation button does not necessarily mean a donation was completed. Similarly, clicking a phone number does not confirm that a conversation occurred. AO2 will therefore distinguish completed outcomes from preliminary engagement signals.
 
-AO2 is affirmed as a baseline-and-measurement objective. Its purpose is to determine which traffic sources, website interactions, and conversion actions represent meaningful engagement for Wellness Ranch—not simply to increase reported traffic. The planned method is a descriptive analytics audit using GA4, Google Search Console, website testing, and client-defined business outcomes. Metrics will be grouped into acquisition, engagement, and conversion measures, with primary conversions separated from diagnostic events. This structure is appropriate because it connects the customer decision journey to the organization’s objectives and provides the baseline needed for AO4’s later evaluation of implemented changes.
+The following table summarizes the proposed measurement categories and their relevance to Wellness Ranch.
+
+| Measurement Category | KPI | Organizational Purpose |
+|---|---|---|
+| Traffic Acquisition | Sessions by traffic source | Identify where website visitors originate |
+| Engagement | Engagement rate and average engagement time | Evaluate interaction with website content |
+| Service Interest | Program interactions and phone clicks | Identify potential interest in services |
+| Inquiries | Successful contact-form submissions | Measure completed requests for information |
+| Donations | Confirmed completed donations, when measurable | Evaluate fundraising outcomes |
+
+Google Search Console will complement GA4 by providing information about organic search visibility, including impressions, clicks, search queries, and page-level search performance. Combining Search Console with GA4 can help the team understand how organic search visibility relates to website engagement and conversion behavior. However, these platforms use different measurement methods, so their reported figures should not be expected to match exactly.
+
+The Customer Decision Journey and GA4 event-based measurement approach are the most appropriate frameworks for AO2 because they connect consumer behavior with measurable website interactions. The customer journey explains why users follow different paths toward decisions, while GA4 provides the data needed to evaluate those interactions.
+
+Together, these frameworks can help Wellness Ranch move beyond basic website traffic reporting and develop a clearer understanding of digital engagement, service inquiries, and donations.
+
+#### Adequateness of Gathered Information
+
+The information gathered is sufficient to establish AO2's measurement framework but is not yet sufficient to confirm that the organization's analytics implementation is accurate. During Fall 2026, the project began implementing and reviewing GA4 on Wellness Ranch's Wix website. Initial troubleshooting indicated that the Google tag was connected, but successful event collection and reporting had not yet been fully verified. The website's contact-form submission process also presented difficulties during testing, preventing reliable confirmation of completed submissions and their corresponding analytics events. These findings demonstrate that installing GA4 does not automatically guarantee accurate conversion measurement. The project has identified important outcomes, including donations, contact submissions, phone clicks, appointment inquiries, and program interest. However, event definitions, key-event settings, historical data availability, and tracking accuracy still require validation. Google Search Console also provides useful search visibility information, but it cannot independently confirm on-site conversions. Therefore, the available information provides a foundation for AO2 but is not yet sufficient to establish a fully validated performance baseline.
+
+#### Need for Additional Analysis
+
+Additional analysis is required to validate the GA4 implementation and determine which website interactions can be measured reliably. The first step will be to review the GA4 configuration and confirm that website visits and standard events are being recorded correctly. Google Tag Assistant and GA4 DebugView can be used to test important interactions and determine whether expected events appear in the analytics system. The team will then examine contact-form submissions, phone clicks, appointment inquiries, and donation interactions to determine whether appropriate events are triggered. Successful submissions must be distinguished from incomplete or unsuccessful attempts, while completed donations must be separated from donation-button clicks whenever technically possible. A measurement matrix will connect organizational objectives to KPIs, event definitions, validation procedures, and reporting sources. Once data collection is verified, descriptive analysis will compare traffic acquisition, engagement, and key-event performance across available channels and landing pages. The team will also document limitations related to incomplete tracking, limited historical data, small sample sizes, and potential differences between GA4 and Search Console. These steps will help establish a reliable baseline for evaluating future website and marketing improvements.
+
+#### Assessment and Affirmation of Analytics Objectives
+
+AO2 remains appropriate because Wellness Ranch needs reliable information about how website visitors interact with its digital content and whether those interactions support organizational goals. The review of existing frameworks confirms that the Customer Decision Journey and GA4 event-based measurement approach provide a useful foundation for evaluating website engagement and conversion performance.
+
+The objective will remain focused on establishing GA4 events, key events, and KPIs that identify meaningful engagement and website actions. However, the research also demonstrates that analytics implementation must be validated before performance conclusions can be drawn.
+
+The proposed analytical approach will combine a GA4 configuration audit, event testing, descriptive website analytics, traffic source comparisons, and KPI reporting. Google Search Console will supplement this analysis by providing organic search visibility measures.
+
+Primary outcomes will include completed donations when reliable tracking is available, successful contact-form submissions, and other client-approved key events. Supporting indicators will include engagement rate, average engagement time, phone clicks, program interactions, and traffic acquisition metrics.
+
+This distinction is important because increased website traffic does not necessarily lead to meaningful organizational outcomes. For example, additional page views may reflect greater awareness without producing more service inquiries or donations. Therefore, AO2 will evaluate both general website activity and actions that more directly support Wellness Ranch's mission.
+
+The project will initially use descriptive analysis because the immediate goal is to establish a dependable measurement baseline rather than determine whether a specific marketing activity caused an increase in conversions. Future comparisons may evaluate website performance after SEO improvements, website changes, or advertising campaigns are implemented. However, results will be interpreted carefully because external factors and changes in visitor behavior may also influence performance.
+
+Overall, AO2 is affirmed as an important component of the CEP. By establishing reliable analytics, defining meaningful KPIs, and validating key website interactions, the project can provide Wellness Ranch with a practical foundation for evaluating digital marketing performance, identifying opportunities for improvement, and making informed decisions about service inquiries, community engagement, and fundraising.
 
 ### AO3. Evaluate Google Ad Grants Readiness and Campaign Data to Guide Application, Launch, and Optimization (Brian)
 
@@ -2545,6 +2658,17 @@ If your project doesn't have a client and is intended to benefit the public or i
 # REFERENCES {#sec-references}
 
 ::: {#refs}
+
+Lemon, Katherine N., and Peter C. Verhoef. 2016. “Understanding Customer Experience Throughout the Customer Journey.” *Journal of Marketing* 80 (6): 69–96. <https://doi.org/10.1509/jm.15.0420>.
+
+Verhoef, Peter C., P. K. Kannan, and J. Jeffrey Inman. 2015. “From Multi-Channel Retailing to Omni-Channel Retailing: Introduction to the Special Issue on Multi-Channel Retailing.” *Journal of Retailing* 91 (2): 174–181. <https://doi.org/10.1016/j.jretai.2015.02.005>.
+
+Google Analytics. n.d. “Set Up Events.” *Google for Developers*. <https://developers.google.com/analytics/devguides/collection/ga4/events>.
+
+Google Analytics. n.d. “Engagement Rate and Bounce Rate.” *Google Analytics Help*. <https://support.google.com/analytics/answer/12195621>.
+
+Google Analytics. n.d. “Recommended Events.” *Google Analytics Help*. <https://support.google.com/analytics/answer/9267735>.
+
 :::
 
 ------------------------------------------------------------------------
