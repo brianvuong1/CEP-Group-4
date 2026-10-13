@@ -709,32 +709,7 @@ This analysis also supports AO2 by identifying the types of website interactions
 
 ### **Summary: SWOT quadrants**
 
-## Investigation of Currently Available Research Framework/Model {#sec-investigation-of-currently-available-research-frameworkmodel}
-
-::: callout-note
-*The main purpose of this section is to gain understanding of the existing research on the topic of your project and assess if you can avoid doing redundant research that can address your analytics objectives. If indeed, there is sufficient existing research that can answer your analytics objectives, why can't you just use the knowledge? Thus, this section is crucial for establishing a solid foundation for your research. To this end, you will be answering the four sections below by filling out the four sections. Make sure you understand what is required for each section.*
-
-1.  **Existence of Well-established Models** (2-3 pages per AO)
-
-- Identify well-established consumer behavior theory/models/frameworks or analytical approaches relevant to the AO.
-
-- Describe how the theory/models support the AO conceptual development in the context of solving the problem.
-
-2.  **Adequateness of Gathered Information** (a paragraph per AO)
-
-- Assess whether the gathered information (above) is sufficient in addressing the AO and thus solving the business problem. Consider aspects such as application, accuracy, consistency, potential bias, and whether the information aligns with your research needs.
-
-- If the gathered information is sufficient, explain how you will use the information to accomplish the AO and solve the business problem. If not, explain why the information is not sufficient and what you will do to fill the gap (e.g., additional analysis, primary research, etc.).
-
-3.  **Need for Additional Analysis** (a paragraph per AO)
-
-- Identify if there is a need for additional analysis to address the AO in the context of the business problem. Consider if there is a need for alternative modeling techniques, methods, or data sources (e.g., primary research) to fill gaps or enhance accuracy, and how they would improve the AO.
-
-- If you had concluded in Step 2 that the gathered information **is sufficient**, you may not need to do additional analysis. In that case, explain why the information is sufficient and how you will use it to accomplish the AO and solve the business problem.
-
-- If you had concluded in Step 2 that the gathered information is **not sufficient**, you will likely need to do additional analysis. In that case, explain what additional analysis you will do and how it will help accomplish the AO and solve the business problem.
-
-4.  **Assessment and Affirmation of Analytics Objectives**
+## Investigation of Currently Available Research Framework/Model
 
 ### AO1. On-Page and Off-Page SEO Performance Analysis (Alexa Bueno)
 
