@@ -734,20 +734,7 @@ This analysis also supports AO2 by identifying the types of website interactions
 
 - If you had concluded in Step 2 that the gathered information is **not sufficient**, you will likely need to do additional analysis. In that case, explain what additional analysis you will do and how it will help accomplish the AO and solve the business problem.
 
-4.  **Assessment and Affirmation of Analytics Objectives** (no more than 1 page per AO)
-
-- In this section, you will evaluate your original AO specified in Chapter 1 in light of the information you have gathered and analyzed in the previous sections. You will specify how the AO aims to address the identified business problem(s). You will identify the analytical techniques, models or tools you plan to use. You will explain how these techniques will help accomplish the AO and why they are appropriate.
-:::
-
-::: callout-tip
-### Assessment Rubric for SLO 2: Evaluate known principles of consumer psychology and behaviors appropriate to address the marketing problems.
-
-- This section will be used to evaluate your performance on SLO 2, which is to evaluate known principles of consumer psychology and behaviors appropriate to address the marketing problems.
-
-- The following rubric will be used to evaluate the quality of your model. Make sure to review this rubric carefully and use it as a guide when writing your recommendations section.
-
-  ![](images/slo-2.png)
-:::
+4.  **Assessment and Affirmation of Analytics Objectives**
 
 ### AO1. On-Page and Off-Page SEO Performance Analysis (Alexa Bueno)
 
