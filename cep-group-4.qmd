@@ -233,13 +233,12 @@ Evaluate Wellness Ranch Therapy’s eligibility, website and analytics readiness
 
 AO3 directly supports PO3 by moving the organization from eligibility assessment through application, launch, measurement, and improvement. It also supports PO1 by identifying necessary website and landing-page improvements and PO2 by defining the conversion tracking required to evaluate campaign performance. The findings will contribute to the sustainable digital marketing roadmap developed under PO5.
 
-### AO4. Analyze Google Ad Grants Campaign Data to Improve Click-Through and Conversion Rates (Ron)
 
 ### AO4. Analyze Google Ad Grants Campaign Data to Improve Click-Through and Conversion Rates (Ron)
 
-Once Wellness Ranch's Google Ad Grants campaigns launch, I will analyze Google Ads and GA4 data to identify which keywords, ads, and landing pages drive meaningful results. Key metrics include impressions, clicks, click-through rate (CTR), search terms, conversions, and conversion rate. CTR is especially important because Ad Grants accounts must maintain at least a 5% CTR to stay compliant.
+Once Wellness Ranch's Google Ad Grants campaigns launch, we will analyze Google Ads and GA4 data to identify which keywords, ads, and landing pages drive meaningful results. Key metrics include impressions, clicks, click-through rate (CTR), search terms, conversions, and conversion rate. CTR is especially important because Ad Grants accounts must maintain at least a 5% CTR to stay compliant.
 
-To achieve this, I will review search terms to add negative keywords, compare keyword and ad group performance, test ad copy and calls to action, and evaluate which landing pages turn visitors into inquiries, calls, or donations. Findings will be summarized in regular performance reports with optimization recommendations.
+To achieve this, we will review search terms to add negative keywords, compare keyword and ad group performance, test ad copy and calls to action, and evaluate which landing pages turn visitors into inquiries, calls, or donations. Findings will be summarized in regular performance reports with optimization recommendations.
 
 AO4 directly supports PO3 by optimizing campaigns after launch, while AO3 covers eligibility, application, and launch. It also supports PO2 by relying on the website's conversion tracking.
 
@@ -1077,13 +1076,73 @@ AO3 does not use traditional independent and dependent variables because it is p
 The primary outcome for Fall 2026 will be the overall readiness classification and the associated gap analysis. Campaign-performance measures will become more important during Spring and Summer after the application, launch, and data-collection requirements have been completed.
 
 
-### AO4. Title of AO4 Here (Name of Author Here)
+### AO4. Analyze Google Ad Grants Campaign Data to Improve Click-Through and Conversion Rates (Ron)
 
 #### Method Used
 
+AO4 will use a two-phase quantitative approach: a pre-launch keyword and intent analysis during Fall 2026, followed by ongoing campaign performance analysis and controlled testing after the Google Ad Grants campaigns launch. Because AO4 depends on the application and launch work led by AO3, the timing of the second phase will follow AO3's readiness assessment and the client's approval.
+
+**Phase 1: Pre-launch keyword and intent analysis (Fall 2026).** Before any campaign data exist, AO4 will build the starting keyword set and campaign structure. Search Console query data will be pulled for the same date window used in AO1, and AO4 will reuse AO1's branded versus non-branded classification so both analyses describe search demand the same way. Google Keyword Planner will then be used to expand the list and estimate monthly search volume for relevant terms in the Inland Empire. Each keyword will be coded by intent (informational, navigational, or transactional) and grouped into themes such as services, location-based searches, education, and donations or volunteering. Each theme will be matched to a landing page from AO1's prioritized page list and to the primary action defined in AO2's measurement matrix. A starting negative keyword list will also be built to exclude predictable irrelevant searches, such as horseback riding lessons, horse boarding, or horses for sale. The output of Phase 1 is a documented account structure that AO3 can use for the campaign launch.
+
+**Phase 2: Post-launch performance analysis (Spring–Summer 2027).** Once campaigns are live, AO4 will run a monthly review cycle using Google Ads and GA4 data. Each cycle will include the following steps:
+
+1. **Search terms review.** The search terms report will be reviewed to find irrelevant queries to add as negative keywords and relevant new queries to add as keywords [@googlenegativekeywords2026].
+2. **Keyword and ad group comparison.** Impressions, clicks, CTR, conversions, and conversion rate will be compared across keyword themes and ad groups to decide which to expand, refine, or pause.
+3. **Funnel-stage diagnosis.** Each theme will be read as a set of stages from impression to click, landing-page engagement, and conversion. Low CTR will point to ad copy or keyword relevance problems, while strong CTR with low conversion rates will point to the landing page or the form or donation process.
+4. **Landing-page analysis.** GA4 data will be used to compare engagement rate, average engagement time, and key events for paid traffic on each landing page, using the event definitions validated in AO2.
+5. **Compliance tracking.** Account-level CTR and policy status will be recorded each month and compared against current Google Ad Grants requirements, including the 5% CTR minimum [@googleadgrantspolicy2026].
+
+**Controlled testing.** Ad copy, calls to action, and landing pages will be tested using multiple ads per ad group, ad variations, or campaign experiments. Only one element will be changed per test so any difference can be attributed to that change. When volume allows, differences in CTR or conversion rate between two versions will be tested using a two-proportion z-test at the 0.05 significance level. When counts are too small for the z-test, Fisher's exact test will be used instead. When neither test has enough data to be meaningful, results will be reported as directional, with sample sizes, test duration, and limitations documented.
+
+All results will be summarized in a monthly performance report built in Excel or Looker Studio, with specific optimization recommendations for the next cycle. If the application or launch is delayed and campaign data are not available within the project timeline, AO4 will deliver the Phase 1 keyword analysis, the documented account structure, and the monthly review routine so Wellness Ranch can begin optimization as soon as campaigns launch.
+
 #### Justification for the Method
 
+This method fits AO4 because it matches how paid search works and how Wellness Ranch's project is sequenced. Paid search responds to intent, so grouping keywords by intent before launch gives the campaigns a stronger starting point and makes later results easier to interpret [@broder2002]. Sponsored search research shows that performance varies widely at the keyword level and that clicks alone can be misleading [@ghoseYang2009; @agarwal2011], which is why the analysis works at the keyword and search-term level and evaluates CTR and conversion rate together.
+
+The funnel-stage diagnosis follows the hierarchy of effects and the consumer decision journey [@lavidgeSteiner1961; @court2009]. Treating each metric as a stage lets the team connect a problem to a specific fix rather than reacting to overall numbers. Controlled testing is the most reliable way to confirm that a change actually caused an improvement [@kohavi2009], and changing one element at a time keeps the results interpretable. The two-proportion z-test is appropriate because CTR and conversion rate are both proportions, and Fisher's exact test covers the small counts that a low-volume nonprofit account is likely to produce. Allowing directional results when volume is limited keeps the analysis honest about what the data can support.
+
+The method also connects directly to the rest of the project. It reuses AO1's query classification and prioritized page list, so paid and organic search are described consistently and paid traffic goes to pages the team has already improved. It relies on AO2's validated key events, so conversions in Google Ads match what GA4 counts as meaningful actions. It builds on AO3's readiness assessment and launch, picking up where AO3's initial descriptive review leaves off. Because both paid and organic traffic may change during the same period, AO4 will report paid search results separately so AO1's organic baseline is not mixed with paid traffic.
+
+Finally, the monthly review cycle is realistic for Wellness Ranch's size and staffing. Each step is documented so the routine can be handed off to the organization's designated account owner after the capstone ends, supporting PO3 and PO5.
+
 #### Variables
+
+AO4 uses keyword, ad, and landing-page characteristics as independent variables and campaign performance measures as dependent variables. Because the data come from a single account rather than a random sample, these variables will mainly be used for descriptive comparisons and controlled tests, not regression models.
+
+**Independent variables**
+
+- **Keyword intent:** informational, navigational, or transactional, coded from the keyword wording.
+- **Keyword theme:** services, location-based, education, or donations and volunteering.
+- **Branded status:** whether the keyword includes the Wellness Ranch name, using the same classification as AO1.
+- **Match type:** the keyword match type used in Google Ads.
+- **Ad variant:** the version of the headline, description, or call to action being tested.
+- **Landing page:** the page the ad sends visitors to, drawn from AO1's prioritized page list.
+
+**Dependent variables**
+
+- **Impressions:** the number of times an ad was shown.
+- **Clicks:** the number of times an ad was clicked.
+- **Click-through rate (CTR):** clicks divided by impressions, measured at the keyword, ad group, and account level.
+- **Primary conversions:** completed donations (where trackable) and successful contact-form submissions, tracked separately using the key events defined in AO2.
+- **Secondary conversions:** phone clicks and donation-button clicks, treated as signals of interest rather than completed outcomes.
+- **Conversion rate:** conversions divided by clicks, calculated separately for each conversion type.
+- **Post-click engagement:** engagement rate and average engagement time for paid traffic in GA4.
+- **Compliance status:** monthly account-level CTR compared with the 5% requirement, along with any policy notices.
+
+**Control variables**
+
+- **Time period:** month and day of week, since search demand can change with seasons, holidays, and school calendars.
+- **Device:** mobile, desktop, or tablet, since landing-page performance may differ by device.
+- **Branded versus non-branded traffic:** reported separately, since branded keywords usually earn much higher CTR and could hide weak performance among non-branded keywords that bring in new clients and families.
+- **Concurrent website changes:** dates of SEO or website changes made through AO1, recorded so that shifts in conversion rate are not wrongly credited to ad changes.
+
+**Pre-launch measures (Phase 1)**
+
+- **Estimated monthly search volume:** from Google Keyword Planner, for keywords in the Inland Empire.
+- **Organic query impressions and clicks:** from Google Search Console, shared with AO1.
+
+The primary outcomes for AO4 are CTR and conversion rate by keyword theme and landing page, along with monthly compliance status. During Fall 2026, the main deliverable is the pre-launch keyword analysis and account structure. Campaign performance measures will become the focus after launch in Spring and Summer 2027.
 
 ### AO5. Title of AO5 Here (Name of Author Here)
 
