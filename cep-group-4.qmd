@@ -1030,13 +1030,94 @@ These techniques are appropriate because they match how paid search works. Peopl
 
 #### Variables
 
-### AO2. Title of AO2 Here (Name of Author Here)
+
+### AO2. Establish GA4 Conversion and Engagement Measurement to Evaluate Website Performance (Kevin Bachez)
 
 #### Method Used
 
+AO2 will use a quantitative, observational analytics approach to evaluate website engagement, traffic acquisition, and conversion-related behavior for Wellness Ranch Therapy. Google Analytics 4 (GA4) will serve as the primary data source, supported by a measurement validation process to ensure that meaningful visitor actions are accurately recorded.
+
+**Phase 1: Measurement setup and validation (Fall 2026).** The first phase will focus on establishing a reliable analytics measurement framework. GA4 implementation will be reviewed to confirm that page views, sessions, traffic sources, and engagement metrics are being collected.
+
+A measurement matrix will identify the website actions most relevant to the client's objectives. Primary outcomes will include successfully submitted contact forms, appointment inquiries where measurable, and completed donations where transaction tracking is available. Secondary interactions will include phone clicks, donation-button clicks, and other actions that indicate visitor interest without confirming a completed inquiry or donation.
+
+Events will be validated using GA4 Realtime reports, DebugView, and controlled website testing. The recommended `generate_lead` event will be considered for completed inquiries when successful submission can be verified (Google, n.d.-a). Events will only be included in conversion reporting after their accuracy has been confirmed.
+
+**Phase 2: Descriptive and funnel analysis (Spring–Summer 2027).** Once sufficient validated data become available, AO2 will evaluate website activity using descriptive statistics, acquisition-channel comparisons, and exploratory funnel analysis.
+
+Descriptive analysis will summarize users, sessions, engaged sessions, engagement rate, average engagement time per session, and key event counts. Results will be compared across acquisition channels, landing pages, and devices.
+
+Funnel analysis will examine the visitor journey from landing-page entry to program exploration, contact-form interaction, and successful inquiry submission. When form interaction events are available, form starts and completed submissions will be compared to identify potential abandonment points.
+
+AO2 will also compare available baseline performance with results after website improvements implemented through AO1. Changes in engagement and inquiry activity will be summarized over consistent reporting periods. Because this is an observational study, the analysis will not claim that website improvements directly caused performance changes.
+
+Findings will be summarized in a measurement report or dashboard showing website performance, validated conversion activity, and recommendations for improvement.
+
 #### Justification for the Method
 
+This method is appropriate because Wellness Ranch needs to understand not only how many people visit its website but also whether visitors engage with its services and complete meaningful actions.
+
+Descriptive analytics provides a practical way to summarize website performance and identify differences across traffic sources, landing pages, and devices. GA4's engagement metrics help distinguish visits involving meaningful interaction from sessions with limited activity (Google, n.d.-b).
+
+Event-based conversion measurement is especially important because general website traffic does not necessarily indicate that visitors are contacting the organization, requesting appointments, or making donations.
+
+Funnel analysis is appropriate because it evaluates different stages of the visitor journey. Comparing form starts with completed submissions may identify areas where users experience difficulties or abandon the inquiry process (Google, n.d.-c).
+
+The phased approach also accounts for the project's timeline. Fall 2026 emphasizes measurement setup and validation, while Spring and Summer 2027 will focus on evaluating available performance data.
+
+AO2 will support AO1 by measuring website engagement and inquiries associated with organic search and landing-page improvements. It will also support AO3 and AO4 by establishing consistent definitions for GA4 key events used to evaluate Google Ad Grants readiness and subsequent advertising performance.
+
+Because the project focuses on a single nonprofit website, results will primarily support descriptive comparisons and practical decision-making rather than broad statistical generalization.
+
 #### Variables
+
+AO2 will examine website acquisition characteristics and visitor behavior as explanatory variables, with engagement and conversion outcomes serving as performance measures.
+
+**Independent and Segmentation Variables**
+
+- **Traffic source/medium:** The source and medium associated with website sessions.
+- **Default channel group:** Organic Search, Direct, Referral, Organic Social, Paid Search, and other applicable channels.
+- **Landing page:** The first website page viewed during a session.
+- **Device category:** Desktop, mobile, or tablet.
+- **Reporting period:** Week or month of observation.
+- **Website improvement period:** Whether observations occurred before or after a documented website change.
+
+**Dependent and Outcome Variables**
+
+- **Engaged sessions:** Sessions meeting GA4's engagement criteria.
+- **Engagement rate:** Percentage of sessions classified as engaged.
+- **Average engagement time per session:** Average time the website was actively engaged during a session.
+- **Primary key events:** Validated successful contact-form inquiries, appointment inquiries, and completed donations where measurable.
+- **Secondary interactions:** Phone clicks, donation-button clicks, and other measurable actions indicating interest.
+- **Session key event rate:** Percentage of sessions containing a selected key event.
+- **Inquiry completion rate:** Percentage of measured form-start sessions resulting in a confirmed inquiry, where the required events are available.
+
+**Descriptive and Supporting Measures**
+
+- Total users
+- New users
+- Sessions
+- Page views
+- Event counts
+- Landing-page traffic
+- Traffic acquisition channel
+- Form starts and submissions, where reliably recorded
+
+**Calculated Performance Indicators**
+
+- **Engagement rate:** Engaged sessions / Total sessions × 100.
+- **Session key event rate:** Sessions with the selected key event / Total sessions × 100.
+- **Inquiry completion rate:** Sessions with confirmed inquiries / Sessions with recorded inquiry form starts × 100.
+
+**Measurement Quality and Limitations**
+
+GA4 tracking will be checked before conversion data are used for analysis. The team will distinguish confirmed completed actions from preliminary website interactions.
+
+Some website behaviors may not be measurable through the current Wix and GA4 configuration. Where accurate event tracking is unavailable, the limitation will be documented rather than treating unverified interactions as completed conversions.
+
+Comparisons across reporting periods will consider possible differences in traffic composition, seasonal demand, and simultaneous website or advertising changes.
+
+The primary outcomes for AO2 are a validated GA4 measurement framework, documented website engagement and conversion indicators, and recommendations for improving the website's ability to generate meaningful visitor actions.
 
 ### AO3. Evaluate Google Ad Grants Readiness and Campaign Data to Guide Application, Launch, and Optimization (Brian)
 
