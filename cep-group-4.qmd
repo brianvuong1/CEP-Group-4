@@ -1039,13 +1039,43 @@ These techniques are appropriate because they match how paid search works. Peopl
 
 #### Variables
 
-### AO3. Title of AO3 Here (Name of Author Here)
+### AO3. Evaluate Google Ad Grants Readiness and Campaign Data to Guide Application, Launch, and Optimization (Brian)
 
 #### Method Used
 
+AO3 will use a mixed-method, single-case diagnostic assessment to evaluate Wellness Ranch Therapy’s readiness for Google Ad Grants. The assessment will combine qualitative information from the client with direct website observations, organizational documentation, official Google requirements, and available platform data. Because the project focuses on one nonprofit rather than a large sample, the method will emphasize structured evaluation and descriptive analysis instead of inferential statistical modeling.
+
+During Fall 2026, data will be collected through a semi-structured client interview, a review of nonprofit and account information, and a website-readiness audit. The interview will gather information about Google for Nonprofits enrollment, application status, account ownership, staff experience, approval responsibilities, available management time, campaign priorities, target audiences, geographic service areas, and long-term account maintenance. The website audit will examine mission clarity, original content, navigation, mobile usability, page speed, HTTPS security, working links, donation and contact processes, landing-page quality, and calls to action.
+
+The Technology-Organization-Environment framework will organize the collected evidence. Technological readiness will include the website, landing pages, donation process, analytics, and conversion tracking. Organizational readiness will include leadership support, staff expertise, account ownership, approval procedures, available time, and long-term management capacity. Environmental readiness will include current Google Ad Grants eligibility requirements, program policies, search conditions, and nonprofit verification.
+
+The evidence will be summarized in a readiness matrix. Each indicator will be classified as **Ready**, **Partially Ready**, **Not Ready**, or **Unable to Verify**. Notes and supporting evidence will accompany each classification. The matrix will be used to identify gaps, assign responsibilities, and develop a Spring implementation plan.
+
+If the application is approved and campaigns are launched, AO3 will incorporate descriptive Google Ads data to confirm that the organization can launch and sustain compliant campaigns. This initial review may include impressions, clicks, click-through rate, search terms, conversions, conversion rate, landing-page activity, and compliance status. More detailed campaign-performance optimization will be coordinated with AO4.
+
 #### Justification for the Method
 
+A mixed-method readiness assessment is appropriate because Google Ad Grants readiness cannot be determined using a single numerical measure. Formal eligibility is important, but successful participation also depends on website quality, reliable measurement, organizational ownership, campaign preparation, and the ability to maintain compliance. Client interviews provide information about responsibilities, experience, goals, and internal capacity that cannot be observed through the website or Google platforms alone. Website and account reviews provide direct evidence that can confirm or challenge the client’s responses.
+
+The TOE framework is appropriate because it separates readiness into technological, organizational, and environmental conditions. This prevents the assessment from treating Google Ad Grants as only a technical application process. For example, Wellness Ranch could meet the formal eligibility requirements but still be only partially ready if no staff member is available to maintain campaigns or if important website conversions cannot be measured.
+
+The readiness matrix provides a transparent and practical way to convert different forms of evidence into an actionable assessment. It will show which requirements have been verified, which gaps can be corrected, and which items remain dependent on the client or Google. The method also fits the project timeline. Fall focuses on evidence collection and readiness, while Spring can focus on the application, account configuration, campaign development, and launch. Descriptive campaign analysis will only be used after sufficient campaign data become available, and AO3 will not claim that Google Ads caused changes in donations or inquiries without adequate evidence.
+
 #### Variables
+
+AO3 does not use traditional independent and dependent variables because it is primarily a single-case readiness assessment. Instead, it evaluates the following constructs and indicators:
+
+- **Eligibility readiness:** verified nonprofit status, Google for Nonprofits enrollment, acceptance of required terms, domain ownership, and current application status.
+- **Website readiness:** mission clarity, nonprofit identification, original content, service information, navigation, mobile usability, page speed, HTTPS security, working links, donation functionality, contact options, landing-page quality, and calls to action.
+- **Analytics readiness:** functioning Google tag, defined conversion actions, accurate event tracking, connection between advertisements and landing pages, and the ability to distinguish meaningful outcomes from general website activity.
+- **Organizational readiness:** leadership support, designated account owner, staff expertise, available management time, approval procedures, campaign responsibilities, training needs, and continuity after the capstone concludes.
+- **Campaign readiness:** defined campaign goals, priority services, target audiences, geographic targeting, keyword themes, landing pages, advertising messages, and intended conversions.
+- **Compliance readiness:** ability to follow current Google Ad Grants and Google Ads policies, monitor account notifications, review search terms, maintain required account activity, and correct policy issues.
+- **Overall readiness outcome:** classification as **Ready**, **Partially Ready**, **Not Ready**, or **Unable to Verify**, supported by documented evidence.
+- **Conditional post-launch measures:** impressions, clicks, click-through rate, search terms, conversions, conversion rate, landing-page engagement, and compliance status if campaigns are launched and sufficient data become available.
+
+The primary outcome for Fall 2026 will be the overall readiness classification and the associated gap analysis. Campaign-performance measures will become more important during Spring and Summer after the application, launch, and data-collection requirements have been completed.
+
 
 ### AO4. Title of AO4 Here (Name of Author Here)
 
