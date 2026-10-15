@@ -2944,6 +2944,15 @@ Kohavi R, Longbotham R, Sommerfield D, Henne RM. Controlled experiments on the w
 Ad Grants policy compliance guide. Google Ad Grants Help. Accessed October 5, 2026. https://support.google.com/grants/answer/9042207
 
 Get negative keyword ideas using the search terms report. Google Ads Help. Accessed October 5, 2026. https://support.google.com/google-ads/answer/7102466
+
+Google. (n.d.-a). *How to generate more leads on your website*. Google Analytics Help. https://support.google.com/analytics/answer/12941105
+
+Google. (n.d.-b). *Engagement rate and bounce rate*. Google Analytics Help. https://support.google.com/analytics/answer/12195621
+
+Google. (n.d.-c). *Recommended events*. Google Analytics Help. https://support.google.com/analytics/answer/9267735
+
+Kaushik, A. (2009). *Web Analytics 2.0: The Art of Online Accountability and Science of Customer Centricity*. Wiley.
+
 :::
 
 ------------------------------------------------------------------------
