@@ -1030,13 +1030,13 @@ AO1 will use a quantitative, observational approach that combines a structured S
 
 **Phase 1: SEO audit and baseline (Fall 2026).** The first phase will review the Wellness Ranch Therapy website across the on-page, off-page, technical, and local components of SEO [@ziakis2019]. The starting point is the SEO Fix Tracker from the prior Semrush site audit, which flagged 21 pages with thin content (10 of them under 200 words), 3 pages missing meta descriptions, and 1 broken external link. The team will confirm these issues on the live Wix site and add on-page checks for page titles, headings, keyword targeting, and internal links. The technical review will cover indexing status, mobile usability, page speed, HTTPS security, and broken links. A backlink audit will count referring domains and flag low-quality or irrelevant links. The local review will check the Google Business Profile and whether the organization's name, address, and phone number are listed consistently across major directories, since Google bases local results mainly on relevance, distance, and prominence [@googlelocalranking].
 
-Search Console data will be exported at the query and page level for a fixed date window, which AO4 will also use for its pre-launch keyword analysis. Each query will be classified as branded (includes the Wellness Ranch name) or non-branded. This separates searches from people who already know the organization from searches by people looking for equine-assisted therapy or related services in general. Baseline measures will include clicks, impressions, click-through rate (CTR), average position, and the number of indexed pages. Audit results and Search Console data will be cleaned and joined by page URL in R.
+Search Console data will be exported at the query and page level for a fixed date window, which AO4 will also use for its pre-launch keyword analysis. Each query will be classified as branded (includes the Wellness Ranch name) or non-branded. This separates searches from people who already know the organization from searches by people looking for equine-assisted therapy or related services in general. Baseline measures will include clicks, impressions, click-through rate (CTR), average position, and the number of indexed pages. Audit results and Search Console data will be cleaned and joined by page URL in R.    
 
-Pages will then be ranked in a prioritization matrix based on three factors:
+Pages will then be ranked in a prioritization matrix based on three factors:   
 
 1. Importance to the organization: how closely the page connects to services, programs, donations, or inquiries, confirmed with the client.
 2. Search opportunity: pages with meaningful impressions but low CTR, or queries ranking just outside the top results (roughly positions 8 to 20), where small improvements may lead to more clicks.
-3. Issue severity: the number and type of audit issues found on the page.
+3. Issue severity: the number and type of audit issues found on the page.  
 
 The outputs of Phase 1 are a prioritized page list, a documented organic search baseline, and a change log for recording website updates.
 
