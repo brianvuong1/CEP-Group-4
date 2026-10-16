@@ -1022,14 +1022,89 @@ These techniques are appropriate because they match how paid search works. Peopl
 
 ## Analytics Methods to Employ
 
-### AO1. Title of AO1 Here (Name of Author Here)
+### AO1. Analyze On-Page, Off-Page, and Technical SEO Performance to Prioritize Website Improvements (Alexa)
 
 #### Method Used
 
+AO1 will use a quantitative, observational approach that combines a structured SEO audit with Google Search Console performance data. The audit shows what is wrong with the website, while Search Console shows how the website actually performs in Google search. Using both makes it possible to decide which pages to fix first and to set a baseline for measuring results later in the project.
+
+**Phase 1: SEO audit and baseline (Fall 2026).** The first phase will review the Wellness Ranch Therapy website across the on-page, off-page, technical, and local components of SEO [@ziakis2019]. The starting point is the SEO Fix Tracker from the prior Semrush site audit, which flagged 21 pages with thin content (10 of them under 200 words), 3 pages missing meta descriptions, and 1 broken external link. The team will confirm these issues on the live Wix site and add on-page checks for page titles, headings, keyword targeting, and internal links. The technical review will cover indexing status, mobile usability, page speed, HTTPS security, and broken links. A backlink audit will count referring domains and flag low-quality or irrelevant links. The local review will check the Google Business Profile and whether the organization's name, address, and phone number are listed consistently across major directories, since Google bases local results mainly on relevance, distance, and prominence [@googlelocalranking].
+
+Search Console data will be exported at the query and page level for a fixed date window, which AO4 will also use for its pre-launch keyword analysis. Each query will be classified as branded (includes the Wellness Ranch name) or non-branded. This separates searches from people who already know the organization from searches by people looking for equine-assisted therapy or related services in general. Baseline measures will include clicks, impressions, click-through rate (CTR), average position, and the number of indexed pages. Audit results and Search Console data will be cleaned and joined by page URL in R.
+
+Pages will then be ranked in a prioritization matrix based on three factors:
+
+1. Importance to the organization: how closely the page connects to services, programs, donations, or inquiries, confirmed with the client.
+2. Search opportunity: pages with meaningful impressions but low CTR, or queries ranking just outside the top results (roughly positions 8 to 20), where small improvements may lead to more clicks.
+3. Issue severity: the number and type of audit issues found on the page.
+
+The outputs of Phase 1 are a prioritized page list, a documented organic search baseline, and a change log for recording website updates.
+
+**Phase 2: Implementation tracking (late Fall 2026) and comparison (Spring and Summer 2027).** As improvements are made, each change will be recorded in the change log with its date, page, and type of fix. Once enough time has passed for Google to recrawl the updated pages, prioritized pages will be compared before and after their changes using equal-length reporting periods. Changed pages will also be compared with pages that were not changed, which serve as a reference group. This helps separate the effect of page improvements from sitewide shifts such as seasonal demand or Google algorithm updates.
+
+When enough pages have been improved, a Wilcoxon signed-rank test will compare page-level clicks and impressions before and after the changes at the 0.05 significance level. This test fits a small number of pages and search data that are usually skewed, with a few pages receiving most of the traffic. If the number of pages or the length of the post-change period is too limited, results will be reported as directional, with the number of pages, the dates compared, and the limitations documented. Because this is an observational study, AO1 will not claim that website improvements directly caused changes in search performance.
+
+Findings will be summarized in an SEO performance report with updated page priorities and recommendations for ongoing SEO maintenance after the capstone ends.
+
 #### Justification for the Method
+
+This method fits AO1 because neither data source answers the question on its own. An audit lists problems but does not show which ones actually limit performance, while Search Console shows performance outcomes without explaining what causes them. Matching audit findings to page-level performance connects specific issues to real search results and gives the team a clear reason for working on one page before another.
+
+The on-page, off-page, and technical framework is appropriate because weaknesses in any one area can hold back the others, so reviewing them together gives a more complete picture of why a page may not be ranking well [@ziakis2019]. Website usability and SEO also overlap, since factors such as navigation, loading speed, and mobile usability affect both visitors and search engines [@visser2011; @herrada2022]. Local SEO is included because Wellness Ranch serves clients in a specific area, and many of the people it wants to reach are likely to search for services near them.
+
+Organic search is especially important for a small nonprofit with a limited marketing budget, because it reaches people who are already searching for a service without paying for each click [@kovalenko2020]. With limited staff time, the prioritization matrix keeps the work focused on the pages most likely to matter for inquiries and donations instead of fixing every flagged issue in order.
+
+The audit results will also be interpreted with care. Semrush flags thin content based on word count, but Google has stated that it does not have a preferred word count [@googlehelpfulcontent]. Thin content flags will therefore be treated as a reason to check whether a page fully answers visitor questions, not as a word count target. Separating branded from non-branded queries is important because branded searches usually have much higher CTR and can hide weak performance in the non-branded searches that bring in new clients and families.
+
+The comparison design reflects the realities of SEO. Search results can take months to respond to website changes, so Fall focuses on the audit, baseline, and implementation, while Spring and Summer focus on measuring results. Using a reference group of unchanged pages and a nonparametric test keeps the analysis realistic for a small website, and allowing directional results keeps it honest about what the data can support.
+
+AO1 also connects directly to the other objectives. It will use AO2's validated GA4 key events to see whether organic visitors to prioritized pages go on to submit inquiries or donate, so the analysis does not stop at clicks. Website improvements from AO1 support AO3's website-readiness assessment for Google Ad Grants. AO4 reuses AO1's query classification, date window, prioritized page list, and change log, so paid and organic search are described consistently and paid traffic is sent to pages that have already been improved.
 
 #### Variables
 
+AO1 uses page, query, and website characteristics as explanatory variables and organic search performance measures as outcomes. Because the data come from a single website rather than a random sample, these variables will mainly support descriptive comparisons and before-and-after analysis, not regression models.
+
+**Independent and Segmentation Variables**
+
+- Page type: services, programs, donations, about or contact, and educational content.
+- Content depth: page word count and whether the page was flagged for thin content.
+- On-page elements: presence and quality of the page title, meta description, H1 heading, target keyword placement, and internal links.
+- Technical status: indexing status, mobile usability, page speed, and broken links.
+- Backlinks: number of referring domains and the share considered relevant and trustworthy.
+- Local listing status: Google Business Profile completeness and name, address, and phone consistency across directories.
+- Query type: branded or non-branded.
+- Device category: desktop, mobile, or tablet.
+- Website improvement period: whether observations occurred before or after a documented change.
+
+**Dependent and Outcome Variables**
+
+- Impressions: the number of times a page appeared in Google search results.
+- Clicks: the number of clicks from Google search results to the page.
+- Click-through rate (CTR): clicks divided by impressions.
+- Average position: the average ranking position of the page or query in search results.
+- Non-branded query reach: the number of non-branded queries generating impressions.
+- Indexed pages: the number of website pages included in Google's index.
+- Local interactions: Google Business Profile calls, website clicks, and direction requests, where available.
+
+**Control Variables**
+
+- Reporting period: month and season, since demand for therapy services may change with holidays and school calendars.
+- Google algorithm updates: dates of confirmed updates, recorded so ranking changes are not wrongly credited to website fixes.
+- Concurrent paid search activity: Google Ad Grants launch dates, since paid campaigns may affect branded searches. Organic results will be reported separately from paid traffic.
+- Sitewide changes: Wix template, navigation, or other changes that affect all pages at once.
+
+**Calculated Performance Indicators**
+
+- CTR: Clicks / Impressions × 100.
+- Non-branded click share: Non-branded clicks / Total clicks × 100.
+- Percent change: (Post-period value − Pre-period value) / Pre-period value × 100.
+- Priority score: each prioritization factor rated from 1 (low) to 3 (high) and summed, for a score from 3 to 9, with ties resolved using client input.
+
+**Measurement Quality and Limitations**
+
+Search Console withholds some low-volume queries to protect user privacy, so query-level totals may not match page-level totals [@googlesearchconsole]. Third-party audit tools and backlink counts are estimates and will be checked against the live website where possible. Average position can shift for reasons unrelated to the website, so it will be interpreted together with impressions and clicks rather than on its own.
+
+The primary outcomes for AO1 are a prioritized page list, a documented organic search baseline, and before-and-after comparisons of clicks, impressions, CTR, and average position for improved pages.
 
 ### AO2. Establish GA4 Conversion and Engagement Measurement to Evaluate Website Performance (Kevin Bachez)
 
