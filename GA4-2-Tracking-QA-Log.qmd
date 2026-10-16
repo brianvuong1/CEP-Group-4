@@ -1,0 +1,116 @@
+---
+title: "GA4-2: Tracking QA Log"
+subtitle: "Wellness Ranch Equine Assisted Therapy"
+author: "CEP Group 4"
+date: today
+format:
+  html:
+    toc: true
+    number-sections: true
+  pdf:
+    toc: true
+    number-sections: true
+---
+
+# Screenshot-Backed QA Checklist
+
+## Testing Overview
+
+This tracking quality assurance (QA) assessment evaluates the
+Google Analytics 4 (GA4) implementation for Wellness Ranch
+Equine Assisted Therapy. The purpose is to verify that website
+interactions are accurately collected, processed, and reported
+to support marketing performance measurement and future
+analytics activities.
+
+Testing was conducted on October 16, 2026, using the live
+Wellness Ranch Therapy website. Google Tag Assistant and GA4
+DebugView were used to verify event collection, trigger
+behavior, and event parameters. GA4 standard reports were
+reviewed to assess traffic acquisition, device categories,
+page titles, and campaign attribution.
+
+The validation confirmed that page views, user engagement,
+form interactions, and lead generation events were received
+by GA4. Contact form testing also confirmed that the
+`generate_lead` event was associated with the website's
+contact form and contained relevant event parameters.
+
+Several limitations were identified. The `generate_lead`
+event was initially not designated as a key event, but this
+configuration was updated during testing. Campaign
+attribution requires further validation, and the GA4
+property does not currently have an active BigQuery export
+connection.
+
+The following sections document the validation procedures,
+supporting screenshots, observed results, and remaining
+limitations.
+
+
+## GTM / Collection Layer
+
+### Collection Layer Validation
+
+Google Tag Assistant was used on October 16, 2026,
+to verify that the Google tag was installed and sending
+events from the live Wellness Ranch Therapy website.
+
+The testing confirmed that the website was connected
+to Google Tag Assistant and that the Google tag with
+measurement ID `G-FL3S97QPD6` was detected.
+
+The Tag Assistant results also showed that page views,
+user engagement, form interactions, and lead generation
+events were being transmitted to GA4.
+
+### Tag Assistant Connection
+
+![Google Tag Assistant connection and detected Google tag](images/TagAssistant_Connection.png)
+
+### Lead Event Validation
+
+A test contact form submission generated a
+`generate_lead` event. Tag Assistant showed one
+`generate_lead` hit sent to the GA4 measurement ID
+during the selected submission event.
+
+![Tag Assistant generate_lead event validation](images/TagAssistant_GenerateLead.png)
+
+### QA Results
+
+| Test | Expected Result | Observed Result | Status |
+|---|---|---|---|
+| Google tag installation | Correct tag detected | G-FL3S97QPD6 detected | Pass |
+| Page view tracking | Page views sent to GA4 | Page view hits observed | Pass |
+| Form interaction tracking | Form start event sent | form_start observed | Pass |
+| Lead generation tracking | generate_lead sent after submission | One lead hit observed | Pass |
+| Duplicate lead tracking | One event per submission | One hit observed in selected test | Pass (limited test) |
+
+The collection-layer tests confirmed that the Google
+tag was sending the expected events. However, additional
+testing across multiple submissions and devices is
+recommended to rule out intermittent duplicate events.
+
+
+## GA4 DebugView and Realtime Validation
+
+## Reporting Sanity Checks
+
+## BigQuery Export Validation
+
+# Issues Log: Findings and Fixes Attempted
+
+## Issues Identified
+
+## Fixes Attempted and Current Status
+
+# Remaining Risks and Mitigation Plan
+
+# Appendix
+
+## Supporting Screenshots
+
+## GitHub Repository
+
+## GitHub Pages
