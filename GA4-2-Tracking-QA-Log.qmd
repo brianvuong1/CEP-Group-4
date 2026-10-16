@@ -1,7 +1,7 @@
 ---
 title: "GA4-2: Tracking QA Log"
 subtitle: "Wellness Ranch Equine Assisted Therapy"
-author: "CEP Group 4"
+author: "CEP Group 4: Kevin B, Alexa B, Ron S, Brian V"
 date: today
 format:
   html:
@@ -91,7 +91,6 @@ The collection-layer tests confirmed that the Google
 tag was sending the expected events. However, additional
 testing across multiple submissions and devices is
 recommended to rule out intermittent duplicate events.
-
 
 ## GA4 DebugView and Realtime Validation
 
