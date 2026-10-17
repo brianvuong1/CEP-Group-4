@@ -106,6 +106,113 @@ recommended to rule out intermittent duplicate events.
 
 # Remaining Risks and Mitigation Plan
 
+Although the QA testing confirmed that the Google tag, page views, form interactions, and `generate_lead` events are being received by GA4, several risks could affect data quality over time. These risks should be monitored as the Wellness Ranch website, campaigns, and tracking configuration change.
+
+## Risk 1: Duplicate Lead Events
+
+**Risk description:** A single contact-form submission could generate more than one `generate_lead` event because of repeated clicks, page refreshes, confirmation-page reloads, or overlapping tags.
+
+**Why it matters:** Duplicate lead events would inflate the number of conversions and make conversion rates, campaign comparisons, and lead-generation reports inaccurate.
+
+**Likely impact:** Medium
+
+**Mitigation strategy:** Test multiple form submissions across desktop and mobile devices. Use a unique submission or confirmation-state trigger, prevent repeated event firing, and compare form-submission records with GA4 event counts. Review unusual spikes in `generate_lead` events.
+
+## Risk 2: Embedded or Third-Party Form Tracking Limitations
+
+**Risk description:** If the contact form is embedded from a third-party provider, GA4 or Google Tag Manager may not consistently detect form starts, successful submissions, or confirmation states.
+
+**Why it matters:** Missing or incomplete form events could undercount meaningful conversions and make the website appear less effective than it actually is.
+
+**Likely impact:** High
+
+**Mitigation strategy:** Confirm whether the form is hosted on the Wellness Ranch website or an external platform. Test successful submissions, validation errors, abandoned forms, and confirmation messages. If necessary, use a reliable data-layer event, thank-you-page trigger, or server-side confirmation from the form provider.
+
+## Risk 3: Consent Settings May Suppress Events
+
+**Risk description:** Consent choices, browser privacy settings, or ad blockers may prevent some users and events from being recorded.
+
+**Why it matters:** GA4 reports may undercount users, sessions, engagement, and conversions. Suppression may also vary by device, browser, or audience segment, which can create biased comparisons.
+
+**Likely impact:** Medium
+
+**Mitigation strategy:** Test tracking with analytics consent accepted and declined. Document which events are expected to be blocked under each consent state. Interpret trends as observed activity rather than a complete count of all website activity, and monitor consent rates over time.
+
+## Risk 4: Cross-Domain Tracking Limitations
+
+**Risk description:** If users move from the Wellness Ranch website to an external form, scheduling system, donation platform, or payment page, the user journey may not remain connected across domains.
+
+**Why it matters:** Conversions may be attributed to direct traffic or a referral instead of the original campaign, keyword, or landing page. This could weaken attribution analysis and distort campaign performance.
+
+**Likely impact:** High
+
+**Mitigation strategy:** Identify all external domains used in the user journey. Configure cross-domain measurement when supported, exclude trusted domains from unwanted-referral lists, and test the complete path from advertisement or landing page through the final conversion. If cross-domain tracking is not possible, report external conversions separately and document the limitation.
+
+## Risk 5: Incomplete or Inconsistent UTM Parameters
+
+**Risk description:** Campaign links may be created without UTMs or may use inconsistent capitalization, abbreviations, or naming conventions.
+
+**Why it matters:** Traffic may be grouped into `(not set)`, direct traffic, or inconsistent campaign categories. This makes it difficult to compare channels, campaigns, advertisements, and keyword-intent groups.
+
+**Likely impact:** Medium
+
+**Mitigation strategy:** Create a shared UTM naming standard for source, medium, campaign, content, and term. Use a campaign URL builder or tracking template, review links before launch, and periodically audit GA4 acquisition reports for missing or inconsistent values.
+
+## Risk 6: Low Traffic and Conversion Volume
+
+**Risk description:** Wellness Ranch may receive a limited number of website visitors, advertisement clicks, and conversions during the measurement period.
+
+**Why it matters:** Small sample sizes can cause large percentage changes from only a few users. Low volume also makes it difficult to determine whether differences between campaigns or keyword groups are meaningful.
+
+**Likely impact:** Medium
+
+**Mitigation strategy:** Report counts together with rates and avoid drawing strong conclusions from very small groups. Use longer observation periods, combine closely related categories when appropriate, and clearly label results as directional when sample sizes are limited.
+
+## Risk 7: BigQuery Export Is Not Currently Active
+
+**Risk description:** The GA4 property does not currently have an active BigQuery export connection.
+
+**Why it matters:** Without BigQuery, the team cannot independently query raw event-level data, extract parameters at scale, or build reproducible attribution analyses from the exported event data.
+
+**Likely impact:** High
+
+**Mitigation strategy:** Confirm whether BigQuery export is available and obtain the required project permissions. If export cannot be enabled, document GA4 as the primary source, preserve regular report exports, and maintain a consistent data dictionary for events and parameters. Avoid presenting GA4 interface totals as equivalent to a complete raw-data export.
+
+## Risk 8: Changes to Key Event Configuration
+
+**Risk description:** The `generate_lead` event was initially not designated as a key event and could be changed, renamed, or removed from the key-event configuration in the future.
+
+**Why it matters:** Changes to key-event settings can create breaks in conversion reporting and make results from different time periods difficult to compare.
+
+**Likely impact:** Medium
+
+**Mitigation strategy:** Maintain a change log for GA4 events and key-event settings. Review the configuration before each reporting period and verify that `generate_lead` remains active. Document the date of any configuration change and avoid comparing periods without noting the change.
+
+## Risk 9: Attribution and Source Classification Errors
+
+**Risk description:** Referral exclusions, browser privacy controls, direct traffic, or inconsistent campaign settings may cause GA4 to assign users to the wrong source, medium, campaign, or keyword-intent group.
+
+**Why it matters:** Incorrect attribution could lead the team to recommend ineffective campaigns or overlook channels that are generating qualified leads.
+
+**Likely impact:** Medium
+
+**Mitigation strategy:** Compare GA4 acquisition information with Google Ads campaign records and available form or CRM records. Review source, medium, campaign, and landing-page values regularly. Treat attribution as an estimate and document the attribution model and reporting window used.
+
+## Risk Monitoring Plan
+
+The team should review the tracking configuration at regular intervals and whenever the website, forms, advertising campaigns, or consent settings change. At minimum, the following checks should be completed before each major reporting period:
+
+- Confirm that the Google tag is still active.
+- Test one contact-form submission on desktop and mobile.
+- Verify that one intended `generate_lead` event is recorded per submission.
+- Confirm that required event parameters are populated.
+- Review acquisition data for missing or inconsistent source, medium, and campaign values.
+- Check whether external domains or embedded forms have changed.
+- Review event and key-event configuration changes.
+- Document any limitations that affect interpretation of the KPI results.
+
+These mitigation steps will help the team distinguish actual changes in Wellness Ranch performance from changes caused by tracking limitations, attribution problems, or incomplete data collection.
+
 # Appendix
 
 ## Supporting Screenshots
