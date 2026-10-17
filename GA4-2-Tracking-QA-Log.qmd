@@ -149,6 +149,91 @@ One thing we noticed is that the "Key events by Event name" card in Realtime sho
 
 ## Reporting Sanity Checks
 
+For this part, we checked that GA4's standard dimensions were filling in correctly in the regular reports. We looked at four things: source / medium, campaign, page title, and device category. For each one, we checked whether the values made sense for Wellness Ranch and looked for any `(not set)` values or numbers that didn't line up. All reports use the same date range (last 28 days, Sep 18 – Oct 15, 2026), and the totals match across reports (902 sessions and 5,405 events), so they're all looking at the same data.
+
+One thing to know up front: in every report, the trend line is flat until around October 7 and then jumps up. This suggests GA4 only started collecting data around then, so even though the range says 28 days, it's really about a week and a half of data. That also explains why almost every user shows up as a new user (760 new out of 764 active users).
+
+### Source / Medium
+
+![GA4 Traffic acquisition report by session source / medium](images/GA4_Source_Medium.png){width=100%}
+
+Source / medium filled in correctly, with no `(not set)` values in the top 10. The top sources were:
+
+| Source / medium | Sessions | Share |
+|---|---|---|
+| ig / social | 472 | 52.3% |
+| google / organic | 198 | 22.0% |
+| (direct) / (none) | 182 | 20.2% |
+| facebook.com / referral | 9 | 1.0% |
+| linktr.ee / referral | 7 | 0.8% |
+
+These make sense for Wellness Ranch. Instagram is their biggest channel, and `ig / social` is the tag Instagram adds automatically to link-in-bio clicks, so it's being labeled correctly. Google organic being second shows people are finding the site through search. The smaller referral sources (like ieautism.org, iecn.com, and llu.tevera.app) look like real community and partner sites, not spam, which is a good sign.
+
+### Campaign
+
+![GA4 Traffic acquisition report by session campaign](images/GA4_Campaign_Attribution.png){width=100%}
+
+Since Wellness Ranch isn't running any paid or named campaigns yet (the Google Ad Grants account hasn't launched), we didn't expect to see real campaign names. GA4 just used its default labels, which is normal:
+
+| Session campaign | Sessions | Share |
+|---|---|---|
+| (referral) | 479 | 53.1% |
+| (organic) | 207 | 23.0% |
+| (direct) | 182 | 20.2% |
+| (not set) | 32 | 3.6% |
+
+The `(organic)` and `(direct)` numbers line up with the source / medium report. Direct is exactly 182 in both, and organic (207) matches Google + Yahoo + Bing organic plus a few smaller search engines further down the list.
+
+**Explaining the `(not set)`:** 32 sessions (3.6%) came in as `(not set)`. GA4 uses this when it can't figure out where a session came from. Likely reasons are links that had a UTM source and medium but no campaign name, or sessions that continued after a timeout without a new page view to attach source info to. At 3.6% it's small and not a big concern, but it's another reason to set up a consistent UTM naming standard before the Ad Grants campaigns go live (see Risks 5 and 9).
+
+### Page Title
+
+![GA4 Pages and screens report by page title](images/GA4_Page_Titles.png){width=100%}
+
+Page titles came through clean, with no `(not set)` values, and they match the real pages on the site. There are 21 page titles total, and the top ones were:
+
+| Page title | Views | Share |
+|---|---|---|
+| Wellness Ranch Equine Assisted Therapy \| Rancho Cucamonga Psychotherapy (homepage) | 844 | 50.4% |
+| Community Events | 237 | 14.2% |
+| About | 94 | 5.6% |
+| Our Services | 86 | 5.1% |
+| Contact | 84 | 5.0% |
+
+This makes sense, since the homepage is where most Instagram link-in-bio traffic lands. Community Events being second is interesting, though, and probably connects to event posts on Instagram.
+
+**Small discrepancy:** The page titles aren't fully consistent. Most end with "| Wellness Ranch **Equine Assisted** Therapy," but a few (Volunteer and Regional Center Services) end with "| Wellness Ranch Therapy." This isn't a tracking error, since GA4 is just reporting whatever title the page has. But it makes reports a little messier, and it's something the Website & SEO side could clean up.
+
+**Note on page location:** This report shows page titles, not full URLs. We confirmed in the DebugView section that `page_location` is being sent with every `page_view`, so the URL data is there, it just isn't shown in this report.
+
+### Device Category
+
+![GA4 Tech details report by device category](images/GA4_Device_Category.png){width=100%}
+
+Device category filled in correctly with no `(not set)` values:
+
+| Device | Active users | Share | Engagement rate | Avg. engagement time |
+|---|---|---|---|---|
+| mobile | 669 | 87.6% | 71.9% | 38s |
+| desktop | 88 | 11.5% | 61.9% | 1m 19s |
+| tablet | 8 | 1.1% | 53.3% | 50s |
+
+Mobile being almost 88% of users lines up with Instagram being the top traffic source, since most people click through from their phones. Desktop users are a lot fewer but spend about twice as long on the site (1m 19s vs 38s), which might mean desktop visitors are doing more research.
+
+**Small discrepancy:** The device rows add up to 765 users, but the total says 764. That's normal in GA4, because if one person visits on two different devices, they get counted once in each device row but only once in the total.
+
+### Summary
+
+| Dimension | Populated correctly? | (not set) / discrepancies | Status |
+|---|---|---|---|
+| Source / medium | Yes, values match real channels | None in top 10 | Pass |
+| Campaign | Yes, default labels as expected (no campaigns running yet) | 32 sessions (3.6%) `(not set)`, likely missing UTM campaign or timed-out sessions | Pass (needs UTM standard) |
+| Page title | Yes, matches real site pages | Inconsistent title suffixes on some pages | Pass |
+| Page location | Confirmed in DebugView | Not shown in this report | Pass |
+| Device category | Yes | Device rows sum to 765 vs 764 total (users on multiple devices) | Pass |
+
+Also worth noting: **Key events show 0 in every report.** This matches what we found earlier, where `generate_lead` was firing but hadn't been marked as a key event yet during this date range.
+
 ## BigQuery Export Validation
 
 # Issues Log: Findings and Fixes Attempted
