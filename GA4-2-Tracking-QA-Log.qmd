@@ -445,4 +445,9 @@ These mitigation steps will help the team distinguish actual changes in Wellness
 
 ## GitHub Repository
 
+Repo: https://github.com/brianvuong1/CEP-Group-4
+
 ## GitHub Pages
+
+Repo file: https://github.com/brianvuong1/CEP-Group-4/blob/main/GA4-2-Tracking-QA-Log.qmd
+Live page: https://brianvuong1.github.io/CEP-Group-4/GA4-2-Tracking-QA-Log.html
