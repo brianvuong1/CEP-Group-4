@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,16 +11,10 @@
 
 <title>GA4-2: Tracking QA Log</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
+code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: 1.5em;}
-div.column{flex: auto;}
-@media screen {
-div.columns{gap: min(4vw, 1.5em);}
-div.column{overflow-x: auto;}
-}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -34,14 +28,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="GA4-2-Tracking-QA-Log_files/libs/clipboard/clipboard.min.js"></script>
 <script src="GA4-2-Tracking-QA-Log_files/libs/quarto-html/quarto.js" type="module"></script>
 <script src="GA4-2-Tracking-QA-Log_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="GA4-2-Tracking-QA-Log_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="GA4-2-Tracking-QA-Log_files/libs/quarto-html/popper.min.js"></script>
 <script src="GA4-2-Tracking-QA-Log_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="GA4-2-Tracking-QA-Log_files/libs/quarto-html/anchor.min.js"></script>
 <link href="GA4-2-Tracking-QA-Log_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="GA4-2-Tracking-QA-Log_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="GA4-2-Tracking-QA-Log_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="GA4-2-Tracking-QA-Log_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="GA4-2-Tracking-QA-Log_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="GA4-2-Tracking-QA-Log_files/libs/bootstrap/bootstrap-917079515d91bccb85b543faf8aa8bb6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="GA4-2-Tracking-QA-Log_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -64,7 +59,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#lead-event-validation" id="toc-lead-event-validation" class="nav-link" data-scroll-target="#lead-event-validation"><span class="header-section-number">1.2.3</span> Lead Event Validation</a></li>
   <li><a href="#qa-results" id="toc-qa-results" class="nav-link" data-scroll-target="#qa-results"><span class="header-section-number">1.2.4</span> QA Results</a></li>
   </ul></li>
-  <li><a href="#ga4-debugview-and-realtime-validation" id="toc-ga4-debugview-and-realtime-validation" class="nav-link" data-scroll-target="#ga4-debugview-and-realtime-validation"><span class="header-section-number">1.3</span> GA4 DebugView and Realtime Validation</a></li>
+  <li><a href="#ga4-debugview-and-realtime-validation" id="toc-ga4-debugview-and-realtime-validation" class="nav-link" data-scroll-target="#ga4-debugview-and-realtime-validation"><span class="header-section-number">1.3</span> GA4 DebugView and Realtime Validation</a>
+  <ul class="collapse">
+  <li><a href="#do-the-events-show-up-in-debugview" id="toc-do-the-events-show-up-in-debugview" class="nav-link" data-scroll-target="#do-the-events-show-up-in-debugview"><span class="header-section-number">1.3.1</span> Do the events show up in DebugView?</a></li>
+  <li><a href="#are-the-required-parameters-there" id="toc-are-the-required-parameters-there" class="nav-link" data-scroll-target="#are-the-required-parameters-there"><span class="header-section-number">1.3.2</span> Are the required parameters there?</a></li>
+  <li><a href="#do-the-values-make-sense" id="toc-do-the-values-make-sense" class="nav-link" data-scroll-target="#do-the-values-make-sense"><span class="header-section-number">1.3.3</span> Do the values make sense?</a></li>
+  <li><a href="#key-event-status" id="toc-key-event-status" class="nav-link" data-scroll-target="#key-event-status"><span class="header-section-number">1.3.4</span> Key event status</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">1.3.5</span> Summary</a></li>
+  </ul></li>
   <li><a href="#reporting-sanity-checks" id="toc-reporting-sanity-checks" class="nav-link" data-scroll-target="#reporting-sanity-checks"><span class="header-section-number">1.4</span> Reporting Sanity Checks</a></li>
   <li><a href="#bigquery-export-validation" id="toc-bigquery-export-validation" class="nav-link" data-scroll-target="#bigquery-export-validation"><span class="header-section-number">1.5</span> BigQuery Export Validation</a></li>
   </ul></li>
@@ -221,6 +223,130 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="ga4-debugview-and-realtime-validation" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="ga4-debugview-and-realtime-validation"><span class="header-section-number">1.3</span> GA4 DebugView and Realtime Validation</h2>
+<p>After confirming the Google tag was sending events in Tag Assistant, we checked that those events were actually being received and processed in GA4. We turned on debug mode, browsed the live Wellness Ranch site, and reviewed the results in two places: DebugView (Admin → Data display → DebugView) and the Realtime overview. For each event, we checked three things: did it show up, were the parameters filled in, and did the values make sense.</p>
+<section id="do-the-events-show-up-in-debugview" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="do-the-events-show-up-in-debugview"><span class="header-section-number">1.3.1</span> Do the events show up in DebugView?</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/GA4_DebugView_Events.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>GA4 DebugView event stream showing page_view and user_engagement events</figcaption>
+</figure>
+</div>
+<p>Yes. Once we started browsing the site, events showed up in the DebugView timeline within a few seconds (around 3:44 PM). Both <code>page_view</code> and <code>user_engagement</code> fired like they’re supposed to, and the Top Events panel shows 6 total events in the last 30 minutes, which were 4 page views and 2 user engagement events. The user property <code>non_personalized_ads</code> also came through, so GA4 is receiving user-level data along with events.</p>
+</section>
+<section id="are-the-required-parameters-there" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="are-the-required-parameters-there"><span class="header-section-number">1.3.2</span> Are the required parameters there?</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/GA4_DebugView_BatchPageID.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>page_view event opened in DebugView showing its parameters</figcaption>
+</figure>
+</div>
+<p>Next we clicked into one of the <code>page_view</code> events to see what parameters came with it. All the main ones we need were there:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>What it’s for</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>page_location</code></td>
+<td>the full URL of the page</td>
+</tr>
+<tr class="even">
+<td><code>page_path</code></td>
+<td>just the path part of the URL</td>
+</tr>
+<tr class="odd">
+<td><code>page_title</code></td>
+<td>the name of the page</td>
+</tr>
+<tr class="even">
+<td><code>page_referrer</code></td>
+<td>where the user came from</td>
+</tr>
+<tr class="odd">
+<td><code>ga_session_id</code></td>
+<td>links the event to a session</td>
+</tr>
+<tr class="even">
+<td><code>ga_session_number</code></td>
+<td>shows if it’s a new or returning session</td>
+</tr>
+<tr class="odd">
+<td><code>engagement_time_msec</code></td>
+<td>how long the user was engaged</td>
+</tr>
+<tr class="even">
+<td><code>debug_mode</code></td>
+<td>shows the hit came from our debug testing</td>
+</tr>
+</tbody>
+</table>
+<p>There were also a couple of GA4 internal parameters like <code>batch_page_id</code> (expanded in the screenshot, value 1792190649611…) and <code>batch_ordering_id</code>. Each parameter only showed up once per event, so nothing was missing or duplicated.</p>
+</section>
+<section id="do-the-values-make-sense" class="level3" data-number="1.3.3">
+<h3 data-number="1.3.3" class="anchored" data-anchor-id="do-the-values-make-sense"><span class="header-section-number">1.3.3</span> Do the values make sense?</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/GA4_Realtime_PageView.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>GA4 Realtime overview showing event counts and views by page title</figcaption>
+</figure>
+</div>
+<p>To double check the values, we looked at the Realtime overview. Everything lined up with how we tested the site:</p>
+<ul>
+<li>There were 10 active users in the last 30 minutes and 1 in the last 5 minutes.</li>
+<li><code>page_view</code> had 10 events and <code>session_start</code> had 7. That makes sense since people usually view more than one page per session.</li>
+<li>The page titles came through clean and match the real pages on the site: the homepage (<em>Wellness Ranch Equine Assisted…</em>) had the most views at 5, then <em>Volunteer</em> (2), <em>Field Trips and Education</em> (1), <em>Individual, Couples…</em> (1), and <em>Our Services</em> (1).</li>
+<li>The traffic source showed up as <code>(direct)</code>, which is right since we typed the URL in directly to test. This also shows why consistent UTMs matter later on (see Risks 5 and 9), because untagged traffic gets grouped as direct.</li>
+</ul>
+<p>Since the page titles match the actual pages and follow the same format every time, <code>page_title</code> and <code>page_location</code> are being sent correctly across the site.</p>
+</section>
+<section id="key-event-status" class="level3" data-number="1.3.4">
+<h3 data-number="1.3.4" class="anchored" data-anchor-id="key-event-status"><span class="header-section-number">1.3.4</span> Key event status</h3>
+<p>One thing we noticed is that the “Key events by Event name” card in Realtime showed no data at the time of capture. This lines up with what we found in the collection layer: <code>generate_lead</code> was already firing (see the Tag Assistant lead validation above), but it <strong>had not been marked as a key event yet</strong>, so GA4 wasn’t counting it as one. We updated the key event configuration during testing, which is also why we flagged key event changes as a risk (Risk 8).</p>
+</section>
+<section id="summary" class="level3" data-number="1.3.5">
+<h3 data-number="1.3.5" class="anchored" data-anchor-id="summary"><span class="header-section-number">1.3.5</span> Summary</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Check</th>
+<th>Result</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Events appear in DebugView</td>
+<td><code>page_view</code>, <code>user_engagement</code>, and <code>session_start</code> received</td>
+<td>Pass</td>
+</tr>
+<tr class="even">
+<td>Required parameters populated</td>
+<td>All page and session parameters present on <code>page_view</code></td>
+<td>Pass</td>
+</tr>
+<tr class="odd">
+<td>Values sensible and consistent</td>
+<td>Page titles and source match real site pages and test behavior</td>
+<td>Pass</td>
+</tr>
+<tr class="even">
+<td>Key events reporting</td>
+<td><code>generate_lead</code> not yet marked as key event at time of capture; updated during testing</td>
+<td>Fixed during testing</td>
+</tr>
+</tbody>
+</table>
+</section>
 </section>
 <section id="reporting-sanity-checks" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="reporting-sanity-checks"><span class="header-section-number">1.4</span> Reporting Sanity Checks</h2>

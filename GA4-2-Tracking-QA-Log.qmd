@@ -94,6 +94,59 @@ recommended to rule out intermittent duplicate events.
 
 ## GA4 DebugView and Realtime Validation
 
+After confirming the Google tag was sending events in Tag Assistant, we checked that those events were actually being received and processed in GA4. We turned on debug mode, browsed the live Wellness Ranch site, and reviewed the results in two places: DebugView (Admin → Data display → DebugView) and the Realtime overview. For each event, we checked three things: did it show up, were the parameters filled in, and did the values make sense.
+
+### Do the events show up in DebugView?
+
+![GA4 DebugView event stream showing page_view and user_engagement events](images/GA4_DebugView_Events.png){width=100%}
+
+Yes. Once we started browsing the site, events showed up in the DebugView timeline within a few seconds (around 3:44 PM). Both `page_view` and `user_engagement` fired like they're supposed to, and the Top Events panel shows 6 total events in the last 30 minutes, which were 4 page views and 2 user engagement events. The user property `non_personalized_ads` also came through, so GA4 is receiving user-level data along with events.
+
+### Are the required parameters there?
+
+![page_view event opened in DebugView showing its parameters](images/GA4_DebugView_BatchPageID.png){width=100%}
+
+Next we clicked into one of the `page_view` events to see what parameters came with it. All the main ones we need were there:
+
+| Parameter | What it's for |
+|---|---|
+| `page_location` | the full URL of the page |
+| `page_path` | just the path part of the URL |
+| `page_title` | the name of the page |
+| `page_referrer` | where the user came from |
+| `ga_session_id` | links the event to a session |
+| `ga_session_number` | shows if it's a new or returning session |
+| `engagement_time_msec` | how long the user was engaged |
+| `debug_mode` | shows the hit came from our debug testing |
+
+There were also a couple of GA4 internal parameters like `batch_page_id` (expanded in the screenshot, value 1792190649611…) and `batch_ordering_id`. Each parameter only showed up once per event, so nothing was missing or duplicated.
+
+### Do the values make sense?
+
+![GA4 Realtime overview showing event counts and views by page title](images/GA4_Realtime_PageView.png){width=100%}
+
+To double check the values, we looked at the Realtime overview. Everything lined up with how we tested the site:
+
+- There were 10 active users in the last 30 minutes and 1 in the last 5 minutes.
+- `page_view` had 10 events and `session_start` had 7. That makes sense since people usually view more than one page per session.
+- The page titles came through clean and match the real pages on the site: the homepage (*Wellness Ranch Equine Assisted…*) had the most views at 5, then *Volunteer* (2), *Field Trips and Education* (1), *Individual, Couples…* (1), and *Our Services* (1).
+- The traffic source showed up as `(direct)`, which is right since we typed the URL in directly to test. This also shows why consistent UTMs matter later on (see Risks 5 and 9), because untagged traffic gets grouped as direct.
+
+Since the page titles match the actual pages and follow the same format every time, `page_title` and `page_location` are being sent correctly across the site.
+
+### Key event status
+
+One thing we noticed is that the "Key events by Event name" card in Realtime showed no data at the time of capture. This lines up with what we found in the collection layer: `generate_lead` was already firing (see the Tag Assistant lead validation above), but it **had not been marked as a key event yet**, so GA4 wasn't counting it as one. We updated the key event configuration during testing, which is also why we flagged key event changes as a risk (Risk 8).
+
+### Summary
+
+| Check | Result | Status |
+|---|---|---|
+| Events appear in DebugView | `page_view`, `user_engagement`, and `session_start` received | Pass |
+| Required parameters populated | All page and session parameters present on `page_view` | Pass |
+| Values sensible and consistent | Page titles and source match real site pages and test behavior | Pass |
+| Key events reporting | `generate_lead` not yet marked as key event at time of capture; updated during testing | Fixed during testing |
+
 ## Reporting Sanity Checks
 
 ## BigQuery Export Validation
