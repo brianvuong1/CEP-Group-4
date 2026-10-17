@@ -236,14 +236,102 @@ Also worth noting: **Key events show 0 in every report.** This matches what we f
 
 ## BigQuery Export Validation
 
+BigQuery export sends GA4's raw, event-level data into a BigQuery
+dataset, where it can be queried directly with SQL. This matters
+because the standard GA4 reports are aggregated and can be
+sampled or thresholded, while the export gives access to every
+event and parameter. For this project, it would let the team
+check `generate_lead` events individually and build attribution
+analysis that can be reproduced later.
+
+### Export Status
+
+According to the team's review of the GA4 property, there is no
+active BigQuery export connection. This would be confirmed under
+Admin → Product links → BigQuery links. A screenshot of this
+page was not captured during testing.
+
+Because the export is not set up, we were not able to complete
+the following checks:
+
+- Confirm that daily `events_YYYYMMDD` tables are being created
+- Compare event counts in BigQuery to the GA4 interface
+- Confirm that `generate_lead` parameters can be pulled out at
+  the event level
+- Check for duplicate lead events using raw timestamps and
+  session IDs
+
+### Planned Validation Once Export Is Enabled
+
+If the team gets the required permissions and turns on the
+export, these are the checks we would run:
+
+| Check | How we would test it | What would count as a pass |
+|---|---|---|
+| Daily tables created | Look for `events_` tables in the `analytics_<property_id>` dataset | A new table appears each day |
+| Event counts match | Compare daily `page_view` and `generate_lead` counts to GA4 reports | Counts are close (small differences are normal) |
+| Lead parameters present | Query `event_params` on `generate_lead` events | Expected parameters are populated |
+| Duplicate leads | Look for multiple `generate_lead` events in the same session within a few seconds | One lead event per submission |
+
+A simple starting query for the count comparison would look
+like this:
+
+```sql
+SELECT
+  event_date,
+  event_name,
+  COUNT(*) AS event_count
+FROM `project_id.analytics_property_id.events_*`
+WHERE event_name IN
+
 # Issues Log: Findings and Fixes Attempted
 
 ## Issues Identified
 
+The table below pulls together the issues found across the
+collection layer, DebugView, reporting, and BigQuery checks.
+
+| # | Issue | Where it was found | Severity | Status |
+|---|---|---|---|---|
+| 1 | `generate_lead` was firing but was not marked as a key event | Realtime and standard reports (key events showed 0) | High | Fixed during testing |
+| 2 | Duplicate lead testing was limited to one submission | Tag Assistant | Medium | Open |
+| 3 | 32 sessions (3.6%) had a `(not set)` campaign | Campaign report | Low | Open |
+| 4 | Page title suffixes are inconsistent across pages | Pages and screens report | Low | Open |
+| 5 | BigQuery export is not active | GA4 BigQuery links | High | Open |
+| 6 | Data collection appears to have started around October 7, so the 28-day range only has about a week and a half of data | All standard reports | Medium | Limitation |
+
 ## Fixes Attempted and Current Status
 
-# Remaining Risks and Mitigation Plan
+**Issue 1: Key event configuration.** This was the only issue
+fixed during testing. We marked `generate_lead` as a key event
+in GA4 on October 16, 2026. GA4 does not apply key event changes
+to past data, so conversions will only start showing up in
+reports from that date forward. That is why key events still
+show 0 for the Sep 18 to Oct 15 range. Any future reporting
+should note the October 16 change date (see Risk 8).
 
+**Issue 2: Duplicate lead testing.** No fix needed yet, since
+the one test submission produced one event. More tests across
+desktop and mobile, including double clicks and page refreshes,
+are needed before we can rule out duplicates (see Risk 1).
+
+**Issue 3: `(not set)` campaign values.** No fix attempted. At
+3.6% it is small, but it should be addressed with a UTM naming
+standard before the Google Ad Grants campaigns launch
+(see Risk 5).
+
+**Issue 4: Inconsistent page titles.** This is a website issue,
+not a tracking error. We are passing it to the Website & SEO
+side to standardize the title suffixes.
+
+**Issue 5: BigQuery export.** No fix attempted, since enabling
+the export requires permissions on a Google Cloud project. The
+next step is to confirm who owns the GA4 property and request
+access (see Risk 7).
+
+**Issue 6: Short data window.** This cannot be fixed after the
+fact. Future reports should use date ranges that start on or
+after October 7 so the numbers are not misread as a full month.
 Although the QA testing confirmed that the Google tag, page views, form interactions, and `generate_lead` events are being received by GA4, several risks could affect data quality over time. These risks should be monitored as the Wellness Ranch website, campaigns, and tracking configuration change.
 
 ## Risk 1: Duplicate Lead Events
