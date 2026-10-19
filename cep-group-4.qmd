@@ -696,17 +696,70 @@ Overall, the proposed customer segmentation provides a practical foundation for 
 
 This analysis also supports AO2 by identifying the types of website interactions that should be included in the organization's GA4 measurement framework. Connecting customer segments to meaningful events and KPIs will help Wellness Ranch evaluate how its digital channels contribute to service awareness, community engagement, and fundraising objectives.
 
-## SWOT Analysis
+
+## SWOT Analysis (Kevin Bachez)
 
 ### Strengths
 
+Wellness Ranch Equine Assisted Therapy has several internal strengths that support its mission and marketing objectives. One of its primary strengths is its specialized approach to mental-health services through equine-assisted therapy. By combining trauma-informed care, experiential activities, and community-based wellness education, Wellness Ranch offers services that differ from traditional office-based counseling.
+
+Another strength is its commitment to accessibility and community engagement. The organization serves children, adults, couples, and groups throughout Rancho Cucamonga and the Inland Empire. Its reported insurance and sliding-scale options may help reduce financial barriers for eligible clients. Community outreach, educational activities, and internship opportunities further strengthen its connection with the local community.
+
+Wellness Ranch also has an existing website and digital analytics infrastructure, including Google Analytics 4 (GA4) and Google Search Console. These tools provide a foundation for improving online visibility, understanding visitor behavior, and evaluating digital marketing performance, although tracking accuracy and data availability still require validation.
+
 ### Weaknesses
+
+As a relatively new nonprofit organization founded in 2023, Wellness Ranch faces internal limitations related to staffing, digital marketing resources, and organizational capacity. The organization does not currently have a documented dedicated marketing department, and responsibilities appear to be distributed among leadership, service providers, volunteers, and community partners.
+
+The current website also presents opportunities for improvement in search engine optimization (SEO), content development, and conversion rate optimization (CRO). Existing project findings have identified areas requiring review, including page content, metadata, internal linking, and calls to action. These limitations may make it more difficult for prospective clients and donors to find relevant information and complete meaningful website actions.
+
+Another weakness is the organization's incomplete digital measurement infrastructure. Although GA4 has been implemented, the accuracy of important interactions, including contact-form submissions, donation actions, and other conversions, requires continued validation. Without reliable measurement, Wellness Ranch may have difficulty determining which digital marketing channels contribute most effectively to organizational objectives.
+
+Limited documentation of marketing responsibilities, campaign-management procedures, and long-term account ownership may also create challenges in maintaining improvements after the CEP project concludes.
 
 ### Opportunities
 
+Wellness Ranch has several external opportunities to strengthen its digital presence and expand community engagement. Increasing the organization's visibility through local SEO and relevant search queries may help prospective clients and families discover its services when searching for equine-assisted therapy, trauma-informed care, or mental-health support in the Inland Empire.
+
+Google Ad Grants represents another potential opportunity. If Wellness Ranch meets the eligibility and program requirements, the grant could provide access to search advertising that supports service awareness, donation opportunities, and community outreach without requiring a traditional paid-search advertising budget.
+
+The organization may also benefit from strengthening relationships with local schools, counselors, healthcare professionals, nonprofit organizations, and community partners. These relationships could generate referrals, increase awareness, and support community-based programs.
+
+Improving website content and user experience presents additional opportunities to communicate the organization's mission and encourage meaningful actions. Clearer service information, accessible contact options, stronger donation pathways, and verified impact statements may help visitors make informed decisions and support the organization.
+
 ### Threats
 
-### **Summary: SWOT quadrants**
+Wellness Ranch operates in an environment where prospective clients can choose among traditional mental-health providers, nonprofit counseling organizations, and other specialized therapeutic programs. These alternatives may compete for online visibility, professional referrals, community attention, and donor support.
+
+Economic conditions also represent a potential threat. Changes in household financial circumstances or charitable giving may affect the ability of individuals and families to afford services or contribute donations. As a nonprofit organization, Wellness Ranch must consider how external funding conditions could affect its ability to maintain accessible programs.
+
+Changes in search engine algorithms, online advertising requirements, and digital platform policies may also influence the organization's visibility and marketing performance. Google Ad Grants presents a valuable opportunity, but eligibility, compliance requirements, and ongoing campaign-management expectations may limit its effectiveness if the organization cannot maintain the necessary resources.
+
+Privacy and communication requirements are particularly important because Wellness Ranch provides mental-health services. Inaccurate therapeutic claims, inappropriate use of sensitive information, or failure to maintain appropriate privacy practices could create reputational and compliance risks.
+
+### Summary: SWOT Quadrants
+
+The following table summarizes the internal strengths and weaknesses and external opportunities and threats identified for Wellness Ranch Equine Assisted Therapy.
+
+| Strengths | Weaknesses |
+|---|---|
+| Specialized equine-assisted and trauma-informed services | Limited staffing and dedicated marketing resources |
+| Community-centered mission and local service focus | Website SEO and content improvement needs |
+| Services for multiple client groups | Incomplete validation of GA4 conversion tracking |
+| Existing website and analytics tools | Limited documentation of marketing procedures and ownership |
+| Community outreach and educational opportunities | Limited organizational capacity as a newer nonprofit |
+
+| Opportunities | Threats |
+|---|---|
+| Local SEO and increased online visibility | Competition from alternative mental-health providers |
+| Potential access to Google Ad Grants | Economic pressures affecting service affordability and donations |
+| Community partnerships and professional referrals | Changes in search engine and advertising policies |
+| Website conversion and donation-pathway improvements | Privacy, regulatory, and reputational risks |
+| Greater public awareness of available services | Limited visibility in competitive online search results |
+
+Overall, the SWOT analysis demonstrates that Wellness Ranch has a distinctive service offering and a mission-driven foundation for community engagement. However, limited marketing resources, website improvement needs, and incomplete analytics validation may restrict its ability to expand its digital reach.
+
+The identified opportunities align with the CEP's objectives of improving SEO performance, strengthening website engagement and conversion measurement, and evaluating Google Ad Grants readiness. Addressing internal weaknesses while taking advantage of relevant external opportunities can help Wellness Ranch increase its visibility, support service inquiries and donations, and establish more sustainable digital marketing practices.
 
 ## Investigation of Currently Available Research Framework/Model
 
