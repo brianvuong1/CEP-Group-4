@@ -763,6 +763,10 @@ The identified opportunities align with the CEP's objectives of improving SEO pe
 
 ## Investigation of Currently Available Research Framework/Model
 
+This section evaluates the research frameworks and models that inform each analytics objective. For every AO, the discussion follows the same four steps. It first reviews well-established models relevant to the objective, then assesses whether the information gathered so far is adequate, identifies what additional analysis is needed, and concludes by affirming or revising the AO.
+
+Although each objective is assigned to one team member, the four AOs share a common foundation. Each one connects how people search for and evaluate Wellness Ranch, whether as prospective clients, families, donors, or partners, to measurable outcomes on the website or in Google Ads. AO1 focuses on whether the organization can be found in organic search, AO2 on whether meaningful website actions can be measured reliably, AO3 on whether the organization is ready to launch and sustain Google Ad Grants campaigns, and AO4 on how those campaigns can be optimized once they are live.
+
 ### AO1. On-Page and Off-Page SEO Performance Analysis (Alexa Bueno)
 
 Using data from the Semrush site audit (SEO Fix Tracker), backlink audit, and Google Search Console, measure Wellness Ranch Therapy's baseline SEO performance during Fall 2026. Measures will include the number and type of technical and on-page issues per page, organic impressions, clicks, click-through rate, and average search position by page and query, and the number of referring domains linking to the website. Pages will then be ranked by issue severity and importance to the organization to produce a prioritized list of pages for improvement and a baseline for measuring the impact of those improvements in Spring 2027.
@@ -1021,6 +1025,20 @@ The analytical approach combines search intent analysis, funnel-stage metric dia
 
 These techniques are appropriate because they match how paid search works. People act on intent, performance varies at the keyword level, and improvements are best confirmed through testing rather than assumption. They are also realistic for Wellness Ranch's size and staffing. The monthly review routine and documented optimization steps can be handed off to the organization so it can continue managing the account after the capstone ends. This supports PO3 by turning a launched campaign into an optimized one, supports PO2 by relying on the conversion tracking established through AO2, and contributes to PO5 by documenting procedures for long-term account management.
 
+### Summary of Research Frameworks and Analytical Direction
+
+@tbl-ao-frameworks summarizes the framework, main limitation, and analytical direction for each analytics objective.
+
+| AO | Primary Framework or Model | Main Limitation | Analytical Direction |
+|---|---|---|---|
+| AO1. SEO Performance | SEO factor framework (on-page, off-page, technical, local) with a search intent lens | Ranking-factor evidence is mostly correlational, and Wix sites have not been studied | Weighted page-prioritization matrix and Fall 2026 baseline |
+| AO2. Conversion and Engagement Measurement | Customer Decision Journey with GA4 event-based measurement | Tracking accuracy has not yet been verified | GA4 configuration audit, event validation, and descriptive analysis |
+| AO3. Google Ad Grants Readiness | Technology-Organization-Environment framework with the Customer Decision Journey | Eligibility does not guarantee organizational capacity | Readiness matrix (Ready, Partially Ready, Not Ready, Unable to Verify) |
+| AO4. Google Ad Grants Optimization | Search intent, hierarchy of effects, sponsored search research, and controlled experiments | No campaign data exists until launch | Keyword and search-term analysis with controlled ad and landing-page tests |
+
+: Summary of Research Frameworks by Analytics Objective {#tbl-ao-frameworks}
+
+Two patterns appear across all four objectives. First, each AO draws on a customer journey or search intent perspective, which keeps the analysis focused on how real audiences find and act on information rather than on website activity alone. Second, each AO is limited by the small data volume of a single nonprofit website and a project timeline in which some data will not exist until Spring 2027. For this reason, the team has chosen descriptive, diagnostic, and readiness-based methods over causal models, and results will be interpreted as directional where data are limited. The AOs also depend on each other. AO1 and AO2 provide the page priorities and validated conversion events that AO3 needs for readiness, and AO4 builds on all three once campaigns launch. Chapter 3 describes the specific methods for each objective.
 ------------------------------------------------------------------------
 
 {{< pagebreak >}}
