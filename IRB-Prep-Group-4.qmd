@@ -60,9 +60,11 @@ The following CITI training certificates document completion of the required res
 
 ### Co-Principal Investigator 2
 
-- **Name:** [Insert name]
+- **Name:** Ron Stephen Sabilla
 - **Role:** Co-Principal Investigator
-- **Certificate:** [View Co-PI 2 CITI Certificate](INSERT-SECURE-LINK)
+- **Certificate:** CITI Training Certificate
+
+![Ron Sabilla CITI Certificate](images/ron-citi.png){width="80%"}
 
 ### Co-Principal Investigator 3
 
