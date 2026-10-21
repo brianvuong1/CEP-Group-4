@@ -25,16 +25,13 @@ The Cayuse application remains in draft status and will not be submitted until f
 
 # Study Information
 
-- **Study title:** [Insert proposed study title]
-- **Principal investigator:** [Insert PI name]
-- **Co-principal investigators:** [Insert Co-PI names]
-- **Faculty advisor:** [Insert faculty advisor’s name]
-- **Course and section:** [Insert course and section]
-- **Organization or project:** [Insert organization or project name]
-- **Proposed research method:** Online questionnaire administered through Qualtrics
-- **Proposed participants:** [Briefly describe the intended participant population]
-- **Anticipated IRB classification:** Exempt status requested; final determination pending IRB review
-- **Current application status:** Draft prepared for faculty review
+- **Project title:** Culminating Experience Project for Wellness Ranch Equine-Assisted Therapy
+- **Team members:** Kevin Bachez, Alexa Bueno, Ron Sabilla, Brian Vuong
+- **Faculty mentor:** Dr. Sonya Zhang
+- **Client:** Wellness Ranch Equine-Assisted Therapy (nonprofit, Rancho Cucamonga, CA)
+- **Research method:** Analysis of existing secondary platform data
+- **Survey data collection:** Not planned
+- **IRB submission:** Not planned unless the project scope changes
 
 # Research Purpose
 
