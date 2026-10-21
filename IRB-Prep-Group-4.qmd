@@ -64,9 +64,11 @@ The following CITI training certificates document completion of the required res
 
 ### Co-Principal Investigator 1
 
-- **Name:** [Insert name]
+- **Name:** Kevin Bachez
 - **Role:** Co-Principal Investigator
-- **Certificate:** [View Co-PI 1 CITI Certificate](INSERT-SECURE-LINK)
+- **Certificate:** CITI Traiing Certificate
+
+![Kevin Bachez CITI Certificate](images/kevin-citi.png){width="80%"}
 
 ### Co-Principal Investigator 2
 
