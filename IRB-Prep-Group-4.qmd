@@ -19,9 +19,7 @@ execute:
 
 # Purpose
 
-This report provides the materials prepared for faculty review before submission of the research protocol to the Cal Poly Pomona Institutional Review Board. The package includes the research-team members’ CITI certificates, the IRB application draft, the Cayuse IRB draft, the informed-consent form, and the Qualtrics questionnaire.
-
-The Cayuse application remains in draft status and will not be submitted until faculty feedback and approval have been received. Data collection will not begin until the required institutional approval or exempt determination has been obtained.
+This report documents the team's IRB status for the Culminating Experience Project with Wellness Ranch Equine-Assisted Therapy. After reviewing the project's analytics objectives, the team determined that the project does not require survey data. Following faculty guidance not to collect data for the sake of data collection, the team will not administer a questionnaire or submit a protocol to the IRB.
 
 # Study Information
 
@@ -33,9 +31,24 @@ The Cayuse application remains in draft status and will not be submitted until f
 - **Survey data collection:** Not planned
 - **IRB submission:** Not planned unless the project scope changes
 
-# Research Purpose
+# Why Survey Data Is Not Needed
 
-The purpose of this proposed study is to [briefly explain what the research will investigate]. The questionnaire will collect information about [identify the principal constructs, behaviors, opinions, or experiences being studied]. The results are expected to help [explain the intended academic or practical use of the findings].
+Each analytics objective can be fully answered with existing platform data. None of the research questions requires collecting new data from individuals.
+
+| Analytics Objective | Data Sources | Survey Needed? |
+|---|---|---|
+| AO1. SEO Performance Analysis (Alexa) | Semrush site audit, Google Search Console, backlink audit, Google Business Profile | No |
+| AO2. Conversion & Engagement Measurement (Kevin) | Google Analytics 4, Google Search Console, Wix, Google Tag Assistant | No |
+| AO3. Google Ad Grants Readiness (Brian) | Official Ad Grants requirements, website and GA4 audits, client documentation | No |
+| AO4. Google Ad Grants Campaign Optimization (Ron) | Google Ads, GA4, Google Keyword Planner, Google Search Console | No |
+
+# Human Subjects Considerations
+
+The project analyzes aggregated website, search, and advertising metrics such as sessions, clicks, impressions, click-through rate, and conversions. The team will not collect names, contact information, or other identifiable information from website visitors. The team will not interact with individuals to gather research data.
+
+Client information, such as staffing and account ownership for AO3, will come from normal project meetings with the client organization, not from research participants.
+
+Because no data will be collected from human participants, the team does not plan to submit a protocol to the IRB. If the project scope changes and survey or interview data become necessary, the team will complete the full IRB package and obtain faculty and IRB approval before any data collection begins.
 
 # IRB Application Package
 
