@@ -1,0 +1,183 @@
+---
+title: "IRB Application Preparation Package"
+subtitle: "GP08 IRB Application Preparation and Submission"
+author: "Group 4"
+date: today
+date-format: long
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    embed-resources: true
+    link-external-newwindow: true
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+# Purpose
+
+This report provides the materials prepared for faculty review before submission of the research protocol to the Cal Poly Pomona Institutional Review Board. The package includes the research-team members’ CITI certificates, the IRB application draft, the Cayuse IRB draft, the informed-consent form, and the Qualtrics questionnaire.
+
+The Cayuse application remains in draft status and will not be submitted until faculty feedback and approval have been received. Data collection will not begin until the required institutional approval or exempt determination has been obtained.
+
+# Study Information
+
+- **Study title:** [Insert proposed study title]
+- **Principal investigator:** [Insert PI name]
+- **Co-principal investigators:** [Insert Co-PI names]
+- **Faculty advisor:** [Insert faculty advisor’s name]
+- **Course and section:** [Insert course and section]
+- **Organization or project:** [Insert organization or project name]
+- **Proposed research method:** Online questionnaire administered through Qualtrics
+- **Proposed participants:** [Briefly describe the intended participant population]
+- **Anticipated IRB classification:** Exempt status requested; final determination pending IRB review
+- **Current application status:** Draft prepared for faculty review
+
+# Research Purpose
+
+The purpose of this proposed study is to [briefly explain what the research will investigate]. The questionnaire will collect information about [identify the principal constructs, behaviors, opinions, or experiences being studied]. The results are expected to help [explain the intended academic or practical use of the findings].
+
+# IRB Application Package
+
+## CITI Training Certificates
+
+The following CITI training certificates document completion of the required research-ethics training by the principal investigator and co-principal investigators.
+
+### Principal Investigator
+
+- **Name:** [Insert PI name]
+- **Role:** Principal Investigator
+- **Certificate:** [View PI CITI Certificate](INSERT-SECURE-LINK)
+
+### Co-Principal Investigator 1
+
+- **Name:** [Insert name]
+- **Role:** Co-Principal Investigator
+- **Certificate:** [View Co-PI 1 CITI Certificate](INSERT-SECURE-LINK)
+
+### Co-Principal Investigator 2
+
+- **Name:** [Insert name]
+- **Role:** Co-Principal Investigator
+- **Certificate:** [View Co-PI 2 CITI Certificate](INSERT-SECURE-LINK)
+
+### Co-Principal Investigator 3
+
+- **Name:** [Insert name]
+- **Role:** Co-Principal Investigator
+- **Certificate:** [View Co-PI 3 CITI Certificate](INSERT-SECURE-LINK)
+
+## IRB Application Draft
+
+The team prepared a written draft of the IRB application before entering the information into Cayuse. The draft allows the team and faculty advisor to review the protocol language, research procedures, recruitment plan, risks, confidentiality protections, and informed-consent process.
+
+- **Document:** [View IRB Application Draft](INSERT-SECURE-LINK)
+- **Document format:** [Word or Google Docs]
+- **Last updated:** [Insert date]
+- **Status:** Draft awaiting faculty feedback
+
+## Cayuse IRB Application Draft
+
+The research protocol has been entered into Cayuse IRB and remains in draft status. The application will not be submitted to the IRB until the professor has reviewed and approved it.
+
+- **Cayuse draft:** [Open Cayuse IRB Application](INSERT-CAYUSE-DRAFT-URL)
+- **Cayuse system:** [Open the CPP Cayuse IRB website](https://cpp.cayuse424.com/)
+- **Current status:** Draft—not submitted
+- **Last updated:** [Insert date]
+
+Because Cayuse access may require Bronco authentication, the faculty reviewer may need to sign in with authorized university credentials before opening the draft.
+
+## Informed Consent Form
+
+The informed-consent form appears on the opening page of the Qualtrics questionnaire. It explains the study’s purpose, participation requirements, anticipated time commitment, possible risks and benefits, confidentiality protections, voluntary-participation statement, withdrawal rights, and researcher contact information.
+
+- **Document:** [View Informed Consent Form](INSERT-SECURE-LINK)
+- **Location in survey:** Opening page
+- **Status:** [Draft, revised, or faculty reviewed]
+- **Last updated:** [Insert date]
+
+## Qualtrics Questionnaire
+
+The questionnaire was prepared in Qualtrics using an anonymous distribution link. The question order follows a funneling approach, beginning with broader questions and progressing to more specific questions. The questionnaire has been reviewed for clear wording, logical sequencing, response-option quality, and alignment with the Construct and Measurement Table.
+
+- **Questionnaire:** [Open Qualtrics Questionnaire](INSERT-ANONYMOUS-QUALTRICS-LINK)
+- **Distribution method:** Anonymous Qualtrics link
+- **Estimated completion time:** [Insert number] minutes
+- **Questionnaire status:** [Draft or ready for faculty review]
+- **Target participants:** [Insert intended participant population]
+- **Data collection status:** Not started
+
+# Construct and Measurement Alignment
+
+The Construct and Measurement Table was reviewed alongside the Qualtrics questionnaire to ensure that each construct is represented by appropriate measures. Faculty feedback from presentations and Canvas submissions was incorporated where applicable.
+
+| Construct | Questionnaire Items | Measurement Scale | Revision Status |
+|---|---|---|---|
+| [Construct 1] | [Q1–Q4] | [Scale type] | [Complete or needs revision] |
+| [Construct 2] | [Q5–Q8] | [Scale type] | [Complete or needs revision] |
+| [Construct 3] | [Q9–Q12] | [Scale type] | [Complete or needs revision] |
+| [Outcome variable] | [Q13–Q15] | [Scale type] | [Complete or needs revision] |
+
+# Questionnaire Design Review
+
+The team reviewed the questionnaire using the required Qualtrics design guidelines and checkpoints.
+
+- [ ] The informed-consent information appears on the opening page.
+- [ ] Participation is clearly described as voluntary.
+- [ ] The study’s purpose is explained without misleading participants.
+- [ ] Risks, benefits, confidentiality, and researcher contact information are provided.
+- [ ] Questions follow a logical funneling sequence.
+- [ ] Question wording is clear, neutral, and appropriate for the intended participants.
+- [ ] Double-barreled and leading questions have been removed.
+- [ ] Response options are complete and mutually appropriate.
+- [ ] Questionnaire items correspond with the Construct and Measurement Table.
+- [ ] Skip logic and display logic have been tested.
+- [ ] Required questions have been reviewed for appropriateness.
+- [ ] The survey has been previewed on desktop and mobile devices.
+- [ ] The anonymous questionnaire link has been tested.
+- [ ] No actual participant data have been collected.
+
+# Package Status
+
+| Required component | Status | Link or location | Remaining action |
+|---|---|---|---|
+| PI CITI certificate | [Status] | [Link] | [Action or None] |
+| Co-PI CITI certificates | [Status] | [Link] | [Action or None] |
+| IRB application draft | [Status] | [Link] | [Action or None] |
+| Cayuse IRB draft | [Status] | [Link] | Obtain faculty approval before submission |
+| Informed-consent form | [Status] | [Link] | [Action or None] |
+| Qualtrics questionnaire | [Status] | [Link] | [Action or None] |
+| Construct and Measurement Table | [Status] | [Link] | [Action or None] |
+
+# Items Requiring Faculty Feedback
+
+The team requests feedback on the following items before submitting the Cayuse application:
+
+1. [Insert question or area requiring feedback]
+2. [Insert question or area requiring feedback]
+3. [Insert question or area requiring feedback]
+4. [Insert question or area requiring feedback]
+
+# Next Steps
+
+1. Submit this `.qmd` file and the rendered HTML report to Canvas.
+2. Obtain faculty feedback on the IRB package.
+3. Revise the IRB application, informed-consent form, and Qualtrics questionnaire as needed.
+4. Receive faculty approval to submit the Cayuse application.
+5. Submit the finalized protocol through Cayuse IRB.
+6. Respond to any revision requests from the IRB.
+7. Wait for the official IRB approval or exempt determination before collecting participant data.
+
+# Submission Files
+
+The following files will be submitted to Canvas:
+
+- `irb-application-package.qmd`
+- `irb-application-package.html`
+
+# Confidentiality and Access Note
+
+Links containing CITI certificates, application materials, or personally identifiable information should be restricted to the professor and authorized team members. Before submission, the team should test each link using an appropriate viewer account to confirm that the professor can access the material without making the documents publicly available.
