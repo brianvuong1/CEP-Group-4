@@ -66,9 +66,11 @@ The following CITI training certificates document completion of the required res
 
 ### Co-Principal Investigator 3
 
-- **Name:** [Insert name]
+- **Name:** Brian V
 - **Role:** Co-Principal Investigator
-- **Certificate:** [View Co-PI 3 CITI Certificate](INSERT-SECURE-LINK)
+- **Certificate:** ## CITI Training Certificate
+
+![CITI training certificate for Brian V](images/brian-citi.png){fig-alt="CITI training completion certificate for Brian Vuong" width=85%}
 
 ## IRB Application Draft
 
