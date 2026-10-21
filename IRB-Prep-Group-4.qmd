@@ -48,7 +48,7 @@ The project analyzes aggregated website, search, and advertising metrics such as
 
 Client information, such as staffing and account ownership for AO3, will come from normal project meetings with the client organization, not from research participants.
 
-Because no data will be collected from human participants, the team does not plan to submit a protocol to the IRB. If the project scope changes and survey or interview data become necessary, the team will complete the full IRB package and obtain faculty and IRB approval before any data collection begins.
+No data will be collected from human participants, the team does not plan to submit a protocol to the IRB. If the project scope changes and survey or interview data become necessary, the team will complete the full IRB package and obtain faculty and IRB approval before any data collection begins.
 
 # IRB Application Package
 
