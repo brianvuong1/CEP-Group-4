@@ -1046,14 +1046,6 @@ Two patterns appear across all four objectives. First, each AO draws on a custom
 
 The AOs also depend on each other. AO1 and AO2 provide the page priorities and validated conversion events that AO3 needs for readiness, and AO4 builds on all three once campaigns launch. Chapter 3 describes the specific methods for each objective.
 
-\newpage
-
-# CHAPTER 3: METHODS {#sec-ch3-methods}
-
-## Data and Sampling
-
-### Population
-
 
 {{< pagebreak >}}
 
@@ -2882,14 +2874,6 @@ Kaushik, A. (2009). *Web Analytics 2.0: The Art of Online Accountability and Sci
 
 # APPENDIX
 
-::: page-note
-*(no specific page length guide)*
-:::
-
-::: callout-note
-*You may have the following in the cloud (e.g., Google Doc) and provide links to them.*
-:::
-
 ## Data
 
 *(If you used data for your analysis, include the data here or link to the shared cloud folder. You may also provide a link to a Google Doc with the data.)*
@@ -2907,16 +2891,6 @@ Kaushik, A. (2009). *Web Analytics 2.0: The Art of Online Accountability and Sci
 ## Literature Review Folder
 
 *(You can provide a link to a group's Zotero's online database or a shared folder established on a cloud folder)*
-
-## Survey Instrument
-
-*(if human subjects are involved in data collection)*
-
-*(If you conducted a survey, include the full survey instrument here.)*
-
-## IRB Approval
-
-*(if human subjects are involved in data collection, include the IRB approval documentation here)*
 
 ## Other Technical Details
 
