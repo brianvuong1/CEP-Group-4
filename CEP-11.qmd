@@ -1,0 +1,263 @@
+---
+title: "Survey Data Download and Preparation"
+subtitle: "Wellness Ranch Equine Assisted Therapy"
+author: "CEP Group 4: Alexa Bueno, Kevin Bachez, Ron Sabilla, and Brian Vuong"
+date: today
+format:
+  html:
+    toc: true
+    number-sections: true
+    embed-resources: true
+---
+
+# Assignment Overview
+
+This group assignment documents the process used to download the Wellness Ranch survey responses from Qualtrics and prepare the data for statistical analysis in SPSS.
+
+The assignment has two parts:
+
+1. Review, clean, and download the raw survey data from Qualtrics.
+2. Prepare the data in SPSS and document all transformations in a syntax file.
+
+The final SPSS deliverables are:
+
+- A cleaned SPSS data file with the `.sav` extension
+- An SPSS syntax file with the `.sps` extension
+
+
+# Part 1: Downloading the Raw Data
+
+## Review of Data-Collection Status
+
+The group reviewed the Qualtrics **Distribution** and **Data & Analysis** tabs before ending data collection.
+
+| Data-Collection Measure | Result |
+|---|---:|
+| Total recorded responses | [Enter number] |
+| Anonymous-link responses | [Enter number] |
+| Preview or test responses | [Enter number] |
+| Responses in progress | [Enter number] |
+| Completed responses | [Enter number] |
+| Date data collection ended | [Enter date] |
+
+## Decision to End Data Collection
+
+The group determined that the available sample was [sufficient/not yet sufficient] for the planned analysis.
+
+Data collection was closed on **[enter date]** after reviewing the number of completed responses, unfinished responses, and the requirements of the planned analysis.
+
+## Review of Individual Responses
+
+Before downloading the data, the group reviewed several individual responses to better understand:
+
+- How respondents interpreted the questions
+- Whether participants completed the full questionnaire
+- Whether open-ended responses contained usable information
+- Whether test, duplicate, or invalid responses were present
+- Whether response patterns suggested data-quality concerns
+
+## Records Removed Before Download
+
+The following records were identified for removal:
+
+| Record Type | Number Removed | Reason |
+|---|---:|---|
+| Preview or test responses | [Enter number] | Generated during survey testing |
+| Duplicate responses | [Enter number] | Multiple records from the same apparent submission |
+| Unusable incomplete responses | [Enter number] | Insufficient information for analysis |
+| Other exclusions | [Enter number] | [Explain reason] |
+| **Total records removed** | **[Enter total]** | |
+
+The group preserved an unchanged copy of the original raw data before deleting or modifying any records.
+
+## Raw Data Download
+
+After reviewing the records, the survey data were downloaded from Qualtrics in SPSS format.
+
+**Downloaded file type:** `.sav`  
+**Download date:** [Enter date]  
+**Downloaded by:** [Enter team member]  
+**Original raw file location:** [Insert shared-drive or repository location]
+
+# Part 2: SPSS Data Preparation
+
+## Data-Preparation Checklist
+
+The group used the following checklist to prepare the SPSS dataset:
+
+- [ ] Preserve an unchanged copy of the original raw data.
+- [ ] Remove preview and test responses.
+- [ ] Review incomplete and duplicate responses.
+- [ ] Confirm that each row represents one respondent.
+- [ ] Confirm that each column represents one variable.
+- [ ] Assign the correct measurement level to each variable.
+- [ ] Add clear variable labels.
+- [ ] Add value labels to nominal and ordinal variables.
+- [ ] Identify missing-value codes.
+- [ ] Convert “not applicable” or similar responses to missing values when appropriate.
+- [ ] Identify and reverse-code negatively worded items.
+- [ ] Run reliability analysis for multi-item constructs.
+- [ ] Conduct factor analysis where appropriate.
+- [ ] Create composite variables for reliable multi-item constructs.
+- [ ] Save every transformation in the SPSS syntax file.
+- [ ] Review the cleaned dataset for errors.
+- [ ] Save the final `.sav` and `.sps` files.
+
+## Measurement Levels
+
+Measurement levels were assigned using the group’s Construct and Measurement Table.
+
+| Variable Type | SPSS Measure | Examples |
+|---|---|---|
+| Unordered categories | Nominal | Gender, city, device, insurance type |
+| Ordered categories | Ordinal | Age group, education, income, search frequency |
+| Likert-scale and composite measures | Scale | Trust, clarity, inquiry intention, donation intention |
+
+## Variable and Value Labels
+
+The group reviewed the imported variable names and labels in SPSS Variable View.
+
+Variable labels were revised so that each variable could be understood without referring back to the Qualtrics questionnaire. Value labels were added for nominal and ordinal variables.
+
+Examples include:
+
+| Variable | Example Variable Label | Example Value Labels |
+|---|---|---|
+| `Q2` | Inland Empire residency | 1 = Yes; 2 = No; 3 = Not sure |
+| `Q3` | Searched online for wellness services | 1 = Yes; 2 = No |
+| `Q18` | Primary device used for online search | 1 = Smartphone; 2 = Computer; 3 = Tablet |
+| `Q21` | Age category | 1 = 18–24; 2 = 25–34; etc. |
+
+## Missing Values
+
+The group reviewed the dataset for responses such as:
+
+- No opinion
+- Not applicable
+- Prefer not to say
+- Blank responses
+- Questions hidden through Qualtrics display logic
+
+The group determined whether each response should remain as a valid category or be coded as system missing. All missing-value decisions were documented in the SPSS syntax file.
+
+## Reverse-Coded Items
+
+The questionnaire contains the following negatively worded item:
+
+| Variable | Statement | Required Action |
+|---|---|---|
+| `ATT3` | I usually skip sponsored ads and scroll to regular results. | Reverse-code before creating the attitude composite |
+
+For a seven-point scale, the reverse-coded value is calculated as:
+
+\[
+\text{ATT3R} = 8 - \text{ATT3}
+\]
+
+A new variable named `ATT3R` should be created so that the original response remains unchanged.
+
+The reverse-coded item should be checked to confirm that higher values have the same conceptual meaning as the other items in the construct.
+
+## Multi-Item Constructs
+
+The following constructs contain multiple survey items:
+
+| Construct | Items | Planned Composite Variable |
+|---|---|---|
+| Attitude Toward Search Ads | ATT1, ATT2, ATT3R | `ATT_MEAN` |
+| Website Clarity | CLR1–CLR3 | `CLR_MEAN` |
+| Perceived Trust | TRU1–TRU4 | `TRU_MEAN` |
+| Perceived Accessibility | ACC1–ACC3 | `ACC_MEAN` |
+| Ease of Action | EAS1–EAS3 | `EAS_MEAN` |
+| Inquiry Intention | INQ1–INQ3 | `INQ_MEAN` |
+| Donation Intention | DON1–DON3 | `DON_MEAN` |
+| Openness to Experiential Therapy | OPN1–OPN3 | `OPN_MEAN` |
+| Attitude Toward Animals | ANI1–ANI2 | `ANI_MEAN` |
+| Social Influence | SOC1–SOC2 | `SOC_MEAN` |
+
+## Attention Check
+
+The questionnaire includes the following attention-check item:
+
+| Variable | Required Response |
+|---|---|
+| CHK1 | Somewhat agree, coded as 5 |
+
+The group will document how responses that fail the attention check are handled. Possible approaches include excluding those cases from the primary analysis or conducting a sensitivity analysis with and without those responses.
+
+**Group decision:** [Enter final decision]
+
+## Reliability Analysis
+
+Reliability analysis will be conducted for each multi-item construct before a composite score is created.
+
+The group will record:
+
+- Number of items
+- Cronbach’s alpha
+- Corrected item-total correlations
+- Whether removing an item substantially improves reliability
+- Final decision about retaining or removing items
+
+| Construct | Number of Items | Cronbach’s Alpha | Decision |
+|---|---:|---:|---|
+| Attitude Toward Search Ads | 3 | [Enter result] | [Retain/Revise] |
+| Website Clarity | 3 | [Enter result] | [Retain/Revise] |
+| Perceived Trust | 4 | [Enter result] | [Retain/Revise] |
+| Perceived Accessibility | 3 | [Enter result] | [Retain/Revise] |
+| Ease of Action | 3 | [Enter result] | [Retain/Revise] |
+| Inquiry Intention | 3 | [Enter result] | [Retain/Revise] |
+| Donation Intention | 3 | [Enter result] | [Retain/Revise] |
+| Openness to Experiential Therapy | 3 | [Enter result] | [Retain/Revise] |
+| Attitude Toward Animals | 2 | [Enter result] | [Retain/Revise] |
+| Social Influence | 2 | [Enter result] | [Retain/Revise] |
+
+## Factor Analysis
+
+Factor analysis will be conducted where appropriate to evaluate whether the multi-item measures represent the intended constructs.
+
+The group will document:
+
+- Variables included
+- Extraction method
+- Rotation method
+- Factor loadings
+- Number of factors retained
+- Items removed, if any
+- Justification for the final structure
+
+**Factor-analysis results:** [Summarize results after analysis]
+
+## Composite Variables
+
+Composite variables will be created only after the corresponding items demonstrate acceptable reliability and an appropriate factor structure.
+
+Composite variables will generally be calculated using the mean of the retained items. Using the mean preserves the original response scale and allows easier interpretation.
+
+Example:
+
+```spss
+COMPUTE ATT_MEAN = MEAN(ATT1, ATT2, ATT3R).
+EXECUTE.
+```
+
+All composite-variable calculations will be saved in the SPSS syntax file.
+
+# SPSS Syntax Documentation
+
+All modifications must be recorded in the `.sps` file.
+
+The syntax file should include:
+
+- Variable and value labels
+- Missing-value definitions
+- Reverse coding
+- Attention-check handling
+- Reliability analyses
+- Factor analyses
+- Composite-variable calculations
+- Case exclusions
+- Any additional transformations
+
+The team will use **Paste** instead of **OK** when running SPSS procedures so that the corresponding syntax is preserved.
+
