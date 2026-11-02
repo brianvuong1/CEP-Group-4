@@ -10,20 +10,24 @@ format:
     embed-resources: true
 ---
 
+
 # Assignment Overview
 
-This group assignment documents the process used to download the Wellness Ranch survey responses from Qualtrics and prepare the data for statistical analysis in SPSS.
+This group assignment documents the process of downloading survey responses from Qualtrics and preparing the Wellness Ranch Equine Assisted Therapy dataset for statistical analysis using R.
 
-The assignment has two parts:
+The assignment includes three main components:
 
-1. Review, clean, and download the raw survey data from Qualtrics.
-2. Prepare the data in SPSS and document all transformations in a syntax file.
+1. Review survey responses in Qualtrics and identify test, incomplete, or invalid responses.
+2. Import the SPSS (.sav) dataset into R using the `haven` package and prepare the variables for analysis.
+3. Clean and transform variables, conduct reliability analysis, and create composite scales when appropriate.
 
-The final SPSS deliverables are:
+Data preparation includes reviewing variable labels, assigning measurement levels, identifying missing values, reverse-coding negatively worded items, and assessing the reliability of multi-item constructs.
 
-- A cleaned SPSS data file with the `.sav` extension
-- An SPSS syntax file with the `.sps` extension
+The final deliverables are:
 
+- A Quarto source file (`CEP-11.qmd`).
+- A rendered HTML report (`CEP-11.html`).
+- A published GitHub Pages report with links to the GitHub repository and published page.
 
 # Part 1: Downloading the Raw Data
 
