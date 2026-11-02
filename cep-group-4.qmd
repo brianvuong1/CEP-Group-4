@@ -2884,3 +2884,7 @@ Kohavi R, Longbotham R, Sommerfield D, Henne RM. Controlled experiments on the w
 ## Other Technical Details
 
 *(Include technical details not appropriate for inclusion in the main text. Do not include important tables and charts that you will explain in the main text; those figures and charts should be located in the same area of the main text where you discuss them for good reading experience for the readers)*
+
+
+## Link to Github 
+[Link to Github Published Report](https://brianvuong1.github.io/CEP-Group-4/cep-group-4.html)
