@@ -1061,81 +1061,292 @@ The AOs also depend on each other. AO1 and AO2 provide the page priorities and v
 
 ## Data and Sampling
 
+This project uses two types of data, and this chapter is organized by data type where the two are handled differently. **Secondary platform data** come from the digital tools Wellness Ranch already uses or will use during the project: Google Analytics 4 (GA4), Google Search Console, the Semrush site and backlink audits, Google Ads (once campaigns launch), social media and email platform analytics, and donation platform records. **Primary data** are collected directly by the team through a semi-structured client interview, a website readiness audit, and a content audit of existing social posts and donor materials. @tbl-data-sources shows which data sources support each analytics objective.
+
+| Data Source | Type | AO1 | AO2 | AO3 | AO4 | Availability |
+|---|---|:-:|:-:|:-:|:-:|---|
+| Google Search Console | Secondary | ● | ○ | ○ | | Available (up to 16 months of history) |
+| Semrush site and backlink audits | Secondary | ● | | ○ | | Available (prior audit, to be refreshed) |
+| GA4 | Secondary | ○ | ● | ● | ● | Collecting since Oct 8, 2026; contact form event validated, donation tracking not yet set up |
+| Google Ads | Secondary | | ○ | ● | | After Ad Grants approval and launch |
+| Social media and email analytics | Secondary | | | | ● | To be confirmed with client |
+| Donation platform records | Secondary | | ○ | ○ | ● | To be confirmed with client |
+| Client interview | Primary | ○ | ○ | ● | ● | Fall 2026 |
+| Website readiness audit | Primary | ● | ○ | ● | | Fall 2026 |
+| Content audit (coded posts and materials) | Primary | | | | ● | Fall 2026 |
+
+: Data sources by analytics objective (● primary use, ○ supporting use) {#tbl-data-sources}
+
 ### Population
+
+The population for this project is everyone who interacts with Wellness Ranch Equine Assisted Therapy through its digital channels. Based on the customer analysis in Chapter 2, this includes four audience segments: prospective adult clients, parents and families, donors and community supporters, and professional referral and partnership audiences. Most of these audiences are located in Rancho Cucamonga and the broader Inland Empire, although donors and online visitors may come from anywhere.
+
+Each AO focuses on a different part of this population. AO1 focuses on people searching Google for services related to Wellness Ranch. AO2 focuses on everyone who visits the website. AO3 focuses on people who search for and click on Google Ad Grants advertisements. AO4 focuses on current and potential supporters reached through outreach channels and the donation page.
 
 ### Sampling Frame
 
+The sampling frame is the set of records that each platform captures, which is narrower than the full population:
+
+- **GA4:** website sessions and events recorded by the Google tag on the Wix website. Visitors who use ad blockers, decline cookies, or block tracking scripts are not captured.
+- **Google Search Console:** search impressions and clicks for the website's pages. Google withholds some low-volume queries for privacy reasons [@googlesearchconsole].
+- **Google Ads:** impressions, clicks, and conversions from Ad Grants campaigns, available only after launch.
+- **Social media and email analytics:** followers and subscribers on the channels Wellness Ranch actively uses.
+- **Donation platform records:** completed donations processed through the organization's donation tool.
+- **Primary data:** Wellness Ranch's director and any staff or volunteers responsible for marketing, fundraising, or website management.
+
+Because each platform measures people differently, figures from different sources are not expected to match exactly. For example, GA4 counts sessions, while Search Console counts clicks, and a single person may appear in several platforms.
+
 ### Sampling Method
+
+The project uses a **census approach** for secondary data rather than probability sampling. All available records within each defined reporting window will be analyzed, since the website's traffic volume is small enough to use in full. This is a nonprobability approach. The data describe Wellness Ranch's own digital audience during the project period and are not intended to represent all nonprofits or all mental-health service seekers.
+
+Primary data use **purposive sampling**. The client interview will include the people who make or carry out decisions about the website, fundraising, analytics, and advertising. The content audit will include all social posts and donor-facing materials published during the 90 days before the audit, or the most recent 30 posts if the organization posts less often.
+
+**Reporting windows and baseline periods.** GA4 began collecting data on the Wellness Ranch website on approximately October 8, 2026, so no earlier GA4 history is available. To keep comparisons consistent across AOs, the team will use shared reporting rules:
+
+- **Initial GA4 snapshot:** October 8–15, 2026 (8 days), reported in @tbl-sample. This snapshot describes early traffic patterns but is too short to serve as a full baseline.
+- **Fall 2026 baseline:** from October 8, 2026, through the day before the first website change is logged in AO1's change log. Search Console baselines can use longer historical windows because the platform retains up to 16 months of data.
+- **AO4 campaign baseline:** the 90 days before the donor outreach campaign launches in Spring 2027. If a Giving Tuesday pilot runs on December 1, 2026, that week will be marked so it is not mistaken for normal activity.
+- **AO3 campaign periods:** measured from the Ad Grants launch date, since no paid search baseline exists before launch.
+- **Comparison periods:** equal-length windows before and after each documented change, adjusted for seasonality such as Giving Tuesday and year-end giving.
 
 ## Data Wrangling (Import, Cleaning, Transformation)
 
 ### Data Collection
 
+**Secondary data** will be collected through platform exports at the start of each reporting window and at the end of each comparison period:
+
+- **GA4:** exported from standard reports and Explorations as CSV files, covering sessions, users, engagement, traffic source and medium, landing pages, devices, and key events.
+- **Google Search Console:** query-level and page-level performance exports for clicks, impressions, CTR, and average position.
+- **Semrush:** site audit and backlink audit exports.
+- **Google Ads:** campaign, ad group, keyword, search term, and conversion reports after launch.
+- **Social and email platforms:** post-level and message-level performance exports.
+- **Donation platform:** donation records with date, amount, and source where available. Personal donor information will not be exported or stored by the team.
+
+**Primary data** will be collected in Fall 2026. The semi-structured client interview will cover website ownership, analytics access, Google for Nonprofits and Ad Grants status, active outreach channels, email list status, donation processing, approval procedures, and which stories and impact figures can be shared. The interview guide is provided in Appendix A. The website readiness audit and content audit will use structured checklists so that each item is recorded the same way.
+
+GA4 is not currently linked to BigQuery, so data will be exported from the GA4 interface as CSV files. The team may link the property to BigQuery to keep a raw, event-level export, which would make data cleaning and joining easier. However, BigQuery only stores data from the date the link is created, so earlier data would still come from interface exports.
+
+**Data quality and validation.** Because the project relies mostly on secondary data, the team will verify the integrity of each metric before using it:
+
+1. **GA4 event validation (AO2):** each key event will be tested in GA4 DebugView and Realtime reports through controlled test submissions before it is included in reporting.
+2. **Internal traffic exclusion:** team and client traffic will be filtered out using GA4's internal traffic settings.
+3. **Completed versus preliminary actions:** donation-button clicks will be reported separately from completed donations. If donations are processed on an external platform, completed donations will come from the platform's records and will be reconciled with GA4 by date.
+4. **UTM testing (AO4):** every campaign link will be tested before launch to confirm that sessions are attributed to the correct source, medium, and campaign.
+5. **Cross-source checks:** Search Console clicks will be compared with GA4 organic sessions, and Semrush issues will be confirmed on the live website.
+6. **Change documentation:** website changes, campaign launches, and known Google algorithm updates will be recorded with dates so performance shifts are not attributed to the wrong cause.
+
+Initial checks have already been completed. The `generate_lead` event was tested in GA4 DebugView by submitting the contact form, which correctly recorded a `form_start` event followed by a `generate_lead` event with the parameters `event_action = Submitted`, `event_label = Page Name: Contact; Form Name: Contacts 9`, and the contact page URL. Page views, scrolls, and engagement events were also confirmed. `generate_lead` is marked as a key event, while `close_convert_lead` and `qualify_lead` are marked but receive no data, and no donation event exists yet. The initial reports also show 32 sessions (3.55%) with an unassigned campaign value, which will be reviewed during cleaning. Because team testing sessions were recorded during this period, internal traffic filters will be applied before baseline data are finalized.
+
 ### Data Wrangling
 
 #### Import
 
+All exported files will be stored in a shared project folder using a consistent naming format (source, report type, and date range). Files will be imported into R using `readr` for CSV files and `readxl` for spreadsheet files. Raw exports will remain unchanged, and all cleaning will be done in code so each step can be reproduced.
+
 #### Tidying
 
+Each dataset will be cleaned with the same steps:
+
+- Column names will be standardized using `janitor::clean_names()`.
+- Dates will be converted to a consistent format using `lubridate`.
+- Page URLs will be normalized by converting them to lowercase, removing tracking parameters, and removing trailing slashes so the same page is not counted twice.
+- Duplicate rows, test events, and internal traffic will be removed.
+- Search queries will be classified as branded or non-branded using a documented keyword list (AO1, AO3).
+- Social posts and donor materials will be coded by message type, format, and function using a coding sheet (AO4).
+- Missing values will be checked and documented. Missing values will not be filled in with estimates.
+
 #### Joining the Data
+
+Datasets will be joined using shared keys:
+
+- **Page URL:** connects Semrush audit results, Search Console data, and GA4 landing-page data (AO1, AO2).
+- **Date:** connects GA4 data with Google Ads data, donation records, and the website change log (all AOs).
+- **UTM campaign and source:** connects outreach and advertising activity to GA4 sessions and key events (AO3, AO4).
+
+Joins will be checked for unmatched records, and the number of unmatched rows will be reported.
 
 ### Understanding the Data
 
 #### Transform
 
+Cleaned data will be transformed into the calculated measures used across AOs, including click-through rate, engagement rate, key event rate, donation conversion rate, percent change between periods, and AO1's page priority score. Data will be summarized by week or month, channel, landing page, device, and campaign. Because traffic volume is small, raw counts will be reported alongside every rate so small numbers are not overstated.
+
 #### Visualize
+
+Visualizations will be created with `ggplot2` and summarized in Looker Studio or Excel dashboards for the client. Planned visualizations include:
+
+- Trend lines for clicks, sessions, and key events over time, with website changes and campaign launches marked.
+- Bar charts comparing channels, landing pages, and keyword or content themes.
+- Funnel charts showing drop-off from impressions or reach to completed actions (AO2, AO3, AO4).
+- Before-and-after comparisons for improved pages (AO1).
 
 ### Programming
 
+Data cleaning, joining, analysis, and visualization will be done in R using `tidyverse`, `janitor`, `lubridate`, `ggplot2`, and `gt`. Statistical tests will use base R functions, including `wilcox.test()` (AO1), `prop.test()` (AO3, AO4), and `fisher.test()` (AO4). The report is written in Quarto, and all code and documentation will be stored in a shared GitHub repository so the analysis can be reproduced and handed off to Wellness Ranch.
+
 ## Sample Characteristics
 
-#### Age
+Because this project uses website and platform analytics rather than a survey, the sample is described by traffic, device, page, and audience characteristics instead of individual respondents. Demographic categories such as education, income, and occupation are not available from these sources and are not included. @tbl-sample summarizes the initial GA4 snapshot. These figures will be updated with the full Fall 2026 baseline once more data are collected.
 
-#### Gender
+| Characteristic | Value | Source |
+|---|---|---|
+| Reporting window | October 8–15, 2026 (8 days) | GA4 |
+| Active users | 764 | GA4 |
+| New users | 760 (99.5%) | GA4 |
+| Sessions | 902 | GA4 |
+| Engaged sessions | 634 | GA4 |
+| Engagement rate | 70.29% | GA4 |
+| Average engagement time per session | 36 seconds | GA4 |
+| Page views | 1,674 (2.19 per active user) | GA4 |
+| Total events | 5,405 | GA4 |
+| Key events (contact form submissions) | 0 | GA4 |
+| Completed donations tracked | Not yet measurable | GA4 |
+| Organic search clicks / impressions | [X] / [X] | Search Console |
+| Indexed pages | [X] | Search Console |
+| Social media followers (by platform) | [X] | Social platforms |
+| Email list size | [X or "No active list"] | Email platform |
 
-#### Race/ethnicity
+: Initial sample characteristics (GA4 snapshot, October 8–15, 2026) {#tbl-sample}
 
-#### Education
+Two patterns stand out. First, almost all visitors (99.5%) were new users, which is expected since GA4 tracking had just started. Second, traffic was concentrated on a single day: sessions peaked at roughly 320 on October 9, mostly from Instagram, before settling to about 60–70 per day. This suggests that one social post or link drove a large share of early traffic, so the full baseline will need a longer window to reflect normal activity.
 
-#### Income
+#### Age and Gender
 
-#### Occupation
+Age and gender data were not available in the initial snapshot. GA4 reports demographics only when Google signals is enabled and enough users are present, and small websites often fall below Google's privacy thresholds. GA4 also recorded the user property `non_personalized_ads = 1`, which limits the data available for advertising and demographic reporting. If demographic data become available in the full baseline, they will be reported by age group and gender. Otherwise, the limitation will be documented, and demographics will not be estimated from other sources.
+
+#### Geographic Location
+
+Sessions will be summarized by city and region to show how much traffic comes from Rancho Cucamonga and the Inland Empire compared with other areas: [X]% Inland Empire, [X]% other California, and [X]% outside California. This helps confirm whether the website reaches Wellness Ranch's local service area.
 
 #### Relevant Behavioral Variables
 
-#### Product Usage Variables.
+**Traffic sources.** @tbl-sources shows that Instagram was the largest source of website traffic, followed by organic search and direct visits.
+
+| Source / Medium | Sessions | Share | Engagement Rate | Avg. Engagement Time |
+|---|---:|---:|---:|---:|
+| Instagram (ig / social) | 472 | 52.33% | 76.06% | 26s |
+| Google (organic) | 198 | 21.95% | 68.18% | 56s |
+| Direct | 182 | 20.18% | 57.14% | 39s |
+| Facebook (referral) | 9 | 1.00% | 88.89% | 48s |
+| Linktree (referral) | 7 | 0.78% | 57.14% | 32s |
+| Other sources (13 sources) | 34 | 3.77% | — | — |
+| **Total** | **902** | **100%** | **70.29%** | **36s** |
+
+: Sessions by traffic source, October 8–15, 2026 {#tbl-sources}
+
+Organic search from Google, Yahoo, and Bing together accounted for 206 sessions (22.84%). Instagram visitors were highly engaged by GA4's definition, but they spent less time on the site than Google visitors (26 seconds compared with 56 seconds). This suggests that social visitors browse quickly, while search visitors arrive with a more specific need. Smaller referral sources included Loma Linda University's Tevera internship platform, ieautism.org, and iecn.com. These point to existing community and educational partners, which are relevant to AO1's link building and AO4's community partnerships.
+
+No sessions were tagged with UTM campaign parameters during this period. All traffic was grouped under GA4's default referral, organic, and direct campaign values. This confirms the need for the UTM conventions planned in AO2 and AO4.
+
+**Device category.** Visitors were overwhelmingly mobile: 669 active users (87.57%) used mobile devices, 88 (11.52%) used desktop, and 8 (1.05%) used tablets. Mobile users had a higher engagement rate (71.88%) than desktop users (61.86%), but desktop users spent more time engaged on average (1 minute 19 seconds compared with 38 seconds). Because most visitors use phones, mobile usability is a priority for AO1's website improvements, AO3's landing pages, and AO4's donation page.
+
+**Top pages.** @tbl-pages shows the most-viewed pages.
+
+| Page | Views | Share of Views | Active Users |
+|---|---:|---:|---:|
+| Home | 844 | 50.42% | 712 |
+| Community Events | 237 | 14.16% | 161 |
+| About | 94 | 5.62% | 82 |
+| Our Services | 86 | 5.14% | 66 |
+| Contact | 84 | 5.02% | 72 |
+| Volunteer | 71 | 4.24% | 49 |
+| Individual, Couples, & Family Therapy | 63 | 3.76% | 46 |
+| Meet the Team | 39 | 2.33% | 34 |
+| Healing on the Move | 27 | 1.61% | 23 |
+| Regional Center Services | 27 | 1.61% | 22 |
+
+: Most-viewed pages, October 8–15, 2026 (top 10 of 21) {#tbl-pages}
+
+The homepage received half of all page views, but visitors spent an average of only 12 seconds on it, so many people may leave before finding service or donation information. Community Events was the second most-viewed page, which suggests interest in Wellness Ranch's community activities. Notably, the donation page did not appear among the top 10 pages. This supports AO4's plan to strengthen the donation page and drive more traffic to it.
+
+#### Product Usage Variables
+
+For Wellness Ranch, product usage refers to visitor actions connected to its services and mission:
+
+- **Service interest:** views of service and program pages (Our Services, Individual, Couples, & Family Therapy, Regional Center Services, Healing on the Move).
+- **Inquiries:** contact page views (84) and validated contact-form submissions (`generate_lead`), which recorded 0 key events in the snapshot outside of team testing.
+- **Donations:** donation-page sessions, donation-button clicks, and completed donations, which are not yet measurable because no donation event has been set up.
+- **Community involvement:** Community Events (237 views) and Volunteer (71 views) page activity.
+
+The lack of recorded inquiries and donations during this short window does not mean these actions are not happening. Tracking had just started, and donations may be completed on an external platform. These gaps will be addressed through AO2's measurement setup before the full baseline is finalized.
 
 ## Measures
 
-### Independent Variables. (if applicable)
+Each AO uses its own detailed variables, described in the Analytics Methods section below. This section summarizes the shared measures that connect the four AOs, so that SEO, analytics, paid search, and outreach results are defined the same way. AO2 provides the common definitions, consistent with its role as the measurement framework for the project.
 
-#### Variable Name 1
+### Independent Variables
 
-#### Variable Name 2
+#### Traffic Source and Channel
 
-#### Variable Name 3
+The source, medium, and default channel group of each session, such as organic search, paid search, organic social, email, referral, and direct. This allows the team to compare SEO (AO1), Google Ads (AO3), and outreach (AO4) results within the same GA4 framework (AO2).
 
-#### Variable Name 4
+#### Landing Page
 
-### Dependent Variables (if applicable)
+The first page viewed in a session, grouped by page type: services, programs, donations, about or contact, and educational content. The donation landing page developed through AO4 and optimized through AO1 is a shared landing page across AOs.
 
-#### Variable Name 5
+#### Implementation Period
 
-#### Variable Name 6
+Whether an observation occurred before or after a documented change, such as a website improvement (AO1), a tracking fix (AO2), an Ad Grants launch (AO3), or an outreach campaign (AO4).
 
-#### Variable Name 7
+#### Content and Campaign Characteristics
 
-#### Variable Name 8
+The keyword theme, ad version, or content type being evaluated, including search intent and ad variant (AO3) and message type, format, and test variant (AO4).
 
-### Control Variables (if applicable)
+### Dependent Variables
 
-#### Variable Name 9
+#### Engagement Rate
 
-#### Variable Name 10
+Engaged sessions divided by total sessions, using GA4's definition of an engaged session (AO2).
 
-#### Variable Name 11
+#### Click-Through Rate
 
-#### Variable Name 12
+Clicks divided by impressions for organic search (AO1) and paid search (AO3), or link clicks divided by reach or emails delivered for outreach (AO4).
+
+#### Completed Donations and Donation Conversion Rate
+
+The number of completed donations and completed donations divided by donation-page sessions. This is the client's primary website outcome and is shared across all four AOs.
+
+#### Contact and Inquiry Submissions
+
+Validated contact-form submissions and appointment inquiries, used as the primary service-related outcome.
+
+### Control Variables
+
+#### Reporting Period and Seasonality
+
+Week, month, and season, since search demand and giving can change around holidays, school calendars, Giving Tuesday, and year-end.
+
+#### Device Category
+
+Desktop, mobile, or tablet, since website and landing-page performance can differ by device.
+
+#### Branded vs. Non-Branded Search
+
+Reported separately for organic and paid search, since branded searches usually perform much better and can hide weak performance among new audiences.
+
+#### Concurrent Changes and External Events
+
+Dates of website changes, campaign launches, tracking updates, and confirmed Google algorithm updates. These dates will be recorded so changes in performance are not credited to the wrong activity.
+
+@tbl-measures-summary shows how the shared measures connect to each AO.
+
+| Measure | AO1 | AO2 | AO3 | AO4 |
+|---|:-:|:-:|:-:|:-:|
+| Traffic source and channel | ● | ● | ● | ● |
+| Landing page | ● | ● | ● | ● |
+| Implementation period | ● | ● | ● | ● |
+| Content and campaign characteristics | | | ● | ● |
+| Engagement rate | ○ | ● | ○ | ○ |
+| Click-through rate | ● | | ● | ● |
+| Completed donations and donation conversion rate | ○ | ● | ● | ● |
+| Contact and inquiry submissions | ○ | ● | ● | |
+| Reporting period and seasonality | ● | ● | ● | ● |
+| Device category | ● | ● | ● | ○ |
+| Branded vs. non-branded search | ● | | ● | |
+| Concurrent changes and external events | ● | ● | ● | ● |
+
+: Shared measures by analytics objective (● primary, ○ supporting) {#tbl-measures-summary}
 
 ## Analytics Methods to Employ
 
