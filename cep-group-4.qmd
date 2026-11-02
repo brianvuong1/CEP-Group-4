@@ -236,9 +236,9 @@ AO3 directly supports PO3 by guiding the organization from eligibility and readi
 
 ### AO4. Content Marketing & Donor Outreach (Ron)
 
-Develop, implement, and evaluate donor-focused content and outreach, including impact storytelling and email or social media campaigns, to strengthen donor engagement and increase donations for Wellness Ranch Therapy.
+Develop, implement, and evaluate donor-focused content and outreach, including impact storytelling, a donation-focused landing page, and a campaign through one primary outreach channel (email or social media), to strengthen donor engagement and increase donations for Wellness Ranch Therapy.
 
-AO4 directly supports the organization's goal of increasing donations and contributes to PO4 by measuring whether outreach campaigns lead to meaningful donor actions. It supports PO1 by improving donor-facing content on the website and PO2 by relying on the conversion tracking established through AO2. The content library, campaign templates, and evaluation process will also contribute to the sustainable strategy developed under PO5.
+AO4 directly supports the organization's goal of increasing donations and contributes to PO4 by measuring whether outreach leads to meaningful donor actions. It supports PO1 by improving the donation page and other donor-facing content, and PO2 by using AO2's measurement framework to track campaign traffic and completed donations. The donation landing page also connects the four AOs: AO1 optimizes it for search, AO3 can use it as a Google Ad Grants landing page, AO4 promotes it through outreach, and AO2 measures its performance. The content library, campaign templates, and evaluation process will contribute to the sustainable strategy developed under PO5.
 
 ## Alignment Between Project Objectives and Analytics Objectives
 
@@ -988,6 +988,10 @@ Research on nonprofit social media shows that most organizations use it mainly t
 
 Social media also has a measurable connection to fundraising. Bhati and McDonnell studied nonprofits participating in an online giving day and found that social media activity played a significant role in fundraising success [@bhatiMcDonnell2020]. This supports building AO4 campaigns around a focused giving moment, such as Giving Tuesday or a year-end appeal, instead of scattered posts.
 
+##### Community Partnerships
+
+Community partners can extend a small nonprofit's reach beyond its own followers and email list. For Wellness Ranch, relevant partners may include local schools, counseling and social-service organizations, businesses, faith and civic groups, and the regional equestrian community. Partners can share donor content with their own audiences, co-promote a giving moment such as Giving Tuesday, sponsor a matching gift, or link to the donation page from their websites. This also connects to AO1, since outreach to community partners is one of the link-building activities that can strengthen the website's search visibility. AO4 will identify a short list of partners with the client and track any partner-driven traffic separately using UTM-tagged links.
+
 ##### Moving Donors Toward Action
 
 The hierarchy of effects describes how people move from awareness and knowledge to liking, preference, conviction, and action [@lavidgeSteiner1961], and the consumer decision journey treats this as a loop rather than a straight line [@court2009]. Applied to donors, the stages become: seeing the content, engaging with it, visiting the donation page, and completing a gift. After giving, the loop continues through thank-you messages and impact updates that make a second gift more likely. Reading outreach metrics as stages helps identify where supporters drop off. High reach with low engagement points to the content, while strong engagement with few donation-page visits points to a weak call to action. Many donation-page visits with few completed gifts points to friction in the donation process, which connects back to AO1 and AO2.
@@ -999,6 +1003,22 @@ Online controlled experiments compare two versions of a message to see which per
 ##### Summary of Frameworks
 
 Giving mechanisms explain why people donate and what content needs to communicate. Storytelling research explains how to communicate it persuasively, with privacy protections suited to a mental-health organization. Nonprofit social media research shows how to balance content and why focused giving campaigns work. The decision journey turns outreach metrics into a stage-by-stage diagnosis, and controlled testing provides a disciplined way to improve. Together, they give AO4 a clear structure: build content around need, ask, and impact; tell stories ethically; run focused campaigns; measure each stage; and test carefully.
+
+##### Research Questions and Hypotheses
+
+Based on the frameworks above, AO4 will address the following research questions:
+
+- **RQ1:** Which message types (need, ask, or impact) and formats (story-based or informational) generate the highest engagement and click-through to the donation page? This question draws on giving mechanisms and storytelling research [@bekkersWiepking2011; @small2007; @greenBrock2000].
+- **RQ2:** Do posts with a clear call to action outperform information-only posts in driving donation-page visits? This question follows the information, community, and action framework for nonprofit social media [@lovejoySaxton2012].
+- **RQ3:** Does a focused campaign tied to a giving moment increase donation-page sessions and completed donations compared with the baseline period? This question draws on research linking social media activity to online giving success [@bhatiMcDonnell2020].
+- **RQ4:** At which stage of the donor journey (reach, engagement, click, donation-page visit, or completed donation) do the most supporters drop off? This question applies the hierarchy of effects and the consumer decision journey [@lavidgeSteiner1961; @court2009].
+
+Two hypotheses will be tested through controlled content tests [@kohavi2009]:
+
+- **H1:** Story-based content will produce a higher click-through rate to the donation page than informational content.
+- **H2:** Posts or emails with a direct donation ask will produce a higher click-through rate than posts or emails without one.
+
+RQ3 and RQ4 will be answered descriptively, since a single campaign for one organization cannot isolate cause and effect.
 
 #### Adequateness of Gathered Information
 
@@ -1344,11 +1364,30 @@ AO4 will use a three-phase approach: a baseline audit and content planning phase
 
 **Phase 1: Audit and planning (Fall 2026).** AO4 will begin with a client interview to confirm active social platforms, email list status and tools, donation processing, past campaigns, approval procedures, and which stories, images, and impact figures can be shared. A content audit will then review existing social posts, email activity, and the donation page. Each existing social post will be coded by function (information, community, or action) and by format (story-based, informational, or direct appeal), and baseline engagement will be recorded. Using these findings, AO4 will build a donor content library organized around three message types: need (why the work matters), ask (a clear request to give or volunteer), and impact (what support makes possible). Stories will follow a privacy protocol: no client is identified without written consent, composites are labeled, and all content is approved by the client before posting. If the client approves, a small pilot around Giving Tuesday on December 1, 2026 can test the content and tracking before the main campaign.
 
-**Phase 2: Campaign implementation (Spring 2027).** AO4 will run a focused donor campaign over a defined period, using the channels confirmed in Phase 1. Depending on what is available, this may include an email series to existing supporters and a social media sequence that moves from need to impact to ask. Every campaign link will carry UTM parameters, coordinated with AO2, so GA4 can separate campaign traffic from organic search (AO1) and paid search (AO3). Content will also be added to the donation page, such as an impact statement or a short story, in coordination with AO1's page priorities.
+**Phase 2: Donation landing page and campaign implementation (Spring 2027).** AO4 will first develop a donation-focused landing page, or strengthen the existing donation page, with an impact statement, a short story, and a clear donation ask. This page will be coordinated with AO1 for search optimization and with AO3 for use as a Google Ad Grants landing page, so the same page is supported by organic search, paid search, and outreach.
+
+Based on the Phase 1 audit, AO4 will select one primary outreach channel: email if Wellness Ranch has an active supporter list, or otherwise its most active social media platform. Focusing on one channel keeps the campaign manageable for a small organization. The campaign will run over a defined period tied to a giving moment and will follow a sequence that moves from need to impact to ask. Community partners identified in Phase 1 may share campaign content with their own audiences. Every campaign link will carry UTM parameters following AO2's naming conventions, so GA4 can separate campaign, partner, organic search (AO1), and paid search (AO3) traffic.
 
 **Phase 3: Evaluation (Spring–Summer 2027).** Campaign results will be read as stages: reach, engagement, clicks to the website, donation-page visits, and completed donations. Each stage will be compared with the Phase 1 baseline to find where supporters drop off. Content elements will be tested one at a time, such as two email subject lines or a story-based versus informational version of the same post. When volume allows, differences in click-through or conversion rates will be tested with a two-proportion z-test at the 0.05 significance level, or Fisher's exact test for small counts. When volume is too low, results will be reported as directional, with sample sizes and limitations documented. Results will be summarized in a campaign report built in Excel or Looker Studio.
 
 If the client cannot provide an email list or approve stories in time, AO4 will focus on social media and the donation page and deliver the content library, templates, and evaluation process for future campaigns.
+
+**Baseline period, KPIs, and data validation.** The baseline period will be the 90 days before the Phase 2 campaign launches, measured with the same GA4 settings and key events defined in AO2. @tbl-ao4-kpis summarizes the KPIs AO4 will report.
+
+| KPI | Definition | Data Source | Role |
+|---|---|---|---|
+| Completed donations | Number (and amount, where available) of completed gifts from campaign traffic | Donation platform records, GA4 key event | Primary |
+| Donation conversion rate | Completed donations divided by donation-page sessions from the campaign | GA4, donation platform | Primary |
+| Donation-page sessions | Visits to the donation page from UTM-tagged campaign links | GA4 | Primary |
+| Click-through rate | Link clicks divided by emails delivered or post reach | Email platform or social analytics | Secondary |
+| Engagement rate | Likes, comments, shares, and saves divided by reach | Social analytics | Diagnostic |
+| Donation-button clicks | Clicks on donation buttons, counted separately from completed gifts | GA4 | Diagnostic |
+
+: AO4 Key Performance Indicators {#tbl-ao4-kpis}
+
+Data will be validated before and during the campaign. Every UTM link will be tested before launch to confirm that sessions appear in GA4 under the correct source, medium, and campaign name. In coordination with AO2, the donation-button click and any confirmation-page event will be tested in GA4 DebugView. If donations are completed on an external platform, GA4 will only show donation-button clicks, so completed donations will be taken from the platform's own records and matched to campaign dates. These figures will be reconciled weekly, and any gaps between GA4 and the platform will be documented. Internal team traffic will be excluded from all counts.
+
+Because Wellness Ranch's website traffic and audience are small, AO4 will report raw counts alongside every rate so small numbers are not overstated. Tests will run long enough to reach a minimum of about 100 recipients or post views per version when possible. Results below that level, or that do not reach statistical significance, will be reported as directional.
 
 #### Justification for the Method
 
@@ -2884,7 +2923,3 @@ Kohavi R, Longbotham R, Sommerfield D, Henne RM. Controlled experiments on the w
 ## Other Technical Details
 
 *(Include technical details not appropriate for inclusion in the main text. Do not include important tables and charts that you will explain in the main text; those figures and charts should be located in the same area of the main text where you discuss them for good reading experience for the readers)*
-
-
-## Link to Github 
-[Link to Github Published Report](https://brianvuong1.github.io/CEP-Group-4/cep-group-4.html)
