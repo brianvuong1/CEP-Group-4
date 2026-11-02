@@ -2839,6 +2839,20 @@ Google. (n.d.-c). *Recommended events*. Google Analytics Help. https://support.g
 
 Kaushik, A. (2009). *Web Analytics 2.0: The Art of Online Accountability and Science of Customer Centricity*. Wiley.
 
+Bekkers R, Wiepking P. A literature review of empirical studies of philanthropy: eight mechanisms that drive charitable giving. *Nonprofit Volunt Sect Q*. 2011;40(5):924-973. doi:10.1177/0899764010380927
+
+Small DA, Loewenstein G, Slovic P. Sympathy and callousness: the impact of deliberative thought on donations to identifiable and statistical victims. *Organ Behav Hum Decis Process*. 2007;102(2):143-153. doi:10.1016/j.obhdp.2006.01.005
+
+Green MC, Brock TC. The role of transportation in the persuasiveness of public narratives. *J Pers Soc Psychol*. 2000;79(5):701-721. doi:10.1037/0022-3514.79.5.701
+
+Lovejoy K, Saxton GD. Information, community, and action: how nonprofit organizations use social media. *J Comput Mediat Commun*. 2012;17(3):337-353. doi:10.1111/j.1083-6101.2012.01576.x
+
+Lavidge RJ, Steiner GA. A model for predictive measurements of advertising effectiveness. *J Mark*. 1961;25(6):59-62. Reprinted in: *Advertising & Society Review*. 2000;1(1). Accessed October 12, 2026. https://muse.jhu.edu/article/2941
+
+Court D, Elzinga D, Mulder S, Vetvik OJ. The consumer decision journey. *McKinsey Q*. 2009;(3). Accessed October 12, 2026. https://www.mckinsey.com/~/media/McKinsey/Business%20Functions/Marketing%20and%20Sales/Our%20Insights/The%20consumer%20decision%20journey/The%20consumer%20decision%20journey.pdf
+
+Kohavi R, Longbotham R, Sommerfield D, Henne RM. Controlled experiments on the web: survey and practical guide. *Data Min Knowl Discov*. 2009;18(1):140-181. Accessed October 12, 2026. https://exp-platform.com/Documents/controlledExperimentDMKD.pdf
+
 :::
 
 ------------------------------------------------------------------------
