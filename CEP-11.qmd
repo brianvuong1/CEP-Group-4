@@ -330,6 +330,4 @@ GitHub Repository: [Wellness Ranch CEP Group 4](https://github.com/brianvuong1/C
 
 ## Published Project
 
-GitHub Pages: [Wellness Ranch Marketing Analytics Project](https://brianvuong1.github.io/CEP-Group-4/cep-group-4.html)
-
-The final CEP 11 report URL will be added after publication.
+GitHub Pages: [Wellness Ranch Marketing Analytics Project](https://brianvuong1.github.io/CEP-Group-4/CEP-11.html)
