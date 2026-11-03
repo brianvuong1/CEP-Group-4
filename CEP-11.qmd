@@ -1,5 +1,5 @@
 ---
-title: "Survey Data Download and Preparation"
+title: "CEP 11 – GA4 Data Preparation"
 subtitle: "Wellness Ranch Equine Assisted Therapy"
 author: "CEP Group 4: Alexa Bueno, Kevin Bachez, Ron Sabilla, and Brian Vuong"
 date: today
@@ -10,258 +10,326 @@ format:
     embed-resources: true
 ---
 
-
 # Assignment Overview
 
-This group assignment documents the process of downloading survey responses from Qualtrics and preparing the Wellness Ranch Equine Assisted Therapy dataset for statistical analysis using R.
+This report documents the data preparation process for the Wellness Ranch Equine Assisted Therapy marketing analytics project.
 
-The assignment includes three main components:
+Unlike traditional survey-based research, this project uses Google Analytics 4 (GA4) to evaluate website performance, visitor engagement, and important user interactions.
 
-1. Review survey responses in Qualtrics and identify test, incomplete, or invalid responses.
-2. Import the SPSS (.sav) dataset into R using the `haven` package and prepare the variables for analysis.
-3. Clean and transform variables, conduct reliability analysis, and create composite scales when appropriate.
+The primary objectives of data preparation are:
 
-Data preparation includes reviewing variable labels, assigning measurement levels, identifying missing values, reverse-coding negatively worded items, and assessing the reliability of multi-item constructs.
+1. Identify and obtain relevant website analytics data from GA4.
+2. Review the available dimensions, metrics, and event data.
+3. Organize and prepare the data for marketing analysis.
+4. Check data quality, missing values, and event-tracking consistency.
+5. Prepare key performance indicators (KPIs) related to website engagement, therapy inquiries, and donation activity.
+6. Document the data preparation process for future analysis and reporting.
 
-The final deliverables are:
+The project will use available GA4 reporting tools and, where appropriate, R in Positron or Looker Studio to prepare and present the data.
 
-- A Quarto source file (`CEP-11.qmd`).
-- A rendered HTML report (`CEP-11.html`).
-- A published GitHub Pages report with links to the GitHub repository and published page.
+The final report will document the actual preparation steps completed and the resulting dataset or reporting outputs.
 
-# Part 1: Downloading the Raw Data
 
-## Review of Data-Collection Status
+# Part 1: GA4 Data Collection and Export
 
-The group reviewed the Qualtrics **Distribution** and **Data & Analysis** tabs before ending data collection.
+## Data Source
 
-| Data-Collection Measure | Result |
-|---|---:|
-| Total recorded responses | [Enter number] |
-| Anonymous-link responses | [Enter number] |
-| Preview or test responses | [Enter number] |
-| Responses in progress | [Enter number] |
-| Completed responses | [Enter number] |
-| Date data collection ended | [Enter date] |
+The primary data source for this project is Google Analytics 4 (GA4), which is used to measure website activity and user interactions on the Wellness Ranch Equine Assisted Therapy website.
 
-## Decision to End Data Collection
+GA4 provides information about website traffic, user engagement, page views, and events that help evaluate the effectiveness of the organization's digital marketing efforts.
 
-The group determined that the available sample was [sufficient/not yet sufficient] for the planned analysis.
+Unlike survey-based research, GA4 collects behavioral data from website interactions rather than questionnaire responses.
 
-Data collection was closed on **[enter date]** after reviewing the number of completed responses, unfinished responses, and the requirements of the planned analysis.
+## Data Collection Objectives
 
-## Review of Individual Responses
+The purpose of collecting GA4 data is to evaluate website performance and identify opportunities to improve visitor engagement, therapy inquiries, and donation activity.
 
-Before downloading the data, the group reviewed several individual responses to better understand:
+The project focuses on the following marketing objectives:
 
-- How respondents interpreted the questions
-- Whether participants completed the full questionnaire
-- Whether open-ended responses contained usable information
-- Whether test, duplicate, or invalid responses were present
-- Whether response patterns suggested data-quality concerns
+1. Understand website traffic and visitor engagement.
+2. Evaluate how visitors interact with important website pages.
+3. Monitor lead-generation activities, including contact form submissions.
+4. Assess donation-related interactions where tracking data are available.
+5. Prepare relevant metrics for future marketing analysis and reporting.
 
-## Records Removed Before Download
+## GA4 Events and Metrics
 
-The following records were identified for removal:
+The group will examine the availability of the following events and metrics:
 
-| Record Type | Number Removed | Reason |
-|---|---:|---|
-| Preview or test responses | [Enter number] | Generated during survey testing |
-| Duplicate responses | [Enter number] | Multiple records from the same apparent submission |
-| Unusable incomplete responses | [Enter number] | Insufficient information for analysis |
-| Other exclusions | [Enter number] | [Explain reason] |
-| **Total records removed** | **[Enter total]** | |
-
-The group preserved an unchanged copy of the original raw data before deleting or modifying any records.
-
-## Raw Data Download
-
-After reviewing the records, the survey data were downloaded from Qualtrics in SPSS format.
-
-**Downloaded file type:** `.sav`  
-**Download date:** [Enter date]  
-**Downloaded by:** [Enter team member]  
-**Original raw file location:** [Insert shared-drive or repository location]
-
-# Part 2: SPSS Data Preparation
-
-## Data-Preparation Checklist
-
-The group used the following checklist to prepare the SPSS dataset:
-
-- [ ] Preserve an unchanged copy of the original raw data.
-- [ ] Remove preview and test responses.
-- [ ] Review incomplete and duplicate responses.
-- [ ] Confirm that each row represents one respondent.
-- [ ] Confirm that each column represents one variable.
-- [ ] Assign the correct measurement level to each variable.
-- [ ] Add clear variable labels.
-- [ ] Add value labels to nominal and ordinal variables.
-- [ ] Identify missing-value codes.
-- [ ] Convert “not applicable” or similar responses to missing values when appropriate.
-- [ ] Identify and reverse-code negatively worded items.
-- [ ] Run reliability analysis for multi-item constructs.
-- [ ] Conduct factor analysis where appropriate.
-- [ ] Create composite variables for reliable multi-item constructs.
-- [ ] Save every transformation in the SPSS syntax file.
-- [ ] Review the cleaned dataset for errors.
-- [ ] Save the final `.sav` and `.sps` files.
-
-## Measurement Levels
-
-Measurement levels were assigned using the group’s Construct and Measurement Table.
-
-| Variable Type | SPSS Measure | Examples |
+| Event or Metric | Description | Marketing Purpose |
 |---|---|---|
-| Unordered categories | Nominal | Gender, city, device, insurance type |
-| Ordered categories | Ordinal | Age group, education, income, search frequency |
-| Likert-scale and composite measures | Scale | Trust, clarity, inquiry intention, donation intention |
+| `page_view` | Records website page views | Evaluate website traffic |
+| `user_engagement` | Measures engagement activity | Understand visitor engagement |
+| `generate_lead` | Records qualifying lead-generation actions | Monitor therapy inquiries |
+| `session_start` | Records the beginning of a session | Evaluate website sessions |
+| Donation-related events | Tracks donation interactions if configured | Evaluate donation activity |
+| Active users | Number of distinct active users | Understand website audience |
 
-## Variable and Value Labels
+These measures will help the group evaluate website activity and identify opportunities for improving marketing performance.
+## Data Collection Period
 
-The group reviewed the imported variable names and labels in SPSS Variable View.
+The reporting period will be selected based on the availability of GA4 data and the objectives of the analysis.
 
-Variable labels were revised so that each variable could be understood without referring back to the Qualtrics questionnaire. Value labels were added for nominal and ordinal variables.
-
-Examples include:
-
-| Variable | Example Variable Label | Example Value Labels |
-|---|---|---|
-| `Q2` | Inland Empire residency | 1 = Yes; 2 = No; 3 = Not sure |
-| `Q3` | Searched online for wellness services | 1 = Yes; 2 = No |
-| `Q18` | Primary device used for online search | 1 = Smartphone; 2 = Computer; 3 = Tablet |
-| `Q21` | Age category | 1 = 18–24; 2 = 25–34; etc. |
-
-## Missing Values
-
-The group reviewed the dataset for responses such as:
-
-- No opinion
-- Not applicable
-- Prefer not to say
-- Blank responses
-- Questions hidden through Qualtrics display logic
-
-The group determined whether each response should remain as a valid category or be coded as system missing. All missing-value decisions were documented in the SPSS syntax file.
-
-## Reverse-Coded Items
-
-The questionnaire contains the following negatively worded item:
-
-| Variable | Statement | Required Action |
-|---|---|---|
-| `ATT3` | I usually skip sponsored ads and scroll to regular results. | Reverse-code before creating the attitude composite |
-
-For a seven-point scale, the reverse-coded value is calculated as:
-
-\[
-\text{ATT3R} = 8 - \text{ATT3}
-\]
-
-A new variable named `ATT3R` should be created so that the original response remains unchanged.
-
-The reverse-coded item should be checked to confirm that higher values have the same conceptual meaning as the other items in the construct.
-
-## Multi-Item Constructs
-
-The following constructs contain multiple survey items:
-
-| Construct | Items | Planned Composite Variable |
-|---|---|---|
-| Attitude Toward Search Ads | ATT1, ATT2, ATT3R | `ATT_MEAN` |
-| Website Clarity | CLR1–CLR3 | `CLR_MEAN` |
-| Perceived Trust | TRU1–TRU4 | `TRU_MEAN` |
-| Perceived Accessibility | ACC1–ACC3 | `ACC_MEAN` |
-| Ease of Action | EAS1–EAS3 | `EAS_MEAN` |
-| Inquiry Intention | INQ1–INQ3 | `INQ_MEAN` |
-| Donation Intention | DON1–DON3 | `DON_MEAN` |
-| Openness to Experiential Therapy | OPN1–OPN3 | `OPN_MEAN` |
-| Attitude Toward Animals | ANI1–ANI2 | `ANI_MEAN` |
-| Social Influence | SOC1–SOC2 | `SOC_MEAN` |
-
-## Attention Check
-
-The questionnaire includes the following attention-check item:
-
-| Variable | Required Response |
+| Data Collection Detail | Information |
 |---|---|
-| CHK1 | Somewhat agree, coded as 5 |
+| Data source | Google Analytics 4 |
+| Organization | Wellness Ranch Equine Assisted Therapy |
+| Reporting start date | To be confirmed |
+| Reporting end date | To be confirmed |
+| Export format | CSV, if exported |
+| Data preparation tool | R in Positron, or an approved alternative |
 
-The group will document how responses that fail the attention check are handled. Possible approaches include excluding those cases from the primary analysis or conducting a sensitivity analysis with and without those responses.
+## Data Export Procedure
 
-**Group decision:** [Enter final decision]
+If a CSV-based R workflow is selected, the group will:
 
-## Reliability Analysis
+1. Access the Wellness Ranch GA4 property.
+2. Navigate to the relevant GA4 reports.
+3. Select the reporting period.
+4. Review the available dimensions, metrics, and events.
+5. Export relevant report data in CSV format.
+6. Preserve an unchanged copy of the exported data.
+7. Import the dataset into R for cleaning and preparation.
 
-Reliability analysis will be conducted for each multi-item construct before a composite score is created.
+The final report will document the actual export method, reporting period, and data sources used.
 
-The group will record:
 
-- Number of items
-- Cronbach’s alpha
-- Corrected item-total correlations
-- Whether removing an item substantially improves reliability
-- Final decision about retaining or removing items
+# Part 2: GA4 Data Preparation
 
-| Construct | Number of Items | Cronbach’s Alpha | Decision |
-|---|---:|---:|---|
-| Attitude Toward Search Ads | 3 | [Enter result] | [Retain/Revise] |
-| Website Clarity | 3 | [Enter result] | [Retain/Revise] |
-| Perceived Trust | 4 | [Enter result] | [Retain/Revise] |
-| Perceived Accessibility | 3 | [Enter result] | [Retain/Revise] |
-| Ease of Action | 3 | [Enter result] | [Retain/Revise] |
-| Inquiry Intention | 3 | [Enter result] | [Retain/Revise] |
-| Donation Intention | 3 | [Enter result] | [Retain/Revise] |
-| Openness to Experiential Therapy | 3 | [Enter result] | [Retain/Revise] |
-| Attitude Toward Animals | 2 | [Enter result] | [Retain/Revise] |
-| Social Influence | 2 | [Enter result] | [Retain/Revise] |
+## Data Preparation Overview
 
-## Factor Analysis
+This section outlines the procedures for preparing Google Analytics 4 (GA4) data for the Wellness Ranch Equine Assisted Therapy marketing analytics project.
 
-Factor analysis will be conducted where appropriate to evaluate whether the multi-item measures represent the intended constructs.
+The goal is to organize website performance data into a consistent and usable format for analyzing website traffic, user engagement, lead generation, and donation-related interactions.
 
-The group will document:
+The group plans to use R in Positron to perform data cleaning and preparation. Google Analytics 4 and Looker Studio may also be used to validate and visualize the data.
 
-- Variables included
-- Extraction method
-- Rotation method
-- Factor loadings
-- Number of factors retained
-- Items removed, if any
-- Justification for the final structure
+## Data Preparation Checklist
 
-**Factor-analysis results:** [Summarize results after analysis]
+The following checklist will guide the data preparation process:
 
-## Composite Variables
+- [ ] Export relevant GA4 data.
+- [ ] Preserve the original dataset.
+- [ ] Import the dataset into R.
+- [ ] Review variable names and data types.
+- [ ] Check for missing values.
+- [ ] Identify potential duplicate records.
+- [ ] Verify numerical metrics.
+- [ ] Review available event names.
+- [ ] Create relevant marketing KPIs.
+- [ ] Validate the prepared dataset.
+- [ ] Save the cleaned dataset for analysis.
 
-Composite variables will be created only after the corresponding items demonstrate acceptable reliability and an appropriate factor structure.
+## Variables and Measurement Levels
 
-Composite variables will generally be calculated using the mean of the retained items. Using the mean preserves the original response scale and allows easier interpretation.
+The GA4 dataset contains dimensions and metrics that can be used to evaluate website performance.
 
-Example:
+The following table identifies potential variables for analysis.
 
-```spss
-COMPUTE ATT_MEAN = MEAN(ATT1, ATT2, ATT3R).
-EXECUTE.
+| Variable | Description | Measurement Level |
+|---|---|---|
+| Event name | Type of website interaction | Nominal |
+| Page path | Website page visited | Nominal |
+| Device category | Desktop, mobile, or tablet | Nominal |
+| Date | Date of recorded activity | Date |
+| Event count | Number of recorded events | Ratio |
+| Active users | Number of active users | Ratio |
+| Engagement rate | Percentage of engaged sessions | Ratio |
+| Sessions | Number of website sessions | Ratio |
+
+The final variables will depend on the dimensions and metrics available in the exported dataset.
+
+## Data Cleaning Procedures
+
+The following steps will be used to clean the dataset:
+
+1. Review the imported column names and data types.
+2. Rename variables where necessary to improve readability.
+3. Identify missing or incomplete values.
+4. Check whether numeric metrics were imported correctly.
+5. Review duplicate rows and determine whether they represent errors or legitimate aggregated records.
+6. Verify that the event names correspond to the intended GA4 tracking activities.
+7. Preserve the original data and document all transformations.
+
+## Data Validation
+
+Data validation will focus on determining whether the exported GA4 data are consistent and suitable for marketing analysis.
+
+The group will examine:
+
+- Whether expected GA4 events appear in the dataset.
+- Whether important numerical metrics contain missing values.
+- Whether metrics contain unexpected negative values.
+- Whether the selected reporting period is correct.
+- Whether lead-generation and donation-related events are available.
+- Whether prepared results are consistent with the corresponding GA4 report.
+
+## Marketing KPIs
+
+The prepared data will support several marketing performance indicators.
+
+| KPI | Marketing Purpose |
+|---|---|
+| Total page views | Evaluate website visibility and content consumption |
+| Active users | Estimate the size of the active website audience |
+| Engagement rate | Evaluate visitor engagement |
+| Lead-generation events | Monitor recorded inquiry actions |
+| Donation-related events | Assess donation interactions where tracking is available |
+| Traffic sources | Understand how visitors reach the website |
+
+These indicators will help the group assess website performance and identify opportunities to improve visitor engagement, therapy inquiries, and donation activity.
+
+## Data Preparation Results
+
+```{r}
+# Load required packages
+library(readr)
+library(dplyr)
+
+# Specify original GA4 CSV file
+ga4_file <- "data/Events_Event_name.csv"
+
+# Import GA4 data after skipping metadata
+ga4_data <- read_csv(
+  ga4_file,
+  skip = 9,
+  show_col_types = FALSE
+)
+
+# Check imported column names
+names(ga4_data)
+
+# Preview the dataset
+glimpse(ga4_data)
+
+# Display first six rows
+head(ga4_data)
 ```
 
-All composite-variable calculations will be saved in the SPSS syntax file.
 
-# SPSS Syntax Documentation
+```{r}
+# Clean and organize GA4 data
+ga4_clean <- ga4_data %>%
+  rename(
+    event_name = `Event name`,
+    event_count = `Event count`,
+    total_users = `Total users`,
+    events_per_active_user = `Event count per active user`,
+    total_revenue = `Total revenue`
+  )
 
-All modifications must be recorded in the `.sps` file.
+# Check the cleaned dataset
+glimpse(ga4_clean)
 
-The syntax file should include:
+# Check missing values in each column
+colSums(is.na(ga4_clean))
 
-- Variable and value labels
-- Missing-value definitions
-- Reverse coding
-- Attention-check handling
-- Reliability analyses
-- Factor analyses
-- Composite-variable calculations
-- Case exclusions
-- Any additional transformations
+# Check for duplicate event names
+sum(duplicated(ga4_clean$event_name))
 
-The team will use **Paste** instead of **OK** when running SPSS procedures so that the corresponding syntax is preserved.
+# Calculate total events
+sum(ga4_clean$event_count, na.rm = TRUE)
+```
 
+### Data Preparation Summary
+
+The Wellness Ranch GA4 event report was successfully imported into R using the `readr` package. The dataset was organized and validated using `dplyr`.
+
+The imported dataset contained 9 observations representing individual GA4 event types and 5 variables describing event activity and website performance.
+
+### Data Cleaning Results
+
+| Data Quality Measure | Result |
+|---|---:|
+| Total observations | 9 |
+| Total variables | 5 |
+| Missing values | 0 |
+| Duplicate event names | 0 |
+| Total recorded events | 9,020 |
+
+The original GA4 column names were renamed to improve consistency and readability.
+
+The validation process found no missing values or duplicate event names in the exported report.
+
+### Interpretation
+
+The dataset contains 9 unique event types with a combined total of 9,020 recorded events.
+
+These findings indicate that the exported GA4 event summary was imported successfully and is suitable for event-level summary analysis.
+
+However, this dataset contains aggregated event counts rather than individual user records. Therefore, the results should be interpreted as website event summaries rather than individual-level behavioral observations.
+
+The prepared dataset will support further evaluation of website engagement, visitor interactions, and lead-generation activity.
+
+## Marketing KPI Summary
+
+The following table summarizes key website interactions recorded in Google Analytics 4 for Wellness Ranch Equine Assisted Therapy.
+
+```{r}
+# Create marketing KPI summary from GA4 event data
+kpi_summary <- ga4_clean %>%
+  filter(event_name %in% c(
+    "page_view",
+    "user_engagement",
+    "session_start",
+    "scroll",
+    "click",
+    "generate_lead",
+    "form_start"
+  )) %>%
+  select(
+    event_name,
+    event_count,
+    total_users,
+    events_per_active_user
+  ) %>%
+  arrange(desc(event_count))
+
+# Display KPI summary
+knitr::kable(
+  kpi_summary,
+  col.names = c(
+    "GA4 Event",
+    "Event Count",
+    "Total Users",
+    "Events per Active User"
+  ),
+  digits = 2,
+  caption = "Wellness Ranch GA4 Marketing KPI Summary"
+)
+```
+
+### Interpretation
+
+The GA4 event summary provides an overview of website activity and user interactions.
+
+Page views and user engagement events help evaluate website activity, while the `generate_lead` and `form_start` events provide information about recorded lead-generation interactions.
+
+These event counts do not necessarily represent unique leads or completed donations. Further tracking validation is required to determine whether the recorded events correspond to the organization's intended conversion actions.
+
+## Exporting the Cleaned Dataset
+
+After importing and validating the GA4 event data, the cleaned dataset was prepared for export. Saving the cleaned data allows the group to reuse the organized event-level summary for future marketing analysis.
+
+```{r}
+# Save cleaned GA4 dataset
+write_csv(
+  ga4_clean,
+  "data/ga4_events_clean.csv"
+)
+
+# Confirm saved file exists
+file.exists("data/ga4_events_clean.csv")
+```
+
+# Appendix
+
+## Project Repository
+
+GitHub Repository: [Wellness Ranch CEP Group 4](https://github.com/brianvuong1/CEP-Group-4)
+
+## Published Project
+
+GitHub Pages: [Wellness Ranch Marketing Analytics Project](https://brianvuong1.github.io/CEP-Group-4/cep-group-4.html)
+
+The final CEP 11 report URL will be added after publication.
