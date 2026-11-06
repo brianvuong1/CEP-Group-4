@@ -1021,7 +1021,7 @@ Social media also has a measurable connection to fundraising. Bhati and McDonnel
 
 ##### Community Partnerships
 
-Community partners can extend a small nonprofit's reach beyond its own followers and email list. For Wellness Ranch, relevant partners may include local schools, counseling and social-service organizations, businesses, faith and civic groups, and the regional equestrian community. Partners can share donor content with their own audiences, co-promote a giving moment such as Giving Tuesday, sponsor a matching gift, or link to the donation page from their websites. This also connects to AO1, since outreach to community partners is one of the link-building activities that can strengthen the website's search visibility. AO4 will identify a short list of partners with the client and track any partner-driven traffic separately using UTM-tagged links.
+Community partners can extend a small nonprofit's reach beyond its own followers and email list. For Wellness Ranch, relevant partners may include local schools, counseling and social-service organizations, businesses, faith and civic groups, and the regional equestrian community. Partners can share donor content with their own audiences, co-promote a giving moment such as Giving Tuesday, sponsor a matching gift, or link to the donation page from their websites. This also connects to AO1, since outreach to community partners is one of the link-building activities that can strengthen the website's search visibility. AO4 will identify a short list of partners with the client and track any partner-driven traffic separately using UTM-tagged links. These tactics are already common in the local market. Trinity Therapeutic Riding Center raises funds through an annual derby event [@trinityZeffy], and Friends of Leaps & Bounds has built visibility through community recognition [@leapsSenate2023] (see Section 2.4).
 
 ##### Moving Donors Toward Action
 
@@ -1035,25 +1035,27 @@ Online controlled experiments compare two versions of a message to see which per
 
 Giving mechanisms explain why people donate and what content needs to communicate. Storytelling research explains how to communicate it persuasively, with privacy protections suited to a mental-health organization. Nonprofit social media research shows how to balance content and why focused giving campaigns work. The decision journey turns outreach metrics into a stage-by-stage diagnosis, and controlled testing provides a disciplined way to improve. Together, they give AO4 a clear structure: build content around need, ask, and impact; tell stories ethically; run focused campaigns; measure each stage; and test carefully.
 
-##### Research Questions and Hypotheses
+#### Research Questions and Hypotheses
 
-Based on the frameworks above, AO4 will address the following research questions:
+These sub-questions support RQ4 in the project's Data Analysis Table:
 
-- **RQ1:** Which message types (need, ask, or impact) and formats (story-based or informational) generate the highest engagement and click-through to the donation page? This question draws on giving mechanisms and storytelling research [@bekkersWiepking2011; @small2007; @greenBrock2000].
-- **RQ2:** Do posts with a clear call to action outperform information-only posts in driving donation-page visits? This question follows the information, community, and action framework for nonprofit social media [@lovejoySaxton2012].
-- **RQ3:** Does a focused campaign tied to a giving moment increase donation-page sessions and completed donations compared with the baseline period? This question draws on research linking social media activity to online giving success [@bhatiMcDonnell2020].
-- **RQ4:** At which stage of the donor journey (reach, engagement, click, donation-page visit, or completed donation) do the most supporters drop off? This question applies the hierarchy of effects and the consumer decision journey [@lavidgeSteiner1961; @court2009].
+- **RQ4.1:** Which message types (need, ask, or impact) and formats (story-based or informational) generate the highest engagement and click-through to the donation page [@bekkersWiepking2011; @small2007; @greenBrock2000]?
+- **RQ4.2:** Do posts with a clear call to action outperform information-only posts in driving donation-page visits [@lovejoySaxton2012]?
+- **RQ4.3:** Does a focused campaign tied to a giving moment increase donation-page sessions and completed donations compared with the baseline period [@bhatiMcDonnell2020]?
+- **RQ4.4:** At which stage of the donor journey (reach, engagement, click, donation-page visit, or completed donation) do the most supporters drop off [@lavidgeSteiner1961; @court2009]?
 
 Two hypotheses will be tested through controlled content tests [@kohavi2009]:
 
-- **H1:** Story-based content will produce a higher click-through rate to the donation page than informational content.
-- **H2:** Posts or emails with a direct donation ask will produce a higher click-through rate than posts or emails without one.
+- **H4.1:** Story-based content will produce a higher click-through rate to the donation page than informational content.
+- **H4.2:** Posts or emails with a direct donation ask will produce a higher click-through rate than posts or emails without one.
 
-RQ3 and RQ4 will be answered descriptively, since a single campaign for one organization cannot isolate cause and effect.
+RQ4.3 and RQ4.4 will be answered descriptively, since a single campaign for one organization cannot isolate cause and effect.
 
 #### Adequateness of Gathered Information
 
-The gathered information is sufficient to select the frameworks and design the campaign, but not to complete the analysis. The research on giving and storytelling is well established, but it comes mostly from laboratory studies and large charities, not small mental-health nonprofits where privacy limits which stories can be told. Several facts about Wellness Ranch's current outreach are still unconfirmed: which social platforms are active, whether an email list exists and how large it is, which email tool is used, whether past donation records are available, and how donations are processed. If donations are completed on a third-party platform, completed gifts may not be directly trackable in GA4, which would limit how precisely campaign results can be attributed. The client also needs to approve which stories, images, and impact figures can be shared. For these reasons, primary campaign data and client input will be needed.
+The gathered information is sufficient to select the frameworks and design the campaign, but not to complete the analysis. Most of the core evidence is strong. The giving, storytelling, and social media studies are peer-reviewed and published in leading journals [@bekkersWiepking2011; @small2007; @greenBrock2000; @lovejoySaxton2012; @bhatiMcDonnell2020]. The consumer decision journey comes from a practitioner publication rather than a peer-reviewed journal [@court2009], and the hierarchy of effects is an older model [@lavidgeSteiner1961], so both are used as organizing frameworks rather than as evidence of effect sizes. The research also comes from contexts that differ from Wellness Ranch: laboratory studies, large charities, and Twitter data, not small mental-health nonprofits where client privacy limits which stories can be told.
+
+Initial data about Wellness Ranch's own outreach show both opportunities and gaps. Instagram produced 52% of website sessions in the first week of GA4 tracking (see Chapter 3), which makes it the likely primary outreach channel. Donations are processed through third-party platforms. The organization's main GoFundMe campaign had raised $805 from 8 donors toward an $80,000 rebuilding goal [@wrGofundme], and its Zeffy profile appears unclaimed, with placeholder events [@wrZeffy]. Because these platforms sit outside the website, completed gifts may not be trackable in GA4. Several facts are still unconfirmed: whether an email list exists, which donation platform is official, whether past donation records are available, and which stories, images, and impact figures the client will approve. For these reasons, client input and primary campaign data will be needed.
 
 #### Need for Additional Analysis
 
@@ -1066,6 +1068,17 @@ AO4 is affirmed as a necessary part of the project. Donations are the client's p
 The analytical approach combines a content and channel audit, a donor content library built around need, ask, and impact, a focused outreach campaign tied to a giving moment, stage-based measurement from reach to completed donation, and controlled testing of content elements. Data will come from social media platform analytics, the email platform's reports, GA4 campaign data through UTM tracking, and donation records where available. AO4 will use descriptive comparisons against the baseline rather than claiming that a campaign caused a change in donations, since seasonality, year-end giving patterns, and other activities may also affect results.
 
 These techniques are appropriate because they match how donors make decisions and are realistic for a small organization. The content library, campaign templates, and simple measurement routine can be handed off to Wellness Ranch so it can continue running donor outreach after the capstone ends.
+
+##### Approaches Considered
+
+| Approach | What It Explains | Limitations | Role in AO4 |
+|---|---|---|---|
+| Giving mechanisms | Why people donate and what content must communicate | Based mostly on large charities and lab studies | Structure for the need, ask, and impact content library |
+| Narrative transportation and identifiable impact | Why stories persuade more than statistics | Client privacy limits which stories can be told | Guides story-based content under a privacy protocol |
+| Information, community, and action framework | How nonprofits balance social media content | Based on Twitter data from large nonprofits | Used to code existing posts and plan the content mix |
+| Hierarchy of effects and decision journey | Where supporters drop off between seeing content and giving | Stages are inferred from platform metrics | Stage-based evaluation of the campaign |
+| Controlled content testing | Which version of a message performs better | Small audiences limit statistical power | Testing of one element at a time; directional results when volume is low |
+| Broad multichannel campaign | Reaches the most people | Unrealistic for a small staff; harder to measure | Rejected in favor of one primary channel |
 
 ### Summary of Research Frameworks and Analytical Direction
 
