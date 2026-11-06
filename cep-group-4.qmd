@@ -1748,45 +1748,17 @@ The primary outcomes for AO4 are donation-page sessions, completed donations, an
 
 ::: {#refs}
 
-Lemon, Katherine N., and Peter C. Verhoef. 2016. “Understanding Customer Experience Throughout the Customer Journey.” *Journal of Marketing* 80 (6): 69–96. <https://doi.org/10.1509/jm.15.0420>.
+Lemon KN, Verhoef PC. Understanding customer experience throughout the customer journey. *J Mark*. 2016;80(6):69-96. doi:10.1509/jm.15.0420
 
-Verhoef, Peter C., P. K. Kannan, and J. Jeffrey Inman. 2015. “From Multi-Channel Retailing to Omni-Channel Retailing: Introduction to the Special Issue on Multi-Channel Retailing.” *Journal of Retailing* 91 (2): 174–181. <https://doi.org/10.1016/j.jretai.2015.02.005>.
-
-Google Analytics. n.d. “Set Up Events.” *Google for Developers*. <https://developers.google.com/analytics/devguides/collection/ga4/events>.
-
-Google Analytics. n.d. “Engagement Rate and Bounce Rate.” *Google Analytics Help*. <https://support.google.com/analytics/answer/12195621>.
-
-Google Analytics. n.d. “Recommended Events.” *Google Analytics Help*. <https://support.google.com/analytics/answer/9267735>.
+Verhoef PC, Kannan PK, Inman JJ. From multi-channel retailing to omni-channel retailing: introduction to the special issue on multi-channel retailing. *J Retail*. 2015;91(2):174-181. doi:10.1016/j.jretai.2015.02.005
 
 Broder A. A taxonomy of web search. *SIGIR Forum*. 2002;36(2):3-10. doi:10.1145/792550.792552
 
-Personalized advertising. Google Advertising Policies Help. Accessed October 12, 2026. https://support.google.com/adspolicy/answer/143465
-
 Lavidge RJ, Steiner GA. A model for predictive measurements of advertising effectiveness. *J Mark*. 1961;25(6):59-62. doi:10.1177/002224296102500611
 
-Court D, Elzinga D, Mulder S, Vetvik OJ. The consumer decision journey. *McKinsey Q*. 2009;(3):96-107. Accessed October 5, 2026. https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey
-
-Jansen BJ, Mullen T. Sponsored search: an overview of the concept, history, and technology. *Int J Electron Bus*. 2008;6(2):114-131. doi:10.1504/IJEB.2008.018068
-
-Ghose A, Yang S. An empirical analysis of search engine advertising: sponsored search in electronic markets. *Manage Sci*. 2009;55(10):1605-1622. doi:10.1287/mnsc.1090.1054
-
-Agarwal A, Hosanagar K, Smith MD. Location, location, location: an analysis of profitability of position in online advertising markets. *J Mark Res*. 2011;48(6):1057-1073. doi:10.1509/jmr.08.0468
-
-Rutz OJ, Bucklin RE. From generic to branded: a model of spillover in paid search advertising. *J Mark Res*. 2011;48(1):87-102. doi:10.1509/jmkr.48.1.87
+Court D, Elzinga D, Mulder S, Vetvik OJ. The consumer decision journey. *McKinsey Q*. 2009;(3). Accessed November 5, 2026. https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey
 
 Kohavi R, Longbotham R, Sommerfield D, Henne RM. Controlled experiments on the web: survey and practical guide. *Data Min Knowl Discov*. 2009;18(1):140-181. doi:10.1007/s10618-008-0114-1
-
-Ad Grants policy compliance guide. Google Ad Grants Help. Accessed October 5, 2026. https://support.google.com/grants/answer/9042207
-
-Get negative keyword ideas using the search terms report. Google Ads Help. Accessed October 5, 2026. https://support.google.com/google-ads/answer/7102466
-
-Google. (n.d.-a). *How to generate more leads on your website*. Google Analytics Help. https://support.google.com/analytics/answer/12941105
-
-Google. (n.d.-b). *Engagement rate and bounce rate*. Google Analytics Help. https://support.google.com/analytics/answer/12195621
-
-Google. (n.d.-c). *Recommended events*. Google Analytics Help. https://support.google.com/analytics/answer/9267735
-
-Kaushik, A. (2009). *Web Analytics 2.0: The Art of Online Accountability and Science of Customer Centricity*. Wiley.
 
 Bekkers R, Wiepking P. A literature review of empirical studies of philanthropy: eight mechanisms that drive charitable giving. *Nonprofit Volunt Sect Q*. 2011;40(5):924-973. doi:10.1177/0899764010380927
 
@@ -1795,12 +1767,6 @@ Small DA, Loewenstein G, Slovic P. Sympathy and callousness: the impact of delib
 Green MC, Brock TC. The role of transportation in the persuasiveness of public narratives. *J Pers Soc Psychol*. 2000;79(5):701-721. doi:10.1037/0022-3514.79.5.701
 
 Lovejoy K, Saxton GD. Information, community, and action: how nonprofit organizations use social media. *J Comput Mediat Commun*. 2012;17(3):337-353. doi:10.1111/j.1083-6101.2012.01576.x
-
-Lavidge RJ, Steiner GA. A model for predictive measurements of advertising effectiveness. *J Mark*. 1961;25(6):59-62. Reprinted in: *Advertising & Society Review*. 2000;1(1). Accessed October 12, 2026. https://muse.jhu.edu/article/2941
-
-Court D, Elzinga D, Mulder S, Vetvik OJ. The consumer decision journey. *McKinsey Q*. 2009;(3). Accessed October 12, 2026. https://www.mckinsey.com/~/media/McKinsey/Business%20Functions/Marketing%20and%20Sales/Our%20Insights/The%20consumer%20decision%20journey/The%20consumer%20decision%20journey.pdf
-
-Kohavi R, Longbotham R, Sommerfield D, Henne RM. Controlled experiments on the web: survey and practical guide. *Data Min Knowl Discov*. 2009;18(1):140-181. Accessed October 12, 2026. https://exp-platform.com/Documents/controlledExperimentDMKD.pdf
 
 :::
 
