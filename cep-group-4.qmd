@@ -436,53 +436,146 @@ The current analytics foundation includes GA4 and Google Search Console, but the
 
 ## Competitive Analysis
 
+Wellness Ranch competes in a narrow niche, equine-assisted mental-health services, that sits inside the much larger outpatient mental-health and nonprofit human-services sectors. This section first sizes the industry at three levels: equine-assisted services, outpatient mental-health care, and charitable giving. It then compares Wellness Ranch with four Inland Empire organizations that compete for the same clients, referrals, volunteers, and donors. Competitor information comes from public nonprofit profiles, donation platforms, and news coverage reviewed in November 2026. A hands-on audit of each competitor's website, search rankings, and social accounts will be completed using Semrush and manual review, and the figures marked [X] will be filled in at that point.
+
 ### Industry Size
 
 #### Number of Companies
 
+Wellness Ranch's direct industry is equine-assisted services (EAS). The Professional Association of Therapeutic Horsemanship International (PATH Intl.), the largest EAS membership and accreditation body, reports **721 member centers**, of which 615 are not-for-profit and 231 are Premier Accredited. **California has 39 member centers**, 17 of them Premier Accredited [@pathintl2025]. Because PATH Intl. membership is voluntary, these figures undercount the field. Newer organizations such as Wellness Ranch, and providers certified through other bodies, may not appear in them.
+
+The broader industries are much larger. IBISWorld counts **12,596 mental health and substance abuse clinics** in the United States in 2026, a number that grew 8.0% per year from 2021 to 2026 [@ibisworldClinics2026]. It also counts **323,783 mental health practitioner businesses**, such as private therapists, psychologists, and counselors [@ibisworldPractitioners2026]. These are the conventional alternatives a prospective client may choose instead of equine-assisted therapy.
+
 #### Number of Employees
+
+The EAS field runs mostly on volunteers. PATH Intl. member centers employ **4,467 people, only 2,002 of them full-time**, while relying on **56,101 volunteers** [@pathintl2025]. That works out to fewer than seven paid employees per center on average and roughly 12 volunteers for every paid staff member. This matches Wellness Ranch's situation as a small, relationship-based nonprofit, and it means competitors also compete for volunteers, not just clients and donors.
 
 #### Annual Revenue and Key Financial Information
 
+PATH Intl. member centers report a combined budget of about **$300.5 million**. Most centers are small: about 60% of the centers that reported a budget operate on less than $200,000 a year, and only 45 centers (about 7%) exceed $1 million [@pathintl2025]. Among local competitors, Queen of Hearts Therapeutic Riding Center reports income in the $100,000–$500,000 range [@qohGudsy], and Friends of Leaps & Bounds Pediatric Therapy reported about $697,000 across its three programs in 2022 [@leapsImpala].
+
+The surrounding markets are larger and growing. U.S. mental health and substance abuse clinics are expected to earn **$42.0 billion in 2026**, after growing 4.8% per year since 2021 [@ibisworldClinics2026]. On the funding side, Americans gave **$592.5 billion** to charity in 2024, up 3.3% after inflation. Individuals provided about two-thirds of that total, and giving to human services ($91.2 billion) and health ($60.5 billion) each grew 5.0% [@givingusa2025]. Since Wellness Ranch depends on donations, this giving environment matters as much as the market for therapy services.
+
 #### Existence of Dominant Players and Competitors
 
+There is no dominant player in either equine-assisted services or outpatient mental-health care. IBISWorld describes mental health clinics as highly fragmented, with no company holding more than 5% of the market [@ibisworldClinics2026]. The EAS field is made up of small, independent local nonprofits. PATH Intl. and Eagala set certification and accreditation standards, but they are professional associations, not competitors.
+
+Competition is therefore local. For Wellness Ranch, the relevant competitors are organizations within driving distance of Rancho Cucamonga that offer horse-based programs or mental-health support. They fall into three groups:
+
+- **Direct competitors** offer equine-assisted mental-health services: Queen of Hearts Therapeutic Riding Center (Jurupa Valley) and Peaceful Hearts for Change (Perris).
+- **Adjacent competitors** offer equine-assisted services focused on physical or developmental needs, and they compete mainly for donors, volunteers, and families of children with disabilities: Friends of Leaps & Bounds Pediatric Therapy (Norco) and Trinity Therapeutic Riding Center (Riverside).
+- **Indirect competitors** include conventional therapists, counseling clinics, and county behavioral health services, which compete for clients and referral sources.
+
 #### Market Share of Each Major Player
+
+Reliable market-share data do not exist for a niche this small and fragmented. Instead, @tbl-competitor-scale compares the scale indicators that are publicly available.
+
+| Organization | Location | Ruling Year | Scale Indicator |
+|---|---|---|---|
+| Wellness Ranch Equine Assisted Therapy | Rancho Cucamonga | 2023 | New organization; rebuilding after closing its previous site [@wrGofundme] |
+| Queen of Hearts Therapeutic Riding Center | Jurupa Valley | 2001 | Income of $100K–$500K [@qohGudsy]; PATH Intl. Premier Accredited [@qohIdealist] |
+| Peaceful Hearts for Change | Perris | Not available | Contracts with Riverside County Mental Health [@peacefulHeartsKlove] |
+| Friends of Leaps & Bounds Pediatric Therapy | Norco | 2015 | About $697K in program activity (2022) [@leapsImpala] |
+| Trinity Therapeutic Riding Center | Riverside | 2015 | Serves about 75 individuals with autism using 12 trained horses [@trinityGuidestar] |
+
+: Scale indicators for Wellness Ranch and local competitors {#tbl-competitor-scale}
+
+Wellness Ranch is the newest and likely the smallest of these organizations. Its competitors have operated for 10 to 25 years, which gives them established referral relationships, donor bases, and search histories. Wellness Ranch's advantage is its mental-health focus. Only Queen of Hearts and Peaceful Hearts also offer equine-assisted mental-health services, and no competitor found in the Rancho Cucamonga and western San Bernardino County area offers equine-assisted psychotherapy to children, adults, couples, families, veterans, and first responders [@wrGuidestar].
 
 ### Industry Outlook
 
 #### Industry Life Cycle
 
+The outpatient mental-health industry is in a **mature but still growing** stage, with steady revenue growth and a rising number of providers [@ibisworldClinics2026]. Equine-assisted mental-health services, by contrast, look more like a **growth-stage niche**. Between 2024 and 2025, the number of PATH Intl. centers offering equine-facilitated psychotherapy or counseling rose from 192 to 195, and equine-assisted learning programs rose from 482 to 488, while physically focused therapeutic riding programs declined [@pathintl2025]. Demand also exceeds supply: 407 member centers report waiting lists totaling **17,776 people** [@pathintl2025]. Wellness Ranch reports a waiting list of its own [@wrGofundme].
+
 #### Future Sales/Profit Growth Outlook
+
+Several trends point to continued demand:
+
+- **Mental-health need remains high.** In 2024, 23.4% of U.S. adults (about 61.5 million people) experienced a mental illness, and 15.4% of adolescents ages 12 to 17 had a major depressive episode [@nsduh2024].
+- **Revenue is still growing.** Mental health clinic revenue is expected to grow 3.1% in 2026 [@ibisworldClinics2026].
+- **Charitable and online giving are rising.** Giving to health and human services grew faster than inflation in 2024 [@givingusa2025], and nonprofits' online revenue rose 15% on average in 2025 [@mrbenchmarks2026].
+
+Two trends create risk. First, the M+R Benchmarks Study found that the share of nonprofit website traffic coming from organic search declined throughout 2025, which it attributes to AI-generated search results [@mrbenchmarks2026]. This makes SEO alone less reliable and supports combining it with paid search (AO3) and direct outreach (AO4). Second, as a nonprofit, Wellness Ranch's growth depends on fundraising rather than profit, so its outlook rests on its ability to turn visibility into donations.
 
 ### Key Competitors and Their Digital Marketing Strategies
 
 #### Target Market
 
+- **Queen of Hearts** serves adults and children with physical or developmental disabilities and people with mental illness, and lists veterans among its causes [@qohIdealist].
+- **Peaceful Hearts for Change** serves families, teens, and children through an eight-week program, with clients referred by Riverside County Mental Health or self-referred [@peacefulHeartsKlove].
+- **Friends of Leaps & Bounds** serves children with disabilities and their siblings in the Inland Empire and North Orange County, with a focus on economically disadvantaged families [@leapsSenate2023].
+- **Trinity** serves children and adults with special needs, including students with disabilities and veterans with post-traumatic stress [@trinityKfrog2025].
+- **Wellness Ranch** has the broadest mental-health audience: children, teens, adults, couples, families, veterans, and police and fire personnel [@wrGuidestar].
+
 #### Positioning
+
+Each competitor holds a clear position. **Queen of Hearts** emphasizes credibility through PATH Intl. Premier Accreditation and specialized equipment such as a wheelchair-to-horse lift [@qohIdealist]. **Leaps & Bounds** positions itself as clinical therapy delivered by licensed physical, occupational, and speech therapists [@leapsImpala]. **Trinity** builds its story around rescued and retrained horses [@trinityGuidestar]. **Peaceful Hearts** is positioned as a county-connected mental-health program [@peacefulHeartsKlove]. **Wellness Ranch** is the only competitor positioned specifically around trauma-informed, equine-assisted psychotherapy for a wide range of ages and relationships, which matches the perceptual map in Section 2.2.
 
 #### Website and Landing Page
 
-#### Keyword research and SEO
+Queen of Hearts (queenofheartsranch.org), Leaps & Bounds (leapsandboundspediatrictherapy.org), Trinity (trinityridingcenter.com), and Wellness Ranch (wellnessranchtherapy.org) all have websites [@qohIdealist; @leapsImpala; @trinityGuidestar; @wrGuidestar]. No website was found for Peaceful Hearts for Change, which lists only an email address and phone number [@peacefulHeartsKlove]. Notably, the Friends of Leaps & Bounds nonprofit operates as a section of its for-profit partner clinic's website [@leapsImpala], which lets it benefit from the clinic's established domain. Wellness Ranch uses separate JotForm forms for its client waiting list and volunteer applications [@wrWaitlist], which send visitors away from its own website.
+
+#### Keyword Research and SEO
+
+Competitors' search performance has not yet been measured. Using Semrush, the team will record each competitor's authority score, number of ranking keywords, estimated organic traffic, and referring domains, and identify keywords competitors rank for that Wellness Ranch does not. Because Leaps & Bounds, Queen of Hearts, and Trinity have operated for 10 to 25 years, they likely have more backlinks and indexed pages than Wellness Ranch, whose site is about three years old. Directory listings appear to be a common visibility tactic. Queen of Hearts is listed on Idealist and Candid [@qohIdealist], and Wellness Ranch is listed in the Rancho Cucamonga Chamber of Commerce directory [@wrChamber].
 
 #### Email Marketing Strategy
 
+No public evidence of an email newsletter program was found for any competitor. This is a gap the team will confirm during the website audit by checking for newsletter sign-up forms. If competitors are not collecting emails, an active donor email program would be a meaningful differentiator for Wellness Ranch (AO4).
+
 #### Social Media Posting
+
+Competitors' public nonprofit profiles do not list social media accounts [@qohIdealist; @trinityKfrog2025], so their activity will be measured directly during the audit. Wellness Ranch's Instagram is already its strongest digital channel, producing 52% of website sessions in its first week of GA4 tracking (see Chapter 3).
 
 #### Paid Search Advertising
 
+No evidence was found that any competitor runs Google Ads or Google Ad Grants campaigns. If none do, Wellness Ranch could reach people searching for equine therapy or mental-health support in the Inland Empire with little competition in paid results once its Ad Grants account launches (AO3). The team will confirm this by checking Google search results for core keywords and the Google Ads Transparency Center.
+
 #### Social Media Advertising
+
+No evidence of paid social campaigns was found for any competitor. The team will check the Meta Ad Library for active ads.
 
 #### Display Advertising
 
+No evidence of display advertising was found for any competitor. This is expected, since display advertising is rarely cost-effective for small local nonprofits.
+
 #### Conversion Rate Optimization (CRO)
+
+Competitors rely on third-party platforms to accept donations and sell tickets. Trinity sells tickets to its annual derby fundraiser through Zeffy [@trinityZeffy], and Leaps & Bounds has a GoFundMe charity page [@leapsGofundme]. Wellness Ranch uses the same approach: a Zeffy profile and GoFundMe campaigns [@wrZeffy; @wrGofundme]. Its main GoFundMe campaign had raised $805 from 8 donors toward an $80,000 goal for rebuilding the ranch [@wrGofundme]. Its Zeffy profile appears unclaimed, showing $0 raised and placeholder events listed in Springfield, Illinois, and San Diego [@wrZeffy]. Cleaning up these donation pages is a low-cost, high-priority CRO opportunity, because donors who reach a confusing or inactive page are unlikely to give.
 
 #### Mobile Application
 
+No competitor offers a mobile application, and none is needed at this scale. Mobile-friendly websites matter more. Wellness Ranch's GA4 data show that about 88% of its visitors use mobile devices (see Chapter 3).
+
 #### Affiliate Marketing
+
+Affiliate marketing is not used by any competitor and does not fit this industry. The closest equivalent is referral partnerships. Peaceful Hearts receives clients through its Riverside County Mental Health contract [@peacefulHeartsKlove], and Leaps & Bounds is connected to its partner therapy clinic [@leapsImpala]. Wellness Ranch receives some website traffic from referral partners such as Loma Linda University's internship platform and local disability and community networks (see Chapter 3).
 
 #### Influencer Campaigns
 
+No competitor uses influencer campaigns. Competitors instead rely on **earned media and recognition**. Trinity promoted its Galactic Derby fundraiser through a KFROG radio segment [@trinityKfrog2025], Peaceful Hearts was featured by K-LOVE [@peacefulHeartsKlove], and Friends of Leaps & Bounds was named the 32nd Senate District Nonprofit of the Year in 2023 [@leapsSenate2023]. Local media coverage and recognition are realistic, low-cost options for Wellness Ranch as well.
+
 #### Summary Table of Comparison
+
+@tbl-competitor-comparison summarizes how Wellness Ranch compares with its local competitors.
+
+| Dimension | Wellness Ranch | Queen of Hearts | Peaceful Hearts for Change | Friends of Leaps & Bounds | Trinity |
+|---|---|---|---|---|---|
+| Competitor type | — | Direct | Direct | Adjacent | Adjacent |
+| Primary focus | Equine-assisted psychotherapy | Therapeutic riding and equine-assisted psychotherapy | Equine-assisted mental-health program | Hippotherapy and adaptive riding | Therapeutic riding with rescued horses |
+| Main audience | All ages, couples, families, veterans, first responders | People with disabilities or mental illness | Families, teens, children | Children with disabilities and siblings | People with special needs, veterans |
+| Credibility signal | Licensed clinicians | PATH Intl. Premier Accreditation | County contract | Licensed therapists; Senate award | Horse rescue story |
+| Website | Yes | Yes | None found | Yes (within partner clinic site) | Yes |
+| Online giving | Zeffy (unclaimed), GoFundMe | Not identified | Not identified | GoFundMe | Zeffy |
+| Fundraising events | Listed but unverified | Not identified | Not identified | Not identified | Annual derby fundraiser |
+| Earned media | Not identified | Not identified | K-LOVE feature | Senate recognition | KFROG radio |
+| SEO strength (Semrush) | [X] | [X] | [X] | [X] | [X] |
+| Paid search | Planned (Ad Grants) | None found | None found | None found | None found |
+
+: Comparison of Wellness Ranch and local competitors {#tbl-competitor-comparison}
+
+The comparison shows three things. First, Wellness Ranch has the clearest mental-health positioning in its area, but it is the newest organization and has the weakest fundraising results so far. Second, no competitor appears to use email, paid search, or paid social advertising, so even basic, consistent digital marketing could set Wellness Ranch apart. Third, competitors' strongest tactics are credibility signals and community fundraising events, which Wellness Ranch can adopt by highlighting its clinicians' credentials, verifying its impact figures, and running a focused giving campaign. These findings directly support AO1 (search visibility), AO3 (paid search with little competition), and AO4 (donor outreach and fixing the donation pages).
 
 
 ## Customer Analysis
