@@ -1,6 +1,6 @@
 ---
-title: "Wellness Ranch Equine Assisted Therapy Culminating Experience Project"
-subtitle: "Group 4"
+title: "Strengthening Digital Marketing and Analytics for Wellness Ranch Equine Assisted Therapy"
+subtitle: "Culminating Experience Project | Group 4"
 image: images/msdm-crosswalk.png
 date-modified: today
 format: 
@@ -18,7 +18,7 @@ format:
     code-tools: true
     code-overflow: wrap
     metadata:
-      description-meta: "This template provides guidelines for creating a comprehensive written report for the MSDM Culminating Experience Project."
+      description-meta: "Group 4's Culminating Experience Project proposal for Wellness Ranch Equine Assisted Therapy, covering website optimization, analytics and conversion measurement, Google Ad Grants, and donor outreach."
     other-links:
       - text: MS in Digital Marketing
         icon: mortarboard-fill
@@ -34,9 +34,6 @@ format:
 bibliography: references.bib
 csl: styles/american-marketing-association.csl
 ---
-
-# Strengthening Digital Marketing and Analytics for Wellness Ranch Equine Assisted Therapy
-
 ------------------------------------------------------------------------
 
 <br>
@@ -75,33 +72,19 @@ csl: styles/american-marketing-association.csl
 
 Wellness Ranch Equine Assisted Therapy is a nonprofit organization that provides equine-assisted psychotherapy and wellness-focused services in Rancho Cucamonga, California [@wellnessranch2026]. This Culminating Experience Project focuses on strengthening the organization’s digital marketing foundation through improvements in search visibility, website performance, analytics, and paid search readiness. Building on recommendations developed by a Cal Poly Pomona search engine marketing class in Spring 2026, the project will move from identifying digital marketing opportunities to implementing, measuring, and evaluating selected strategies.
 
-## Background and Problem Statement
+## Background and Business Problems
 
-Wellness Ranch Equine Assisted Therapy is a nonprofit based in Rancho Cucamonga, led by Director Angelica Manzo [@wellnessranch2026]. Founded in 2022 and established as a 501(c)(3) nonprofit organization in 2023, its mission is to "bring individual healing and empowerment to our clients through the transformative use of equine assisted therapy and community activities that promote mental wellness and learning" [@wellnessranchabout2026].
+This project addresses four connected digital marketing needs:
 
-The ranch serves people of all ages, from children to adults, providing:
+1. **Website visibility and usability.** Prior recommendations identified opportunities to improve technical SEO, website content, local search visibility, and navigation. The team will verify and prioritize these opportunities before implementing feasible changes.
 
-- Trauma-informed therapy
-- Wellness education
-- Community outreach
+2. **Reliable performance measurement.** Initial GA4 testing has confirmed selected website events, but tracking coverage, baseline data quality, and outcome definitions require further review. Donations are the primary organizational outcome, with service inquiries as a secondary outcome. Donation-link clicks must be distinguished from verified completed donations.
 
-Services are offered to individuals, couples, and groups [@wellnessranchservices2026].
+3. **Advertising preparation and implementation.** Wellness Ranch has submitted its Google Ad Grants application, with approval pending at the latest documented update. Campaign development, landing-page readiness, measurement validation, and ongoing management procedures are needed to prepare for launch after approval.
 
-There is a real and growing need for what Wellness Ranch provides. The organization focuses mainly on the Inland Empire, especially underserved communities where access to responsive mental health care is affected by behavioral health workforce shortages [@hcai2025]. It is also building capacity in the field by training emerging mental health professionals through hands-on experience and internships.
+4. **Donor communication and outreach.** The project will assess existing donor-facing materials and develop a focused outreach campaign through one feasible channel. This work will connect the organization's mission and approved impact stories with clear opportunities to support its fundraising needs.
 
-In Spring 2026, a Cal Poly Pomona search engine marketing class researched Wellness Ranch's digital presence and produced recommendations across website, SEO, content, local search, and advertising. Our team picks up where that work left off.
-
-Wellness Ranch has done tremendous and meaningful work, but its digital presence can improve and take it even further in connecting with the people who need help. There are three connected gaps:
-
-1.  **Visibility.** When someone in the Inland Empire searches for trauma therapy, equine therapy, or mental health support, Wellness Ranch needs to show up. Right now, technical SEO issues, content and keyword gaps, and an underdeveloped local search presence make that harder.
-
-2.  **Measurement.** Without a properly configured GA4 setup with defined events, conversions, and baseline KPIs, the organization can't tell which channels drive inquiries, sign-ups, or donations, so there's no way to know what's working.
-
-3.  **Untapped resources.** As a nonprofit, Wellness Ranch may qualify for Google Ad Grants, which provides eligible nonprofit organizations with access to up to \$10,000 per month in Google Search advertising [@googleadgrants2026], but it hasn't yet applied or built the campaign structure to use it.
-
-> **Core problem:** Wellness Ranch has a strong mission and growing community demand, but lacks the digital infrastructure to be found, measure its impact, and scale its reach.
-
-Our project moves the organization from recommendations to implementation, measurement, and ongoing optimization so its online presence can support its mission instead of holding it back.
+The central business problem is the need to connect digital visibility, donor communication, and service information with measurable organizational outcomes. The project will address this problem through coordinated implementation, documented evaluation, and practical guidance that Wellness Ranch can maintain.
 
 ## Project Objectives (POs)
 
@@ -111,7 +94,7 @@ The overall purpose of this project is to help Wellness Ranch Equine Assisted Th
 
 The first project objective is to review the recommendations produced by the Spring 2026 search engine marketing class and identify the improvements that are most relevant and feasible for Wellness Ranch. Using access to the Wix website, the team will evaluate and address priority technical SEO issues, broken links, page titles, keyword usage, internal linking, calls to action, landing pages, and other conversion-related elements.
 
-The team will also examine local SEO opportunities that could help Wellness Ranch appear more consistently when Inland Empire residents search for equine-assisted therapy, trauma-informed services, mental-health support, and wellness resources. Website work will focus primarily on improving the organization, presentation, and optimization of existing information rather than creating an ongoing content-production program.
+The team will also examine local SEO opportunities that could help Wellness Ranch appear more consistently when Inland Empire residents search for equine-assisted therapy, trauma-informed services, mental-health support, and wellness resources. AO1 will focus on the technical quality, organization, usability, and search optimization of website information. Donor-focused content and outreach will be developed under AO4, with coordination across objectives when donation pages or campaign landing pages require website improvements.
 
 ### PO2. Strengthen Analytics and Performance Measurement
 
@@ -125,11 +108,13 @@ The third project objective is to guide Wellness Ranch through the Google Ad Gra
 
 This objective includes improving website and landing-page readiness, validating conversion tracking, researching keywords and audiences, and establishing campaign ownership and management procedures. After launch, the team will review measures such as impressions, clicks, click-through rate, search terms, and conversions to improve performance. The project will also provide documentation and recommendations so Wellness Ranch can maintain the account after the capstone concludes.
 
-### PO4. Measure the Impact of Implemented Strategies
+### PO4. Strengthen Donor Outreach and Evaluate Marketing Outcomes
 
-The fourth project objective is to evaluate whether the selected website, SEO, analytics, and digital marketing improvements produce measurable changes. The team will compare pre-implementation baseline data with post-implementation results when sufficient data are available.
+The fourth project objective is to develop and implement donor-focused content and a campaign through one feasible outreach channel, selected with the client. The campaign will communicate Wellness Ranch's mission, approved impact stories, and fundraising needs through clear calls to action.
 
-Potential measures include organic search impressions, rankings, website traffic, engagement, donation activity, inquiries, conversions, and advertising results if campaigns are launched. Because seasonality, external events, platform changes, and other factors may influence performance, the results will be interpreted carefully rather than automatically attributing every change to a single intervention.
+The team will also evaluate outcomes associated with website improvements, SEO, advertising, and donor outreach using AO2's shared measurement framework. Measures may include search visibility, website engagement, validated inquiries, donation-link clicks, and verified completed donations where records are available.
+
+Comparisons will use documented implementation dates and appropriate reporting periods. Donation-link clicks will be distinguished from completed donations, and observed changes will not automatically be attributed to a particular intervention.
 
 ### PO5. Develop a Sustainable Digital Marketing Strategy
 
@@ -141,170 +126,106 @@ This objective emphasizes sustainability. Recommendations must be realistic give
 
 The analytics objectives define the specific investigations needed to support the broader project objectives. Each analytics objective is assigned to one team member, but the findings will be shared and integrated across the project.
 
-### AO1. On-Page and Off-Page SEO Performance Analysis (Alexa)
+### AO1. SEO and Website Optimization (Alexa Bueno)
 
-Analyze current SEO data, including technical issues, website content, backlinks, local SEO, and information from the SEO Fix Tracker and backlink audit, to identify which factors most affect Wellness Ranch Therapy’s search visibility and which pages and improvements should be prioritized.
+Identify and prioritize technical, on-page, off-page, and local SEO opportunities, implement feasible improvements, and evaluate changes in organic search visibility and website performance.
 
-AO1 directly supports PO1 by providing the evidence needed to select and prioritize website and SEO improvements. It also supports PO4 by identifying the SEO indicators that should be monitored before and after implementation. The resulting findings will contribute to the SEO component of the sustainable strategy developed under PO5.
+#### How to Address AO1
+
+The team will review available Semrush audits, Google Search Console reports, website content, and prior recommendations. Issues will be prioritized according to their likely relevance, implementation effort, and the client's resources. Activities will include improving selected page titles, internal links, content organization, and calls to action, as well as identifying relevant community partners for link-building outreach.
+
+Implemented changes will be documented by page and date. Search impressions, clicks, click-through rates, and available website engagement measures will be compared across appropriate reporting periods using AO2's shared measurement framework. Observed changes will be interpreted with attention to limited traffic, seasonality, and concurrent marketing activities.
+
+#### How AO1 Supports the Project Objectives
+
+AO1 directly supports PO1 by turning website and SEO recommendations into prioritized improvements. It supports PO4 by documenting implementation and evaluating associated performance changes. It also contributes to PO3 through website and landing-page readiness and to PO5 through a practical maintenance and optimization plan.
+
+### AO2. Analytics and Conversion Measurement (Kevin Bachez)
+
+Establish and validate a shared measurement framework to evaluate website engagement, service inquiries, and donation-related activity across SEO, Google Ad Grants, and donor outreach.
+
+#### How to Address AO2
+
+The team will review GA4 configuration, validate priority events, and document tracking limitations using controlled tests and available platform reports. Initial testing has confirmed selected page, engagement, and contact-form events. Further checks will establish which measures are reliable enough for baseline reporting.
+
+AO2 will define shared KPIs, reporting periods, campaign tracking conventions, and dashboard measures. GA4, Search Console, BigQuery exports, and other available platform records will support descriptive comparisons by channel, landing page, campaign, and implementation period.
+
+Donations are the primary organizational outcome, with service inquiries as a secondary outcome. Donation-link clicks will be reported separately from verified completed donations. Website donation conversion rates will be calculated only when transactions can be linked reliably to the relevant website sessions.
+
+#### How AO2 Supports the Project Objectives
+
+AO2 directly supports PO2 by establishing consistent measurement and reporting procedures. It supports PO4 by coordinating baseline and post-implementation comparisons across all four AOs. It also supports PO1 and PO3 by measuring website and advertising outcomes, and PO5 through dashboard reporting, measurement documentation, and client handoff guidance.
 
 
-### AO2. Conversion & Engagement Measurement (Kevin Bachez)
+### AO3. Google Ad Grants Campaign Development and Optimization (Brian Vuong)
 
-Establish GA4 events, conversions, and KPIs to determine which user actions and traffic sources represent meaningful engagement for Wellness Ranch Therapy.
+Assess advertising readiness, develop Google Search campaigns, launch after Ad Grants approval, and evaluate campaign performance to guide ongoing optimization.
 
-#### Existence of Well-established Models
+#### How to Address AO3
 
-Web analytics helps organizations understand how visitors interact with their websites and whether those interactions support business objectives. Instead of evaluating website success only through traffic volume, web analytics focuses on how users arrive, engage with content, and complete meaningful actions. This is especially important for nonprofit organizations such as Wellness Ranch Equine Assisted Therapy, where website performance should support service inquiries, community engagement, and donations.
+The team will confirm the outcome of the submitted Google Ad Grants application and document any remaining requirements. Campaign preparation will include keyword research, search-intent classification, ad group organization, ad copy, landing-page selection, and conversion-tracking checks coordinated with AO2.
 
-The Customer Decision Journey provides a useful framework for understanding these interactions. Lemon and Verhoef (2016) explain that customer experiences develop across multiple touchpoints throughout the customer journey. These touchpoints influence how customers gather information, evaluate alternatives, and make decisions. Although this framework was developed for broader customer experiences, it is relevant to Wellness Ranch because prospective clients, families, and donors may interact with the organization through different digital channels before taking action.
+After approval and client authorization, the team will launch campaigns and review impressions, clicks, click-through rates, search terms, and validated conversion activity. Optimization will focus on keyword relevance, negative keywords, ad messaging, landing-page alignment, and applicable program requirements.
 
-For example, a prospective client may discover Wellness Ranch through Google Search, visit the website to learn about equine-assisted therapy, review the organization's services, and eventually submit an inquiry. A potential donor may follow a different journey by discovering the organization through social media, learning about its mission, and visiting the donation page. These examples demonstrate why website activity should be evaluated according to the visitor's purpose rather than treating every interaction as equally valuable.
+If approval or launch is delayed, the team will document the barriers and provide campaign materials and a launch plan. Campaign results will be reported only after advertising is active and sufficient observations are available.
 
-Research on multichannel customer behavior also supports evaluating how different marketing channels contribute to the overall experience. Verhoef, Kannan, and Inman (2015) discuss how customers interact with organizations across multiple channels during information search and decision-making. Their framework supports examining traffic sources and user behavior together rather than evaluating channels independently. For Wellness Ranch, this means comparing visitors from organic search, referrals, social media, and direct traffic to understand which sources generate engagement and meaningful website actions.
+#### How AO3 Supports the Project Objectives
 
-Google Analytics 4 (GA4) provides a practical measurement framework for evaluating these behaviors. GA4 uses an event-based data model to record website interactions and organize them into reports. According to Google Analytics (2026a), events may be automatically collected, collected through enhanced measurement, recommended by Google, or customized to measure specific organizational activities. This structure allows organizations to track general website engagement while also identifying actions that support their objectives.
+AO3 directly supports PO3 by moving from application and readiness assessment to campaign development, launch, and optimization. It supports PO1 through landing-page recommendations, PO2 through coordination with the shared measurement framework, and PO4 through campaign evaluation. Campaign documentation and management procedures will contribute to PO5.
 
-For AO2, the measurement framework will focus on three categories: traffic acquisition, engagement, and conversions.
 
-**Traffic Acquisition**
+### AO4. Content Marketing and Donor Outreach (Ron Sabilla)
 
-Traffic acquisition identifies how visitors reach the website. GA4 provides information about traffic sources, including organic search, direct traffic, referrals, and social media. Examining these channels can help Wellness Ranch understand which sources bring visitors to its website and which sources contribute to meaningful interactions.
+Develop, implement, and evaluate donor-focused content and outreach to strengthen engagement and encourage donations.
 
-**Engagement Measurement**
+#### How to Address AO4
 
-Engagement measurement evaluates how visitors interact with website content after arriving. Important metrics include engaged sessions, engagement rate, average engagement time, page views, and relevant interaction events.
+The team will review existing donor-facing content and consult with the client to select one manageable outreach channel, such as email or social media. Content will communicate Wellness Ranch's mission, approved impact stories, fundraising needs, and clear opportunities to give.
 
-Google Analytics (2026b) defines an engaged session as a session that lasts longer than 10 seconds, contains a key event, or includes at least two page or screen views. Engagement rate represents the percentage of sessions that meet at least one of these conditions.
+Implementation will include preparing client-approved content, improving donation-related messaging, and conducting a focused outreach campaign. Campaign links will use consistent tracking parameters coordinated with AO2.
 
-These measures provide useful indicators of website activity, but they do not necessarily demonstrate that visitors are interested in obtaining services or supporting the organization. For example, a visitor spending time on a service page may be learning about equine-assisted therapy without intending to schedule an appointment. Therefore, engagement metrics should be interpreted alongside more direct behavioral outcomes.
+Evaluation will consider available reach or delivery measures, link clicks, website engagement, and donation-link activity. Verified completed donations will be reported where records are available. Donation-link clicks will not be treated as completed donations, and campaign attribution will be claimed only when supported by reliable evidence.
 
-**Conversion Measurement**
+#### How AO4 Supports the Project Objectives
 
-Conversion measurement identifies whether visitors complete actions that support organizational goals. In GA4, events representing particularly important outcomes can be designated as key events. For Wellness Ranch, the primary measurement priority is donations, since the organization has identified fundraising as an important website outcome.
+AO4 supports PO1 through donor-facing content and donation-page recommendations. It supports PO2 by applying AO2's shared measurement framework and PO4 by evaluating outreach performance. It contributes to PO5 through reusable content, campaign templates, and practical guidance for continued donor communication.
 
-Additional meaningful actions may include successful contact-form submissions, appointment inquiries, phone-number clicks, and program-interest interactions. Google Analytics (2026c) recommends the `generate_lead` event for completed requests for information, making it an appropriate option for measuring verified inquiries.
+### Alignment Between Project Objectives and Analytics Objectives
 
-However, these actions represent different levels of commitment. A phone-number click does not establish that a conversation occurred, and clicking a donation button does not confirm a completed donation. Consequently, AO2 will distinguish confirmed outcomes from preliminary engagement signals.
+The project objectives describe the organizational outcomes the team seeks to support. The analytics objectives define the evidence, implementation activities, and evaluation needed to support those outcomes.
 
-The proposed measurement framework will organize events according to their relationship with Wellness Ranch's objectives:
-
-| Measurement Category | Example KPI | Organizational Purpose |
+| Project Objective | Supporting Analytics Objectives | Connection |
 |---|---|---|
-| Acquisition | Sessions by traffic source | Identify where visitors originate |
-| Engagement | Engagement rate and average engagement time | Evaluate interaction with website content |
-| Service Interest | Program interactions and phone clicks | Identify potential interest in services |
-| Inquiries | Successful contact-form submissions | Measure completed requests for information |
-| Donations | Confirmed completed donations, where trackable | Evaluate the website's fundraising outcomes |
+| PO1. Implement priority website and SEO improvements | AO1, supported by AO2, AO3, and AO4 | AO1 prioritizes and implements SEO and website improvements. AO2 measures outcomes, while AO3 and AO4 identify advertising and donor-content requirements. |
+| PO2. Strengthen analytics and performance measurement | AO2, supporting all other AOs | AO2 establishes shared event definitions, validation procedures, baseline KPIs, and reporting methods for SEO, advertising, and donor outreach. |
+| PO3. Obtain and activate Google Ad Grants | AO3, supported by AO1 and AO2 | AO3 manages readiness, campaign development, launch after approval, and optimization. AO1 supports website readiness, and AO2 validates measurement. |
+| PO4. Strengthen donor outreach and evaluate marketing outcomes | AO4 and AO2, supported by AO1 and AO3 | AO4 implements donor-focused content and outreach. AO2 coordinates shared measurement, while all AO owners document activities and evaluate outcomes within their areas. |
+| PO5. Develop a sustainable digital marketing strategy | All four AOs | Findings are integrated into prioritized recommendations, documented procedures, reusable materials, and a client handoff plan. |
 
-Google Search Console will complement GA4 by providing organic search information, including impressions, clicks, search queries, and search performance by page. Combining Search Console and GA4 reporting can help the team examine how organic visibility relates to website engagement and meaningful actions. However, these platforms use different measurement methods, so their metrics should not be expected to match exactly.
+All five project objectives are supported by the four analytics objectives. PO5 integrates their findings rather than requiring a separate AO.
 
-The Customer Decision Journey and GA4 measurement framework are the most appropriate combination for AO2 because they connect consumer behavior with observable website interactions. The customer journey provides the conceptual explanation for why visitors take different actions, while GA4 supplies the measurement infrastructure needed to evaluate those actions.
+### Team Responsibilities
 
-Together, these frameworks will help Wellness Ranch move beyond basic website traffic reporting toward a more useful understanding of digital engagement, inquiries, and donations.
+| Team Member | Assigned AO | Primary Responsibility |
+|---|---|---|
+| Alexa Bueno | AO1. SEO and Website Optimization | Analyze search performance, prioritize and implement website improvements, and pursue relevant link-building opportunities. |
+| Kevin Bachez | AO2. Analytics and Conversion Measurement | Validate tracking, define shared KPIs, establish reporting periods, and evaluate performance across the project. |
+| Brian Vuong | AO3. Google Ad Grants Campaign Development and Optimization | Confirm application status, develop campaigns, launch after approval, and monitor compliance and performance. |
+| Ron Sabilla | AO4. Content Marketing and Donor Outreach | Develop donor-focused content, implement outreach through one feasible channel, and evaluate donor engagement using AO2's measurement framework. |
 
-#### Adequateness of Gathered Information
-
-The information gathered is sufficient to establish AO2's measurement framework but is not yet sufficient to confirm the accuracy of the organization's analytics data. During Fall 2026, the project began implementing and reviewing GA4 on Wellness Ranch's Wix website. Initial troubleshooting indicated that the Google tag was connected, but successful collection and reporting of the intended events had not yet been fully verified. In addition, the website's contact-form submission process presented difficulties during testing, preventing reliable confirmation of completed submissions and their corresponding analytics events. These findings indicate that installing GA4 does not automatically guarantee accurate conversion measurement. The current evidence identifies important measurement priorities, including donations, contact submissions, appointment inquiries, and phone interactions, but additional verification is required before these actions can be treated as reliable KPIs. Historical data availability, event configuration, attribution settings, and possible tracking limitations must also be evaluated. Therefore, the gathered information provides a reasonable starting point but does not yet support a complete and validated performance baseline.
-
-#### Need for Additional Analysis
-
-Additional analysis is necessary to validate the GA4 implementation and determine which website interactions can be measured reliably. The first step will be to review GA4 configuration, confirm that website visits and standard events are being recorded, and test important user journeys through tools such as GA4 DebugView and Google Tag Assistant. The team will then evaluate whether contact forms, phone clicks, donation interactions, and appointment inquiries trigger the appropriate events. Successful form submissions must be distinguished from form starts or unsuccessful attempts. Donation measurement will also require determining whether confirmed completed transactions can be recorded or whether only earlier interactions are currently measurable. A measurement matrix will connect each organizational objective to a KPI, event definition, validation method, and reporting source. Once reliable data collection is confirmed, descriptive analysis will compare traffic acquisition, engagement, and key-event performance across available channels and landing pages. Conversion rates will be calculated using clearly defined numerators and denominators, with limitations documented when sample sizes are small or tracking is incomplete. These additional steps will improve data reliability and establish a practical baseline for future evaluation.
-
-#### Assessment and Affirmation of Analytics Objectives
-
-AO2 remains appropriate because Wellness Ranch needs reliable information about how website visitors interact with its digital content and whether those interactions support its organizational goals. The review of existing frameworks confirms that the Customer Decision Journey and GA4 event-based measurement approach provide a defensible foundation for evaluating digital performance.
-
-The objective will remain focused on establishing GA4 events, key events, and KPIs that identify meaningful website engagement and conversion actions. However, the research also demonstrates that implementation must be accompanied by validation before performance conclusions can be drawn.
-
-The planned analytical approach will combine a GA4 configuration audit, event testing, descriptive website analytics, traffic source comparisons, and KPI reporting. Google Search Console will supplement the analysis by providing organic search visibility measures.
-
-The primary outcomes will include verified donation completions where measurement is available, successful contact-form submissions, and other client-approved key events. Supporting indicators will include engagement rate, average engagement time, phone clicks, program interactions, and traffic acquisition metrics.
-
-This distinction is important because website engagement does not always result in a meaningful organizational outcome. For example, an increase in page views may indicate greater awareness without necessarily increasing donations or inquiries. The analytical approach will therefore evaluate both website activity and the actions that more directly support Wellness Ranch's mission.
-
-The project will initially use descriptive analysis because its immediate purpose is to establish a reliable measurement baseline rather than prove that a specific marketing change caused an increase in conversions. Later comparisons may evaluate changes in performance after website improvements, SEO recommendations, or advertising campaigns are implemented, while acknowledging other factors that may influence the results.
-
-Overall, AO2 is affirmed as a necessary component of the CEP. Its contribution is to create a dependable analytics foundation that Wellness Ranch can use to evaluate digital marketing activity, identify opportunities for improvement, and make informed decisions about website engagement, service inquiries, and fundraising performance.
-
-
-### AO3. Prepare, Launch, and Optimize Google Ad Grants Campaigns (Brian)
-
-Evaluate Wellness Ranch Therapy’s Google Ad Grants eligibility and readiness, support the application and campaign-development process, and analyze campaign data to launch, manage, and optimize compliant Google Search advertising.
-
-AO3 directly supports PO3 by guiding the organization from eligibility and readiness assessment through application, campaign development, launch, compliance monitoring, and ongoing optimization. It also supports PO1 by identifying necessary website and landing-page improvements and PO2 by defining the conversion tracking and performance measures required to evaluate campaign outcomes. The findings will contribute to the sustainable digital marketing roadmap developed under PO5.
-
-
-### AO4. Content Marketing & Donor Outreach (Ron)
-
-Develop, implement, and evaluate donor-focused content and outreach, including impact storytelling, a donation-focused landing page, and a campaign through one primary outreach channel (email or social media), to strengthen donor engagement and increase donations for Wellness Ranch Therapy.
-
-AO4 directly supports the organization's goal of increasing donations and contributes to PO4 by measuring whether outreach leads to meaningful donor actions. It supports PO1 by improving the donation page and other donor-facing content, and PO2 by using AO2's measurement framework to track campaign traffic and completed donations. The donation landing page also connects the four AOs: AO1 optimizes it for search, AO3 can use it as a Google Ad Grants landing page, AO4 promotes it through outreach, and AO2 measures its performance. The content library, campaign templates, and evaluation process will contribute to the sustainable strategy developed under PO5.
-
-## Alignment Between Project Objectives and Analytics Objectives
-
-The project objectives describe what the team intends to accomplish for Wellness Ranch, while the analytics objectives define the analysis and evidence needed to make those decisions. The relationship between the POs and AOs is summarized below.
-
-| Project Objective | Directly Supporting AO | Additional Supporting AOs | Relationship |
-|------------------|------------------|------------------|------------------|
-| PO1. Implement priority website and SEO improvements | AO1 | AO2, AO3, and AO4 | AO1 identifies the SEO and website factors that should be prioritized. AO2 identifies conversion and measurement needs, AO3 identifies website and landing-page requirements for Google Ad Grants campaigns, and AO4 measures the effects of the changes. |
-| PO2. Strengthen analytics and performance measurement | AO2 | AO3 and AO4 | AO2 establishes KPIs, events, conversions, and baseline measures. AO3 evaluates whether the measurement infrastructure can support Google Ads and uses campaign metrics to guide optimization, while AO4 applies the measures to evaluate results. |
-| PO3. Obtain and activate Google Ad Grants | AO3 | AO1 and AO2 | AO3 evaluates eligibility and readiness, supports the application, campaign development, and launch, and analyzes campaign data to guide compliant management and ongoing optimization. AO1 supports website and landing-page readiness, while AO2 supports conversion measurement. |
-| PO4. Measure the impact of implemented strategies | AO4 | AO1, AO2, and AO3 | AO4 compares baseline and post-implementation results. AO3 contributes Google Ads measures such as clicks, click-through rate, search terms, and conversions, while the other interventions and measures originate from the preceding AOs. |
-| PO5. Develop a sustainable digital marketing strategy | AO1, AO2, AO3, and AO4 collectively | All AOs | PO5 integrates the findings of all four analyses into recommendations, procedures, reporting guidance, and a long-term roadmap. |
-
-### Coverage of the Project Objectives
-
-The project objectives are converted into analytics work through four assigned AOs. PO1 through PO4 each have a directly corresponding analytics objective:
-
-- PO1 is primarily supported by AO1.
-- PO2 is primarily supported by AO2.
-- PO3 is primarily supported by AO3.
-- PO4 is primarily supported by AO4.
-
-PO5 does not have a separate one-to-one analytics objective. However, this does not represent an unsupported project objective. PO5 is an integration and implementation objective rather than a separate analytical question. It can be achieved by combining the findings from AO1 through AO4 into a sustainable digital marketing strategy.
-
-Creating another AO solely for PO5 would duplicate work already performed through the four existing analyses. Instead, the team will use the evidence produced by all four AOs to develop the final recommendations, reporting procedures, and client roadmap. Therefore, all five POs are supported by analytics work even though the project contains four AOs.
-
-### Team Assignment and Individual Responsibility
-
-Each member of the four-person project team has at least one analytics objective assigned:
-
-| Team Member | Assigned Analytics Objective | Primary Area of Responsibility |
-|------------------------|------------------------|------------------------|
-| Alexa | AO1 | SEO and website-priority analysis |
-| Kevin | AO2 | GA4, Search Console, conversions, and baseline measurement |
-| Brian | AO3 | Google Ad Grants readiness, application, campaign development, launch, compliance, and optimization |
-| Ron | AO4 | Measurement of implemented digital marketing changes |
-
-The assignments provide individual ownership while maintaining the connections among the analyses. For example, AO4 depends on the baseline established through AO2, while AO3 may identify website and landing-page improvements related to AO1 and conversion-tracking requirements related to AO2. Team members must therefore coordinate their findings rather than treating each AO as an independent project.
-
-### Relevance of the Analytics Objectives
-
-All four analytics objectives support at least one project objective, and none requires resources without contributing to the overall project. AO1 supports website and search visibility improvements, AO2 supports performance measurement, AO3 supports Google Ad Grants readiness, application, campaign development, launch, compliant management, and optimization, and AO4 supports impact evaluation. All four also contribute to PO5 by providing the evidence needed to develop a sustainable digital marketing strategy.
-
-The relationship among the objectives follows a logical sequence:
-
-1.  AO1 identifies which website and SEO issues should be addressed.
-2.  AO2 establishes how website activity and meaningful outcomes will be measured.
-3.  AO3 evaluates Google Ad Grants readiness, supports the application, campaign development, and launch, and analyzes campaign data to maintain compliance and guide ongoing optimization.
-4.  AO4 evaluates the results of implemented changes.
-5.  Findings from all four AOs are integrated to accomplish PO5 and produce the final strategic roadmap.
-
-This alignment ensures that the team’s analytical work is connected to the client’s needs and that each AO contributes to a defined project outcome.
+Each member owns implementation documentation and interpretation for their assigned objective. AO2 provides common measurement definitions across the project. Donation-link clicks and verified completed donations will be reported separately.
 
 ## Significance of the Project
 
-This project is significant because Wellness Ranch Equine Assisted Therapy operates in an area where digital visibility can directly support access to mental wellness services and community resources. As a nonprofit serving children, adults, couples, and groups throughout the Inland Empire, Wellness Ranch relies on its ability to communicate its services to individuals who may be actively searching for therapy, equine-assisted services, wellness education, and related support. Improving the organization’s digital presence can make it easier for these audiences to find relevant information and take the next step toward engaging with the organization.
+This project is significant because it connects Wellness Ranch Equine Assisted Therapy's digital presence with two organizational priorities: encouraging donations and helping prospective clients find relevant service information. Website visibility alone does not establish success. The organization also needs clear pathways to act and reliable information about the outcomes of its marketing activities.
 
-The project is also significant because it addresses the connection between digital marketing activities and measurable organizational outcomes. Improving website content, SEO, local search visibility, and conversion pathways can increase opportunities for users to discover and engage with Wellness Ranch. However, these improvements are most useful when their impact can be measured. Establishing reliable GA4 events, conversions, and baseline KPIs will give the organization a clearer understanding of how users find the website, how they interact with it, and which actions may contribute to inquiries, program interest, or other meaningful outcomes.
+For Wellness Ranch, the project will provide prioritized website improvements, a documented measurement framework, Google Ad Grants campaign preparation and implementation after approval, and donor-focused content and outreach. These activities are intended to help the organization make informed decisions within its available staffing, time, and resources.
 
-For a nonprofit organization, the ability to use available resources efficiently is particularly important. Google Ad Grants provides Wellness Ranch with an opportunity to use donated search advertising to expand awareness, strengthen service and donation pathways, and reach relevant audiences without requiring the same financial investment as traditional paid advertising. Evaluating eligibility and readiness, supporting the application and campaign-development process, and establishing procedures for launch, compliance monitoring, and optimization will help ensure that the organization can use the program realistically and sustain it after the capstone concludes.
+The project also connects implementation with evaluation. AO2 provides shared measurement definitions for SEO improvements, advertising, and donor outreach. Reporting will distinguish preliminary interactions, such as donation-link clicks, from verified outcomes, such as completed donations. This distinction will help the client understand both the usefulness and the limitations of its digital marketing data.
 
-The project also builds on the work completed by the Spring 2026 search engine marketing class. Rather than developing recommendations independently, the current project provides an opportunity to move from identifying digital marketing opportunities to implementing, measuring, and evaluating selected improvements. This creates continuity between the two semesters while allowing the team to establish performance baselines and assess changes over time.
+From an academic perspective, the project applies search optimization, customer journey concepts, digital analytics, advertising, and donor communication to a nonprofit setting. It examines how these approaches can work together when traffic volume, platform access, and implementation capacity are limited. Findings will be interpreted within this organizational context rather than generalized to all nonprofits.
 
-From an academic perspective, the project provides an applied opportunity to use digital marketing and analytics concepts in a real nonprofit setting. SEO analysis, website optimization, GA4 measurement, local search, and paid search planning will be evaluated based on both their potential impact and Wellness Ranch's ability to maintain them with its available resources. The project therefore demonstrates how data-informed digital marketing strategies can be adapted to the needs and constraints of a community-based organization.
-
-Ultimately, the significance of this project is its potential to strengthen the connection between Wellness Ranch's mission and its digital presence. By improving how the organization is found, how user engagement is measured, and how digital marketing resources are managed, the project aims to provide Wellness Ranch with a sustainable foundation for reaching its target audiences and supporting its continued growth.
+The project builds on recommendations developed by the Spring 2026 search engine marketing class by moving selected ideas into implementation and evaluation. Its lasting contribution will be a practical handoff: documented procedures, reusable campaign materials, reporting guidance, and a prioritized roadmap that Wellness Ranch can continue using after the capstone concludes.
 
 ------------------------------------------------------------------------
 
@@ -847,6 +768,16 @@ The Customer Decision Journey and GA4 event-based measurement approach are the m
 
 Together, these frameworks can help Wellness Ranch move beyond basic website traffic reporting and develop a clearer understanding of digital engagement, service inquiries, and donations.
 
+#### Research Questions
+
+The customer journey perspective and event-based measurement framework inform the following research questions:
+
+- **RQ2.1:** Which priority website actions can be measured reliably through the current GA4 configuration, and what tracking gaps remain?
+- **RQ2.2:** How do engagement and validated inquiry outcomes differ across traffic sources and landing pages during the defined reporting period?
+- **RQ2.3:** What donation-related activity can be verified, and what limitations prevent linking donation-link clicks to completed donations?
+- **RQ2.4:** How do shared KPIs change following documented SEO improvements, advertising launches, and donor outreach activities when comparable reporting periods are available?
+
+These questions will be addressed through configuration audits, controlled event tests, descriptive comparisons, and documented implementation timelines. Observed differences will be interpreted as associations rather than proof that an intervention caused an outcome.
 
 #### Adequateness of Gathered Information
 
@@ -1049,18 +980,16 @@ These techniques are appropriate because they match how donors make decisions an
 
 | AO | Primary Framework or Model | Main Limitation | Analytical Direction |
 |---|---|---|---|
-| AO1. SEO Performance | SEO factor framework (on-page, off-page, technical, local) with a search intent lens | Ranking-factor evidence is mostly correlational, and Wix sites have not been studied | Weighted page-prioritization matrix and Fall 2026 baseline |
-| AO2. Conversion and Engagement Measurement | Customer Decision Journey with GA4 event-based measurement | Tracking accuracy has not yet been verified | GA4 configuration audit, event validation, and descriptive analysis |
-| AO3. Google Ad Grants Readiness | Technology-Organization-Environment framework with the Customer Decision Journey | Eligibility does not guarantee organizational capacity | Readiness matrix (Ready, Partially Ready, Not Ready, Unable to Verify) |
-| AO4. Google Ad Grants Optimization | Search intent, hierarchy of effects, sponsored search research, and controlled experiments | No campaign data exists until launch | Keyword and search-term analysis with controlled ad and landing-page tests |
-
+| AO1. SEO and Website Optimization | SEO factor framework and search intent | Audit findings alone do not establish which changes improve performance | Prioritize and implement website improvements and link-building outreach; compare search performance before and after changes |
+| AO2. Analytics and Conversion Measurement | Customer Decision Journey and GA4 event-based measurement | Initial event tests have been completed, but baseline data quality and completed donations require further verification | Validate events, establish baseline KPIs, and measure SEO, advertising, and donor outreach outcomes |
+| AO3. Google Ad Grants Campaign Development and Optimization | Technology-Organization-Environment framework, search intent, and Customer Decision Journey | Approval, launch timing, and limited traffic may restrict evaluation | Assess readiness, develop and launch campaigns after approval, and optimize using campaign results |
+| AO4. Content Marketing and Donor Outreach | Donor motivation, narrative transportation, and nonprofit social media engagement | Limited audience size and access to donation records may restrict evaluation | Audit donor content, implement a focused outreach campaign, and evaluate engagement, donation-link clicks, and verified donations where available |
 
 : Summary of Research Frameworks by Analytics Objective {#tbl-ao-frameworks}
 
 Two patterns appear across all four objectives. First, each AO draws on a customer journey or search intent perspective, which keeps the analysis focused on how real audiences find and act on information rather than on website activity alone. Second, each AO is limited by the small data volume of a single nonprofit website and a project timeline in which some data will not exist until Spring 2027. For this reason, the team has chosen descriptive, diagnostic, and readiness-based methods over causal models, and results will be interpreted as directional where data are limited.
 
-The AOs also depend on each other. AO1 and AO2 provide the page priorities and validated conversion events that AO3 needs for readiness, and AO4 builds on all three once campaigns launch. Chapter 3 describes the specific methods for each objective.
-
+The four AOs work together. AO1 improves website visibility and usability. AO2 provides the shared measurement framework for evaluating SEO, advertising, and donor outreach. AO3 develops and optimizes Google Ad Grants campaigns after approval, while AO4 creates donor-focused content and implements outreach. Chapter 3 describes the methods used to implement and evaluate each objective.
 
 {{< pagebreak >}}
 
@@ -1119,7 +1048,7 @@ Primary data use **purposive sampling**. The client interview will include the p
 
 ## Data Wrangling (Import, Cleaning, Transformation)
 
-#### Google Analytics 4 (GA4) Data Wrangling — AO2
+### Google Analytics 4 (GA4) Data Wrangling — AO2
 
 For AO2, data wrangling will involve preparing Google Analytics 4 (GA4) website data for descriptive analysis of traffic acquisition, engagement, and conversion-related activity. The objective is to create a consistent and reliable dataset that can be used to evaluate Wellness Ranch's digital marketing performance.
 
@@ -1157,18 +1086,19 @@ Because the project involves a mental-health service organization, the analysis 
 
 **Primary data** will be collected in Fall 2026. The semi-structured client interview will cover website ownership, analytics access, Google for Nonprofits and Ad Grants status, active outreach channels, email list status, donation processing, approval procedures, and which stories and impact figures can be shared. The interview guide is provided in Appendix A. The website readiness audit and content audit will use structured checklists so that each item is recorded the same way.
 
-GA4 is not currently linked to BigQuery, so data will be exported from the GA4 interface as CSV files. The team may link the property to BigQuery to keep a raw, event-level export, which would make data cleaning and joining easier. However, BigQuery only stores data from the date the link is created, so earlier data would still come from interface exports.
+GA4 data are available through platform reports and the project's configured BigQuery export. The team has downloaded BigQuery data for data preparation and analysis. Each extract will be documented by source, reporting period, extraction date, and level of detail. GA4 report exports and BigQuery event-level exports will be prepared separately because their structures and metric definitions can differ. The team will verify the available export dates before selecting baseline and comparison periods.
 
 **Data quality and validation.** Because the project relies mostly on secondary data, the team will verify the integrity of each metric before using it:
 
 1. **GA4 event validation (AO2):** each key event will be tested in GA4 DebugView and Realtime reports through controlled test submissions before it is included in reporting.
-2. **Internal traffic exclusion:** team and client traffic will be filtered out using GA4's internal traffic settings.
-3. **Completed versus preliminary actions:** donation-button clicks will be reported separately from completed donations. If donations are processed on an external platform, completed donations will come from the platform's records and will be reconciled with GA4 by date.
+2. **Internal and testing traffic:** The team will document whether internal traffic rules and filters are configured and active. Controlled tests will be logged by date, time, and event so they can be distinguished from visitor activity where the available data permit. Filters applied later will not be assumed to remove testing activity from historical reports. Any testing activity that cannot be separated reliably will be disclosed as a baseline limitation.
+3. **Completed versus preliminary actions:** Donation-page visits and donation-button clicks will be reported separately from completed donations. Completed donations will be verified through donation-platform records where access is available. Comparisons by date may describe trends, but they will not establish that particular website sessions generated donations. Website donation attribution and conversion rates will be reported only when a reliable connection between the records can be verified.
 4. **UTM testing (AO4):** every campaign link will be tested before launch to confirm that sessions are attributed to the correct source, medium, and campaign.
 5. **Cross-source checks:** Search Console clicks will be compared with GA4 organic sessions, and Semrush issues will be confirmed on the live website.
 6. **Change documentation:** website changes, campaign launches, and known Google algorithm updates will be recorded with dates so performance shifts are not attributed to the wrong cause.
 
-Initial checks have already been completed. The `generate_lead` event was tested in GA4 DebugView by submitting the contact form, which correctly recorded a `form_start` event followed by a `generate_lead` event with the parameters `event_action = Submitted`, `event_label = Page Name: Contact; Form Name: Contacts 9`, and the contact page URL. Page views, scrolls, and engagement events were also confirmed. `generate_lead` is marked as a key event, while `close_convert_lead` and `qualify_lead` are marked but receive no data, and no donation event exists yet. The initial reports also show 32 sessions (3.55%) with an unassigned campaign value, which will be reviewed during cleaning. Because team testing sessions were recorded during this period, internal traffic filters will be applied before baseline data are finalized.
+Initial checks have already been completed. The `generate_lead` event was tested in GA4 DebugView by submitting the contact form, which correctly recorded a `form_start` event followed by a `generate_lead` event with the parameters `event_action = Submitted`, `event_label = Page Name: Contact; Form Name: Contacts 9`, and the contact page URL. Page views, scrolls, and engagement events were also confirmed. `generate_lead` is marked as a key event, while `close_convert_lead` and `qualify_lead` are marked but receive no data, and no donation event exists yet. The initial reports also show 32 sessions (3.55%) with an unassigned campaign value, which will be reviewed during cleaning. Because team testing sessions were recorded during this period, the baseline review will document their potential effect. Testing activity will be separated where identifiable in the available data; otherwise, it will remain a stated limitation. Later activation of internal traffic filters will not be treated as a correction to historical reports.
+
 #### Google Analytics 4 (GA4) Data Collection — AO2
 
 For AO2, website behavioral data will be collected from Wellness Ranch Equine Assisted Therapy's Google Analytics 4 (GA4) property. The purpose is to evaluate how visitors discover the organization's website, interact with its content, and complete actions that support its marketing objectives.
@@ -1200,21 +1130,21 @@ Each dataset will be cleaned with the same steps:
 
 - Column names will be standardized using `janitor::clean_names()`.
 - Dates will be converted to a consistent format using `lubridate`.
-- Page URLs will be normalized by converting them to lowercase, removing tracking parameters, and removing trailing slashes so the same page is not counted twice.
-- Duplicate rows, test events, and internal traffic will be removed.
+- Page URLs will be reviewed before normalization. Tracking parameters will be separated into campaign fields before removal from page-comparison keys. URL paths will retain their original capitalization, and trailing slashes or other URL variations will be combined only after confirming that they identify the same page. Parameters that change page content will be preserved.
+- Potential duplicate records will be investigated using the source, reporting dimensions, and available event identifiers. Repeated event names or similar interactions will not automatically be treated as duplicates. Testing and internal traffic will be excluded only where reliably identifiable, and any exclusions will be documented.
 - Search queries will be classified as branded or non-branded using a documented keyword list (AO1, AO3).
 - Social posts and donor materials will be coded by message type, format, and function using a coding sheet (AO4).
 - Missing values will be checked and documented. Missing values will not be filled in with estimates.
 
 #### Joining the Data
 
-Datasets will be joined using shared keys:
+Datasets will first be summarized to compatible levels of detail before any joins are attempted. Potential shared keys include normalized page URLs, reporting dates, and verified campaign identifiers.
 
-- **Page URL:** connects Semrush audit results, Search Console data, and GA4 landing-page data (AO1, AO2).
-- **Date:** connects GA4 data with Google Ads data, donation records, and the website change log (all AOs).
-- **UTM campaign and source:** connects outreach and advertising activity to GA4 sessions and key events (AO3, AO4).
+Page-level SEO and Search Console summaries may be compared with GA4 landing-page summaries when URL definitions and reporting periods align. Campaign reports may be compared with GA4 acquisition data when campaign identifiers are available and consistent.
 
-Joins will be checked for unmatched records, and the number of unmatched rows will be reported.
+Each join will be checked for duplicate keys, unmatched records, and changes in row counts or metric totals. Many-to-many joins that inflate counts will be avoided. Platform metrics will retain their original definitions.
+
+Donation records will be summarized separately unless a reliable attribution link is available. Matching dates alone will not be used to attribute donations to website sessions or campaigns.
 
 ### Understanding the Data
 
@@ -1239,6 +1169,8 @@ Data cleaning, joining, analysis, and visualization will be done in R using `tid
 
 Because this project uses website and platform analytics rather than a survey, the sample is described by traffic, device, page, and audience characteristics instead of individual respondents. Demographic categories such as education, income, and occupation are not available from these sources and are not included. @tbl-sample summarizes the initial GA4 snapshot. These figures will be updated with the full Fall 2026 baseline once more data are collected.
 
+Search Console performance, indexed-page counts, social media audience size, and email list size are not included in this initial GA4 snapshot. These measures will be reported separately after the relevant platform access, reporting periods, and exports have been verified.
+
 | Characteristic | Value | Source |
 |---|---|---|
 | Reporting window | October 8–15, 2026 (8 days) | GA4 |
@@ -1252,26 +1184,22 @@ Because this project uses website and platform analytics rather than a survey, t
 | Total events | 5,405 | GA4 |
 | Key events (contact form submissions) | 0 | GA4 |
 | Completed donations tracked | Not yet measurable | GA4 |
-| Organic search clicks / impressions | [X] / [X] | Search Console |
-| Indexed pages | [X] | Search Console |
-| Social media followers (by platform) | [X] | Social platforms |
-| Email list size | [X or "No active list"] | Email platform |
 
 : Initial sample characteristics (GA4 snapshot, October 8–15, 2026) {#tbl-sample}
 
-Two patterns stand out. First, almost all visitors (99.5%) were new users, which is expected since GA4 tracking had just started. Second, traffic was concentrated on a single day: sessions peaked at roughly 320 on October 9, mostly from Instagram, before settling to about 60–70 per day. This suggests that one social post or link drove a large share of early traffic, so the full baseline will need a longer window to reflect normal activity.
+The initial snapshot reports 760 new users and 764 active users. These metrics should not be interpreted as proof that nearly all visitors were encountering Wellness Ranch for the first time, because analytics identifiers and the recent tracking setup affect how users are classified. Sessions were also concentrated early in the reporting window. A longer observation period and a review of campaign and testing activity are needed before treating this snapshot as representative of typical website performance.
 
-#### Age and Gender
+### Age and Gender
 
 Age and gender data were not available in the initial snapshot. GA4 reports demographics only when Google signals is enabled and enough users are present, and small websites often fall below Google's privacy thresholds. GA4 also recorded the user property `non_personalized_ads = 1`, which limits the data available for advertising and demographic reporting. If demographic data become available in the full baseline, they will be reported by age group and gender. Otherwise, the limitation will be documented, and demographics will not be estimated from other sources.
 
-#### Geographic Location
+### Geographic Location
 
-Sessions will be summarized by city and region to show how much traffic comes from Rancho Cucamonga and the Inland Empire compared with other areas: [X]% Inland Empire, [X]% other California, and [X]% outside California. This helps confirm whether the website reaches Wellness Ranch's local service area.
+Geographic analysis will summarize recorded website activity by city and region to assess whether the website reaches Rancho Cucamonga and the broader Inland Empire. The initial snapshot does not provide verified geographic totals, so regional percentages are not reported here. Future summaries will identify the reporting period, geographic groupings, and any unknown locations. Platform-reported locations will be treated as approximate indicators of website reach rather than confirmed visitor residences.
 
-3. **Traffic Sources:** The distribution of website activity across acquisition channels, including organic search, direct traffic, referrals, and social media.
+### Traffic Sources
 
-**Traffic sources.** @tbl-sources shows that Instagram was the largest source of website traffic, followed by organic search and direct visits.
+@tbl-sources summarizes recorded sessions by source and medium during the initial reporting window. Instagram accounted for the largest share, followed by Google organic search and direct traffic.
 
 | Source / Medium | Sessions | Share | Engagement Rate | Avg. Engagement Time |
 |---|---:|---:|---:|---:|
@@ -1308,9 +1236,9 @@ No sessions were tagged with UTM campaign parameters during this period. All tra
 
 : Most-viewed pages, October 8–15, 2026 (top 10 of 21) {#tbl-pages}
 
-The homepage received half of all page views, but visitors spent an average of only 12 seconds on it, so many people may leave before finding service or donation information. Community Events was the second most-viewed page, which suggests interest in Wellness Ranch's community activities. Notably, the donation page did not appear among the top 10 pages. This supports AO4's plan to strengthen the donation page and drive more traffic to it.
+The homepage accounted for approximately half of recorded page views, while Community Events was the second most-viewed page. These patterns identify pages to prioritize for further review, but page views and average engagement time alone do not establish whether visitors found the information they needed or left prematurely. The donation page did not appear among the ten most-viewed pages in this snapshot. Further analysis will examine donation-link visibility, navigation paths, and validated click activity before recommending changes.
 
-#### Product Usage Variables
+### Product Usage Variables
 
 For Wellness Ranch, product usage refers to visitor actions connected to its services and mission:
 
@@ -1351,11 +1279,13 @@ Engaged sessions divided by total sessions, using GA4's definition of an engaged
 
 #### Click-Through Rate
 
-Clicks divided by impressions for organic search (AO1) and paid search (AO3), or link clicks divided by reach or emails delivered for outreach (AO4).
+Click-through rates will be defined separately for each platform. Search Console CTR is organic search clicks divided by impressions, and Google Ads CTR is advertising clicks divided by impressions. For email outreach, the team will report unique link clickers divided by successfully delivered emails, where available. Social media link clicks divided by reach will be labeled as a link-click-to-reach rate rather than treated as equivalent to search CTR. Each rate will include its numerator, denominator, reporting period, and platform definition.
 
 #### Completed Donations and Donation Conversion Rate
 
-The number of completed donations and completed donations divided by donation-page sessions. This is the client's primary website outcome and is shared across all four AOs.
+Completed donations are transactions confirmed by the organization's donation platform or verified donation records. Donation-page visits and donation-button clicks will be reported separately as preliminary interactions.
+
+A website donation conversion rate will be calculated only when confirmed donations can be linked reliably to the website sessions used as the denominator. If that linkage is unavailable, the team will report completed donation counts and amounts separately from GA4 sessions and donation-link clicks. Matching records by date alone does not establish that a website visit produced a donation.
 
 #### Contact and Inquiry Submissions
 
@@ -1524,6 +1454,16 @@ The results will be summarized in a reporting framework that identifies the most
 
 The objective is to establish a sustainable analytics measurement process that Wellness Ranch can continue using after the capstone project concludes.
 
+#### Alignment with Research Questions
+
+| Research Question | Method | Expected Output |
+|---|---|---|
+| RQ2.1: Measurement reliability | Audit event configuration and conduct controlled tests using DebugView, Realtime, and Tag Assistant | Event validation log identifying verified events, tracking gaps, and implementation dates |
+| RQ2.2: Differences across sources and pages | Compare sessions, engagement, and validated inquiry outcomes by traffic source and landing page | Descriptive tables reporting counts, rates, denominators, and reporting periods |
+| RQ2.3: Donation measurement limitations | Review donation-link tracking and the availability of verified donation records | Separate reporting of donation-link clicks and confirmed donations, with attribution limitations |
+| RQ2.4: Changes following implementation | Compare shared KPIs across comparable periods around documented changes | Before-and-after summaries with implementation dates and limitations |
+
+Analyses will use only available, verified measures. Small counts, changes in tracking, unequal reporting coverage, and concurrent marketing activities will be disclosed when interpreting comparisons.
 
 #### Justification for the Method
 
@@ -1692,1411 +1632,13 @@ AO4 uses content and campaign characteristics as independent variables and donor
 
 The primary outcomes for AO4 are donation-page sessions, completed donations, and donation conversion rate from campaign traffic, compared against the Fall 2026 baseline. During Fall 2026, the main deliverables are the content audit, the donor content library, and the campaign plan.
 
-### AO5. Title of AO5 Here (Name of Author Here)
-
-#### Method Used
-
-#### Justification for the Method
-
-#### Variables
-
-------------------------------------------------------------------------
-
-{{< pagebreak >}}
-
-# CHAPTER 4: ANALYSIS/MODELING AND RESULTS {#sec-ch4-analysis-modeling-and-results}
-
-## AO1. Title of AO1 Here (Name of Author Here)
-
-### Introduction
-
-### Descriptive Analytics and Results
-
-### Predictive Analytics and Results
-
-### Summary Findings
-
-## AO2. Title of AO2 Here (Name of Author Here)
-
-### Introduction
-
-### Descriptive Analytics and Results
-
-### Predictive Analytics and Results
-
-### Summary Findings
-
-## AO3. Title of AO3 Here (Name of Author Here).
-
-### Introduction
-
-### Descriptive Analytics and Results
-
-### Predictive Analytics and Results
-
-### Summary Findings
-
-## AO4. Title of AO4 Here (Name of Author Here).
-
-### Introduction
-
-### Descriptive Analytics and Results
-
-### Predictive Analytics and Results
-
-### Summary Findings
-
-## AO5. Title of AO5 Here (Name of Author Here)
-
-### Introduction
-
-### Descriptive Analytics and Results
-
-### Predictive Analytics and Results
-
-### Summary Findings
-
-------------------------------------------------------------------------
-
-{{< pagebreak >}}
-
-# CHAPTER 5: DATA-INFORMED MARKETING STRATEGY AND CONCLUSION {#sec-ch5-data-informed-marketing-strategy-and-conclusion}
-
-## AO1. Title of AO1 Here (Name of Author Here)
-
-**Summary of findings from data analysis - AO1.**
-
-- *This section includes recommendations for the company/industry and the rationale behind it. The rationale should be the insights that emerged from the analysis results. However, avoid using detailed statistics here; instead, use plain English so that even unsophisticated readers can also understand you.*
-
-- In the next sections, provide specific recommendations based on the data analysis findings. Make sure you justify each recommendation with the insights from your analysis or/and literature.
-
-- When writing the recommendations section, begin it with a 3rd-level heading. The heading should start with an action verb (e.g., “Allocate 30% of the advertising budget to Google Ads”).
-
-**Do A.**
-
-- The sample headings are provided for reference and are meant to be replaced with your own. You can have more or fewer recommendations than the sample.
-
-- The headings should be specific to your project. The key is to make sure that the headings are actionable and directly tied to the insights from your analysis.
-
-- After this heading, start the paragraph in the same line. The writing should focus on justifying the recommendation. Use the research findings that support the recommendation.
-
-**Implement B.**
-
-*The same guidelines for Do A apply to Implement B. The only difference is that the heading should start with an action verb that indicates implementation (e.g., “Implement a retargeting campaign on Facebook”).*
-
-**Change C to D.**
-
-*The same guidelines for Do A apply to Change C to D. The only difference is that the heading should start with an action verb that indicates change (e.g., “Change the target audience from millennials to Gen Z”).*
-
-### Summary of Findings from Data Analysis - AO1
-
-### Do A
-
-### Implement B
-
-### Change C to D
-
-
-## AO2. Title of AO2 Here (Name of Author Here)
-
-### Summary of Findings from Data Analysis – AO2
-
-### Do E
-
-### Implement F
-
-### Change G to H
-
-## AO3. Title of AO3 Here (Name of Author Here)
-
-### Summary of Findings from Data Analysis – AO3
-
-### Do I
-
-### Implement J
-
-### Change K to L
-
-## AO4. Title of AO4 Here (Name of Author Here)
-
-### Summary of Findings from Data Analysis – AO4
-
-### Do M
-
-### Implement N
-
-### Change O to P
-
-## AO5. Title of AO5 Here (Name of Author Here)
-
-### Summary of Findings from Data Analysis – AO5
-
-### Do Q
-
-### Implement R
-
-### Change S to T
-
-## **Concrete Digital Marketing Plan** {#sec-digital-marketing-implementation-plan}
-
-### Instructions for the Digital Marketing Plan {#sec-instructions-for-the-digital-marketing-plan .unnumbered}
-
-#### Why This Guideline Is Provided?
-
-#### The Breadth of the Digital Marketing Plan
-
-
-#### Depth of Your Digital Marketing Plan
-
-
-
-### Sample Digital Marketing Plan {#sec-sample-digital-marketing-plan .unnumbered}
-
-
-### How Success is Measured? {#sec-how-success-is-measured .unnumbered}
-
-
-
-
-
-### Target Market
-
-Define the specific audience your campaign will target.
-
-Include relevant characteristics such as:
-
-- Demographics\
-  For example: age, gender, income, education, location
-- Psychographics\
-  For example: lifestyle, values, motivations, interests
-- Behavioral characteristics\
-  For example: online search behavior, purchase behavior, media usage
-- Needs or pain points
-- Preferred digital platforms
-- Stage in the customer journey
-
-You may also create one or more **customer personas** to make the target audience more concrete.
-
-Each persona may include:
-
-- Name
-- Age
-- Occupation or student status
-- Lifestyle
-- Goals
-- Frustrations
-- Media habits
-- Reason for buying or engaging with the brand
-
-### Positioning and Perceptual Map
-
-Explain how the brand should be positioned in the market based on your analysis.
-
-You should include:
-
-- Main competitors
-- Key dimensions of comparison\
-  For example: price, quality, sustainability, convenience, authenticity, innovation, luxury, accessibility
-- A perceptual map showing where the brand currently stands and/or where it should be positioned
-- Explanation of the desired brand position
-
-Your discussion should answer:
-
-- What makes the brand different?
-- Why should the target market care?
-- How should customers perceive the brand after the campaign?
-- How does this positioning respond to the data analysis?
-
-### Brand Persona
-
-Describe the brand personality that should guide the tone, visuals, and messaging of the campaign.
-
-Include:
-
-- Brand voice\
-  For example: professional, friendly, playful, inspirational, premium, educational
-- Visual style\
-  For example: minimalist, colorful, natural, bold, youthful
-- Emotional appeal
-- Key message themes
-- Example phrases or slogans
-- Words the brand should use
-- Words the brand should avoid
-
-This section helps ensure that all website, social media, email, and advertising content feels consistent.
-
-### Campaign Objectives
-
-Clearly state the main objectives of your digital marketing campaign.
-
-Use **SMART objectives** whenever possible. Objectives should be:
-
-- Specific
-- Measurable
-- Achievable
-- Relevant
-- Time-bound
-
-Examples:
-
-- Increase website traffic by 20% within three months.
-- Increase email sign-ups by 15% during the campaign period.
-- Improve Instagram engagement rate from 2% to 4%.
-- Increase product page visits from paid search ads by 25%.
-- Generate 100 qualified leads through landing page form submissions.
-
-You may list your objectives as:
-
-**Project Objective #1**
-
-Describe the objective and explain why it matters.
-
-**Project Objective #2**
-
-Describe the objective and explain why it matters.
-
-**Project Objective #3**
-
-Describe the objective and explain why it matters.
-
-**Project Objective #4**
-
-Describe the objective and explain why it matters.
-
-For each objective, include the relevant KPI and the data source you would use to evaluate it.
-
-### SEO Strategy
-
-#### SEO Goals
-
-Explain how SEO will support your campaign objectives.
-
-For example, SEO may help the brand:
-
-- Improve visibility on search engines
-- Attract high-intent visitors
-- Increase organic traffic
-- Improve ranking for relevant keywords
-- Support product, service, or content discovery
-
-#### Keyword Research and Ranking
-
-Conduct keyword research based on your target market and campaign goals.
-
-Include:
-
-- Seed keywords
-- Search intent\
-  For example: informational, navigational, commercial, transactional
-- Search volume, if available
-- Keyword difficulty, if available
-- Relevance to the brand
-- Current ranking, if available
-- Competitor ranking, if available
-
-You should identify the **top five best keywords for each seed keyword** and explain why they were selected.
-
-A suggested table format:
-
-|  |  |  |  |  |
-|---------------|---------------|---------------|---------------|---------------|
-| **Seed Keyword** | **Recommended Keyword** | **Search Intent** | **Reason for Selection** | **Target Page** |
-| sustainable skincare | natural face cream | Commercial | Relevant to target audience and product category | Product page |
-
-#### Keyword Mapping
-
-Map selected keywords to specific pages of the website.
-
-Include:
-
-- Homepage keywords
-- Product or service page keywords
-- Blog or educational content keywords
-- Landing page keywords
-- FAQ page keywords
-
-Explain how the keywords match the purpose of each page.
-
-#### SEO Content Recommendations
-
-Suggest content that can improve organic search performance.
-
-Examples:
-
-- Blog posts
-- FAQ pages
-- Product guides
-- How-to articles
-- Comparison pages
-- Educational videos
-- Local SEO content, if relevant
-
-Each content idea should include:
-
-- Target keyword
-- Target audience
-- Search intent
-- Brief content description
-- Expected KPI
-
-### Website and Landing Page Plan
-
-#### Website Objectives
-
-Explain the role of the website in your digital marketing plan.
-
-For example, the website may be designed to:
-
-- Generate leads
-- Increase purchases
-- Educate customers
-- Build trust
-- Encourage newsletter sign-ups
-- Drive appointment bookings
-- Support brand awareness
-
-#### Relevant Website KPIs
-
-Select KPIs that match your website objectives.
-
-Possible KPIs include:
-
-- Form submissions
-- Conversion rate
-- Bounce rate
-- Average session duration
-- Number of purchases
-- Number of sessions
-- Number of visitors
-- Pages per session
-- Add-to-cart rate
-- Newsletter sign-ups
-- Click-through rate on key buttons
-- Landing page conversion rate
-
-Do not simply list KPIs. Explain why each KPI is relevant.
-
-#### Website Structure and Outline
-
-Provide a clear website structure or hierarchy.
-
-For example:
-
-- Homepage
-- About Us
-- Products or Services
-- Product Detail Pages
-- Blog or Resources
-- Reviews or Testimonials
-- FAQ
-- Contact Us
-- Landing Page for Campaign
-
-You may include a simple sitemap or visual hierarchy.
-
-#### Specific Page Recommendations
-
-For each important page, describe:
-
-- Page goal
-- Target audience
-- Main message
-- Key sections
-- Call-to-action
-- Target keywords
-- Relevant KPIs
-
-Example:
-
-**Homepage**
-
-- Goal: Introduce the brand and direct visitors to key products.
-- Main message: Affordable, sustainable products for everyday use.
-- CTA: Shop Now / Learn More / Sign Up.
-- KPI: Click-through rate to product pages.
-
-#### Mock Website or Landing Page
-
-Create a mock website, landing page, or wireframe.
-
-Your mockup should show:
-
-- Page layout
-- Main headline
-- Key visuals
-- Navigation menu
-- Call-to-action buttons
-- Product or service information
-- Trust-building elements\
-  For example: reviews, testimonials, certifications, awards
-- Lead capture or purchase path
-
-You may use tools such as Canva, Figma, Wix, Shopify mockups, PowerPoint, or another design tool.
-
-### Social Media Strategy
-
-#### Social Media Objectives
-
-Explain how social media supports your campaign goals.
-
-Possible objectives include:
-
-- Build brand awareness
-- Increase engagement
-- Drive website traffic
-- Generate leads
-- Build community
-- Promote products or services
-- Encourage user-generated content
-- Improve brand trust
-
-#### Relevant Social Media KPIs
-
-Choose KPIs that match your social media goals.
-
-Possible KPIs include:
-
-- Reach
-- Impressions
-- Engagement rate
-- Likes
-- Comments
-- Shares
-- Saves
-- Follower growth
-- Video views
-- Reel completion rate
-- Story interactions
-- Link clicks
-- Website sessions from social media
-- Conversions from social media traffic
-
-Explain why each KPI matters.
-
-#### Use of UTM Tracking and GA4
-
-Explain how UTM parameters and GA4 can be used to track social media performance.
-
-You should identify:
-
-- Campaign source\
-  For example: Instagram, TikTok, LinkedIn
-- Campaign medium\
-  For example: social, paid-social, influencer
-- Campaign name
-- Content variation, if relevant
-
-Example:
-
-utm_source=instagram&utm_medium=social&utm_campaign=spring_launch&utm_content=reel1
-
-Explain how this tracking would help evaluate which platform, post, or campaign content drives the best results.
-
-#### Platform Selection
-
-Identify the most relevant social media platforms for the campaign.
-
-For each platform, explain:
-
-- Why the platform fits the target market
-- What type of content should be posted there
-- How often content should be posted
-- What role the platform plays in the customer journey
-
-Possible platforms include:
-
-- Instagram
-- TikTok
-- Facebook
-- YouTube
-- LinkedIn
-- Pinterest
-- X/Twitter
-- Snapchat
-
-Avoid using every platform unless there is a clear strategic reason.
-
-#### Social Media Profile Recommendations
-
-Recommend improvements to the brand’s social media profile.
-
-Include:
-
-- Logo or profile image
-- Bio/profile description
-- Link in bio
-- Contact information
-- Highlight covers
-- Pinned posts
-- Visual consistency
-- Brand tone
-
-Suggested Instagram highlights:
-
-- Our Story
-- Announcements
-- Product Highlights
-- Reviews
-- Behind the Scenes
-- FAQs
-- Promotions
-- Customer Stories
-
-#### Social Media Engagement Strategies
-
-Explain how the campaign will encourage audience interaction.
-
-Discuss strategies such as:
-
-- Reels
-- Stories
-- Static images
-- Carousel posts
-- Polls
-- Q&A stickers
-- Hashtags
-- User-generated content
-- Giveaways or contests, if appropriate
-- Influencer or creator collaboration
-- Comment prompts
-- Community management
-
-For each strategy, explain the intended effect.
-
-For example:
-
-Instagram Stories with polls will be used to increase interaction and collect informal customer preferences.
-
-#### New Content Creation
-
-Propose original content ideas created by the brand.
-
-For each idea, include:
-
-- Content title or theme
-- Platform
-- Format\
-  For example: Reel, story, carousel, blog, video, short post
-- Target audience
-- Key message
-- Call-to-action
-- Relevant KPI
-
-Example format:
-
-**Content Idea #1: “How to Use the Product in 30 Seconds”**
-
-- Platform: Instagram Reels and TikTok
-- Format: Short-form video
-- Goal: Product education and awareness
-- CTA: Visit product page
-- KPI: Video views, saves, link clicks
-
-Students should provide several content ideas, not just general descriptions.
-
-#### Content Curation
-
-Suggest curated content that the brand can share from other credible sources or users.
-
-Examples:
-
-- Customer reviews
-- User-generated photos or videos
-- Industry news
-- Expert tips
-- Partner content
-- Influencer mentions
-- Community stories
-
-For each curated content idea, explain:
-
-- Source
-- Why it is relevant
-- How it supports the brand persona
-- How permission or credit will be handled, if applicable
-
-#### Mock Social Media Posts
-
-Create mock posts for the most relevant platforms.
-
-Each mock post should include:
-
-- Visual or design mockup
-- Caption
-- Hashtags
-- Call-to-action
-- Platform
-- Objective
-- KPI
-
-Students should make sure the mock posts match the brand persona and campaign objectives.
-
-### Email Marketing Strategy
-
-#### Email Marketing Objectives
-
-Explain the role of email marketing in the campaign.
-
-Possible objectives include:
-
-- Nurture leads
-- Promote products
-- Increase repeat purchases
-- Encourage sign-ups
-- Share educational content
-- Recover abandoned carts
-- Build customer loyalty
-
-#### Relevant Email KPIs
-
-Choose KPIs that match the email objectives.
-
-Possible KPIs include:
-
-- Open rate
-- Click-through rate
-- Conversion rate
-- Unsubscribe rate
-- Bounce rate
-- Email sign-ups
-- Revenue per email
-- Abandoned cart recovery rate
-- List growth rate
-
-Explain why each KPI is important.
-
-#### Use of UTM Tracking and GA4
-
-Explain how email links will be tracked using UTM parameters and GA4.
-
-Example:
-
-utm_source=newsletter&utm_medium=email&utm_campaign=summer_promotion&utm_content=button_cta
-
-Explain how this helps identify which email content drives traffic or conversions.
-
-#### Email Content Plan
-
-Develop specific email content ideas.
-
-For each email, include:
-
-- Email purpose
-- Target segment
-- Subject line
-- Preview text
-- Main message
-- Call-to-action
-- Timing
-- KPI
-
-Example emails:
-
-**Email #1: Welcome Email**
-
-- Purpose: Introduce the brand and encourage first visit.
-- Subject line: Welcome to \[Brand Name\]
-- CTA: Explore Our Products
-- KPI: Open rate and click-through rate
-
-**Email #2: Product Education Email**
-
-- Purpose: Explain product benefits.
-- CTA: Learn More
-- KPI: Click-through rate
-
-**Email #3: Promotional Email**
-
-- Purpose: Encourage purchase.
-- CTA: Shop Now
-- KPI: Conversion rate
-
-#### Mock Email
-
-Create a mock email design.
-
-The mock email should include:
-
-- Subject line
-- Preview text
-- Header
-- Main image or visual
-- Body copy
-- Call-to-action button
-- Footer
-- Brand-consistent design
-- UTM-tagged links, if applicable
-
-#### A/B Testing Plan
-
-Propose at least one A/B test.
-
-Possible A/B tests include:
-
-- Subject line A vs. subject line B
-- CTA button wording
-- Email layout
-- Promotional offer
-- Personalization
-- Send time
-- Image vs. no image
-
-For each test, include:
-
-- Hypothesis
-- Version A
-- Version B
-- KPI used to determine the winner
-- How results would inform future campaigns
-
-### Paid Advertising Strategy
-
-#### Paid Advertising Objectives
-
-Explain why paid advertising is needed.
-
-Paid ads may be used to:
-
-- Increase awareness quickly
-- Drive traffic to a landing page
-- Retarget website visitors
-- Promote a specific product
-- Generate leads
-- Support campaign launch
-- Improve conversion volume
-
-#### Search Advertising
-
-If search ads are relevant, include:
-
-- Campaign objective
-- Target keywords
-- Match types, if applicable
-- Ad groups
-- Example ad copy
-- Landing page
-- Budget recommendation
-- Bidding strategy
-- Relevant KPIs
-
-Possible KPIs:
-
-- Click-through rate
-- Cost per click
-- Conversion rate
-- Cost per conversion
-- Quality score
-- Return on ad spend
-
-Example structure:
-
-**Search Advertising Campaign**
-
-- Campaign goal: Drive high-intent traffic to product page.
-- Target keyword: “organic face cream”
-- Headline: Natural Skincare for Everyday Glow
-- CTA: Shop Now
-- Landing page: Product page
-- KPI: Conversion rate and cost per conversion
-
-#### Display Advertising
-
-If display ads are relevant, include:
-
-- Campaign objective
-- Target audience
-- Placement strategy
-- Visual message
-- Example banner ad
-- Landing page
-- Retargeting strategy, if applicable
-- Relevant KPIs
-
-Possible KPIs:
-
-- Impressions
-- Reach
-- Click-through rate
-- View-through conversions
-- Cost per thousand impressions
-- Cost per click
-
-#### Social Media Advertising
-
-If social media ads are relevant, include:
-
-- Platform
-- Campaign objective
-- Target audience
-- Ad format\
-  For example: image ad, video ad, carousel ad, story ad, reel ad
-- Example creative
-- Ad copy
-- Call-to-action
-- Budget recommendation
-- Landing page
-- Relevant KPIs
-
-Possible KPIs:
-
-- Reach
-- Impressions
-- Engagement
-- Click-through rate
-- Cost per click
-- Cost per lead
-- Cost per acquisition
-- Return on ad spend
-
-#### Paid Advertising Budget Allocation
-
-Provide a suggested budget allocation across channels.
-
-For example:
-
-|                     |              |                                 |
-|---------------------|--------------|---------------------------------|
-| **Channel**         | **Budget %** | **Reason**                      |
-| Search Ads          | 40%          | Captures high-intent customers  |
-| Social Media Ads    | 40%          | Builds awareness and engagement |
-| Display Retargeting | 20%          | Re-engages previous visitors    |
-
-Students should justify the budget based on campaign objectives and target audience behavior.
-
-### Other Digital Marketing Channel and Tactics
-
-#### Conversion Rate Optimization
-
-Conversion Rate Optimization, or CRO, focuses on improving the percentage of users who complete a desired action, such as making a purchase, submitting a form, signing up for an email list, downloading a resource, or booking an appointment.
-
-Students should identify where users may be dropping off and recommend improvements that make conversion easier, clearer, or more persuasive.
-
-**What to Include**
-
-Discuss how the brand can improve conversion performance through website, landing page, checkout, or lead-generation improvements.
-
-Possible CRO recommendations include:
-
-- Improving call-to-action buttons
-
-- Simplifying forms
-
-- Reducing checkout steps
-
-- Improving landing page headlines
-
-- Adding customer reviews or testimonials
-
-- Adding trust signals, such as secure payment icons, certifications, guarantees, or return policies
-
-- Improving product descriptions
-
-- Making pricing or offers clearer
-
-- Improving page speed
-
-- Improving mobile usability
-
-- Reducing distractions on key landing pages
-
-- Adding live chat or chatbot support
-
-- Testing different page layouts
-
-- Creating stronger product images or videos
-
-**Suggested CRO Questions**
-
-Students should answer questions such as:
-
-- What is the main conversion goal?
-- Where in the customer journey might users hesitate or drop off?
-- What website or landing page element should be improved?
-- What change would make the user more likely to act?
-- How does this recommendation connect to your previous data analysis?
-- How would you test whether the improvement worked?
-
-**Relevant CRO KPIs**
-
-Possible KPIs include:
-
-- Conversion rate
-- Landing page conversion rate
-- Add-to-cart rate
-- Checkout completion rate
-- Form completion rate
-- Click-through rate on CTA buttons
-- Bounce rate
-- Exit rate
-- Average session duration
-- Cart abandonment rate
-- Cost per conversion
-- Revenue per visitor
-
-**Example CRO Recommendation**
-
-Based on the previous analysis, many users visit the product page but do not complete a purchase. To improve conversion, the brand should redesign the product page by adding clearer product benefits, customer reviews, a stronger “Buy Now” button, and a simplified checkout path. Success can be measured using product page conversion rate, add-to-cart rate, and checkout completion rate.
-
-#### Mobile Application
-
-A mobile application may be useful when the brand needs frequent customer engagement, personalized experiences, loyalty features, repeat purchases, booking functions, or app-based services.
-
-Students should only recommend a mobile app if there is a clear strategic reason. A mobile app should not be proposed simply because it sounds modern.
-
-**What to Include**
-
-Explain whether a mobile app is appropriate for the brand and campaign.
-
-Possible mobile app features include:
-
-- Loyalty program
-- Personalized product recommendations
-- Push notifications
-- Mobile ordering or booking
-- Appointment scheduling
-- Rewards points
-- Exclusive app-only promotions
-- Product scanning or augmented reality features
-- Customer support chat
-- User account/profile
-- Saved favorites or wish list
-- Subscription management
-- In-app educational content
-- Location-based offers
-- Community features
-
-**Suggested Mobile App Questions**
-
-Students should answer:
-
-- Why would customers download and continue using the app?
-- What problem does the app solve better than a website or social media page?
-- Which customer segment would benefit most?
-- What features are essential?
-- How does the app support repeat engagement, loyalty, or conversion?
-- What resources would be required to develop and maintain the app?
-- Would a mobile-optimized website be more realistic than an app?
-
-**Relevant Mobile App KPIs**
-
-Possible KPIs include:
-
-- App downloads
-- App installs
-- Active users
-- Daily active users
-- Monthly active users
-- User retention rate
-- Churn rate
-- Push notification open rate
-- In-app purchases
-- App conversion rate
-- Average order value
-- Session frequency
-- App store rating
-- Cost per install
-
-**Example Mobile App Recommendation**
-
-A mobile app may be appropriate if the brand relies on repeat purchases and loyalty. The app could include personalized product recommendations, rewards points, saved favorites, and push notifications for exclusive promotions. Success can be measured through app downloads, monthly active users, retention rate, and app-based purchases.
-
-#### Affiliate Marketing
-
-Affiliate marketing involves partnering with individuals, publishers, bloggers, creators, or websites that promote the brand and earn a commission when they generate sales, leads, or traffic.
-
-This tactic is especially useful when the brand wants to expand reach through third-party recommendations while paying based on performance.
-
-**What to Include**
-
-Describe how an affiliate program could support the campaign.
-
-Students should specify:
-
-- Type of affiliate partners
-- Target audience reached by affiliates
-- Commission structure
-- Promotional rules or brand guidelines
-- Tracking method
-- Landing page or offer used
-- Expected benefit to the campaign
-
-Possible affiliate partners include:
-
-- Bloggers
-- Review websites
-- Niche content creators
-- YouTubers
-- Newsletter publishers
-- Coupon or deal websites
-- Industry experts
-- Comparison websites
-- Community groups
-- Podcast hosts
-
-**Suggested Affiliate Marketing Questions**
-
-Students should answer:
-
-- What type of affiliate partners fit the brand?
-- Why would these partners influence the target audience?
-- What offer or incentive would affiliates promote?
-- What commission or reward structure would be appropriate?
-- How would affiliate sales or leads be tracked?
-- How would the brand ensure affiliates represent the brand accurately?
-- What risks should be managed?
-
-**Relevant Affiliate Marketing KPIs**
-
-Possible KPIs include:
-
-- Affiliate-generated traffic
-- Affiliate conversion rate
-- Number of affiliate partners
-- Sales generated by affiliates
-- Leads generated by affiliates
-- Cost per acquisition
-- Revenue from affiliate channel
-- Return on ad spend or return on affiliate investment
-- Average order value
-- New customer acquisition
-- Refund or cancellation rate by affiliate source
-
-**Example Affiliate Marketing Recommendation**
-
-The brand could partner with niche bloggers and YouTube creators who already produce content for the target audience. Each affiliate would receive a unique tracking link and earn a commission for each sale. This tactic supports customer acquisition because potential buyers may trust third-party recommendations more than direct brand advertising. Performance can be measured through affiliate-generated traffic, sales, conversion rate, and cost per acquisition.
-
-#### Influencer Campaigns
-
-Influencer campaigns involve collaborating with creators who have credibility, audience trust, or content expertise in a relevant niche. Influencers can help increase awareness, build trust, demonstrate product use, and generate social proof.
-
-This section can overlap with social media, but it should focus specifically on **creator partnerships** rather than the brand’s own social media content.
-
-**What to Include**
-
-Describe the proposed influencer campaign strategy.
-
-Students should specify:
-
-- Type of influencer\
-  For example: nano, micro, mid-tier, macro, or celebrity
-- Platform\
-  For example: Instagram, TikTok, YouTube, LinkedIn, Twitch
-- Target audience
-- Campaign goal
-- Influencer selection criteria
-- Content format
-- Key message
-- Offer or call-to-action
-- Tracking method
-- Compensation approach
-- Brand guidelines
-
-Possible influencer campaign formats include:
-
-- Product review
-- Tutorial
-- Unboxing
-- Day-in-the-life content
-- Before-and-after demonstration
-- Sponsored post
-- Sponsored reel or TikTok
-- YouTube integration
-- Giveaway
-- Live stream
-- Discount code promotion
-- Affiliate-style influencer partnership
-- Brand ambassador program
-
-**Suggested Influencer Campaign Questions**
-
-Students should answer:
-
-- Why is influencer marketing appropriate for this campaign?
-- What type of influencer is most suitable for the target market?
-- What audience should the influencer reach?
-- What platform should be used?
-- What content should the influencer create?
-- How will the campaign maintain authenticity?
-- How will the brand track results?
-- What risks should be managed, such as poor brand fit or low engagement quality?
-
-**Relevant Influencer Campaign KPIs**
-
-Possible KPIs include:
-
-- Reach
-- Impressions
-- Engagement rate
-- Video views
-- Completion rate
-- Saves and shares
-- Follower growth
-- Link clicks
-- Website traffic from influencer links
-- Discount code redemptions
-- Leads or sales generated
-- Cost per engagement
-- Cost per acquisition
-- Earned media value, if applicable
-
-**Example Influencer Campaign Recommendation**
-
-The brand should collaborate with micro-influencers who have strong engagement within the target niche. Each influencer could create one short-form video demonstrating how they use the product, along with a unique discount code and UTM-tagged link. This tactic supports awareness and trust because followers are exposed to the brand through a familiar creator. Success can be measured using reach, engagement rate, link clicks, discount code redemptions, and sales generated from influencer traffic.
-
-### Implementation Timeline
-
-Provide a realistic timeline for campaign execution.
-
-The timeline may include:
-
-- Preparation phase
-- Content creation
-- Website updates
-- SEO implementation
-- Social media launch
-- Email campaign launch
-- Paid advertising launch
-- Monitoring and optimization
-- Final evaluation
-
-Suggested format:
-
-|  |  |  |  |
-|------------------|------------------|------------------|------------------|
-| **Week** | **Activity** | **Responsible Area** | **Deliverable** |
-| Week 1 | Finalize campaign objectives and content calendar | Strategy | Campaign brief |
-| Week 2 | Create website landing page and social content | Website/Social | Landing page mockup, posts |
-| Week 3 | Launch social and email campaigns | Social/Email | Published content |
-| Week 4 | Launch paid ads and monitor performance | Paid Media | Ad dashboard |
-| Week 5 | Analyze performance and optimize | Analytics | KPI report |
-
-## **Implementation of the Concrete Digital Marketing Plan** {#sec-implementation-digital-marketing-plan}
-
-### Instructions for Implementation of the Digital Marketing Plan {#sec-implementation-instructions .unnumbered}
-
-
-
-## Post Implementation Analysis on the Effectiveness of the Implementation {#sec-post-implementation-analysis}
-
-### **Measurement and Post-Implementation Analysis**
-
-#### KPI Baseline Before Implementation
-
-Identify the key performance metrics before the campaign begins.
-
-Examples:
-
-|                           |                         |                    |
-|---------------------------|-------------------------|--------------------|
-| **KPI**                   | **Current Performance** | **Data Source**    |
-| Website sessions          | 5,000/month             | GA4                |
-| Instagram engagement rate | 2.1%                    | Instagram Insights |
-| Email open rate           | 24%                     | Email platform     |
-| Conversion rate           | 1.5%                    | GA4                |
-
-If real data is unavailable, students may use reasonable assumptions, but they must clearly label them as assumptions.
-
-#### KPI Targets After Implementation
-
-Set expected performance targets after implementation.
-
-Examples:
-
-|  |  |  |  |
-|------------------|------------------|------------------|------------------|
-| **KPI** | **Baseline** | **Target** | **Rationale** |
-| Website sessions | 5,000/month | 6,000/month | SEO and paid ads expected to increase traffic |
-| Email CTR | 3% | 5% | Improved segmentation and stronger CTA |
-| Conversion rate | 1.5% | 2.2% | Landing page optimization |
-
-#### Implementation Effectiveness Analysis
-
-Explain how you would evaluate campaign effectiveness after implementation.
-
-Discuss:
-
-- Which KPIs improved
-- Which KPIs did not improve
-- Which channels performed best
-- Whether objectives were achieved
-- What data sources were used
-- What recommendations should be revised
-- What future tests should be conducted
-
-Students should connect the results back to the original campaign objectives.
-
-## Conclusion and Recommendations {#sec-conclusion-recommendations}
-
-Summarize the overall digital marketing implementation plan.
-
-Your conclusion should answer:
-
-- What is the main strategy?
-- Why is this strategy appropriate based on the data?
-- Which channels are most important?
-- What outcomes are expected?
-- What should the brand do next?
-- Avoid simply repeating earlier sections. Instead, synthesize the overall plan.
-
-## Limitations for Theory and Practice {#sec-limitations}
-
-Discuss the limitations of your analysis and implementation plan.
-
-Possible limitations include:
-
-- Limited data availability
-- Short campaign period
-- Small sample size
-- Lack of access to actual GA4 or ad platform data
-- Budget constraints
-- Assumptions about target audience behavior
-- External market changes
-- Limited ability to test the plan in real time
-- You may organize limitations into:
-
-### Limitations for Theory
-
-Discuss how limitations affect the interpretation of your analysis, model, or theoretical assumptions.
-
-### Limitations for Practice
-
-Discuss how limitations affect the practical implementation of the marketing plan
-
-## Future Directions {#sec-future-directions}
-
-### Directions for Future Research
-
-Suggest how future research could improve the analysis.
-
-Examples:
-
-- Collect more customer data
-- Conduct customer interviews
-- Run surveys with a larger sample
-- Compare multiple customer segments
-- Analyze long-term campaign performance
-- Test additional digital platforms
-- Use experiments or A/B testing
-
-### Directions for Future Marketing Efforts
-
-Suggest practical next steps for the brand.
-
-Examples:
-
-- Continue optimizing SEO content
-- Expand paid advertising after testing
-- Develop a stronger content calendar
-- Build a customer loyalty program
-- Improve email segmentation
-- Test new landing page designs
-- Use retargeting campaigns
-- Collaborate with influencers or partners
-
-------------------------------------------------------------------------
-
-{{< pagebreak >}}
-
-
-
-# CHAPTER 5: For Basic/Applied Academic Research Project {#sec-ch5-basic-applied-research .unnumbered .unlisted}
-
-
-## 5.1 Overall Summary of Results from Data Analysis {.unnumbered .unlisted}
-
-## 5.2 Contribution to the Theory {.unnumbered .unlisted}
-
-## 5.3 Recommendations to Businesses for Analytics Objective #1 {.unnumbered .unlisted}
-
-### 5.3.1 Summary of findings from data analysis - AO1 {.unnumbered .unlisted}
-
-### 5.3.2 Do A {.unnumbered .unlisted}
-
-### 5.3.3 Implement B {.unnumbered .unlisted}
-
-### 5.3.4 Change C to D {.unnumbered .unlisted}
-
-## 5.4 Recommendations to Businesses for Analytics Objective #2 {.unnumbered .unlisted}
-
-### 5.4.1 Summary of findings from data analysis – AO2 {.unnumbered .unlisted}
-
-### 5.4.2 Do E {.unnumbered .unlisted}
-
-### 5.4.3 Implement F {.unnumbered .unlisted}
-
-### 5.4.4 Change G to H {.unnumbered .unlisted}
-
-## 5.5 Recommendations to Businesses for Analytics Objective #3 {.unnumbered .unlisted}
-
-### 5.5.1 Summary of findings from data analysis – AO3 {.unnumbered .unlisted}
-
-### 5.5.2 Do I {.unnumbered .unlisted}
-
-### 5.5.3 Implement J {.unnumbered .unlisted}
-
-### 5.5.4 Change K to L {.unnumbered .unlisted}
-
-## 5.6 Recommendations to Businesses for Analytics Objective #4 {.unnumbered .unlisted}
-
-### 5.6.1 Summary of findings from data analysis – AO4 {.unnumbered .unlisted}
-
-### 5.6.2 Do M {.unnumbered .unlisted}
-
-### 5.6.3 Implement N {.unnumbered .unlisted}
-
-### 5.6.4 Change O to P {.unnumbered .unlisted}
-
-## 5.7 Recommendations to Businesses for Analytics Objective #5 {.unnumbered .unlisted}
-
-### 5.7.1 Summary of findings from data analysis – AO5 {.unnumbered .unlisted}
-
-### 5.7.2 Do Q {.unnumbered .unlisted}
-
-### 5.7.3 Implement R {.unnumbered .unlisted}
-
-### 5.7.4 Change S to T {.unnumbered .unlisted}
-
-## 5.8 Concrete Digital Marketing Plan {.unnumbered .unlisted}
-
-*(Specific headings are subject to the project goals)*
-
-### 5.8.1 Target Market {.unnumbered .unlisted}
-
-### 5.8.2 Positioning and Perceptual Map {.unnumbered .unlisted}
-
-### 5.8.3 Website Design {.unnumbered .unlisted}
-
-### 5.8.4 SEO {.unnumbered .unlisted}
-
-### 5.8.5 Social Media {.unnumbered .unlisted}
-
-### 5.8.6 Paid Advertising {.unnumbered .unlisted}
-
-### 5.8.7 Digital Marketing Channels and Tactics {.unnumbered .unlisted}
-
-### 5.8.8 Implementation Timeline {.unnumbered .unlisted}
-
-## 5.9 Implementation of the Concrete Digital Marketing Plan {.unnumbered .unlisted}
-
-## 5.10 Post Implementation Analysis on the Effectiveness of the Implementation {.unnumbered .unlisted}
-
-### 5.10.1 KPI before Implementation {.unnumbered .unlisted}
-
-### 5.10.2 KPI after Implementation {.unnumbered .unlisted}
-
-## 5.11 Conclusion and Recommendations {.unnumbered .unlisted}
-
-## 5.12 Limitations for Theory and Practice {.unnumbered .unlisted}
-
-## 5.13 Directions for Future Research and Practical Marketing Efforts {.unnumbered .unlisted}
-
 ------------------------------------------------------------------------
 
 <br>
 
 {{< pagebreak >}}
 
-# REFERENCES {#sec-references}
+# REFERENCES {#sec-references .unnumbered}
 
 ::: {#refs}
 
@@ -3162,7 +1704,45 @@ Kohavi R, Longbotham R, Sommerfield D, Henne RM. Controlled experiments on the w
 
 {{< pagebreak >}}
 
-# APPENDIX
+# APPENDIX {.unnumbered}
+
+## Appendix A: Proposed Client Interview Guide
+
+This project does not use a respondent survey. It uses digital platform data, structured audits, and client consultation. The following proposed semi-structured interview guide supports clarification of data access, organizational priorities, and implementation requirements. It does not represent a completed interview or recorded client responses.
+
+1. What fundraising and service-inquiry outcomes should the project prioritize?
+2. Who manages the website, analytics, advertising, and donor outreach accounts?
+3. Which platform reports and historical reporting periods are available?
+4. How are donations processed, and can anonymized transaction totals be shared?
+5. Can completed donations be linked reliably to website or campaign activity?
+6. What is the current Google for Nonprofits and Ad Grants application status?
+7. Which email or social media chasnnel is feasible for a donor outreach campaign?
+8. What approval process applies to website changes, advertising, and outreach content?
+9. Which approved impact stories, images, and organizational results may be used?
+10. What staffing, budget, and time constraints should guide implementation?
+11. What website changes and campaigns have already occurred, and on which dates?
+12. Who will maintain the measurement and marketing activities after the project?
+
+Responses will be documented with the consultation date and used to refine the implementation and measurement plans. Sensitive client health information and identifiable donor records will not be requested.
+
+## Appendix B: AO2 Measurement and Validation Checklist
+
+This checklist documents the review of website analytics and conversion tracking. It is a data collection instrument, not a respondent survey. Validation results will be recorded separately; inclusion here does not indicate that a check has been completed.
+
+| Measurement Area | Check | Evidence to Record |
+|---|---|---|
+| Reporting scope | Confirm property, website, time zone, and reporting dates | Property identifier, domain, time zone, and date range |
+| Website activity | Test page_view and user_engagement collection | Test date, page, tool used, and observed events |
+| Contact inquiries | Confirm generate_lead follows a successful form submission | Test steps, submission confirmation, event parameters, and result |
+| Donation-link clicks | Confirm the outbound link points to the intended donation platform and records a click | Destination URL, observed event, test date, and result |
+| Completed donations | Determine whether verified transaction totals are available | Data source, available dates, and access limitations |
+| Donation attribution | Assess whether transactions can be linked reliably to website activity | Linkage method or documented inability to attribute |
+| Campaign tracking | Test source, medium, and campaign parameters | Test URL and observed attribution |
+| Testing traffic | Review internal traffic settings and identifiable test activity | Filter status, test log, exclusions, and limitations |
+| Export quality | Check dates, missing values, reporting grain, and metric definitions | Export filename, extraction date, and quality notes |
+| Reporting consistency | Check that dashboard figures match equivalent source reports | Filters, date range, comparison results, and discrepancies |
+
+Each check will be classified as Verified, Partially Verified, Not Verified, or Not Applicable. Tracking changes will be dated so that later reporting does not assume an event was measurable before its implementation.
 
 ## Data
 
