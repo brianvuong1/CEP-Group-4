@@ -104,7 +104,7 @@ This objective includes reviewing existing events and conversions, defining base
 
 ### PO3. Obtain and Activate Google Ad Grants
 
-The third project objective is to guide Wellness Ranch through the Google Ad Grants process, including eligibility verification, application, campaign development, and launch. If the organization qualifies, the team will assist with submitting the application and launching compliant search campaigns. If approval is delayed or denied, the team will document the barriers and recommend corrective actions.
+The third project objective is to support Wellness Ranch through Google Ad Grants approval, campaign development, and launch. The application has been submitted, with approval pending at the latest documented update. The team will confirm the outcome, address any remaining requirements, and prepare compliant search campaigns for launch after approval. If approval is delayed or denied, the team will document the barriers and recommend corrective actions.
 
 This objective includes improving website and landing-page readiness, validating conversion tracking, researching keywords and audiences, and establishing campaign ownership and management procedures. After launch, the team will review measures such as impressions, clicks, click-through rate, search terms, and conversions to improve performance. The project will also provide documentation and recommendations so Wellness Ranch can maintain the account after the capstone concludes.
 
