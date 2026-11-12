@@ -235,7 +235,7 @@ The project builds on recommendations developed by the Spring 2026 search engine
 
 ## Client (Company) Background
 
-Wellness Ranch Equine Assisted Therapy is a nonprofit organization based in Rancho Cucamonga, California. Founded in 2023 and led by Director Angelica Manzo, the organization uses equine-assisted therapy and community-based activities to promote mental wellness, personal development, and healing. Wellness Ranch serves children and adults through individual, couples, and group services. Its principal service area is the Inland Empire, including communities where access to mental-health care may be limited by cost, provider shortages, and other barriers.
+Wellness Ranch Equine Assisted Therapy is a nonprofit organization based in Rancho Cucamonga, California. Founded in 2023 and led by Director Angelica Manzo, the organization uses equine-assisted therapy and community-based activities to promote mental wellness, personal development, and healing. Wellness Ranch serves children and adults through individual, couples, and group services. Its principal service area is the Inland Empire, including communities where access to mental-health care may be limited by cost, provider shortages, and other barriers.The organization is currently rebuilding after closing its previous site and maintains a waiting list for services [@wrGofundme].
 
 The organization’s services include trauma-informed therapy, wellness education, and community outreach. Wellness Ranch also contributes to the development of future mental-health professionals by offering internships and hands-on learning opportunities. As a relatively new nonprofit, the organization is continuing to develop its operational capacity, public visibility, fundraising efforts, and digital infrastructure.
 
@@ -303,7 +303,7 @@ The current business objectives include:
 
 5.  **Improve digital measurement.** Evaluate the existing GA4 implementation, define meaningful events and conversions, establish baseline key performance indicators, and determine which channels contribute to donations and inquiries.
 
-6.  **Evaluate Google Ad Grants readiness.** Determine whether Wellness Ranch meets the eligibility requirements and possesses the website, analytics, staffing, and campaign-management capacity needed to apply for and sustain Google Ad Grants.
+6.  **Launch and sustain Google Ad Grants.** Complete the approval process for the submitted Google Ad Grants application, then launch and manage compliant search campaigns with the website, analytics, staffing, and campaign-management capacity needed to sustain them.
 
 7.  **Build sustainable internal capacity.** Establish procedures, documentation, and ownership so that the website, analytics tools, and future advertising campaigns can continue to be managed after the capstone project concludes.
 
@@ -323,7 +323,7 @@ Wellness Ranch serves a geographically concentrated but behaviorally diverse mar
 
 The client’s target market also includes indirect decision-makers and support audiences. Parents or guardians may research services for children, partners or family members may help evaluate care options, and referral sources may seek information about the organization’s programs and qualifications. Donors, volunteers, interns, and community partners represent additional audiences that support the organization even when they are not therapy clients.
 
-For digital-marketing purposes, the most important preliminary segments are prospective clients and families; referral and professional audiences; and donors, volunteers, interns, and community partners. Each segment may use different search terms, respond to different messages, and complete different website actions. AO2 will therefore distinguish traffic and conversions by source and action where the available data permit. These segments should be validated with the client.
+For digital-marketing purposes, Section 2.5 groups these audiences into four segments: prospective adult clients, parents and families, donors and community supporters, and professional referral and partnership audiences. Each segment may use different search terms, respond to different messages, and complete different website actions, so AO2 reports traffic and outcomes by source and action where the data permit.
 
 ### Current Positioning and Perceptual Map
 
@@ -354,7 +354,7 @@ Until these details are confirmed, the project should avoid publishing unsupport
 
 ### Current Marketing Channels
 
-The current channel mix appears to include the organization’s website, organic search, local-search listings, social media, referrals and community relationships, direct communication or email, and potential Google Ad Grants search advertising. The website is the central owned channel because it provides information about services, mission, donations, and contact options [@wellnessranch2026]. The team should distinguish channels that are confirmed from those that are planned or recommended.
+The confirmed channel mix includes the website, organic and local search, Instagram, directory listings such as the Rancho Cucamonga Chamber of Commerce [@wrChamber], referrals from community and educational partners, and third-party fundraising pages on GoFundMe and Zeffy [@wrGofundme; @wrZeffy]. Instagram is currently the largest source of website traffic, producing 52% of sessions in the first week of GA4 tracking (see Chapter 3). Google Ad Grants search advertising is planned pending approval (AO3), and email has not been confirmed as an active channel. The website is the central owned channel because it provides information about services, mission, donations, and contact options [@wellnessranch2026].
 
 ### Current Integrated Marketing Communications
 
@@ -384,11 +384,11 @@ Email marketing has not yet been documented as a formal program. If the organiza
 
 #### Social Media Posting
 
-Social media may support awareness, education, community participation, and donor or volunteer relationships. The team should confirm which platforms are active, who posts, how often content is published, and whether links are tagged for measurement. Content should protect client privacy and avoid using sensitive stories or images without appropriate consent.
+Instagram is Wellness Ranch's most active social platform and its largest source of website traffic, producing 52% of sessions in the first week of GA4 tracking (see Chapter 3). Posting frequency, ownership, and link tagging have not yet been documented. AO4 will audit existing posts, and AO2's UTM conventions will tag campaign links going forward. Content should protect client privacy and avoid using sensitive stories or images without appropriate consent.
 
 #### Paid Search Advertising
 
-Wellness Ranch is not currently using an established Google Ad Grants campaign according to the project materials. AO3 will evaluate eligibility and readiness, and AO4 will analyze campaign performance if an account is approved and launched. Paid search requires verified conversions, relevant landing pages, ongoing optimization, and a clear owner.
+Wellness Ranch is not yet running Google Ads. Its Google Ad Grants application has been submitted, and approval was pending at the latest documented update. AO3 will prepare campaigns, launch them after approval, and optimize them using campaign results. Paid search requires verified conversions, relevant landing pages, ongoing optimization, and a clear owner, so AO3 coordinates landing-page readiness with AO1 and conversion tracking with AO2.
 
 #### Social Media Advertising
 
@@ -432,11 +432,11 @@ Loyalty building includes respectful follow-up, donor stewardship, volunteer and
 
 ### Analytics Infrastructure
 
-The current analytics foundation includes GA4 and Google Search Console, but the project has not yet verified event definitions, conversion settings, data quality, historical baselines, attribution, or account access. AO2 will audit the implementation and define a measurement plan covering traffic acquisition, engagement, and meaningful actions such as contact submissions, phone clicks, appointment inquiries, donations, and program-interest actions. The team should document data limitations and avoid treating page views or clicks as outcomes by themselves.
+The analytics foundation includes GA4 and Google Search Console. During Fall 2026, the team obtained GA4 access and used Realtime, DebugView, and Google Tag Assistant to confirm that page views, engagement events, form-related interactions, and the `generate_lead` event are being recorded, and the key-event configuration was reviewed and corrected. Several gaps remain. The property's reliable history is short, Search Console access is being transferred from a departing volunteer, and the waitlist and volunteer forms (JotForm) and donation platforms (Zeffy and GoFundMe) operate outside the website, so completed submissions and gifts are not visible in GA4 [@wrWaitlist; @wrZeffy; @wrGofundme]. AO2 addresses these gaps through a validated measurement framework (Section 2.7).
 
 ## Competitive Analysis
 
-Wellness Ranch competes in a narrow niche, equine-assisted mental-health services, that sits inside the much larger outpatient mental-health and nonprofit human-services sectors. This section first sizes the industry at three levels: equine-assisted services, outpatient mental-health care, and charitable giving. It then compares Wellness Ranch with four Inland Empire organizations that compete for the same clients, referrals, volunteers, and donors. Competitor information comes from public nonprofit profiles, donation platforms, and news coverage reviewed in November 2026. A hands-on audit of each competitor's website, search rankings, and social accounts will be completed using Semrush and manual review, and the figures marked [X] will be filled in at that point.
+Wellness Ranch competes in a narrow niche, equine-assisted mental-health services, that sits inside the much larger outpatient mental-health and nonprofit human-services sectors. This section first sizes the industry at three levels: equine-assisted services, outpatient mental-health care, and charitable giving. It then compares Wellness Ranch with four Inland Empire organizations that compete for the same clients, referrals, volunteers, and donors. Competitor information comes from public nonprofit profiles, donation platforms, and news coverage reviewed in November 2026.Comparable search-performance data for competitors were not collected, so the comparison focuses on publicly observable positioning, fundraising, and channel use.
 
 ### Industry Size
 
@@ -586,7 +586,7 @@ Wellness Ranch Equine Assisted Therapy serves multiple audiences with different 
 
 Customer segmentation involves dividing a broader market into groups with similar characteristics, needs, or behaviors. For Wellness Ranch, segmentation should consider geographic location, service needs, behavioral intentions, and the type of relationship each audience has with the organization.
 
-The Customer Decision Journey framework emphasizes that individuals interact with organizations through different touchpoints before making decisions (Lemon and Verhoef 2016). Similarly, multichannel research demonstrates the importance of understanding how audiences interact with organizations across different communication channels (Verhoef, Kannan, and Inman 2015).
+Customer journey research shows that people interact with organizations through multiple touchpoints before making decisions [@lemonVerhoef2016], and omnichannel research shows that they move across channels while doing so [@verhoef2015].
 
 Based on the organization's current services and business objectives, four preliminary audience segments have been identified: prospective adult clients, parents and families, donors and community supporters, and professional referral and partnership audiences.
 
@@ -713,61 +713,59 @@ This analysis also supports AO2 by identifying the types of website interactions
 
 ### Strengths
 
-Wellness Ranch also benefits from an established digital presence and access to marketing analytics tools, including Google Analytics 4 (GA4). During Fall 2026, the project team obtained GA4 access and conducted initial event validation using Realtime, DebugView, and Google Tag Assistant. These efforts provide a foundation for evaluating website engagement, traffic acquisition, and conversion-related behavior.
+Wellness Ranch holds the clearest mental-health positioning among local equine-assisted providers. It is the only organization identified in the Rancho Cucamonga and western San Bernardino County area that offers equine-assisted psychotherapy to children, adults, couples, families, veterans, and first responders, and its services are delivered by licensed clinicians [@wrGuidestar]. Its trauma-informed approach, insurance and sliding-scale options, and internship program give it both a service role and a community-education role (Section 2.1).
+
+The organization also has a working digital base to build on. Instagram already drives most website traffic, producing 52% of sessions in the first week of GA4 tracking (see Chapter 3). GA4 is installed and recording page, engagement, and form events after Fall 2026 validation (Section 2.7). The website runs on Wix, which the project team can edit directly, so improvements do not depend on an outside developer.
 
 ### Weaknesses
 
-Although Wellness Ranch has an existing GA4 implementation, its conversion measurement capabilities are still developing. Initial testing has confirmed the observation of standard engagement events and selected form-related interactions, but additional validation is necessary to ensure that completed service inquiries and donations are accurately recorded. Incomplete conversion tracking may limit the organization's ability to evaluate fundraising performance and determine which digital marketing activities produce meaningful outcomes.
+Wellness Ranch is the newest and smallest organization in its competitive set. Its competitors have operated for 10 to 25 years, which gives them established donor bases, referral relationships, and search histories (Section 2.4). Fundraising results so far are weak. The main GoFundMe campaign had raised $805 from 8 donors toward an $80,000 rebuilding goal [@wrGofundme], and the Zeffy profile appears unclaimed, showing $0 raised and placeholder events [@wrZeffy].
+
+The website and measurement foundation also need work. The prior Semrush audit flagged 21 thin-content pages, 3 missing meta descriptions, and a broken link (see Chapter 3). Waitlist and volunteer forms run on JotForm and donations run on third-party platforms, which sends visitors off the site and keeps completed submissions and gifts out of GA4 [@wrWaitlist]. There is no dedicated marketing staff, and ownership of SEO, analytics, advertising, and reporting has not been documented (Section 2.2).
 
 ### Opportunities
 
-Wellness Ranch has several external opportunities to strengthen its digital presence and expand community engagement. Increasing the organization's visibility through local SEO and relevant search queries may help prospective clients and families discover its services when searching for equine-assisted therapy, trauma-informed care, or mental-health support in the Inland Empire.
+Demand for equine-assisted mental-health services exceeds supply. PATH Intl. member centers report waiting lists totaling 17,776 people, and the number of centers offering equine-facilitated psychotherapy grew between 2024 and 2025 [@pathintl2025]. Mental-health need remains high, with 23.4% of U.S. adults experiencing a mental illness in 2024 [@nsduh2024].
 
-Google Ad Grants represents another potential opportunity. If Wellness Ranch meets the eligibility and program requirements, the grant could provide access to search advertising that supports service awareness, donation opportunities, and community outreach without requiring a traditional paid-search advertising budget.
-
-The organization may also benefit from strengthening relationships with local schools, counselors, healthcare professionals, nonprofit organizations, and community partners. These relationships could generate referrals, increase awareness, and support community-based programs.
-
-Improving website content and user experience presents additional opportunities to communicate the organization's mission and encourage meaningful actions. Clearer service information, accessible contact options, stronger donation pathways, and verified impact statements may help visitors make informed decisions and support the organization.
+The local digital landscape is uncrowded. No competitor was found running Google Ads, email newsletters, or paid social campaigns (Section 2.4). Once approved, Google Ad Grants could give Wellness Ranch paid search visibility with little local competition (AO3), and a consistent donor outreach campaign could set it apart (AO4). The giving environment is also favorable: giving to human services and to health each grew 5.0% in 2024 [@givingusa2025], and nonprofits' online revenue rose 15% on average in 2025 [@mrbenchmarks2026]. Community partners, directories, and local media offer low-cost routes to referrals, backlinks, and earned coverage, and competitors already use them (Section 2.4).
 
 ### Threats
 
-Wellness Ranch operates in an environment where prospective clients can choose among traditional mental-health providers, nonprofit counseling organizations, and other specialized therapeutic programs. These alternatives may compete for online visibility, professional referrals, community attention, and donor support.
+Organic search is becoming a less reliable source of traffic. The share of nonprofit website traffic from organic search declined through 2025, a trend the M+R Benchmarks Study attributes to AI-generated search results [@mrbenchmarks2026], and Google users are less likely to click links when an AI summary appears [@chapekisLieb2025].
 
-Economic conditions also represent a potential threat. Changes in household financial circumstances or charitable giving may affect the ability of individuals and families to afford services or contribute donations. As a nonprofit organization, Wellness Ranch must consider how external funding conditions could affect its ability to maintain accessible programs.
-
-Changes in search engine algorithms, online advertising requirements, and digital platform policies may also influence the organization's visibility and marketing performance. Google Ad Grants presents a valuable opportunity, but eligibility, compliance requirements, and ongoing campaign-management expectations may limit its effectiveness if the organization cannot maintain the necessary resources.
-
-Privacy and communication requirements are particularly important because Wellness Ranch provides mental-health services. Inaccurate therapeutic claims, inappropriate use of sensitive information, or failure to maintain appropriate privacy practices could create reputational and compliance risks.
+Wellness Ranch also competes with established local programs and with conventional therapists, clinics, and county services for clients, referrals, volunteers, and donors (Section 2.4). Google Ad Grants carries ongoing program requirements [@googleadgrants2026], so without a designated owner after the capstone, the grant could lapse. Economic pressure may also affect both charitable giving and clients' ability to afford services. Finally, because Wellness Ranch provides mental-health services, unsupported therapeutic claims, careless use of client stories, or tracking that captures sensitive information could create reputational and privacy risks.
 
 ### Summary: SWOT Quadrants
 
-The following table summarizes the internal strengths and weaknesses and external opportunities and threats identified for Wellness Ranch Equine Assisted Therapy.
+@tbl-swot-internal and @tbl-swot-external summarize the analysis.
 
 | Strengths | Weaknesses |
 |---|---|
-| Specialized equine-assisted and trauma-informed services | Limited staffing and dedicated marketing resources |
-| Community-centered mission and local service focus | Website SEO and content improvement needs |
-| Services for multiple client groups | Incomplete validation of GA4 conversion tracking |
-| Existing website and analytics tools | Limited documentation of marketing procedures and ownership |
-| Community outreach and educational opportunities | Limited organizational capacity as a newer nonprofit |
+| Clearest local mental-health positioning in equine-assisted services | Newest and smallest organization in its competitive set |
+| Licensed clinicians; broad audience across ages and relationships | Weak fundraising results; unclaimed Zeffy profile |
+| Instagram drives most website traffic | Forms and donations hosted off-site; outcomes not visible in GA4 |
+| GA4 installed and recording validated events | SEO issues, including thin content and missing metadata |
+| Insurance, sliding-scale, and internship programs | No dedicated marketing staff or documented ownership |
+
+: Internal Factors: Strengths and Weaknesses {#tbl-swot-internal}
 
 | Opportunities | Threats |
 |---|---|
-| Local SEO and increased online visibility | Competition from alternative mental-health providers |
-| Potential access to Google Ad Grants | Economic pressures affecting service affordability and donations |
-| Community partnerships and professional referrals | Changes in search engine and advertising policies |
-| Website conversion and donation-pathway improvements | Privacy, regulatory, and reputational risks |
-| Greater public awareness of available services | Limited visibility in competitive online search results |
+| Demand exceeds supply, with long national waiting lists | Declining organic search clicks from AI-generated results |
+| No local competitors using paid search, email, or paid social | Established competitors with older donor and referral bases |
+| Google Ad Grants, with approval pending | Ad Grants requirements without a long-term account owner |
+| Growing charitable and online giving | Economic pressure on giving and service affordability |
+| Community partners, directories, and local media | Privacy and claims risks in mental-health communications |
 
-Overall, the SWOT analysis demonstrates that Wellness Ranch has a distinctive service offering and a mission-driven foundation for community engagement. However, limited marketing resources, website improvement needs, and incomplete analytics validation may restrict its ability to expand its digital reach.
+: External Factors: Opportunities and Threats {#tbl-swot-external}
 
-The identified opportunities align with the CEP's objectives of improving SEO performance, strengthening website engagement and conversion measurement, and evaluating Google Ad Grants readiness. Addressing internal weaknesses while taking advantage of relevant external opportunities can help Wellness Ranch increase its visibility, support service inquiries and donations, and establish more sustainable digital marketing practices.
+Taken together, the SWOT points to one central gap: Wellness Ranch has a distinctive position and growing demand, but it is not yet turning attention into measurable support. The four AOs target that gap directly. AO1 addresses search visibility and website weaknesses, AO2 closes the measurement gap created by off-site forms and donations, AO3 uses the uncrowded paid search landscape through Google Ad Grants, and AO4 responds to weak fundraising results with focused donor outreach. Every recommendation must remain realistic for a small organization without dedicated marketing staff.
 
 ## Investigation of Currently Available Research Framework/Model
 
 This section evaluates the research frameworks and models that inform each analytics objective. For every AO, the discussion follows the same four steps. It first reviews well-established models relevant to the objective, then assesses whether the information gathered so far is adequate, identifies what additional analysis is needed, and concludes by affirming or revising the AO.
 
-Although each objective is assigned to one team member, the four AOs share a common foundation. Each one connects how people search for and evaluate Wellness Ranch, whether as prospective clients, families, donors, or partners, to measurable outcomes on the website or in Google Ads. AO1 focuses on whether the organization can be found in organic search, AO2 on whether meaningful website actions can be measured reliably, AO3 on whether the organization is ready to launch and sustain Google Ad Grants campaigns, and AO4 on how those campaigns can be optimized once they are live.
+Although each objective is assigned to one team member, the four AOs share a common foundation. Each one connects how people search for and evaluate Wellness Ranch, whether as prospective clients, families, donors, or partners, to measurable outcomes on the website, in Google Ads, or on donation platforms. AO1 focuses on whether the organization can be found in organic search, AO2 on whether meaningful actions can be measured reliably, AO3 on preparing, launching, and optimizing Google Ad Grants campaigns, and AO4 on developing and evaluating donor-focused content and outreach.
 
 ### AO1. On-Page and Off-Page SEO Performance Analysis (Alexa Bueno)
 
@@ -1067,7 +1065,7 @@ These techniques are appropriate because they match how donors make decisions an
 | AO | Primary Framework or Model | Main Limitation | Analytical Direction |
 |---|---|---|---|
 | AO1. SEO and Website Optimization | SEO factor framework and search intent | Audit findings alone do not establish which changes improve performance | Prioritize and implement website improvements and link-building outreach; compare search performance before and after changes |
-| AO2. Analytics and Conversion Measurement | Customer Decision Journey and GA4 event-based measurement | Initial event tests have been completed, but baseline data quality and completed donations require further verification | Validate events, establish baseline KPIs, and measure SEO, advertising, and donor outreach outcomes |
+| AO2. Analytics and Conversion Measurement | Customer journey theory and a performance-measurement plan, operationalized in GA4 | Inquiries and donations are partly completed on external platforms, and data volume is small | Validate events, build a measurement matrix, set shared tracking conventions, and compare validated outcomes by channel, page, and period |
 | AO3. Google Ad Grants Campaign Development and Optimization | Technology-Organization-Environment framework, search intent, and Customer Decision Journey | Approval, launch timing, and limited traffic may restrict evaluation | Assess readiness, develop and launch campaigns after approval, and optimize using campaign results |
 | AO4. Content Marketing and Donor Outreach | Donor motivation, narrative transportation, and nonprofit social media engagement | Limited audience size and access to donation records may restrict evaluation | Audit donor content, implement a focused outreach campaign, and evaluate engagement, donation-link clicks, and verified donations where available |
 
@@ -1500,7 +1498,7 @@ Search Console withholds some low-volume queries to protect user privacy, so que
 
 The primary outcomes for AO1 are a prioritized page list, a documented organic search baseline, and before-and-after comparisons of clicks, impressions, CTR, and average position for improved pages.
 
-### AO2. Establish GA4 Conversion and Engagement Measurement to Evaluate Website Performance (Kevin Bachez)
+### AO2. Analytics and Conversion Measurement (Kevin Bachez)
 
 #### Method Used
 
@@ -1727,10 +1725,6 @@ The primary outcomes for AO4 are donation-page sessions, completed donations, an
 # REFERENCES {#sec-references .unnumbered}
 
 ::: {#refs}
-
-Lemon KN, Verhoef PC. Understanding customer experience throughout the customer journey. *J Mark*. 2016;80(6):69-96. doi:10.1509/jm.15.0420
-
-Verhoef PC, Kannan PK, Inman JJ. From multi-channel retailing to omni-channel retailing: introduction to the special issue on multi-channel retailing. *J Retail*. 2015;91(2):174-181. doi:10.1016/j.jretai.2015.02.005
 
 Broder A. A taxonomy of web search. *SIGIR Forum*. 2002;36(2):3-10. doi:10.1145/792550.792552
 
