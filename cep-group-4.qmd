@@ -890,7 +890,7 @@ The evidence supports a validation-first, descriptive approach. Customer journey
 
 AO2 directly supports PO2 by establishing validated measures and reporting procedures. It supports PO4 by providing the baseline and comparison periods used to evaluate AO1, AO3, and AO4, and it supports PO5 by leaving Wellness Ranch with a measurement matrix, documented definitions, and a reporting routine it can maintain after the capstone ends.
 
-### AO3. Prepare, Launch, and Optimize Google Ad Grants Campaigns (Brian)
+### AO3. Google Ad Grants Campaign Development and Optimization (Brian Vuong)
 
 AO3 evaluates Wellness Ranch Equine Assisted Therapy’s Google Ad Grants eligibility and readiness, supports the application and campaign-development process, and uses campaign data to guide launch, compliant management, and ongoing optimization. The objective extends beyond determining basic eligibility. Successful use of the grant also requires a functional website, relevant landing pages, reliable conversion tracking, appropriate keyword and campaign planning, organizational ownership, and continued performance monitoring.
 
@@ -908,7 +908,7 @@ Campaign development and optimization will be interpreted through search intent 
 
 AO3 will use descriptive comparisons and controlled campaign changes after launch. Keyword themes, search terms, advertisements, and landing pages will be compared using impressions, clicks, click-through rate, conversions, and conversion rate. Search-term reviews will identify irrelevant queries for negative keywords, while carefully documented changes to advertisements or landing pages will be evaluated over time. Results will be treated as directional when traffic or conversion volume is limited. Search-platform and third-party estimates will also be interpreted cautiously because these tools may filter low-volume activity or use methods that are not fully transparent [@polfuss2025].
 
-These frameworks will be translated into a readiness assessment. Each category will be classified as **Ready**, **Partially Ready**, or **Not Ready** based on documented evidence. The assessment categories will include:
+These frameworks will be translated into a readiness assessment. Each category will be classified as **Ready**, **Partially Ready**, **Not Ready**, or **Unable to Verify** based on documented evidence.
 
 - Nonprofit and Google Ad Grants eligibility
 - Website and landing-page readiness
@@ -931,19 +931,19 @@ However, several important pieces of evidence still require verification. The te
 
 The available information does not yet establish whether Wellness Ranch has sufficient staff time and expertise to manage an account after the capstone project ends. Campaign management requires continued monitoring, search-term review, keyword updates, ad testing, conversion review, and compliance checks. A campaign may therefore be technically possible but operationally difficult to sustain.
 
-The gathered information should be treated as a preliminary foundation rather than a final readiness assessment. Additional client, account, website, and platform evidence is required before the team can determine whether Wellness Ranch is ready to apply, launch, and maintain a campaign.
+The gathered information should be treated as a preliminary foundation rather than a final readiness assessment. Because Wellness Ranch has already submitted its Google Ad Grants application, additional client, account, website, and platform evidence is required to confirm the application status and determine whether the organization is ready to launch and maintain a campaign after approval.
 
 #### Need for Additional Analysis
 
 Additional analysis is required across three connected phases before AO3 can be completed.
 
-**Phase 1—Readiness and application preparation.** The team should verify Wellness Ranch’s nonprofit documentation and account status against the current official Google Ad Grants requirements [@googleadgrants2026]. The review should document which requirements are satisfied, which require clarification, and which may prevent or delay application. The team should also consult with Wellness Ranch stakeholders to identify the future account owner, approval process, monitoring responsibilities, available staff time, and procedures for maintaining the account after the capstone concludes.
+**Phase 1—Application-status verification and launch readiness.** The team should verify Wellness Ranch’s nonprofit documentation and account status against the current official Google Ad Grants requirements [@googleadgrants2026]. The review should document which requirements are satisfied, which require clarification, and which may prevent or delay application. The team should also consult with Wellness Ranch stakeholders to identify the future account owner, approval process, monitoring responsibilities, available staff time, and procedures for maintaining the account after the capstone concludes.
 
 The team should complete the website and landing-page assessment for pages that may receive advertising traffic. The review should consider page clarity, relevance to search intent, mobile usability, page speed, calls to action, service descriptions, trust information, accessibility information, contact pathways, and donation pathways. Advertisements should not direct users to pages that are unclear, incomplete, or disconnected from the advertisement’s message.
 
 AO3 should coordinate with AO2 to verify the analytics and conversion infrastructure. The team should determine whether GA4 can reliably measure meaningful actions such as successful contact-form submissions, phone clicks, appointment inquiries, donation-button clicks, completed donations, and program-interest actions. Completed outcomes should be distinguished from preliminary engagement signals.
 
-**Phase 2—Campaign development and launch.** After readiness gaps are resolved and the application can proceed, the team should conduct keyword, search-intent, and competitor research. Potential keywords should be grouped into categories such as equine-assisted therapy, mental-health services, location-based searches, donations, volunteering, and educational searches. Each keyword theme should be matched to a relevant landing page, advertisement message, geographic area, and meaningful conversion. The team should also prepare an initial negative-keyword list, campaign and ad-group structure, advertisement copy, launch checklist, and approval process.
+**Phase 2—Campaign development and launch.** After the application outcome is confirmed and readiness gaps are resolved, After readiness gaps are resolved and the application can proceed, the team should conduct keyword, search-intent, and competitor research. Potential keywords should be grouped into categories such as equine-assisted therapy, mental-health services, location-based searches, donations, volunteering, and educational searches. Each keyword theme should be matched to a relevant landing page, advertisement message, geographic area, and meaningful conversion. The team should also prepare an initial negative-keyword list, campaign and ad-group structure, advertisement copy, launch checklist, and approval process.
 
 **Phase 3—Post-launch measurement and optimization.** If campaigns are launched, AO3 should review impressions, clicks, click-through rate, search terms, conversions, conversion rate, landing-page engagement, and compliance status. Search-term analysis should identify irrelevant queries and new keyword opportunities. Advertisement and landing-page changes should be documented and evaluated over an appropriate period. If campaign launch is delayed or unavailable, AO3 should report the implementation barriers, completed preparation work, remaining requirements, and a corrective action and launch-readiness plan.
 
@@ -1597,7 +1597,7 @@ The analysis will distinguish observed interactions from confirmed organizationa
 
 Variables will be included in the final analysis only when the relevant GA4 data are available and sufficiently validated.
 
-### AO3. Prepare, Launch, and Optimize Google Ad Grants Campaigns (Brian)
+### AO3. Google Ad Grants Campaign Development and Optimization (Brian Vuong)
 
 #### Method Used
 
