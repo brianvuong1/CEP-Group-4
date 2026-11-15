@@ -80,7 +80,7 @@ This project addresses four connected digital marketing needs:
 
 2. **Reliable performance measurement.** Initial GA4 testing has confirmed selected website events, but tracking coverage, baseline data quality, and outcome definitions require further review. Donations are the primary organizational outcome, with service inquiries as a secondary outcome. Donation-link clicks must be distinguished from verified completed donations.
 
-3. **Advertising preparation and implementation.** Wellness Ranch has submitted its Google Ad Grants application, with approval pending at the latest documented update. Campaign development, landing-page readiness, measurement validation, and ongoing management procedures are needed to prepare for launch after approval.
+3. **Advertising preparation and implementation.** Wellness Ranch’s Google Ad Grants account has been approved. The remaining work is to confirm account access, coordinate conversion tracking, and prepare for campaign development and launch. Campaign development, landing-page readiness, measurement validation, and ongoing management procedures are needed to prepare for launch after approval.
 
 4. **Donor communication and outreach.** The project will assess existing donor-facing materials and develop a focused outreach campaign through one feasible channel. This work will connect the organization's mission and approved impact stories with clear opportunities to support its fundraising needs.
 
@@ -104,9 +104,9 @@ This objective includes reviewing existing events and conversions, defining base
 
 ### PO3. Obtain and Activate Google Ad Grants
 
-The third project objective is to support Wellness Ranch through Google Ad Grants approval, campaign development, and launch. The application has been submitted, with approval pending at the latest documented update. The team will confirm the outcome, address any remaining requirements, and prepare compliant search campaigns for launch after approval. If approval is delayed or denied, the team will document the barriers and recommend corrective actions.
+The third project objective is to support Wellness Ranch through its approved Google Ad Grants account, campaign development, launch, and optimization. The account has been approved, and the team will confirm account access and ownership, coordinate conversion tracking with AO2, and prepare compliant search campaigns for Spring 2027 launch.
 
-This objective includes improving website and landing-page readiness, validating conversion tracking, researching keywords and audiences, and establishing campaign ownership and management procedures. After launch, the team will review measures such as impressions, clicks, click-through rate, search terms, and conversions to improve performance. The project will also provide documentation and recommendations so Wellness Ranch can maintain the account after the capstone concludes.
+This objective includes developing keyword and search-intent research, organizing ad groups, preparing ad copy, improving landing pages, validating conversion tracking, and establishing campaign ownership and management procedures. After launch, the team will review measures such as impressions, clicks, click-through rate, search terms, and conversions to improve performance. The project will also provide documentation and recommendations so Wellness Ranch can maintain the account after the capstone concludes.
 
 ### PO4. Strengthen Donor Outreach and Evaluate Marketing Outcomes
 
@@ -163,7 +163,7 @@ Assess advertising readiness, develop Google Search campaigns, launch after Ad G
 
 #### How to Address AO3
 
-The team will confirm the outcome of the submitted Google Ad Grants application and document any remaining requirements. Campaign preparation will include keyword research, search-intent classification, ad group organization, ad copy, landing-page selection, and conversion-tracking checks coordinated with AO2.
+The team will document the approved Google Ad Grants account, confirm account access and ownership, and identify any remaining setup or compliance requirements. Campaign preparation will include keyword research, search-intent classification, ad group organization, ad copy, landing-page selection, and conversion-tracking checks coordinated with AO2.
 
 After approval and client authorization, the team will launch campaigns and review impressions, clicks, click-through rates, search terms, and validated conversion activity. Optimization will focus on keyword relevance, negative keywords, ad messaging, landing-page alignment, and applicable program requirements.
 
@@ -303,7 +303,7 @@ The current business objectives include:
 
 5.  **Improve digital measurement.** Evaluate the existing GA4 implementation, define meaningful events and conversions, establish baseline key performance indicators, and determine which channels contribute to donations and inquiries.
 
-6.  **Launch and sustain Google Ad Grants.** Complete the approval process for the submitted Google Ad Grants application, then launch and manage compliant search campaigns with the website, analytics, staffing, and campaign-management capacity needed to sustain them.
+6.  **Launch and sustain Google Ad Grants.** Complete the approval process for the submitted Google Ad Grants application, then launch and manage compliant search campaigns with the website, analytics, staffing, and campaign-management capacity needed to sustain them. Its Google Ad Grants account has been approved, but campaigns have not yet launched. AO3 will prepare campaigns for Spring 2027 and optimize them using campaign results.
 
 7.  **Build sustainable internal capacity.** Establish procedures, documentation, and ownership so that the website, analytics tools, and future advertising campaigns can continue to be managed after the capstone project concludes.
 
@@ -753,7 +753,7 @@ Wellness Ranch also competes with established local programs and with convention
 |---|---|
 | Demand exceeds supply, with long national waiting lists | Declining organic search clicks from AI-generated results |
 | No local competitors using paid search, email, or paid social | Established competitors with older donor and referral bases |
-| Google Ad Grants, with approval pending | Ad Grants requirements without a long-term account owner |
+| Approved Google Ad Grants account available for campaign development | Ad Grants requirements without a long-term account owner |
 | Growing charitable and online giving | Economic pressure on giving and service affordability |
 | Community partners, directories, and local media | Privacy and claims risks in mental-health communications |
 
@@ -931,7 +931,7 @@ However, several important pieces of evidence still require verification. The te
 
 The available information does not yet establish whether Wellness Ranch has sufficient staff time and expertise to manage an account after the capstone project ends. Campaign management requires continued monitoring, search-term review, keyword updates, ad testing, conversion review, and compliance checks. A campaign may therefore be technically possible but operationally difficult to sustain.
 
-The gathered information should be treated as a preliminary foundation rather than a final readiness assessment. Because Wellness Ranch has already submitted its Google Ad Grants application, additional client, account, website, and platform evidence is required to confirm the application status and determine whether the organization is ready to launch and maintain a campaign after approval.
+The gathered information should be treated as a preliminary foundation rather than a final readiness assessment. Because Wellness Ranch has already submitted its Google Ad Grants application, additional client, account, website, and platform evidence is required to confirm the application status and determine whether the organization is ready to launch and maintain a campaign after approval. Wellness Ranch’s Google Ad Grants account has now been approved. The remaining evidence needed for campaign launch includes account access, account ownership, conversion tracking, landing-page readiness, campaign priorities, and long-term management responsibilities.
 
 #### Need for Additional Analysis
 
@@ -943,7 +943,7 @@ The team should complete the website and landing-page assessment for pages that 
 
 AO3 should coordinate with AO2 to verify the analytics and conversion infrastructure. The team should determine whether GA4 can reliably measure meaningful actions such as successful contact-form submissions, phone clicks, appointment inquiries, donation-button clicks, completed donations, and program-interest actions. Completed outcomes should be distinguished from preliminary engagement signals.
 
-**Phase 2—Campaign development and launch.** After the application outcome is confirmed and readiness gaps are resolved, After readiness gaps are resolved and the application can proceed, the team should conduct keyword, search-intent, and competitor research. Potential keywords should be grouped into categories such as equine-assisted therapy, mental-health services, location-based searches, donations, volunteering, and educational searches. Each keyword theme should be matched to a relevant landing page, advertisement message, geographic area, and meaningful conversion. The team should also prepare an initial negative-keyword list, campaign and ad-group structure, advertisement copy, launch checklist, and approval process.
+**Phase 2—Campaign development and launch.** With Ad Grants approval confirmed and readiness gaps are resolved, the team should conduct keyword, search-intent, and competitor research. Potential keywords should be grouped into categories such as equine-assisted therapy, mental-health services, location-based searches, donations, volunteering, and educational searches. Each keyword theme should be matched to a relevant landing page, advertisement message, geographic area, and meaningful conversion. The team should also prepare an initial negative-keyword list, campaign and ad-group structure, advertisement copy, launch checklist, and approval process.
 
 **Phase 3—Post-launch measurement and optimization.** If campaigns are launched, AO3 should review impressions, clicks, click-through rate, search terms, conversions, conversion rate, landing-page engagement, and compliance status. Search-term analysis should identify irrelevant queries and new keyword opportunities. Advertisement and landing-page changes should be documented and evaluated over an appropriate period. If campaign launch is delayed or unavailable, AO3 should report the implementation barriers, completed preparation work, remaining requirements, and a corrective action and launch-readiness plan.
 
@@ -1607,7 +1607,7 @@ AO3 will use a mixed-method, single-case approach that combines a readiness asse
 
 The Technology–Organization–Environment (TOE) framework will organize the readiness evidence. The technological dimension will include the Wix website, landing pages, donation process, analytics, and conversion tracking. The organizational dimension will include leadership support, staff expertise, account ownership, approval procedures, available management time, and long-term campaign-management capacity. The environmental dimension will include Google for Nonprofits requirements, Google Ad Grants policies, nonprofit verification, search conditions, and platform changes. TOE is appropriate because nonprofit digital-marketing adoption is influenced by the interaction of technological compatibility, organizational resources, leadership, staffing, and the external digital environment [@yoon2024]. The evidence will be summarized in a readiness matrix, with each indicator classified as **Ready**, **Partially Ready**, **Not Ready**, or **Unable to Verify**. Supporting evidence and recommended corrective actions will accompany each classification.
 
-**Phase 2—Campaign development and launch (Spring 2027):** If Wellness Ranch is approved for Google Ad Grants, the team will use keyword and search-intent research to develop campaigns and ad groups around priority services, donation needs, target audiences, and geographic service areas. The analysis will guide keyword themes, match types, negative keywords, geographic targeting, ad messages, landing-page selection or improvement, conversion goals, and the campaign launch checklist. The Customer Decision Journey will connect each campaign element to the audience’s movement from awareness and information seeking to a meaningful action, such as submitting an inquiry, requesting an appointment, registering for a program, or making a donation [@vollrath2022]. Campaigns will be launched only after account ownership, conversion tracking, landing pages, and compliance responsibilities are confirmed.
+**Phase 2—Campaign development and launch (Spring 2027):** With Wellness Ranch approved for Google Ad Grants, the team will use keyword and search-intent research to develop campaigns and ad groups around priority services, donation needs, target audiences, and geographic service areas. The analysis will guide keyword themes, match types, negative keywords, geographic targeting, ad messages, landing-page selection or improvement, conversion goals, and the campaign launch checklist. The Customer Decision Journey will connect each campaign element to the audience’s movement from awareness and information seeking to a meaningful action, such as submitting an inquiry, requesting an appointment, registering for a program, or making a donation [@vollrath2022]. Campaigns will be launched only after account ownership, conversion tracking, landing pages, and compliance responsibilities are confirmed.
 
 **Phase 3—Measurement and optimization (Summer 2027):** After launch, Google Ads and GA4 data will be reviewed using descriptive analysis. Measures may include impressions, clicks, click-through rate, search terms, conversions, conversion rate, landing-page engagement, and compliance status. Results will be compared across keywords, search terms, ads, landing pages, and time periods. Where traffic volume permits, the team will document controlled changes to ad messages, keywords, targeting, or landing pages and compare performance before and after each change. Search-term reviews and account notifications will also be used to identify irrelevant traffic, policy risks, and opportunities for continued optimization.
 
@@ -1623,7 +1623,7 @@ The Customer Decision Journey is included because campaign development should re
 
 The readiness matrix provides a transparent way to convert different forms of evidence into an actionable assessment. It will show which requirements have been verified, which gaps can be corrected, and which items remain dependent on the client or Google. Search and keyword data will be interpreted cautiously because platform and third-party estimates may be incomplete, filtered, or methodologically unclear [@polfuss2025]. Keyword findings will therefore be evaluated alongside client knowledge, website evidence, search intent, and organizational priorities.
 
-Descriptive analysis and documented campaign changes are appropriate for the post-launch phase because they allow the team to identify patterns and make practical improvements without overstating causality. The method also fits the project timeline: Fall focuses on readiness and application preparation, Spring on application completion, campaign development, and launch, and Summer on measurement, compliance, testing, and optimization. If campaign traffic or conversion volume is limited, results will be reported as directional evidence rather than proof that Google Ads caused changes in donations, inquiries, or website activity.
+Descriptive analysis and documented campaign changes are appropriate for the post-launch phase because they allow the team to identify patterns and make practical improvements without overstating causality. The method also fits the project timeline: Fall focuses on readiness and application preparation and account approval, Spring on application completion, campaign development, and launch, and Summer on measurement, compliance, testing, and optimization. If campaign traffic or conversion volume is limited, results will be reported as directional evidence rather than proof that Google Ads caused changes in donations, inquiries, or website activity.
 
 #### Variables
 
@@ -1640,7 +1640,7 @@ AO3 begins as a single-case readiness assessment and later incorporates campaign
 - **Post-launch comparison variables:** keyword, search term, advertisement, landing page, campaign or ad group, and time period.
 - **Post-launch outcome measures:** impressions, clicks, click-through rate, conversions, conversion rate, landing-page engagement, irrelevant search traffic, and compliance status.
 
-The primary Fall 2026 outcome will be the overall readiness classification and associated gap analysis. Spring 2027 outputs will include the application status, campaign structure, launch requirements, and initial campaign deployment. Summer 2027 outcomes will focus on performance patterns, compliance, documented tests, and recommendations for continued optimization and long-term account management.
+The primary Fall 2026 outcome will be the overall readiness classification and associated gap analysis. Spring 2027 outputs will include confirmed account access, campaign structure, launch requirements, and initial campaign deployment. Summer 2027 outcomes will focus on performance patterns, compliance, documented tests, and recommendations for continued optimization and long-term account management.
 
 ### AO4. Content Marketing & Donor Outreach (Ron)
 
@@ -1762,7 +1762,7 @@ This project does not use a respondent survey. It uses digital platform data, st
 3. Which platform reports and historical reporting periods are available?
 4. How are donations processed, and can anonymized transaction totals be shared?
 5. Can completed donations be linked reliably to website or campaign activity?
-6. What is the current Google for Nonprofits and Ad Grants application status?
+6. What is the current Google Ads account access, campaign-setup, and long-term management status?
 7. Which email or social media chasnnel is feasible for a donor outreach campaign?
 8. What approval process applies to website changes, advertising, and outreach content?
 9. Which approved impact stories, images, and organizational results may be used?
