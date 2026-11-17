@@ -971,9 +971,9 @@ AO3 will not claim that Google Ad Grants caused changes in donations, inquiries,
 
 This method direction supports PO3 by addressing Google Ad Grants eligibility, readiness, application, campaign development, launch, compliant management, and optimization. It supports PO2 by requiring reliable conversion tracking and performance measurement. It supports PO1 by identifying website and landing-page requirements, and it contributes to PO5 by establishing the procedures, ownership, testing practices, and monitoring routines needed for sustainable digital marketing after the capstone project ends.
 
-### AO4. Content Marketing & Donor Outreach (Ron)
+### AO4. Content Marketing and Donor Outreach (Ron Sabilla)
 
-Develop, implement, and evaluate donor-focused content and outreach, including impact storytelling and email or social media campaigns, to strengthen donor engagement and increase donations for Wellness Ranch Therapy.
+Develop, implement, and evaluate donor-focused content and outreach to strengthen engagement and encourage donations.
 
 #### Existence of Well-established Models
 
@@ -1015,7 +1015,7 @@ Giving mechanisms explain why people donate and what content needs to communicat
 
 #### Research Questions and Hypotheses
 
-These sub-questions support RQ4 in the project's Data Analysis Table:
+The giving, storytelling, social media, and decision-journey frameworks above inform the following research questions:
 
 - **RQ4.1:** Which message types (need, ask, or impact) and formats (story-based or informational) generate the highest engagement and click-through to the donation page [@bekkersWiepking2011; @small2007; @greenBrock2000]?
 - **RQ4.2:** Do posts with a clear call to action outperform information-only posts in driving donation-page visits [@lovejoySaxton2012]?
@@ -1037,11 +1037,11 @@ Initial data about Wellness Ranch's own outreach show both opportunities and gap
 
 #### Need for Additional Analysis
 
-Additional analysis is needed before and after implementation. First, a content and channel audit will review Wellness Ranch's existing social media, email activity, donation page, and any past campaign results to establish a baseline. Second, a client interview will confirm active channels, email list status, donation processing, approval procedures, and which stories and figures can be used. Third, all campaign links will be tagged with UTM parameters, coordinated with AO2, so that donation-page visits and completed donations can be traced to specific content and channels. Fourth, campaign content will be tested one element at a time, using two-proportion z-tests or Fisher's exact test when volume allows and directional reporting when it does not. Finally, results will be compared against the pre-campaign baseline, with paid search traffic from AO3 separated by source so outreach results are not mixed with advertising results.
+Additional analysis is needed before and after implementation. First, a content and channel audit will review Wellness Ranch's existing social media, email activity, donation page, and any past campaign results to establish a baseline. Second, a client interview will confirm active channels, email list status, donation processing, approval procedures, and which stories and figures can be used. Third, all campaign links will be tagged with UTM parameters, coordinated with AO2, so that donation-page visits can be traced to specific content and channels. Completed donations will be taken from donation platform records and attributed to the campaign only when a reliable link exists. Fourth, campaign content will be tested one element at a time, using two-proportion z-tests or Fisher's exact test when volume allows and directional reporting when it does not. Finally, results will be compared against the pre-campaign baseline, with paid search traffic from AO3 separated by source so outreach results are not mixed with advertising results.
 
 #### Assessment and Affirmation of Analytics Objectives
 
-AO4 is affirmed as a necessary part of the project. Donations are the client's primary website outcome, and the other three AOs improve how people find and move through the website without directly asking anyone to give. AO4 fills that gap by creating the content and outreach that turn awareness into support.
+AO4 is affirmed, and its wording now matches Chapter 1. Impact storytelling and email or social media campaigns remain the planned tactics, with one channel selected with the client. Donations are the client's primary website outcome, and the other three AOs improve how people find and move through the website without directly asking anyone to give. AO4 fills that gap by creating the content and outreach that turn awareness into support.
 
 The analytical approach combines a content and channel audit, a donor content library built around need, ask, and impact, a focused outreach campaign tied to a giving moment, stage-based measurement from reach to completed donation, and controlled testing of content elements. Data will come from social media platform analytics, the email platform's reports, GA4 campaign data through UTM tracking, and donation records where available. AO4 will use descriptive comparisons against the baseline rather than claiming that a campaign caused a change in donations, since seasonality, year-end giving patterns, and other activities may also affect results.
 
@@ -1642,7 +1642,7 @@ AO3 begins as a single-case readiness assessment and later incorporates campaign
 
 The primary Fall 2026 outcome will be the overall readiness classification and associated gap analysis. Spring 2027 outputs will include confirmed account access, campaign structure, launch requirements, and initial campaign deployment. Summer 2027 outcomes will focus on performance patterns, compliance, documented tests, and recommendations for continued optimization and long-term account management.
 
-### AO4. Content Marketing & Donor Outreach (Ron)
+### AO4. Content Marketing and Donor Outreach (Ron Sabilla)
 
 #### Method Used
 
@@ -1662,8 +1662,8 @@ If the client cannot provide an email list or approve stories in time, AO4 will 
 
 | KPI | Definition | Data Source | Role |
 |---|---|---|---|
-| Completed donations | Number (and amount, where available) of completed gifts from campaign traffic | Donation platform records, GA4 key event | Primary |
-| Donation conversion rate | Completed donations divided by donation-page sessions from the campaign | GA4, donation platform | Primary |
+| Completed donations | Number (and amount, where available) of completed gifts during the campaign period, verified through platform records | Donation platform records | Primary |
+| Donation conversion rate | Completed donations divided by campaign donation-page sessions; reported only if donations can be linked reliably to those sessions | GA4, donation platform | Primary (conditional) |
 | Donation-page sessions | Visits to the donation page from UTM-tagged campaign links | GA4 | Primary |
 | Click-through rate | Link clicks divided by emails delivered or post reach | Email platform or social analytics | Secondary |
 | Engagement rate | Likes, comments, shares, and saves divided by reach | Social analytics | Diagnostic |
