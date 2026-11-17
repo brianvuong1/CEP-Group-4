@@ -767,8 +767,9 @@ This section evaluates the research frameworks and models that inform each analy
 
 Although each objective is assigned to one team member, the four AOs share a common foundation. Each one connects how people search for and evaluate Wellness Ranch, whether as prospective clients, families, donors, or partners, to measurable outcomes on the website, in Google Ads, or on donation platforms. AO1 focuses on whether the organization can be found in organic search, AO2 on whether meaningful actions can be measured reliably, AO3 on preparing, launching, and optimizing Google Ad Grants campaigns, and AO4 on developing and evaluating donor-focused content and outreach.
 
-### AO1. On-Page and Off-Page SEO Performance Analysis (Alexa Bueno)
+### AO1. SEO and Website Optimization (Alexa Bueno)
 
+Identify and prioritize technical, on-page, off-page, and local SEO opportunities, implement feasible improvements, and evaluate changes in organic search visibility and website performance.
 Using data from the Semrush site audit (SEO Fix Tracker), backlink audit, and Google Search Console, measure Wellness Ranch Therapy's baseline SEO performance during Fall 2026. Measures will include the number and type of technical and on-page issues per page, organic impressions, clicks, click-through rate, and average search position by page and query, and the number of referring domains linking to the website. Pages will then be ranked by issue severity and importance to the organization to produce a prioritized list of pages for improvement and a baseline for measuring the impact of those improvements in Spring 2027.
 
 #### Existence of Well-established Models
