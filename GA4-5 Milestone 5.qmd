@@ -1,0 +1,859 @@
+---
+title: "GA4-5 Milestone 5: Analytics Mart v1"
+subtitle: "Wellness Ranch Equine Assisted Therapy"
+author: "CEP Group 4: Kevin B, Alexa B, Ron S, Brian V"
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-copy: true
+    code-overflow: wrap
+    embed-resources: true
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: setup
+#| include: false
+library(DBI)
+library(bigrquery)
+bq_auth(email = TRUE)
+
+con <- dbConnect(
+  bigquery(),
+  project = "wellness-ranch-analytics",
+  dataset = "ga4_mart",
+  billing = "wellness-ranch-analytics"
+)
+
+knitr::opts_chunk$set(connection = "con", max.print = 30)
+```
+
+# Overview {.unnumbered}
+
+In earlier milestones, every analysis started from the raw GA4 export (`analytics_558215559.events_*`). That meant re-writing the same `UNNEST` subqueries, session keys, landing-page logic and `session_engaged` type fix each time (see the GA4-4 SQL Pack). The Analytics Mart writes that logic **once**, in three BigQuery objects, so every Looker Studio chart and every team analysis uses the same definitions of a session, a lead and a channel.
+
+```{mermaid}
+flowchart LR
+  A["Raw GA4 export<br/>analytics_558215559.events_*<br/>(nested, event grain)"] --> B["stg_events_flat<br/>VIEW · 1 row per event"]
+  B --> C["fct_sessions<br/>TABLE · 1 row per session"]
+  C --> D["agg_daily_kpis<br/>VIEW · day × channel × device × geo × landing page"]
+  D --> E["Looker Studio<br/>KPI scorecards & trends"]
+  C --> F["Ad-hoc analysis<br/>(exact users, funnels)"]
+```
+
+| Object | Type | Grain | Main use |
+|---|---|---|---|
+| `ga4_mart.stg_events_flat` | View | 1 row per event | The only place `event_params` is unnested |
+| `ga4_mart.fct_sessions` | Table (partitioned + clustered) | 1 row per session | Core fact table: attribution, landing page, engagement, lead funnel, outbound conversions |
+| `ga4_mart.agg_daily_kpis` | View | 1 row per date × channel × source/medium × device × country × region × landing page × user type | Looker Studio source, with no UNNEST and additive metrics only |
+
+**Data window for v1:** daily tables `20261104`–`20261117`. The BigQuery export started on November 4, 2026, so earlier dates are not available in BigQuery. To extend the window, change the end date in `stg_events_flat` and rebuild `fct_sessions`.
+
+# Deliverable 1 — Mart Design Brief
+
+## Business questions and KPIs supported (from Milestone 1)
+
+Wellness Ranch is a nonprofit therapy provider. Its website's job is to turn visitors into **inquiries (leads)**, **intake / booking actions**, **event sign-ups** and **donations**. Google Ad Grants is planned but not live yet, so the mart also needs a clean channel baseline before that launch.
+
+| # | Business question | KPI(s) | Mart object |
+|---|---|---|---|
+| Q1 | Which channels (Instagram, Google organic, direct, referral partners) bring visitors who engage and submit leads? | Sessions, Engagement rate, Lead sessions, Lead rate by channel | `agg_daily_kpis` |
+| Q2 | Which landing pages turn visits into inquiries? | Sessions, Engagement rate, Lead rate by landing page | `agg_daily_kpis` |
+| Q3 | Where do visitors drop off between arriving, engaging, starting the contact form and submitting a lead? | Scroll rate → Form-start rate → Lead rate | `fct_sessions`, `agg_daily_kpis` |
+| Q4 | How often do visitors take off-site actions (therapy intake portal, Eventbrite events, donations)? | Intake-click sessions, Event-click sessions, Donation-intent sessions, Key-action rate | `agg_daily_kpis` |
+| Q5 | Do mobile and desktop visitors behave differently? (Mobile was about 88% of users in GA4-2.) | Engagement rate, Avg. engagement time, Lead rate by device | `agg_daily_kpis` |
+| Q6 | What is the pre-Ad Grants baseline we will compare paid search against? | Daily sessions, lead sessions, key-action sessions by channel | `agg_daily_kpis` |
+
+**Standard KPI definitions (one definition for the whole team):**
+
+| KPI | Formula |
+|---|---|
+| Sessions | count of distinct `session_key` |
+| Engagement rate | engaged sessions ÷ sessions |
+| Lead sessions | sessions with ≥1 `generate_lead` event |
+| Lead rate | lead sessions ÷ sessions |
+| Form-start rate | sessions with ≥1 `form_start` ÷ sessions |
+| Key-action sessions | sessions with a lead, an intake-portal click **or** a donation action |
+| Key-action rate | key-action sessions ÷ sessions |
+| Avg. engagement time | total engagement seconds ÷ sessions |
+
+## Chosen grain
+
+- **Core fact table — `fct_sessions`: session-level.** One row per session, keyed by `session_key = user_pseudo_id || '.' || ga_session_id`.
+- **Reporting view — `agg_daily_kpis`:** one row per `session_date × channel_group × source_medium × device_category × country × region × landing_page_path × user_type`. It is built only from `fct_sessions`.
+- **Staging view — `stg_events_flat`:** event-level, enriched. A building block, not used directly in dashboards.
+
+## Why session grain is appropriate
+
+1. **Our main KPI needs it.** In the mart, 9 `generate_lead` events fall in only **7 sessions**. V5b found a lead firing twice within 60 seconds in the same session, and the GA4-4 SQL Pack saw 12 lead events for the same period because it also counted cookieless events. Counting *sessions with a lead* is robust to duplicate fires and gives one consistent conversion number.
+2. **Every attribute we report on belongs to the session.** Channel, source/medium, landing page, device and new vs. returning are all decided once per session. Deciding them once in SQL stops two team members from getting different answers.
+3. **It aggregates cleanly.** Session rows sum correctly to day, channel, device, region or landing page. Event grain double-counts (one session = many rows). User grain loses landing page and session channel.
+4. **It fits our volume.** About 30–70 sessions/day means the mart is tiny, cheap to query and fast in Looker Studio.
+
+## Scope for v1
+
+| In scope | Out of scope (future versions) |
+|---|---|
+| Web events from the GA4 export, Nov 4 – Nov 17, 2026 | Data before Nov 4 (export not enabled; only in the GA4 UI) |
+| Session KPIs: traffic, engagement, scroll → form start → lead funnel | Google Ads / Ad Grants cost and click data (not launched) |
+| Outbound key actions: intake portal (clientsecure.me), Eventbrite, GoFundMe / `donate_click`, Jotform | What happens *after* the click on external sites (cross-domain completions, Risk 4) |
+| Breakdowns: date, channel, source/medium, campaign, landing page, device, browser, OS, country/region/city, new vs. returning | CRM / intake records for lead quality; user lifetime and cohorts |
+| Rebuild by re-running the `fct_sessions` statement | Consent-mode modeled data; intraday (`events_intraday_*`) tables |
+
+## Data quality finding that shapes v1
+
+Validation (V6) found that from **November 8, 2026**, 81–97% of events per day arrive **without a `user_pseudo_id` or `ga_session_id`**, while total event volume stays normal (244–284 events/day vs. 306–471 before). This is the pattern of **consent mode cookieless pings**: visitors who decline cookies still send events, but GA4 cannot link them into users or sessions. The likely cause is a cookie banner or privacy setting turned on around Nov 7–8 (GA4-2, Risk 3).
+
+**What this means for the mart:**
+
+- Session-based KPIs from Nov 8 onward reflect **only visitors who accepted cookies**, about 2–11 sessions/day instead of 45–70. The drop is in measurement, not real traffic.
+- **Nov 4–7** is the only window with near-complete session data, so it is the baseline for rates (engagement, lead rate).
+- Rates after Nov 8 describe consenting visitors only and should not be compared directly with Nov 4–7.
+- Event-level counts (e.g. `page_view` totals in the raw export) are still usable as a rough traffic trend.
+- **Next step for the team:** confirm whether a consent banner was added on the Wix site around Nov 7–8.
+
+# Deliverable 2 — BigQuery Views and Tables (SQL)
+
+> **How to build:** Run the three statements below **once, in order**, in the BigQuery console. They are shown here with `eval: false` so rendering this report does not rebuild the mart. The `ga4_mart` dataset must be in the **same location** as `analytics_558215559`.
+>
+> `CREATE SCHEMA IF NOT EXISTS \`wellness-ranch-analytics.ga4_mart\` OPTIONS(location = 'US');`  *(change `US` if the export dataset is elsewhere)*
+
+## Object 1: `ga4_mart.stg_events_flat` (VIEW, event grain)
+
+```sql
+-- =====================================================================
+-- stg_events_flat
+-- Grain   : one row per raw GA4 event (nothing dropped, nothing aggregated)
+-- Source  : wellness-ranch-analytics.analytics_558215559.events_*
+-- Purpose : flatten every event_param the mart needs, so no downstream
+--           query ever has to UNNEST.
+-- Window  : daily tables 20261104–20261117 (BETWEEN on a date string also
+--           excludes events_intraday_* tables).
+-- =====================================================================
+CREATE OR REPLACE VIEW `wellness-ranch-analytics.ga4_mart.stg_events_flat`
+OPTIONS (description = 'Wellness Ranch GA4 events with key event_params flattened. One row per event.')
+AS
+WITH base AS (
+  SELECT
+    -- ---------- time ----------
+    PARSE_DATE('%Y%m%d', event_date)                 AS event_date,   -- property time zone
+    event_timestamp,                                                  -- microseconds, UTC
+    TIMESTAMP_MICROS(event_timestamp)                AS event_ts,
+    event_name,
+
+    -- ---------- identity / sessionization ----------
+    user_pseudo_id,
+    (SELECT value.int_value    FROM UNNEST(event_params) WHERE key = 'ga_session_id')        AS ga_session_id,
+    (SELECT value.int_value    FROM UNNEST(event_params) WHERE key = 'ga_session_number')    AS ga_session_number,
+
+    -- ---------- page ----------
+    (SELECT value.string_value FROM UNNEST(event_params) WHERE key = 'page_location')        AS page_location,
+    (SELECT value.string_value FROM UNNEST(event_params) WHERE key = 'page_title')           AS page_title,
+    (SELECT value.string_value FROM UNNEST(event_params) WHERE key = 'page_referrer')        AS page_referrer,
+
+    -- ---------- engagement ----------
+    (SELECT value.int_value    FROM UNNEST(event_params) WHERE key = 'engagement_time_msec') AS engagement_time_msec,
+    -- session_engaged is a STRING on most events and an INT on some in this
+    -- property (1,789 vs 224 events, GA4-4); read both forms.
+    (SELECT COALESCE(value.int_value, SAFE_CAST(value.string_value AS INT64))
+       FROM UNNEST(event_params) WHERE key = 'session_engaged')                              AS session_engaged,
+    (SELECT value.int_value    FROM UNNEST(event_params) WHERE key = 'percent_scrolled')     AS percent_scrolled,
+
+    -- ---------- outbound clicks (enhanced measurement) ----------
+    (SELECT value.string_value FROM UNNEST(event_params) WHERE key = 'outbound')             AS outbound,
+    (SELECT value.string_value FROM UNNEST(event_params) WHERE key = 'link_domain')          AS link_domain,
+    (SELECT value.string_value FROM UNNEST(event_params) WHERE key = 'link_url')             AS link_url,
+
+    -- ---------- forms ----------
+    (SELECT COALESCE(value.string_value, CAST(value.int_value AS STRING))
+       FROM UNNEST(event_params) WHERE key = 'form_id')                                      AS form_id,
+
+    -- ---------- session-scoped attribution (last non-direct click) ----------
+    session_traffic_source_last_click.manual_campaign.source        AS stslc_source,
+    session_traffic_source_last_click.manual_campaign.medium        AS stslc_medium,
+    session_traffic_source_last_click.manual_campaign.campaign_name AS stslc_campaign,
+
+    -- ---------- event-scoped collected source (fallback) ----------
+    collected_traffic_source.manual_source           AS cts_source,
+    collected_traffic_source.manual_medium           AS cts_medium,
+    collected_traffic_source.manual_campaign_name    AS cts_campaign,
+
+    -- ---------- user-scoped FIRST-touch acquisition ----------
+    traffic_source.source                            AS first_user_source,
+    traffic_source.medium                            AS first_user_medium,
+    traffic_source.name                              AS first_user_campaign,
+
+    -- ---------- device / geo ----------
+    device.category                                  AS device_category,
+    device.operating_system                          AS operating_system,
+    device.web_info.browser                          AS browser,
+    geo.country                                      AS country,
+    geo.region                                       AS region,
+    geo.city                                         AS city
+  FROM `wellness-ranch-analytics.analytics_558215559.events_*`
+  WHERE _TABLE_SUFFIX BETWEEN '20261104' AND '20261117'
+)
+SELECT
+  base.*,
+  -- Globally unique session ID (ga_session_id is unique only within a user).
+  -- NULL when ga_session_id is missing; those events are excluded downstream (see V4).
+  CONCAT(user_pseudo_id, '.', CAST(ga_session_id AS STRING))           AS session_key,
+  -- URL without query string / fragment (same rule as GA4-4 Query 4 & 8)
+  REGEXP_REPLACE(page_location, r'[?#].*$', '')                        AS page_url,
+  -- Path only, e.g. '/volunteer'; '/' for the homepage
+  COALESCE(REGEXP_EXTRACT(page_location, r'^https?://[^/]+(/[^?#]*)'), '/') AS page_path
+FROM base;
+```
+
+## Object 2: `ga4_mart.fct_sessions` (TABLE, session grain)
+
+```sql
+-- =====================================================================
+-- fct_sessions
+-- Grain   : one row per session (PK = session_key)
+-- Source  : ga4_mart.stg_events_flat
+-- Refresh : re-run this statement (or schedule it daily)
+-- Rules   : session_date   = date of the session's FIRST event
+--           landing page   = first page_view in the session
+--           session source = first event with session_traffic_source_last_click,
+--                            falling back to collected_traffic_source
+--           device / geo   = from the session's first event
+--           funnel flags   = TRUE if the event happened at least once
+-- =====================================================================
+CREATE OR REPLACE TABLE `wellness-ranch-analytics.ga4_mart.fct_sessions`
+PARTITION BY session_date
+CLUSTER BY channel_group, device_category, landing_page_path
+OPTIONS (description = 'One row per Wellness Ranch website session: attribution, landing page, device, geo, engagement, lead funnel and outbound key actions.')
+AS
+WITH ev AS (
+  SELECT *
+  FROM `wellness-ranch-analytics.ga4_mart.stg_events_flat`
+  WHERE ga_session_id IS NOT NULL
+),
+
+-- 1) Session metrics (single pass)
+sess AS (
+  SELECT
+    session_key,
+    ANY_VALUE(user_pseudo_id)                                     AS user_pseudo_id,
+    ANY_VALUE(ga_session_id)                                      AS ga_session_id,
+    MAX(ga_session_number)                                        AS ga_session_number,
+    MIN(event_date)                                               AS session_date,
+    MIN(event_ts)                                                 AS session_start_ts,
+    MAX(event_ts)                                                 AS session_end_ts,
+    COUNT(*)                                                      AS events,
+    COUNTIF(event_name = 'session_start')                         AS session_start_events,
+    COUNTIF(event_name = 'page_view')                             AS page_views,
+    COUNT(DISTINCT IF(event_name = 'page_view', page_path, NULL)) AS unique_pages,
+    SUM(COALESCE(engagement_time_msec, 0)) / 1000                 AS engagement_time_sec,
+    MAX(COALESCE(session_engaged, 0))                             AS session_engaged_flag,
+    -- on-site lead funnel
+    COUNTIF(event_name = 'scroll')                                AS scroll_events,
+    COUNTIF(event_name = 'form_start')                            AS form_start_events,
+    COUNTIF(event_name = 'generate_lead')                         AS lead_events,
+    COUNTIF(event_name = 'donate_click')                          AS donate_click_events,
+    -- outbound key actions
+    COUNTIF(event_name = 'click' AND outbound = 'true')           AS outbound_clicks,
+    COUNTIF(event_name = 'click' AND outbound = 'true'
+            AND REGEXP_CONTAINS(link_domain, r'clientsecure\.me$'))  AS intake_portal_clicks,
+    COUNTIF(event_name = 'click' AND outbound = 'true'
+            AND REGEXP_CONTAINS(link_domain, r'eventbrite\.'))       AS eventbrite_clicks,
+    COUNTIF(event_name = 'click' AND outbound = 'true'
+            AND REGEXP_CONTAINS(link_domain, r'gofund\.me$'))        AS gofundme_clicks,
+    COUNTIF(event_name = 'click' AND outbound = 'true'
+            AND REGEXP_CONTAINS(link_domain, r'jotform\.com$'))      AS jotform_clicks
+  FROM ev
+  GROUP BY session_key
+),
+
+-- 2) Device / geo / first-touch from the session's first event
+first_event AS (
+  SELECT
+    session_key,
+    ARRAY_AGG(
+      STRUCT(device_category, operating_system, browser, country, region, city,
+             first_user_source, first_user_medium)
+      ORDER BY event_timestamp LIMIT 1
+    )[SAFE_OFFSET(0)] AS fe
+  FROM ev
+  GROUP BY session_key
+),
+
+-- 3) Landing page = first page_view
+landing AS (
+  SELECT
+    session_key,
+    ARRAY_AGG(
+      STRUCT(page_path, page_url, page_title)
+      ORDER BY event_timestamp LIMIT 1
+    )[SAFE_OFFSET(0)] AS lp
+  FROM ev
+  WHERE event_name = 'page_view'
+  GROUP BY session_key
+),
+
+-- 4) Session source / medium / campaign = first event that carries one
+traffic AS (
+  SELECT
+    session_key,
+    ARRAY_AGG(
+      CASE
+        WHEN stslc_source IS NOT NULL OR stslc_medium IS NOT NULL
+          THEN STRUCT(stslc_source AS source, stslc_medium AS medium, stslc_campaign AS campaign)
+        WHEN cts_source IS NOT NULL OR cts_medium IS NOT NULL
+          THEN STRUCT(cts_source AS source, cts_medium AS medium, cts_campaign AS campaign)
+      END
+      IGNORE NULLS
+      ORDER BY event_timestamp LIMIT 1
+    )[SAFE_OFFSET(0)] AS tsrc
+  FROM ev
+  GROUP BY session_key
+),
+
+joined AS (
+  SELECT s.*, f.fe, l.lp, t.tsrc
+  FROM sess s
+  LEFT JOIN first_event f USING (session_key)
+  LEFT JOIN landing     l USING (session_key)
+  LEFT JOIN traffic     t USING (session_key)
+)
+
+SELECT
+  -- ---------- keys & time ----------
+  session_date,
+  session_key,
+  user_pseudo_id,
+  ga_session_id,
+  ga_session_number,
+  IF(ga_session_number = 1, 'new', 'returning')                  AS user_type,
+  session_start_ts,
+  TIMESTAMP_DIFF(session_end_ts, session_start_ts, SECOND)       AS session_duration_sec,
+
+  -- ---------- landing page ----------
+  lp.page_path                                                   AS landing_page_path,
+  lp.page_url                                                    AS landing_page_url,
+  lp.page_title                                                  AS landing_page_title,
+
+  -- ---------- acquisition (session-scoped) ----------
+  tsrc.source                                                    AS session_source,
+  tsrc.medium                                                    AS session_medium,
+  tsrc.campaign                                                  AS session_campaign,
+  CONCAT(COALESCE(tsrc.source, '(not set)'), ' / ',
+         COALESCE(tsrc.medium, '(not set)'))                     AS source_medium,
+  CASE
+    WHEN tsrc.source IS NULL AND tsrc.medium IS NULL
+      THEN 'Unassigned'
+    WHEN LOWER(COALESCE(tsrc.source, '(not set)')) = '(not set)'
+         AND LOWER(COALESCE(tsrc.medium, '(not set)')) = '(not set)'
+      THEN 'Direct'   -- export stores direct sessions as (not set)/(not set) (V3)
+    WHEN LOWER(tsrc.source) = '(direct)'
+         AND LOWER(COALESCE(tsrc.medium, '(none)')) IN ('(none)', '(not set)')
+      THEN 'Direct'
+    WHEN REGEXP_CONTAINS(LOWER(COALESCE(tsrc.medium, '')), r'^(cpc|ppc|paid.*)$')
+      THEN 'Paid Search'                                   -- reserved for Ad Grants
+    WHEN LOWER(COALESCE(tsrc.medium, '')) = 'organic'
+      THEN 'Organic Search'
+    WHEN REGEXP_CONTAINS(LOWER(COALESCE(tsrc.medium, '')), r'^(social|social-network|social-media|social_media|sm)$')
+      OR REGEXP_CONTAINS(LOWER(COALESCE(tsrc.source, '')),
+           r'^(ig|fb)$|instagram|facebook|linktr\.ee|tiktok|linkedin|youtube|pinterest|twitter|^t\.co$|^x\.com$')
+      THEN 'Organic Social'                                -- ig / social, facebook.com / referral, linktr.ee
+    WHEN LOWER(COALESCE(tsrc.medium, '')) = 'ai-assistant'
+      OR REGEXP_CONTAINS(LOWER(COALESCE(tsrc.source, '')), r'chatgpt|openai|perplexity|gemini|copilot|claude\.ai')
+      THEN 'AI Assistant'
+    WHEN LOWER(COALESCE(tsrc.medium, '')) = 'email'
+      THEN 'Email'
+    WHEN LOWER(COALESCE(tsrc.medium, '')) = 'referral'
+      THEN 'Referral'                                      -- partner sites, e.g. ieautism.org
+    ELSE 'Other'
+  END                                                            AS channel_group,
+
+  -- ---------- acquisition (user-scoped, first touch) ----------
+  fe.first_user_source,
+  fe.first_user_medium,
+
+  -- ---------- device / geo ----------
+  fe.device_category,
+  fe.operating_system,
+  fe.browser,
+  fe.country,
+  fe.region,
+  fe.city,
+
+  -- ---------- engagement ----------
+  events,
+  session_start_events,
+  page_views,
+  unique_pages,
+  engagement_time_sec,
+  session_engaged_flag = 1                                       AS is_engaged_session,
+
+  -- ---------- on-site lead funnel ----------
+  scroll_events,
+  form_start_events,
+  lead_events,
+  scroll_events > 0                                              AS has_scroll,
+  form_start_events > 0                                          AS has_form_start,
+  lead_events > 0                                                AS has_lead,
+
+  -- ---------- outbound key actions ----------
+  outbound_clicks,
+  intake_portal_clicks,
+  eventbrite_clicks,
+  jotform_clicks,
+  gofundme_clicks,
+  donate_click_events,
+  intake_portal_clicks > 0                                       AS has_intake_click,
+  eventbrite_clicks > 0                                          AS has_event_click,
+  (donate_click_events + gofundme_clicks) > 0                    AS has_donation_intent,
+  (lead_events + intake_portal_clicks + donate_click_events + gofundme_clicks) > 0
+                                                                 AS has_key_action
+FROM joined;
+```
+
+## Object 3: `ga4_mart.agg_daily_kpis` (VIEW, daily dimensional grain)
+
+```sql
+-- =====================================================================
+-- agg_daily_kpis
+-- Grain   : one row per session_date × channel_group × source_medium
+--           × device_category × country × region × landing_page_path × user_type
+-- Source  : ga4_mart.fct_sessions (no UNNEST, no raw events)
+-- Rule    : store numerators and denominators only; build rates in
+--           Looker Studio as SUM()/SUM(). Every metric is additive
+--           EXCEPT `users`.
+-- =====================================================================
+CREATE OR REPLACE VIEW `wellness-ranch-analytics.ga4_mart.agg_daily_kpis`
+OPTIONS (description = 'Daily additive KPI components for Looker Studio. Build rates as SUM()/SUM().')
+AS
+SELECT
+  session_date,
+  channel_group,
+  source_medium,
+  device_category,
+  country,
+  region,
+  landing_page_path,
+  user_type,
+
+  COUNT(*)                          AS sessions,
+  COUNT(DISTINCT user_pseudo_id)    AS users,                    -- NOT additive across rows
+  COUNTIF(is_engaged_session)       AS engaged_sessions,
+  SUM(page_views)                   AS page_views,
+  SUM(engagement_time_sec)          AS engagement_time_sec,
+  COUNTIF(has_scroll)               AS scroll_sessions,
+  COUNTIF(has_form_start)           AS form_start_sessions,
+  COUNTIF(has_lead)                 AS lead_sessions,
+  SUM(lead_events)                  AS lead_events,              -- includes duplicates; for QA only
+  COUNTIF(has_intake_click)         AS intake_click_sessions,
+  COUNTIF(has_event_click)          AS event_click_sessions,
+  COUNTIF(has_donation_intent)      AS donation_intent_sessions,
+  COUNTIF(has_key_action)           AS key_action_sessions
+FROM `wellness-ranch-analytics.ga4_mart.fct_sessions`
+GROUP BY session_date, channel_group, source_medium, device_category,
+         country, region, landing_page_path, user_type;
+```
+
+### Looker Studio calculated fields (data source = `agg_daily_kpis`)
+
+| KPI | Calculated field |
+|---|---|
+| Engagement rate | `SUM(engaged_sessions) / SUM(sessions)` |
+| Scroll rate | `SUM(scroll_sessions) / SUM(sessions)` |
+| Form-start rate | `SUM(form_start_sessions) / SUM(sessions)` |
+| Lead rate | `SUM(lead_sessions) / SUM(sessions)` |
+| Form completion rate | `SUM(lead_sessions) / SUM(form_start_sessions)` |
+| Key-action rate | `SUM(key_action_sessions) / SUM(sessions)` |
+| Avg. engagement time (sec) | `SUM(engagement_time_sec) / SUM(sessions)` |
+| Exact users | Use `fct_sessions` with `COUNT_DISTINCT(user_pseudo_id)` |
+
+## Reusability: before vs. after
+
+**Before (GA4-4 Query 8, landing-page performance: ~45 lines, 3 CTEs, 3 UNNESTs):** extract session ID, page URL and engagement flag from `event_params`, build the landing page with `ARRAY_AGG`, flag outcomes per session, then join.
+
+**After (same question on the mart):**
+
+```{sql}
+--| label: reuse-demo
+SELECT
+  landing_page_path,
+  SUM(sessions)                                                AS sessions,
+  ROUND(SAFE_DIVIDE(SUM(engaged_sessions), SUM(sessions)), 3)  AS engagement_rate,
+  SUM(lead_sessions)                                           AS lead_sessions,
+  ROUND(100 * SAFE_DIVIDE(SUM(lead_sessions), SUM(sessions)), 1) AS lead_rate_pct
+FROM `wellness-ranch-analytics.ga4_mart.agg_daily_kpis`
+GROUP BY landing_page_path
+ORDER BY sessions DESC
+LIMIT 15;
+```
+
+# Deliverable 3 — Data Dictionary
+
+## Caveats that apply to every object
+
+- **Short window.** The BigQuery export began Nov 4, 2026, so v1 covers two weeks. The GA4 UI history (from about Oct 7) is **not** in the mart. With roughly 10 leads a week, rates on small slices (one landing page, tablet users) are directional only (Risk 6).
+- **Export ≠ GA4 UI.** The export has no thresholding and no HyperLogLog estimation. Channel rules are our own, not GA4's default channel grouping. Mart numbers will be close to, but not identical to, the GA4 UI.
+- **Consent and blockers.** Visitors who decline cookies or use ad blockers are missing or partly missing. Modeled data is never in the export (Risk 3).
+- **Double tagging ruled out.** GA4-4 saw 280 `first_visit` events for 170 users and suspected a duplicate tag. V5a shows that among identified users, `first_visit` fires exactly once per user. The extra events were cookieless pings from Nov 8 onward, which have no user ID. Lead events can still fire twice in one session (V5b found 1 near-duplicate), so lead KPIs use **session flags** (`has_lead`), not event counts.
+- **Off-site completions are not visible.** An intake-portal, Eventbrite, Jotform or GoFundMe click shows intent only. Whether the visitor completed the booking, registration or donation happens on another domain (Risk 4).
+- **Key-event setting does not matter here.** `generate_lead` was made a key event on Oct 16. The export contains the event either way, so the mart counts it consistently across the whole window.
+- **Identity.** `user_pseudo_id` identifies a browser cookie, not a person.
+- **Time zones.** `event_date` / `session_date` use the property time zone. `*_ts` fields are UTC.
+- **Consent-mode break on Nov 8, 2026.** From Nov 8, 81–97% of events have no user or session ID (V6). Those events cannot be placed in `fct_sessions`, so session counts, users and lead sessions after Nov 7 are heavily undercounted. Use Nov 4–7 for baseline rates and label later periods "consented visitors only."
+
+## `stg_events_flat` (event grain)
+
+| Field | Type | Definition | Caveats |
+|---|---|---|---|
+| `event_date` | DATE | Date of the event (property time zone) | Parsed from `YYYYMMDD` |
+| `event_timestamp` / `event_ts` | INT64 / TIMESTAMP | Event time (µs since epoch / timestamp) | UTC; used to order events within a session |
+| `event_name` | STRING | GA4 event (`page_view`, `scroll`, `form_start`, `generate_lead`, `click`, `donate_click`, …) | — |
+| `user_pseudo_id` | STRING | Pseudonymous browser ID | Not a person; resets when cookies are cleared |
+| `ga_session_id` | INT64 | Session ID | Unique only within a user; NULL on 55% of events in v1, almost all cookieless pings from Nov 8 onward (V4, V6) |
+| `ga_session_number` | INT64 | Nth session for this browser | Resets with cookies |
+| `session_key` | STRING | `user_pseudo_id.ga_session_id`; unique session ID | NULL when `ga_session_id` is NULL |
+| `page_location` | STRING | Full page URL including query string | UTM tags and other parameters still attached |
+| `page_url` | STRING | URL without query string or fragment | Merges UTM variants of the same page |
+| `page_path` | STRING | Path only, e.g. `/volunteer`; `/` = homepage | — |
+| `page_title` | STRING | HTML page title | Suffixes differ between pages (GA4-2 Issue 4) |
+| `page_referrer` | STRING | Previous URL | Often NULL on landing pages |
+| `engagement_time_msec` | INT64 | Foreground time reported with the event | Only on some events |
+| `session_engaged` | INT64 | 1 if GA4 marked the session engaged at this event | Stored as both STRING and INT in this property; both forms read |
+| `percent_scrolled` | INT64 | Scroll depth on `scroll` events (90) | Enhanced measurement fires only at 90% depth |
+| `outbound` | STRING | `'true'` on outbound link clicks | String, not boolean |
+| `link_domain` / `link_url` | STRING | Destination of an outbound click | Only on `click` events |
+| `form_id` | STRING | ID of the form on form events | May be empty for embedded forms (Risk 2) |
+| `stslc_source` / `_medium` / `_campaign` | STRING | Session last-click manual source/medium/campaign | GA4's session-scoped attribution field |
+| `cts_source` / `_medium` / `_campaign` | STRING | Source collected on this event (UTMs/referrer) | Usually only on the first event of a session |
+| `first_user_source` / `_medium` / `_campaign` | STRING | How the user was **first** acquired | User-scoped; not the session's source |
+| `device_category`, `operating_system`, `browser` | STRING | Device details | — |
+| `country`, `region`, `city` | STRING | IP-based geography | City may be `(not set)` |
+
+## `fct_sessions` (session grain, PK = `session_key`)
+
+| Field | Type | Definition | Caveats |
+|---|---|---|---|
+| `session_date` | DATE | Date of the session's first event | Sessions crossing midnight count once, on the start date (unlike GA4-4 Q5, which counted them on both days) |
+| `session_key` | STRING | Unique session ID | Events without `ga_session_id` are excluded (V4) |
+| `user_pseudo_id`, `ga_session_id`, `ga_session_number` | — | See staging | — |
+| `user_type` | STRING | `new` if `ga_session_number = 1`, else `returning` | Cookie clearing makes returning visitors look new |
+| `session_start_ts` | TIMESTAMP | Time of the first event (UTC) | — |
+| `session_duration_sec` | INT64 | Seconds from the first to the last event | 0 for single-event sessions; not the same as engagement time |
+| `landing_page_path` / `_url` / `_title` | STRING | First `page_view` of the session | NULL if the session had no `page_view` |
+| `session_source` / `session_medium` / `session_campaign` | STRING | Session attribution: last-click field, falling back to collected source | Untagged Instagram traffic may show as referral or direct (Risks 5, 9) |
+| `source_medium` | STRING | `source / medium`; NULLs shown as `(not set)` | — |
+| `channel_group` | STRING | Team channel rules: Direct, Organic Search, Organic Social, Paid Search, AI Assistant, Email, Referral, Other, Unassigned | Our own rules (see SQL); close to GA4's default grouping but not identical. **Direct** includes sessions whose source/medium is `(not set) / (not set)` with no collected source: this export writes direct visits that way (V3; 92 sessions, 34%, all with first-touch `(direct) / (none)`). `Paid Search` stays empty until Ad Grants launches |
+| `first_user_source` / `first_user_medium` | STRING | First-touch acquisition | Don't use for session channel KPIs |
+| `device_category`, `operating_system`, `browser`, `country`, `region`, `city` | STRING | From the session's first event | — |
+| `events` | INT64 | Events in the session | May be inflated if the tag fires twice |
+| `session_start_events` | INT64 | `session_start` events in the session | Should be 1. >1 or 0 means a tagging issue (V5) |
+| `page_views`, `unique_pages` | INT64 | Page views / distinct paths viewed | — |
+| `engagement_time_sec` | FLOAT64 | Sum of `engagement_time_msec` ÷ 1000 | Missing values treated as 0 |
+| `is_engaged_session` | BOOL | GA4's engaged flag (≥10 s, ≥2 page views, or a key event) | — |
+| `scroll_events`, `form_start_events`, `lead_events` | INT64 | Counts of each funnel event | `lead_events` includes duplicate fires; use `has_lead` for KPIs |
+| `has_scroll`, `has_form_start`, `has_lead` | BOOL | Session reached the step at least once | Steps are not forced into order |
+| `outbound_clicks` | INT64 | All outbound link clicks | Enhanced measurement counts only cross-domain clicks |
+| `intake_portal_clicks` | INT64 | Clicks to the client intake portal (`clientsecure.me`) | Intent only; booking completion not visible |
+| `eventbrite_clicks` | INT64 | Clicks to Eventbrite event pages | Registration completion not visible |
+| `jotform_clicks` | INT64 | Clicks to Jotform forms | Form purpose may vary (volunteer/intake) |
+| `gofundme_clicks`, `donate_click_events` | INT64 | Donation link clicks / custom `donate_click` events | A single donation action may fire both |
+| `has_intake_click`, `has_event_click`, `has_donation_intent` | BOOL | Session took that off-site action | — |
+| `has_key_action` | BOOL | Session had a lead, intake click or donation action | Main "did the visit matter" flag |
+
+## `agg_daily_kpis`
+
+| Field | Type | Definition | Caveats |
+|---|---|---|---|
+| `session_date`, `channel_group`, `source_medium`, `device_category`, `country`, `region`, `landing_page_path`, `user_type` | — | Grouping dimensions from `fct_sessions` | NULLs form their own group |
+| `sessions` | INT64 | Sessions | Additive |
+| `users` | INT64 | Distinct browsers in the row | **Not additive.** Summing across rows double-counts repeat visitors. Use `fct_sessions` for exact totals |
+| `engaged_sessions` | INT64 | Engaged sessions | Additive |
+| `page_views`, `engagement_time_sec` | INT64 / FLOAT64 | Totals | Additive |
+| `scroll_sessions`, `form_start_sessions`, `lead_sessions` | INT64 | Sessions reaching each funnel step | Additive; `lead_sessions` is the official lead KPI |
+| `lead_events` | INT64 | Raw `generate_lead` events | Includes duplicates; QA only |
+| `intake_click_sessions`, `event_click_sessions`, `donation_intent_sessions`, `key_action_sessions` | INT64 | Sessions with each off-site action | Additive; intent, not completion |
+
+# Deliverable 4 — Validation Queries
+
+The queries below run live against the mart when this report renders.
+
+## V1 — Row counts, grain uniqueness and date coverage
+
+**Pass if:** `duplicate_session_keys = 0`, `null_session_keys = 0`, `min_date = 2026-11-04`, `max_date = 2026-11-17`, `days_covered = expected_days`.
+
+```{sql}
+--| label: v1-grain
+SELECT
+  COUNT(*)                                                  AS row_count,
+  COUNT(DISTINCT session_key)                               AS distinct_sessions,
+  COUNT(*) - COUNT(DISTINCT session_key)                    AS duplicate_session_keys,
+  COUNTIF(session_key IS NULL)                              AS null_session_keys,
+  MIN(session_date)                                         AS min_date,
+  MAX(session_date)                                         AS max_date,
+  COUNT(DISTINCT session_date)                              AS days_covered,
+  DATE_DIFF(MAX(session_date), MIN(session_date), DAY) + 1  AS expected_days
+FROM `wellness-ranch-analytics.ga4_mart.fct_sessions`;
+```
+
+Daily trend, to spot gaps and anomalies like Nov 8–9 in GA4-4 (8 users but 63 `session_start` events):
+
+```{sql}
+--| label: v1-daily
+SELECT
+  session_date,
+  COUNT(*)                          AS sessions,
+  COUNT(DISTINCT user_pseudo_id)    AS users,
+  SUM(session_start_events)         AS session_start_events,
+  COUNTIF(has_lead)                 AS lead_sessions
+FROM `wellness-ranch-analytics.ga4_mart.fct_sessions`
+GROUP BY session_date
+ORDER BY session_date;
+```
+
+## V2 — Metric totals: raw export vs. fact table vs. aggregate
+
+**Pass if:** `pct_diff = 0` for every metric. The mart must neither drop nor duplicate anything relative to raw events that have a `ga_session_id`, and the aggregate must match the fact table.
+
+```{sql}
+--| label: v2-reconcile
+WITH raw AS (
+  SELECT
+    COUNT(DISTINCT CONCAT(user_pseudo_id, '.', CAST(sid AS STRING))) AS sessions,
+    COUNT(*)                                                        AS events,
+    COUNTIF(event_name = 'page_view')                               AS page_views,
+    COUNTIF(event_name = 'form_start')                              AS form_starts,
+    COUNTIF(event_name = 'generate_lead')                           AS lead_events
+  FROM (
+    SELECT
+      user_pseudo_id,
+      event_name,
+      (SELECT value.int_value FROM UNNEST(event_params) WHERE key = 'ga_session_id') AS sid
+    FROM `wellness-ranch-analytics.analytics_558215559.events_*`
+    WHERE _TABLE_SUFFIX BETWEEN '20261104' AND '20261117'
+  )
+  WHERE sid IS NOT NULL
+),
+mart AS (
+  SELECT COUNT(*) AS sessions, SUM(events) AS events, SUM(page_views) AS page_views,
+         SUM(form_start_events) AS form_starts, SUM(lead_events) AS lead_events
+  FROM `wellness-ranch-analytics.ga4_mart.fct_sessions`
+),
+agg AS (
+  SELECT SUM(sessions) AS sessions, SUM(page_views) AS page_views, SUM(lead_events) AS lead_events
+  FROM `wellness-ranch-analytics.ga4_mart.agg_daily_kpis`
+)
+SELECT
+  x.metric,
+  x.raw_value,
+  x.mart_value,
+  x.agg_value,
+  x.mart_value - x.raw_value                                            AS diff_mart_vs_raw,
+  ROUND(100 * SAFE_DIVIDE(x.mart_value - x.raw_value, x.raw_value), 3)  AS pct_diff
+FROM raw, mart, agg,
+UNNEST([
+  STRUCT('sessions' AS metric, raw.sessions AS raw_value, mart.sessions AS mart_value, agg.sessions AS agg_value),
+  STRUCT('events',      raw.events,      mart.events,      CAST(NULL AS INT64)),
+  STRUCT('page_views',  raw.page_views,  mart.page_views,  agg.page_views),
+  STRUCT('form_starts', raw.form_starts, mart.form_starts, CAST(NULL AS INT64)),
+  STRUCT('lead_events', raw.lead_events, mart.lead_events, agg.lead_events)
+]) AS x;
+```
+
+Cross-check against the numbers in the GA4-4 SQL Pack for Nov 4–9: about **241 sessions, 9 form-start sessions, 7 lead sessions, 12 lead events**. Small differences can come from sessions that continue past Nov 9, which the mart now includes.
+
+```{sql}
+--| label: v2-sqlpack
+SELECT
+  COUNT(*)                  AS sessions,
+  COUNTIF(has_scroll)       AS scroll_sessions,
+  COUNTIF(has_form_start)   AS form_start_sessions,
+  COUNTIF(has_lead)         AS lead_sessions,
+  SUM(lead_events)          AS lead_events
+FROM `wellness-ranch-analytics.ga4_mart.fct_sessions`
+WHERE session_date BETWEEN '2026-11-04' AND '2026-11-09';
+```
+
+## V3 — Missingness of key breakdown dimensions
+
+**Pass if:** `device_category`, `country` and `landing_page_path` are under 2% unusable. Higher rates for campaign/city are expected (no campaigns yet; IP-based city) and are documented as caveats.
+
+```{sql}
+--| label: v3-missing
+WITH s AS (SELECT * FROM `wellness-ranch-analytics.ga4_mart.fct_sessions`),
+dims AS (
+  SELECT 'landing_page_path' AS dim, landing_page_path AS val FROM s UNION ALL
+  SELECT 'session_source',      session_source                FROM s UNION ALL
+  SELECT 'session_medium',      session_medium                FROM s UNION ALL
+  SELECT 'session_campaign',    session_campaign              FROM s UNION ALL
+  SELECT 'channel_group',       NULLIF(channel_group, 'Unassigned') FROM s UNION ALL
+  SELECT 'device_category',     device_category               FROM s UNION ALL
+  SELECT 'country',             country                       FROM s UNION ALL
+  SELECT 'region',              region                        FROM s UNION ALL
+  SELECT 'city',                city                          FROM s
+)
+SELECT
+  dim,
+  COUNT(*)                                       AS sessions,
+  COUNTIF(val IS NULL)                           AS n_null,
+  COUNTIF(val IN ('(not set)', ''))              AS n_not_set,
+  ROUND(100 * SAFE_DIVIDE(
+    COUNTIF(val IS NULL OR val IN ('(not set)', '')), COUNT(*)), 1) AS pct_unusable
+FROM dims
+GROUP BY dim
+ORDER BY pct_unusable DESC;
+```
+
+**Result:** Device, country and channel are 0% unusable and region is 1.1%, so the core breakdowns pass. **Landing page** is missing for 27 sessions (10.1%). These sessions have no identified `page_view`, most likely because the visitor accepted cookies *after* the first page loaded (consent mode, see V6). **Source/medium** shows `(not set)` for 92 sessions (34%). Diagnostics showed the session attribution field was `(not set) / (not set)` with no collected source, and all 92 have first-touch source `(direct) / (none)`. These are direct visits, so `channel_group` classifies them as **Direct**, and channel reporting is unaffected.
+
+## V4 — Sessionization coverage (events the mart cannot place in a session)
+
+**Pass if:** under 1% of all events lack a `ga_session_id`.
+
+```{sql}
+--| label: v4-coverage
+SELECT
+  COUNT(*)                                                         AS total_events,
+  COUNTIF(sid IS NULL)                                             AS events_without_session,
+  ROUND(100 * SAFE_DIVIDE(COUNTIF(sid IS NULL), COUNT(*)), 2)      AS pct_without_session
+FROM (
+  SELECT (SELECT value.int_value FROM UNNEST(event_params) WHERE key = 'ga_session_id') AS sid
+  FROM `wellness-ranch-analytics.analytics_558215559.events_*`
+  WHERE _TABLE_SUFFIX BETWEEN '20261104' AND '20261117'
+);
+```
+
+Which events are affected (GA4-4 found 8 `click` events without a session ID):
+
+```{sql}
+--| label: v4-by-event
+SELECT
+  event_name,
+  COUNT(*) AS events_without_session
+FROM `wellness-ranch-analytics.analytics_558215559.events_*`
+WHERE _TABLE_SUFFIX BETWEEN '20261104' AND '20261117'
+  AND (SELECT value.int_value FROM UNNEST(event_params) WHERE key = 'ga_session_id') IS NULL
+GROUP BY event_name
+ORDER BY events_without_session DESC;
+```
+
+## V5 — Tag health and metric logic
+
+**5a. Double-tag check.** `first_visit` should fire once per browser. **Pass if** `first_visit_per_user` is about 1.0. GA4-4 found 280 events / 170 users ≈ 1.65.
+
+```{sql}
+--| label: v5a-first-visit
+SELECT
+  COUNT(*)                                   AS users_with_first_visit,
+  SUM(fv)                                    AS first_visit_events,
+  COUNTIF(fv > 1)                            AS users_with_multiple_first_visits,
+  ROUND(SAFE_DIVIDE(SUM(fv), COUNT(*)), 2)   AS first_visit_per_user
+FROM (
+  SELECT user_pseudo_id, COUNTIF(event_name = 'first_visit') AS fv
+    FROM `wellness-ranch-analytics.ga4_mart.stg_events_flat`
+  WHERE user_pseudo_id IS NOT NULL   -- exclude cookieless pings (no user ID)
+  GROUP BY user_pseudo_id
+)
+WHERE fv > 0;
+```
+
+**5b. Duplicate lead check.** Counts `generate_lead` events that fire within 60 seconds of a previous lead in the same session (GA4-2 Risk 1). **Pass if** `near_duplicate_leads = 0`. Any non-zero value supports using `lead_sessions` instead of `lead_events`.
+
+```{sql}
+--| label: v5b-dup-leads
+SELECT
+  COUNT(*)                                                         AS lead_events,
+  COUNT(DISTINCT session_key)                                      AS lead_sessions,
+  COUNTIF(TIMESTAMP_DIFF(event_ts, prev_ts, SECOND) <= 60)         AS near_duplicate_leads
+FROM (
+  SELECT
+    session_key,
+    event_ts,
+    LAG(event_ts) OVER (PARTITION BY session_key ORDER BY event_timestamp) AS prev_ts
+  FROM `wellness-ranch-analytics.ga4_mart.stg_events_flat`
+  WHERE event_name = 'generate_lead'
+    AND session_key IS NOT NULL
+);
+```
+
+**5c. Logic and range checks.** **Pass if** every count is 0 (rows marked *info* are informational), engagement rate is plausible (≈0.6–0.75 in GA4-2/GA4-4) and lead rate is about 2–4%.
+
+```{sql}
+--| label: v5c-logic
+SELECT
+  COUNTIF(session_duration_sec < 0)                         AS negative_durations,
+  COUNTIF(page_views > events)                              AS pageviews_exceed_events,
+  COUNTIF(has_lead AND lead_events = 0)                     AS flag_count_mismatch,
+  COUNTIF(session_start_events > 1)                         AS info_multi_session_start,
+  COUNTIF(session_start_events = 0)                         AS info_no_session_start,
+  COUNTIF(has_lead AND NOT has_form_start)                  AS info_lead_without_form_start,
+  ROUND(SAFE_DIVIDE(COUNTIF(is_engaged_session), COUNT(*)), 3)  AS engagement_rate,
+  ROUND(100 * SAFE_DIVIDE(COUNTIF(has_lead), COUNT(*)), 2)      AS lead_rate_pct,
+  ROUND(100 * SAFE_DIVIDE(COUNTIF(has_key_action), COUNT(*)), 2) AS key_action_rate_pct
+FROM `wellness-ranch-analytics.ga4_mart.fct_sessions`;
+```
+
+## V6 — Consent / cookieless event check
+
+**Purpose:** Explains V4. Separates "traffic dropped" from "tracking lost the ability to identify visitors."
+**Pass if:** `pct_unsessioned` stays under 5% every day.
+
+```{sql}
+--| label: v6-cookieless
+SELECT
+  PARSE_DATE('%Y%m%d', event_date)                          AS event_date,
+  COUNT(*)                                                  AS total_events,
+  COUNTIF(user_pseudo_id IS NULL)                           AS events_no_user_id,
+  COUNTIF((SELECT value.int_value FROM UNNEST(event_params)
+           WHERE key = 'ga_session_id') IS NULL)            AS events_no_session_id,
+  ROUND(100 * SAFE_DIVIDE(
+    COUNTIF((SELECT value.int_value FROM UNNEST(event_params)
+             WHERE key = 'ga_session_id') IS NULL), COUNT(*)), 1) AS pct_unsessioned
+FROM `wellness-ranch-analytics.analytics_558215559.events_*`
+WHERE _TABLE_SUFFIX BETWEEN '20261104' AND '20261117'
+GROUP BY event_date
+ORDER BY event_date;
+```
+
+**Result:** **Fail from Nov 8 onward.** Nov 4–7 have 0–9 unsessioned events per day (≤3%). From Nov 8, 81–97% of events have no user or session ID, while total events per day remain in the normal range. This matches consent-mode cookieless pings, not a traffic drop. The mart handles it correctly by excluding events it cannot sessionize, and the limitation is documented in the design brief and data dictionary.
+
+## Validation summary
+
+| Check | What it tests | Pass criteria | Status |
+|---|---|---|---|
+| V1 | Grain uniqueness, date coverage | 0 duplicate/NULL keys; Nov 4–17 covered | **Pass:** 268 rows = 268 distinct keys; 14 of 14 days |
+| V2 | Raw → fact → aggregate reconciliation | 0% difference | **Pass:** sessions, events, page views, form starts and lead events all match exactly (0.0%). Nov 4–9 = 243 sessions / 7 lead sessions, matching the GA4-4 SQL Pack |
+| V3 | Completeness of breakdown dimensions | Device, country, landing page < 2% unusable | **Partial:** device, country, channel 0%; region 1.1%. Landing page 10.1% (27 sessions with no identified `page_view`, consent timing). Source/medium 34% `(not set)`, confirmed as direct traffic and classified as **Direct** |
+| V4 | Events lost to sessionization | < 1% of events | **Fail:** 2,036 of 3,678 events (55%) have no session ID, almost all from Nov 8 on (explained by V6) |
+| V5 | Double tagging, duplicate leads, logic | ~1 first_visit/user; 0 near-duplicate leads; logic counts 0 | **Mostly pass:** 1.0 first_visit per identified user (no double tag); all logic checks 0; engagement 0.649, lead rate 2.6%. 1 near-duplicate lead found, which supports using `lead_sessions` |
+| V6 | Consent / cookieless events | < 5% unsessioned per day | **Fail from Nov 8:** 0–2.6% on Nov 4–7, then 81–97% daily. Consent-mode cookieless pings; documented limitation |
+
+
+# Appendix
+
+## GitHub Repository
+
+Repo: https://github.com/brianvuong1/CEP-Group-4
+
+## GitHub Pages
+
+Repo file: https://github.com/brianvuong1/CEP-Group-4/blob/main/GA4-5_Milestone_5.qmd
+
+Live page: https://brianvuong1.github.io/CEP-Group-4/GA4-5_Milestone_5.html
+
+## Next steps (v2)
+
+- Confirm the consent banner change on the Wix site (around Nov 7–8) and decide whether to report on consented sessions only or add event-level trend metrics for cookieless traffic.
+- Add Google Ads / Ad Grants cost and click data once campaigns launch, so `Paid Search` can report cost per lead.
+- Switch the fixed end date to a scheduled daily rebuild.
+- Join lead sessions to intake/CRM records to measure lead quality.
+
+```{r}
+#| label: disconnect
+#| include: false
+dbDisconnect(con)
+```
